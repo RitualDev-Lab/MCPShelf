@@ -1,0 +1,50 @@
+[
+  {
+    "id": "security",
+    "name": "Security & Guardrails",
+    "icon": "🛡️",
+    "description": "Secret redaction, prompt injection defense, sandboxing, and runtime security firewalls."
+  },
+  {
+    "id": "databases",
+    "name": "Databases & Storage",
+    "icon": "🗄️",
+    "description": "SQL proxies, query guardrails, mock DB generators, vector indexes, and cloud storage."
+  },
+  {
+    "id": "developer-tools",
+    "name": "Developer Tools",
+    "icon": "🛠️",
+    "description": "Directory search, discovery, synthetic fixtures, AST analysis, and build orchestrators."
+  },
+  {
+    "id": "monetization",
+    "name": "Billing & Monetization",
+    "icon": "💳",
+    "description": "Paywalls, capability tokens, credit middleware, and Dodo/Stripe payment links for AI agents."
+  },
+  {
+    "id": "ai-agents",
+    "name": "AI & Multi-Agent",
+    "icon": "🤖",
+    "description": "Agent memory, context optimization, progressive skill disclosure, and model routers."
+  },
+  {
+    "id": "cloud-infra",
+    "name": "Cloud & DevOps",
+    "icon": "☁️",
+    "description": "Container orchestration, serverless execution, Helm charts, and infrastructure automation."
+  },
+  {
+    "id": "productivity",
+    "name": "Productivity & Collaboration",
+    "icon": "⚡",
+    "description": "GitHub, Jira, Linear, Slack, and Google Workspace integrations for autonomous workflows."
+  },
+  {
+    "id": "web-automation",
+    "name": "Browser & Scraping",
+    "icon": "🌐",
+    "description": "Headless browsers, DOM interaction, search APIs, and live web scraping."
+  }
+]

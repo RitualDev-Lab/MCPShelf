@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit MCP Server - MCPShelf Registry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl">⚡</span>
+        <span class="font-extrabold text-xl tracking-tight text-white">MCP<span class="text-emerald-400">Shelf</span></span>
+      </a>
+      <a href="/" class="text-xs font-semibold text-slate-400 hover:text-white transition">&larr; Back to Marketplace</a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-extrabold text-white mb-2">Submit Your MCP Server</h1>
+    <p class="text-sm text-slate-400 mb-8">Register your Model Context Protocol server. Submissions are synchronized with both MCPShelf and the official MCP Registry.</p>
+
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">Server Name (Namespace / Identifier)</label>
+          <input type="text" placeholder="e.g. io.github.my-org/my-mcp-server" class="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">Title & One-line Description</label>
+          <input type="text" placeholder="e.g. PostgreSQL Query Guardrail & Sandboxing Engine" class="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">GitHub Repository URL</label>
+          <input type="url" placeholder="https://github.com/my-org/my-mcp-server" class="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">Category</label>
+          <select class="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-white">
+            <option value="security">Security & Guardrails</option><option value="databases">Databases & Storage</option><option value="developer-tools">Developer Tools</option><option value="monetization">Billing & Monetization</option><option value="ai-agents">AI & Multi-Agent</option><option value="cloud-infra">Cloud & DevOps</option><option value="productivity">Productivity & Collaboration</option><option value="web-automation">Browser & Scraping</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">server.json Manifest</label>
+          <textarea rows="6" placeholder="Paste your official server.json here..." class="w-full px-3 py-2 bg-slate-950 font-mono border border-slate-700 rounded-lg text-xs text-emerald-400"></textarea>
+        </div>
+        <button class="w-full py-2.5 rounded-xl font-bold text-xs bg-emerald-500 hover:bg-emerald-400 text-black transition">
+          Submit via GitHub Pull Request &rarr;
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

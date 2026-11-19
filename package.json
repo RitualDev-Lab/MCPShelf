@@ -1,0 +1,51 @@
+{
+  "name": "@ritualdev-lab/mcpshelf",
+  "version": "1.0.0",
+  "description": "The open-source Model Context Protocol (MCP) registry, marketplace, analytics dashboard, and creator boosting platform",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcpshelf": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RitualDev-Lab/MCPShelf.git"
+  },
+  "homepage": "https://mcp.ritualdev.in",
+  "bugs": {
+    "url": "https://github.com/RitualDev-Lab/MCPShelf/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "mcp-registry",
+    "mcp-marketplace",
+    "claude-desktop",
+    "cursor-ide",
+    "windsurf-ai",
+    "ai-agents"
+  ],
+  "author": "RitualDev Lab <founder@ritualdev.in>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "sync": "tsx scripts/sync-official-registry.ts",
+    "build:css": "tailwindcss -i site/input.css -o site/css/tailwind.min.css --minify",
+    "build:site": "tsx scripts/build-site.ts",
+    "build:seo": "tsx scripts/generate-seo.ts",
+    "build": "npm run build:css && npm run build:site && npm run build:seo",
+    "test": "tsx --test tests/**/*.test.ts",
+    "dev": "tsx scripts/build-site.ts && npx serve site -l 3000"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

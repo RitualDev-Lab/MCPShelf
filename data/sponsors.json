@@ -1,0 +1,69 @@
+{
+  "boostTiers": {
+    "spotlight": {
+      "name": "Category Spotlight",
+      "priceUSD": 19,
+      "badge": "Promoted",
+      "searchMultiplier": 2.0,
+      "perks": [
+        "Pinned to top 3 slots in primary category",
+        "Transparent 'Promoted' badge",
+        "2x search relevance multiplier",
+        "Direct install modal with custom instructions"
+      ]
+    },
+    "hero": {
+      "name": "Homepage Hero Boost",
+      "priceUSD": 49,
+      "badge": "Featured Hero",
+      "searchMultiplier": 4.0,
+      "perks": [
+        "Featured in top Hero banner across the entire marketplace",
+        "Prominent card highlighting on all search queries",
+        "Weekly spotlight in developer newsletter (5,000+ engineers)",
+        "Verified installation badge"
+      ]
+    },
+    "partner": {
+      "name": "Enterprise Verified Partner",
+      "priceUSD": 99,
+      "badge": "Verified Partner",
+      "searchMultiplier": 5.0,
+      "perks": [
+        "Official Gold Shield Verification Checkmark",
+        "Dedicated Security Audit & Compliance verification badge",
+        "Inclusion in Enterprise AI Agent recommended stack",
+        "Priority developer support and direct partnership link"
+      ]
+    }
+  },
+  "activeBoosts": [
+    {
+      "serverId": "io.github.RitualDev-Lab/agentshield",
+      "tier": "hero",
+      "badge": "Official Security Partner",
+      "customCallout": "Zero-Leak Secret Redaction & Kernel Sandboxing for Autonomous AI Agents",
+      "startedAt": "2026-11-01T00:00:00Z",
+      "expiresAt": "2027-12-31T23:59:59Z",
+      "verifiedStatus": "audit-passed"
+    },
+    {
+      "serverId": "io.github.RitualDev-Lab/mcp-monetize",
+      "tier": "spotlight",
+      "badge": "Promoted Middleware",
+      "customCallout": "Drop-in billing, paywalls & credit middleware for MCP servers with Dodo & Stripe",
+      "startedAt": "2026-11-15T00:00:00Z",
+      "expiresAt": "2027-12-31T23:59:59Z",
+      "verifiedStatus": "audit-passed"
+    },
+    {
+      "serverId": "io.github.RitualDev-Lab/dbshield",
+      "tier": "spotlight",
+      "badge": "Promoted Guardrail",
+      "customCallout": "Safety-first database guardrail and query proxy preventing destructive drops",
+      "startedAt": "2026-11-10T00:00:00Z",
+      "expiresAt": "2027-12-31T23:59:59Z",
+      "verifiedStatus": "audit-passed"
+    }
+  ]
+}

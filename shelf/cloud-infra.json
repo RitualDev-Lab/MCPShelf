@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ai.askwatch/gsc",
+    "name": "ai.askwatch/gsc",
+    "title": "AskWatch Google Search Console MCP",
+    "description": "Ask Google Search Console in plain language. Hosted, free, no Google Cloud project.",
+    "version": "1.0.0",
+    "category": "cloud-infra",
+    "author": "Community",
+    "repositoryUrl": "",
+    "websiteUrl": "",
+    "isOfficialLatest": true,
+    "publishedAt": "2026-09-22T17:02:07.800881Z",
+    "trustScore": 7,
+    "securityRating": "Moderate",
+    "reviewsCount": 12,
+    "averageRating": 4.6,
+    "estimatedInstalls": 4748,
+    "transportType": "stdio",
+    "installSnippets": {
+      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"gsc\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askwatch/gsc\"\n      ]\n    }\n  }\n}",
+      "cursorMcp": "{\n  \"mcpServers\": {\n    \"gsc\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askwatch/gsc\"\n      ]\n    }\n  }\n}",
+      "windsurf": "{\n  \"mcpServers\": {\n    \"gsc\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askwatch/gsc\"\n      ]\n    }\n  }\n}",
+      "terminal": "npx -y ai.askwatch/gsc"
+    }
+  }
+]
