@@ -157,7 +157,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   }
 
   return `<!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark bg-[#07090e] text-slate-100">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -317,10 +317,15 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     }
   </script>
   <style>
-    body { background-color: #07090e; color: #f1f5f9; }
+    html, body {
+      background-color: #07090e !important;
+      color: #f1f5f9 !important;
+    }
     .ambient-glow {
-      background: radial-gradient(ellipse 70% 35% at 50% -5%, rgba(99, 102, 241, 0.16), transparent 70%),
-                  radial-gradient(circle at 10% 25%, rgba(6, 182, 212, 0.05), transparent 45%);
+      background-color: #07090e !important;
+      background-image: 
+        radial-gradient(ellipse 70% 35% at 50% -5%, rgba(99, 102, 241, 0.16), transparent 70%),
+        radial-gradient(circle at 10% 25%, rgba(6, 182, 212, 0.05), transparent 45%) !important;
     }
     .grid-mesh {
       background-size: 44px 44px;
@@ -370,7 +375,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     ::-webkit-scrollbar-thumb:hover { background: #334155; }
   </style>
 </head>
-<body class="min-h-screen font-sans antialiased ambient-glow selection:bg-brand-500 selection:text-white">
+<body class="min-h-screen font-sans antialiased bg-[#07090e] text-slate-100 ambient-glow selection:bg-brand-500 selection:text-white">
   <div class="fixed inset-0 grid-mesh pointer-events-none z-0"></div>
 
   <!-- Sticky Cyber Header -->
@@ -1771,7 +1776,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
 
 function generateBoostHtml(categories: Category[], boostTiers: any): string {
   return `<!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark bg-[#07090e] text-slate-100">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1901,7 +1906,7 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
 
 function generateSubmitHtml(categories: Category[]): string {
   return `<!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark bg-[#07090e] text-slate-100">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2019,7 +2024,7 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
   const terminalSnippet = server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`;
 
   return `<!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark bg-[#07090e] text-slate-100">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
