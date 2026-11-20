@@ -12,6 +12,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { launchExplorer } from './explorer.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -31,7 +32,9 @@ const command = args[0] || 'help';
 
 const catalog = loadCatalog();
 
-if (command === 'search') {
+if (command === 'explore' || command === 'tui') {
+  launchExplorer(catalog);
+} else if (command === 'search') {
   const query = (args[1] || '').toLowerCase().trim();
   if (!query) {
     console.log('Usage: mcpshelf search <query>');
@@ -54,7 +57,7 @@ if (command === 'search') {
   const clientArg = args.find(a => a.startsWith('--client='))?.split('=')[1] || 'claude';
 
   if (!id) {
-    console.log('Usage: mcpshelf install <serverId> [--client=claude|cursor|windsurf]');
+    console.log('Usage: mcpshelf install <serverId> [--client=claude|cursor|windsurf|zed|terminal]');
     process.exit(1);
   }
 
@@ -71,6 +74,23 @@ if (command === 'search') {
   } else if (clientArg === 'windsurf') {
     console.log('Paste this into your ~/.codeium/windsurf/mcp_config.json:');
     console.log(s.installSnippets.windsurf);
+  } else if (clientArg === 'zed') {
+    const shortName = (s.name || s.id.split('/').pop() || 'mcp-server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+    const pkg = s.packageIdentifier || s.id;
+    console.log('Paste this into your ~/.config/zed/settings.json:');
+    console.log(JSON.stringify({
+      context_servers: {
+        [shortName]: {
+          command: {
+            env: {},
+            path: "npx",
+            args: ["-y", pkg]
+          }
+        }
+      }
+    }, null, 2));
+  } else if (clientArg === 'terminal') {
+    console.log(s.installSnippets.terminal || `npx -y ${s.packageIdentifier || s.id}`);
   } else {
     console.log('Paste this into your claude_desktop_config.json:');
     console.log(s.installSnippets.claudeDesktop);
@@ -137,8 +157,9 @@ if (command === 'search') {
 ⚡ \x1b[1mMCPShelf CLI\x1b[0m - Open MCP Registry & Marketplace (https://mcp.ritualdev.in)
 
 Usage:
+  mcpshelf explore                    Launch interactive keyboard-driven TUI explorer
   mcpshelf search <query>             Search 400+ verified MCP servers
-  mcpshelf install <serverId>         Get 1-click install snippets (Claude / Cursor / Windsurf)
+  mcpshelf install <serverId>         Get 1-click install snippets (Claude / Cursor / Windsurf / Zed)
   mcpshelf audit <serverId>           Run trust score & security check
   mcpshelf submit <file.json>         Submit to MCPShelf or DevShelf (--target=mcpshelf|devshelf)
   mcpshelf serve-api [--port=4000]    Launch unified REST API for MCPShelf & DevShelf

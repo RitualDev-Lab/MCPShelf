@@ -117,11 +117,14 @@ curl -X POST https://mcp.ritualdev.in/api/v1/subscribe \
 ### NPM CLI & Direct Execution
 MCPShelf is available directly via npm:
 ```bash
+# Launch interactive keyboard-driven terminal explorer (TUI)
+npx @ritualdev-lab/mcpshelf explore
+
 # Instant search across all 419+ MCP servers
 npx @ritualdev-lab/mcpshelf search <query>
 
-# Generate 1-click install snippets for Claude, Cursor, or Windsurf
-npx @ritualdev-lab/mcpshelf install <server-id>
+# Generate 1-click install snippets for Claude, Cursor, Windsurf, or Zed
+npx @ritualdev-lab/mcpshelf install <server-id> [--client=claude|cursor|windsurf|zed|terminal]
 
 # Run trust & security compliance audit
 npx @ritualdev-lab/mcpshelf audit <server-id>

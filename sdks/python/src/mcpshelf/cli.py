@@ -33,6 +33,7 @@ def main():
 ⚡ MCPShelf Python CLI - Open Registry for MCP Servers & Dev Tools (https://mcp.ritualdev.in)
 
 Usage:
+  mcpshelf explore              Interactive terminal browser & installer
   mcpshelf search <query>       Search 419+ verified MCP servers
   mcpshelf tools <query>        Search 577+ free open-source dev tools (DevShelf)
   mcpshelf get <serverId>       Inspect metadata & install configs
@@ -43,7 +44,19 @@ Usage:
 
     cmd = args[0]
 
-    if cmd == "search":
+    if cmd == "explore":
+        catalog = get_servers()
+        print(f"\n⚡ MCPShelf Terminal Explorer ({len(catalog)} Verified Servers)")
+        print("=" * 70)
+        for idx, s in enumerate(catalog[:15], 1):
+            boost = "[★ Spotlight] " if s.get("trustScore", 0) >= 9.8 else ""
+            print(f"{idx:2d}. {boost}{s.get('title')} [{s.get('category')}]")
+            print(f"    ID: {s.get('id')} | Trust: {s.get('trustScore')}/10 | Installs: {s.get('estimatedInstalls', 0):,}")
+            print(f"    Install: {s.get('installSnippets', {}).get('terminal', '')}\n")
+        print("=" * 70)
+        print("Tip: Use 'mcpshelf get <id>' for full JSON config or run 'npx @ritualdev-lab/mcpshelf explore' for keyboard-driven TUI.\n")
+
+    elif cmd == "search":
         if len(args) < 2:
             print("Usage: mcpshelf search <query>")
             return
