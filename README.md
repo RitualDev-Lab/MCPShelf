@@ -76,6 +76,21 @@ To promote your MCP server to thousands of AI developers building with Claude an
 
 Visit **[mcp.ritualdev.in/boost.html](https://mcp.ritualdev.in/boost.html)** to activate instant boosting.
 
+### ⚡ Automated Webhook Integration (Dodo Payments)
+
+MCPShelf includes an automated webhook fulfillment engine for instant, self-serve boosting upon checkout:
+
+- **Webhook Endpoint**: `POST https://mcp.ritualdev.in/api/v1/webhooks/dodo`
+- **Supported Events**:
+  - `payment.succeeded`: Automatically activates server placement boost in `data/sponsors.json`.
+  - `subscription.active` / `subscription.renewed`: Enforces recurring monthly boost visibility.
+  - `subscription.cancelled` / `payment.refunded`: Deactivates boost immediately upon cancellation.
+- **Enterprise Security**:
+  - **Fail Closed**: Strictly rejects unverified webhooks if `DODO_WEBHOOK_SECRET` is unset.
+  - **Cryptographic HMAC-SHA256**: Validates header signatures with constant-time equality checks (`timingSafeEqual`).
+  - **Replay Attack Protection**: Deduplicates events by event ID and rejects stale timestamps (>300s).
+  - **Atomic File Persistence**: Updates `data/sponsors.json` via atomic rename to eliminate race conditions.
+
 ---
 
 ## 📦 Multi-Language Ecosystem & CLI
