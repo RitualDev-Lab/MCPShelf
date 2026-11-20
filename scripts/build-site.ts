@@ -309,77 +309,104 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       theme: {
         extend: {
           colors: {
-            brand: { 50: '#ecfdf5', 400: '#34d399', 500: '#10b981', 600: '#059669', 700: '#047857' },
-            dark: { 950: '#030712', 900: '#0b0f19', 850: '#111827', 800: '#1f2937', 700: '#374151' }
+            brand: { 50: '#eef2ff', 400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca' },
+            dark: { 950: '#07090e', 900: '#0b0f19', 850: '#111726', 800: '#1b2336', 700: '#2d3748' }
           }
         }
       }
     }
   </script>
   <style>
-    body { background-color: #030712; color: #f3f4f6; }
+    body { background-color: #07090e; color: #f1f5f9; }
+    .ambient-glow {
+      background: radial-gradient(ellipse 70% 35% at 50% -5%, rgba(99, 102, 241, 0.16), transparent 70%),
+                  radial-gradient(circle at 10% 25%, rgba(6, 182, 212, 0.05), transparent 45%);
+    }
+    .grid-mesh {
+      background-size: 44px 44px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      mask-image: radial-gradient(ellipse 80% 50% at 50% 15%, #000 35%, transparent 80%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 15%, #000 35%, transparent 80%);
+    }
     .glass-card {
-      background: rgba(17, 24, 39, 0.75);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #0c101a;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .glass-card:hover {
-      border-color: rgba(16, 185, 129, 0.4);
-      box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
+      border-color: rgba(99, 102, 241, 0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
     }
-    .hero-mesh {
-      background: radial-gradient(circle at 50% -10%, rgba(16, 185, 129, 0.15), transparent 60%),
-                  radial-gradient(circle at 90% 20%, rgba(6, 182, 212, 0.1), transparent 50%),
-                  radial-gradient(circle at 10% 40%, rgba(139, 92, 246, 0.08), transparent 50%);
+    .glass-pill {
+      background: rgba(12, 16, 26, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
     }
     .mark-highlight {
-      background: rgba(16, 185, 129, 0.25);
-      color: #6ee7b7;
+      background: rgba(99, 102, 241, 0.25);
+      color: #c7d2fe;
       padding: 0 2px;
       border-radius: 3px;
       font-weight: 600;
     }
+    /* Flow animation for topology wire */
+    @keyframes pulseWire {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .anim-wire {
+      stroke-dasharray: 4, 4;
+      animation: pulseWire 2s linear infinite;
+    }
     /* Custom Scrollbar */
-    ::-webkit-scrollbar { width: 8px; height: 8px; }
-    ::-webkit-scrollbar-track { background: #030712; }
-    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #374151; }
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #07090e; }
+    ::-webkit-scrollbar-thumb { background: #1b2336; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #334155; }
   </style>
 </head>
-<body class="min-h-screen font-sans antialiased hero-mesh selection:bg-brand-500 selection:text-black">
+<body class="min-h-screen font-sans antialiased ambient-glow selection:bg-brand-500 selection:text-white">
+  <div class="fixed inset-0 grid-mesh pointer-events-none z-0"></div>
 
   <!-- Sticky Cyber Header -->
-  <header class="border-b border-slate-800/80 bg-dark-950/85 backdrop-blur-md sticky top-0 z-40 transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+  <header class="border-b border-white/[0.06] bg-dark-950/85 backdrop-blur-md sticky top-0 z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between relative z-10">
       <div class="flex items-center space-x-3">
-        <a href="/" class="flex items-center space-x-2 group">
-          <span class="text-2xl transition-transform group-hover:scale-110">⚡</span>
-          <span class="font-extrabold text-xl tracking-tight text-white">MCP<span class="text-brand-500">Shelf</span></span>
+        <a href="/" class="flex items-center space-x-2.5 group">
+          <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+            ⚡
+          </div>
+          <span class="font-extrabold text-xl tracking-tight text-white">MCP<span class="text-indigo-400">Shelf</span></span>
         </a>
-        <span class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          v1.3 Official Mirror
+        <span class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+          <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+          v1.3 Verified Ecosystem
         </span>
       </div>
 
       <div class="flex items-center space-x-2 sm:space-x-3">
-        <a href="/digest.html" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:text-white transition">
+        <a href="/digest.html" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 border border-white/[0.08] hover:text-white transition">
           <span>📰</span>
           <span>Weekly Digest</span>
         </a>
-        <a href="/boost.html" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 transition">
+        <a href="/boost.html" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/25 transition">
           <span>🚀</span>
           <span>Boost</span>
         </a>
-        <button onclick="openBundleModal()" id="navStackBtn" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-brand-500/10 hover:bg-brand-500/20 text-brand-400 border border-brand-500/30 transition">
+        <button onclick="openBundleModal()" id="navStackBtn" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-300 border border-indigo-500/30 transition">
           <span>🎒</span>
           <span>Stack (<span id="navStackCount">0</span>)</span>
         </button>
-        <button onclick="copyCliExplore()" title="Copy CLI Command" class="hidden md:inline-flex items-center space-x-1 px-2.5 py-1.5 text-xs font-mono bg-dark-900 border border-slate-800 rounded-lg text-slate-400 hover:text-emerald-400 hover:border-slate-700 transition">
-          <span class="text-emerald-400">&gt;_</span>
+        <button onclick="copyCliExplore()" title="Copy CLI Command" class="hidden md:inline-flex items-center space-x-1 px-2.5 py-1.5 text-xs font-mono bg-white/[0.03] border border-white/[0.08] rounded-lg text-slate-400 hover:text-indigo-300 hover:border-white/[0.15] transition">
+          <span class="text-indigo-400">&gt;_</span>
           <span>npx mcpshelf</span>
         </button>
-        <a href="/submit.html" class="inline-flex items-center px-3.5 py-1.5 text-xs font-bold rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black transition shadow-lg shadow-emerald-500/15">
+        <a href="/submit.html" class="inline-flex items-center px-3.5 py-1.5 text-xs font-bold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition shadow-lg shadow-indigo-600/20">
           + Submit MCP
         </a>
         <a href="https://github.com/RitualDev-Lab/MCPShelf" target="_blank" class="p-1.5 text-slate-400 hover:text-white transition" title="GitHub">
@@ -389,44 +416,45 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     </div>
   </header>
 
-  <!-- Hero Section with Distinct Visual Punch -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6 text-center">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 text-emerald-400 border border-emerald-500/25 mb-4 shadow-sm">
-      <span>🚀 The Next-Gen Model Context Protocol Registry</span>
-      <span class="text-slate-500">•</span>
-      <span class="text-slate-300">Synchronized Daily</span>
+  <!-- Hero Section with Executive Graphic & Distinct Visual Polish -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6 text-center relative z-10">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 mb-5 shadow-sm">
+      <span class="text-indigo-400">✦</span>
+      <span>Universal Model Context Protocol (MCP) Ecosystem</span>
+      <span class="text-slate-600">•</span>
+      <span class="text-slate-400">Daily Sync</span>
     </div>
     
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight">
-      Build Autonomous Agent Stacks with <br class="hidden sm:inline">
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Production-Ready MCP Tools</span>
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-5 leading-[1.1]">
+      The Open Registry for <br class="hidden sm:inline">
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-200 to-indigo-400">Autonomous AI Agent Tools</span>
     </h1>
     
-    <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
-      Instant multi-field fuzzy search, cryptographic security ratings, and 1-click bundle export for <strong>Claude Desktop</strong>, <strong>Cursor</strong>, <strong>Windsurf</strong>, and <strong>Zed</strong>.
+    <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-400 mb-8 leading-relaxed">
+      Instant multi-field fuzzy search, cryptographic security ratings, and 1-click multi-server stack generation for <strong>Claude Desktop</strong>, <strong>Cursor</strong>, <strong>Windsurf</strong>, and <strong>Zed</strong>.
     </p>
 
     <!-- Key Metrics Ribbon -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mb-8">
-      <div class="glass-card rounded-xl p-3 text-center">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mb-10">
+      <div class="glass-card rounded-2xl p-3.5 text-center">
         <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center justify-center gap-1.5">
-          <span class="text-brand-500">●</span> 419+
+          <span class="text-indigo-400">●</span> 419+
         </div>
         <div class="text-[11px] text-slate-400 font-medium">Verified MCP Servers</div>
       </div>
-      <div class="glass-card rounded-xl p-3 text-center">
+      <div class="glass-card rounded-2xl p-3.5 text-center">
         <div class="text-xl sm:text-2xl font-extrabold text-emerald-400 flex items-center justify-center gap-1.5">
           <span>🛡️</span> 100%
         </div>
         <div class="text-[11px] text-slate-400 font-medium">Zero-Leak Audited</div>
       </div>
-      <div class="glass-card rounded-xl p-3 text-center">
-        <div class="text-xl sm:text-2xl font-extrabold text-amber-400 flex items-center justify-center gap-1.5">
+      <div class="glass-card rounded-2xl p-3.5 text-center">
+        <div class="text-xl sm:text-2xl font-extrabold text-indigo-300 flex items-center justify-center gap-1.5">
           <span>⚡</span> 5 Clients
         </div>
         <div class="text-[11px] text-slate-400 font-medium">Claude, Cursor, Zed+</div>
       </div>
-      <div class="glass-card rounded-xl p-3 text-center">
+      <div class="glass-card rounded-2xl p-3.5 text-center">
         <div class="text-xl sm:text-2xl font-extrabold text-cyan-400 flex items-center justify-center gap-1.5">
           <span>🎒</span> Multi-Stack
         </div>
@@ -434,11 +462,126 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       </div>
     </div>
 
+    <!-- Interactive MCP Agent Topology Graphic (Hologram Visualizer) -->
+    <div class="max-w-4xl mx-auto mb-12 glass-card rounded-3xl p-5 sm:p-7 text-left relative overflow-hidden border border-white/10 shadow-2xl">
+      <!-- Graphic Window Top Bar -->
+      <div class="flex items-center justify-between pb-4 mb-5 border-b border-white/[0.06] text-xs">
+        <div class="flex items-center space-x-2">
+          <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+          <span class="ml-2 font-mono text-slate-400 text-[11px] hidden sm:inline">mcpshelf://agent-mesh/topology</span>
+        </div>
+        <div class="flex items-center gap-3 text-[11px] font-mono text-slate-400">
+          <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Stdio IPC Active</span>
+          <span class="text-slate-600 hidden md:inline">|</span>
+          <span class="text-indigo-400 font-semibold hidden md:inline">&lt;0.5ms Omnisearch Latency</span>
+        </div>
+      </div>
+
+      <!-- 3-Column Topology Mesh Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 items-center relative">
+        <!-- Node 1: AI Clients (Agent Hosts) -->
+        <div class="space-y-2.5">
+          <div class="text-[11px] font-mono uppercase tracking-wider text-slate-500 font-semibold mb-1 flex items-center gap-1.5">
+            <span>💻</span> AI Host Clients
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-white/[0.06] hover:border-indigo-500/40 transition flex items-center justify-between group">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base text-amber-400">✦</span>
+              <div>
+                <div class="text-xs font-bold text-white group-hover:text-indigo-300 transition">Claude Desktop</div>
+                <div class="text-[10px] text-slate-500 font-mono">claude_desktop_config.json</div>
+              </div>
+            </div>
+            <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">Ready</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-white/[0.06] hover:border-cyan-500/40 transition flex items-center justify-between group">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base text-cyan-400">⚡</span>
+              <div>
+                <div class="text-xs font-bold text-white group-hover:text-cyan-300 transition">Cursor IDE</div>
+                <div class="text-[10px] text-slate-500 font-mono">~/.cursor/mcp.json</div>
+              </div>
+            </div>
+            <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">Ready</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-white/[0.06] hover:border-teal-500/40 transition flex items-center justify-between group">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base text-teal-400">🌊</span>
+              <div>
+                <div class="text-xs font-bold text-white group-hover:text-teal-300 transition">Windsurf / Zed</div>
+                <div class="text-[10px] text-slate-500 font-mono">stdio subprocess</div>
+              </div>
+            </div>
+            <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">Ready</span>
+          </div>
+        </div>
+
+        <!-- Node 2: Central MCPShelf Orchestrator Hub -->
+        <div class="p-5 rounded-2xl bg-gradient-to-b from-indigo-950/40 to-slate-900/90 border-2 border-indigo-500/30 text-center relative shadow-xl shadow-indigo-950/50">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-600/20 border border-indigo-500/40 mx-auto mb-3 flex items-center justify-center text-2xl text-indigo-400 shadow-inner">
+            ⚡
+          </div>
+          <div class="text-sm font-extrabold text-white mb-0.5">MCPShelf Core Bridge</div>
+          <div class="text-[10px] font-mono text-indigo-300 mb-3">Multi-Server Stack Orchestrator</div>
+          <div class="flex flex-col gap-1.5 text-[10px] font-mono text-slate-400 bg-black/40 p-2.5 rounded-xl border border-white/[0.04]">
+            <div class="flex items-center justify-between text-slate-300">
+              <span>Standard:</span> <strong class="text-emerald-400">JSON-RPC 2.0</strong>
+            </div>
+            <div class="flex items-center justify-between text-slate-300">
+              <span>Trust Engine:</span> <strong class="text-indigo-300">0.0 - 10.0 Rating</strong>
+            </div>
+            <div class="flex items-center justify-between text-slate-300">
+              <span>Stack Merging:</span> <strong class="text-cyan-400">1-Click Universal</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Node 3: Live MCP Capability Matrix (Tools, DB, Sandbox) -->
+        <div class="space-y-2.5">
+          <div class="text-[11px] font-mono uppercase tracking-wider text-slate-500 font-semibold mb-1 flex items-center gap-1.5">
+            <span>🛡️</span> Production Capabilities
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-white/[0.06] hover:border-indigo-500/40 transition flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base">🗄️</span>
+              <div>
+                <div class="text-xs font-bold text-white">Database & Storage</div>
+                <div class="text-[10px] text-slate-500">PostgreSQL, SQLite, Vector DB</div>
+              </div>
+            </div>
+            <span class="text-[10px] font-mono text-slate-400">34 tools</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-white/[0.06] hover:border-emerald-500/40 transition flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base">🛡️</span>
+              <div>
+                <div class="text-xs font-bold text-white">Security & Guardrails</div>
+                <div class="text-[10px] text-slate-500">DBShield, Prompt Defense, Sandboxes</div>
+              </div>
+            </div>
+            <span class="text-[10px] font-mono text-slate-400">18 tools</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/90 border border-white/[0.06] hover:border-cyan-500/40 transition flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base">🌐</span>
+              <div>
+                <div class="text-xs font-bold text-white">Browser & Scraping</div>
+                <div class="text-[10px] text-slate-500">Puppeteer, Playwright, DOM Agents</div>
+              </div>
+            </div>
+            <span class="text-[10px] font-mono text-slate-400">42 tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- OmniSearch Control Box -->
     <div class="max-w-3xl mx-auto relative mb-6">
       <div class="relative flex items-center">
         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
-          <svg class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="h-5 w-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
         </div>
@@ -446,7 +589,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
           type="text"
           id="searchInput"
           placeholder="Search 419+ servers by keyword, title, tag, or author (e.g. postgres, secret, dodo, github, puppeteer)..."
-          class="w-full pl-12 pr-28 py-4 bg-slate-900/90 border-2 border-slate-700/80 hover:border-slate-600 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/20 rounded-2xl text-white placeholder-slate-400 text-sm sm:text-base shadow-2xl transition-all duration-200 outline-none"
+          class="w-full pl-12 pr-28 py-4 bg-slate-900/90 border-2 border-slate-700/80 hover:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 rounded-2xl text-white placeholder-slate-400 text-sm sm:text-base shadow-2xl transition-all duration-200 outline-none"
         />
         <!-- Clear Button & Keyboard Badge -->
         <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center space-x-2">
@@ -462,7 +605,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
 
     <!-- Category Filter Pills with Dynamic Counts -->
     <div class="flex flex-wrap items-center justify-center gap-2 max-w-5xl mx-auto mb-4" id="categoryFilters">
-      <button onclick="filterCategory('all')" data-cat="all" class="cat-pill active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-brand-500 text-black shadow-lg shadow-brand-500/20 transition-all">
+      <button onclick="filterCategory('all')" data-cat="all" class="cat-pill active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 text-white shadow-lg shadow-indigo-600/20 transition-all">
         🌐 All Categories (<span id="cat-count-all">${catalog.length}</span>)
       </button>
       ${categories.map(cat => `
@@ -480,14 +623,14 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       <!-- Left Filters: Client & Security -->
       <div class="flex flex-wrap items-center gap-2">
         <span class="text-slate-500 font-semibold text-[11px]">Client:</span>
-        <button onclick="filterClient('all')" data-client="all" class="client-pill active px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">All</button>
+        <button onclick="filterClient('all')" data-client="all" class="client-pill active px-2.5 py-1 rounded-lg bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">All</button>
         <button onclick="filterClient('claude')" data-client="claude" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Claude</button>
         <button onclick="filterClient('cursor')" data-client="cursor" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Cursor</button>
         <button onclick="filterClient('windsurf')" data-client="windsurf" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Windsurf</button>
         <button onclick="filterClient('zed')" data-client="zed" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Zed</button>
         
         <span class="text-slate-500 font-semibold text-[11px] ml-2">Trust:</span>
-        <button onclick="filterSecurity('all')" data-sec="all" class="sec-pill active px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">All</button>
+        <button onclick="filterSecurity('all')" data-sec="all" class="sec-pill active px-2.5 py-1 rounded-lg bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">All</button>
         <button onclick="filterSecurity('gold')" data-sec="gold" class="sec-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">🛡️ 9.5+ Gold</button>
       </div>
 
@@ -602,18 +745,18 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
               </div>
 
               <div class="flex items-center gap-2">
-                <button onclick="openInstallModal('${escapeHtml(server.id)}')" class="flex-1 py-1.5 px-2.5 text-xs font-bold rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black transition shadow flex items-center justify-center gap-1">
+                <button onclick="openInstallModal('${escapeHtml(server.id)}')" class="flex-1 py-1.5 px-2.5 text-xs font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white transition shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
                   <span>⚡</span>
                   <span>Install</span>
                 </button>
-                <button onclick="toggleStack('${escapeHtml(server.id)}')" id="stack-btn-${escapeHtml(server.id)}" class="stack-btn py-1.5 px-2.5 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:text-white transition flex items-center gap-1" title="Add to Multi-Server Stack">
+                <button onclick="toggleStack('${escapeHtml(server.id)}')" id="stack-btn-${escapeHtml(server.id)}" class="stack-btn py-1.5 px-2.5 text-xs font-semibold rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 border border-white/[0.08] hover:text-white transition flex items-center gap-1" title="Add to Multi-Server Stack">
                   <span>+</span>
                   <span>Stack</span>
                 </button>
-                <button onclick="quickCopyTerminal('${escapeHtml(server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`)}', event)" class="p-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-emerald-400 border border-slate-700 transition" title="Copy Direct Terminal Run Command">
+                <button onclick="quickCopyTerminal('${escapeHtml(server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`)}', event)" class="p-1.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-400 hover:text-white border border-white/[0.08] transition" title="Copy Direct Terminal Run Command">
                   📋
                 </button>
-                <a href="/servers/${slug}.html" class="p-1.5 text-xs text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition" title="View Documentation">
+                <a href="/servers/${slug}.html" class="p-1.5 text-xs text-slate-400 hover:text-indigo-400 rounded-lg hover:bg-white/[0.04] transition" title="View Documentation">
                   &rarr;
                 </a>
               </div>
@@ -622,6 +765,24 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
           </div>
         `;
       }).join('')}
+    </div>
+
+    <!-- Progressive Pagination & Infinite Scroll Bar -->
+    <div id="loadMoreContainer" class="mt-12 text-center max-w-md mx-auto">
+      <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+        <span id="paginationSummary">Showing 24 of ${catalog.length} servers</span>
+        <span class="text-indigo-400 font-medium flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+          Scroll down for more
+        </span>
+      </div>
+      <div class="w-full bg-slate-800/80 rounded-full h-1.5 overflow-hidden mb-5">
+        <div id="paginationProgress" class="bg-gradient-to-r from-indigo-500 to-indigo-400 h-1.5 rounded-full transition-all duration-300" style="width: 6%;"></div>
+      </div>
+      <button onclick="loadMoreServers()" id="loadMoreBtn" class="px-6 py-2.5 rounded-xl text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-slate-600 transition shadow flex items-center justify-center gap-2 mx-auto group">
+        <span>Load More Servers</span>
+        <span class="group-hover:translate-y-0.5 transition-transform">↓</span>
+      </button>
     </div>
 
     <!-- Empty State -->
@@ -955,6 +1116,13 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     </div>
   </div>
 
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-40 px-4 py-2.5 rounded-full glass-pill text-xs font-semibold text-slate-300 hover:text-white hover:border-indigo-500/50 hover:shadow-[0_0_25px_rgba(99,102,241,0.25)] transition-all duration-300 translate-y-24 opacity-0 pointer-events-none flex items-center gap-2 group shadow-2xl">
+    <span class="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs group-hover:-translate-y-0.5 transition-transform font-bold">↑</span>
+    <span>Back to Top</span>
+    <span id="scrollProgress" class="text-[10px] font-mono text-slate-400 px-1.5 py-0.5 rounded bg-black/40">0%</span>
+  </button>
+
   <!-- Footer -->
   <footer class="border-t border-slate-800 bg-dark-950 py-12 text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -986,6 +1154,9 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     let currentTab = 'claude';
     let currentBundleTab = 'claude';
     const selectedStack = new Set();
+    let currentFilteredList = CATALOG;
+    let displayLimit = 24;
+    const PAGE_SIZE = 24;
 
     // DOM Elements
     const searchInput = document.getElementById('searchInput');
@@ -1120,7 +1291,10 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     }
 
     // Comprehensive Multi-Field Search & Filter Engine
-    function triggerFilter() {
+    function triggerFilter(resetPaging = true) {
+      if (resetPaging) {
+        displayLimit = PAGE_SIZE;
+      }
       const q = searchInput.value.toLowerCase().trim();
       const sort = document.getElementById('sortSelect').value;
       const tokens = q ? q.split(/\\s+/).filter(Boolean) : [];
@@ -1184,27 +1358,90 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         if (span) span.textContent = counts[c] || 0;
       });
 
-      // Toggle DOM Cards
+      currentFilteredList = visibleServers;
+      renderVisibleSlice();
+    }
+
+    function renderVisibleSlice() {
       const cardMap = new Map();
       document.querySelectorAll('.server-card').forEach(el => {
         cardMap.set(el.dataset.id, el);
         el.style.display = 'none';
       });
 
-      visibleServers.forEach(server => {
+      const slice = currentFilteredList.slice(0, displayLimit);
+      slice.forEach(server => {
         const el = cardMap.get(server.id);
         if (el) {
           el.style.display = 'flex';
-          cardsGrid.appendChild(el); // preserves sorted order
+          cardsGrid.appendChild(el);
         }
       });
 
-      resultCount.textContent = visibleServers.length + ' servers';
-      emptyState.classList.toggle('hidden', visibleServers.length > 0);
+      const showingCount = Math.min(slice.length, currentFilteredList.length);
+      const totalCount = currentFilteredList.length;
+      resultCount.textContent = totalCount + ' servers';
 
-      // Sync URL State
+      const loadMoreContainer = document.getElementById('loadMoreContainer');
+      const paginationSummary = document.getElementById('paginationSummary');
+      const paginationProgress = document.getElementById('paginationProgress');
+
+      if (loadMoreContainer) {
+        loadMoreContainer.classList.toggle('hidden', slice.length >= totalCount);
+        if (paginationSummary) {
+          paginationSummary.textContent = 'Showing ' + showingCount + ' of ' + totalCount + ' servers';
+        }
+        if (paginationProgress) {
+          const pct = totalCount > 0 ? (showingCount / totalCount) * 100 : 100;
+          paginationProgress.style.width = pct + '%';
+        }
+      }
+
+      emptyState.classList.toggle('hidden', totalCount > 0);
       syncUrlState();
     }
+
+    function loadMoreServers() {
+      if (displayLimit < currentFilteredList.length) {
+        displayLimit += PAGE_SIZE;
+        renderVisibleSlice();
+      }
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Scroll listener for Infinite Scroll and Back to Top Button
+    let isAutoLoading = false;
+    window.addEventListener('scroll', () => {
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      const scrollProgress = document.getElementById('scrollProgress');
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const currentScroll = window.scrollY;
+
+      if (backToTopBtn) {
+        if (currentScroll > 320) {
+          backToTopBtn.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+          backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+        } else {
+          backToTopBtn.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+          backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+        }
+        if (scrollProgress && maxScroll > 0) {
+          const pct = Math.min(100, Math.round((currentScroll / maxScroll) * 100));
+          scrollProgress.textContent = pct + '%';
+        }
+      }
+
+      if (!isAutoLoading && displayLimit < currentFilteredList.length) {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+          isAutoLoading = true;
+          loadMoreServers();
+          setTimeout(() => { isAutoLoading = false; }, 150);
+        }
+      }
+    }, { passive: true });
 
     function syncUrlState() {
       const params = new URLSearchParams();
@@ -1524,9 +1761,8 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         updateStackUI();
       }
 
-      if (q || cat || client || sec || sort) {
-        triggerFilter();
-      }
+      // Initial render of first slice
+      triggerFilter(true);
     });
   </script>
 </body>
