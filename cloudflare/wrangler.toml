@@ -1,0 +1,8 @@
+name = "ritualdev-submission-gateway"
+main = "worker.ts"
+compatibility_date = "2024-11-01"
+
+# To deploy custom domain:
+# routes = [
+#   { pattern = "api.ritualdev.in/api/*", zone_name = "ritualdev.in" }
+# ]

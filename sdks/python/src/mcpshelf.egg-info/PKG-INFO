@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: mcpshelf
+Version: 1.1.0
+Summary: Official Python client & MCP Server for MCPShelf (mcp.ritualdev.in) - Discover & audit 400+ Model Context Protocol servers and 570+ DevShelf tools
+Author-email: RitualDev Lab <developer@ritualdev.in>
+License: Apache-2.0
+Project-URL: Homepage, https://mcp.ritualdev.in
+Project-URL: Repository, https://github.com/RitualDev-Lab/MCPShelf
+Project-URL: Issues, https://github.com/RitualDev-Lab/MCPShelf/issues
+Keywords: mcp,model-context-protocol,mcp-server,claude,cursor,ai-agents,langchain,security-audit
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Security
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.0
+
+# mcpshelf ⚡
+> Official Python client & CLI for MCPShelf (https://mcp.ritualdev.in)
+
+## Installation
+```bash
+pip install mcpshelf
+```
+
+Or run directly without installation:
+```bash
+uvx mcpshelf search secret
+```
+
+## Usage
+
+### Search 400+ Verified MCP Servers
+```bash
+mcpshelf search postgres
+```
+
+### Audit an MCP Server Trust Score
+```bash
+mcpshelf audit io.github.RitualDev-Lab/agentshield
+```
+
+### Run as Stdio MCP Server
+```bash
+mcpshelf-mcp
+```

@@ -1,0 +1,77 @@
+name: ⚡ Submit an MCP Server
+description: Submit a new Model Context Protocol server to be listed on MCPShelf and the official mirror.
+title: "[Submission]: <Server Name or Package Identifier>"
+labels: ["submission", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting your Model Context Protocol server to **MCPShelf**!
+        Your submission will be indexed across **[mcp.ritualdev.in](https://mcp.ritualdev.in)** and validated against the official Model Context Protocol schema.
+  - type: input
+    id: server_id
+    attributes:
+      label: Server Identifier / Package Name
+      description: The reverse domain or package name (e.g., io.github.my-org/my-mcp or @my-org/mcp-server).
+      placeholder: "e.g. io.github.RitualDev-Lab/agentshield"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Human-Readable Title
+      description: Clear, professional title of your MCP server.
+      placeholder: "e.g. AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: Describe what your MCP server does and which tools it exposes to AI models.
+      placeholder: "Provides tools to scan, sanitize prompts, and isolate autonomous AI agents..."
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Security & Privacy
+        - AI Agents & Orchestration
+        - Databases & Cache
+        - Developer Tools & Utilities
+        - Monetization & Billing
+        - Cloud Infrastructure & DevOps
+        - Productivity & Automation
+        - Web Automation & Scraping
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Source Code Repository URL
+      placeholder: "https://github.com/my-org/my-mcp-server"
+    validations:
+      required: true
+  - type: textarea
+    id: server_json
+    attributes:
+      label: Official server.json Manifest
+      description: Paste your official Model Context Protocol manifest.
+      render: json
+      placeholder: |
+        {
+          "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+          "name": "io.github.example/my-server",
+          "version": "1.0.0",
+          "packages": [
+            {
+              "registryType": "npm",
+              "identifier": "@example/my-server",
+              "version": "1.0.0"
+            }
+          ]
+        }
+    validations:
+      required: true

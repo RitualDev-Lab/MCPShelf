@@ -132,6 +132,25 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <title>MCPShelf - Open MCP Registry, Marketplace & Security Directory</title>
   <meta name="description" content="Discover, install, and audit 400+ Model Context Protocol (MCP) servers for Claude Desktop, Cursor, and Windsurf. Verified security ratings, 1-click install snippets, and creator boosting.">
   <link rel="canonical" href="https://mcp.ritualdev.in/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mcp.ritualdev.in/">
+  <meta property="og:title" content="MCPShelf - Open MCP Registry, Marketplace & Security Directory">
+  <meta property="og:description" content="Discover, install, and audit 400+ Model Context Protocol (MCP) servers for Claude Desktop, Cursor, and Windsurf.">
+  <meta property="og:image" content="https://mcp.ritualdev.in/og/default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:title" content="MCPShelf - Open MCP Registry, Marketplace & Security Directory">
+  <meta name="twitter:description" content="Discover, install, and audit 400+ Model Context Protocol (MCP) servers with 1-click install snippets.">
+  <meta name="twitter:image" content="https://mcp.ritualdev.in/og/default.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -334,10 +353,11 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       <p id="modalSubtitle" class="text-xs text-slate-400 mb-4">Choose your AI agent client to copy configuration</p>
 
       <!-- Client Tabs -->
-      <div class="flex border-b border-slate-700 mb-4 text-xs font-semibold">
+      <div class="flex border-b border-slate-700 mb-4 text-xs font-semibold overflow-x-auto">
         <button onclick="switchTab('claude')" id="tab-claude" class="tab-btn active px-4 py-2 border-b-2 border-brand-500 text-brand-400">Claude Desktop</button>
         <button onclick="switchTab('cursor')" id="tab-cursor" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Cursor</button>
         <button onclick="switchTab('windsurf')" id="tab-windsurf" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Windsurf</button>
+        <button onclick="switchTab('zed')" id="tab-zed" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Zed</button>
         <button onclick="switchTab('terminal')" id="tab-terminal" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">CLI (npx / uvx)</button>
       </div>
 
@@ -478,10 +498,37 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       } else if (tab === 'windsurf') {
         codeBox.textContent = currentServer.installSnippets.windsurf;
         pathBox.textContent = 'Paste into: ~/.codeium/windsurf/mcp_config.json';
+      } else if (tab === 'zed') {
+        const sid = currentServer.name || currentServer.id.split('/').pop();
+        const zedObj = {
+          "context_servers": {
+            [sid]: {
+              "command": "npx",
+              "args": ["-y", currentServer.packageIdentifier || currentServer.id]
+            }
+          }
+        };
+        codeBox.textContent = JSON.stringify(zedObj, null, 2);
+        pathBox.textContent = 'Paste into: ~/.config/zed/settings.json';
       } else {
         codeBox.textContent = currentServer.installSnippets.terminal;
         pathBox.textContent = 'Run directly in your terminal';
       }
+    }
+
+    function showToast(msg) {
+      let toast = document.getElementById('toastNotification');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toastNotification';
+        toast.className = 'fixed bottom-5 right-5 z-50 bg-emerald-500 text-black px-4 py-2.5 rounded-xl font-bold text-xs shadow-2xl flex items-center gap-2 transition-all duration-300 opacity-0 translate-y-4';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = '<span>⚡</span> <span>' + msg + '</span>';
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-4');
+      }, 2500);
     }
 
     function copySnippet() {
@@ -490,6 +537,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       const btn = document.getElementById('copyBtn');
       btn.textContent = 'Copied!';
       btn.classList.add('bg-brand-500', 'text-black');
+      showToast('Copied ' + currentTab.toUpperCase() + ' snippet to clipboard!');
       setTimeout(() => {
         btn.textContent = 'Copy';
         btn.classList.remove('bg-brand-500', 'text-black');
@@ -509,6 +557,25 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
   <title>Boost Your MCP Server - MCPShelf Marketplace</title>
   <meta name="description" content="Promote your Model Context Protocol (MCP) server to 10,000+ AI developers using Claude Desktop, Cursor, and Windsurf. Self-serve boosting via Dodo Payments & Stripe.">
   <link rel="canonical" href="https://mcp.ritualdev.in/boost.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mcp.ritualdev.in/boost.html">
+  <meta property="og:title" content="Boost Your MCP Server - MCPShelf Marketplace">
+  <meta property="og:description" content="Promote your Model Context Protocol (MCP) server to 10,000+ AI developers using Claude Desktop, Cursor, and Windsurf.">
+  <meta property="og:image" content="https://mcp.ritualdev.in/og/boost.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:title" content="Boost Your MCP Server - MCPShelf Marketplace">
+  <meta name="twitter:description" content="Promote your Model Context Protocol (MCP) server with self-serve boosting.">
+  <meta name="twitter:image" content="https://mcp.ritualdev.in/og/boost.png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-amber-400 selection:text-black">
@@ -611,6 +678,25 @@ function generateSubmitHtml(categories: Category[]): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Submit MCP Server - MCPShelf Registry</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mcp.ritualdev.in/submit.html">
+  <meta property="og:title" content="Submit MCP Server - MCPShelf Registry">
+  <meta property="og:description" content="Register your Model Context Protocol server. Automated security audit & official registry synchronization.">
+  <meta property="og:image" content="https://mcp.ritualdev.in/og/submit.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:title" content="Submit MCP Server - MCPShelf Registry">
+  <meta name="twitter:description" content="Register your Model Context Protocol server on MCPShelf.">
+  <meta name="twitter:image" content="https://mcp.ritualdev.in/og/submit.png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
@@ -671,6 +757,25 @@ function generateServerDetailHtml(server: any, categories: Category[]): string {
   <title>${escapeHtml(server.title)} - MCP Server Security Audit & 1-Click Install</title>
   <meta name="description" content="${escapeHtml(server.description)}">
   <link rel="canonical" href="https://mcp.ritualdev.in/servers/${slugify(server.id)}.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mcp.ritualdev.in/servers/${slugify(server.id)}.html">
+  <meta property="og:title" content="${escapeHtml(server.title)} - MCP Server">
+  <meta property="og:description" content="${escapeHtml(server.description)}">
+  <meta property="og:image" content="https://mcp.ritualdev.in/og/${slugify(server.id)}.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:title" content="${escapeHtml(server.title)} - MCP Server">
+  <meta name="twitter:description" content="${escapeHtml(server.description)}">
+  <meta name="twitter:image" content="https://mcp.ritualdev.in/og/${slugify(server.id)}.png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">

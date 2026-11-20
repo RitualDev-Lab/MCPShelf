@@ -1,0 +1,3 @@
+[console_scripts]
+mcpshelf = mcpshelf.cli:main
+mcpshelf-mcp = mcpshelf.server:main

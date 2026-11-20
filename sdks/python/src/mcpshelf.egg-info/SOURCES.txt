@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/mcpshelf/__init__.py
+src/mcpshelf/cli.py
+src/mcpshelf/server.py
+src/mcpshelf.egg-info/PKG-INFO
+src/mcpshelf.egg-info/SOURCES.txt
+src/mcpshelf.egg-info/dependency_links.txt
+src/mcpshelf.egg-info/entry_points.txt
+src/mcpshelf.egg-info/requires.txt
+src/mcpshelf.egg-info/top_level.txt

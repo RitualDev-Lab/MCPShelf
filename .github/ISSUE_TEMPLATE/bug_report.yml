@@ -1,0 +1,34 @@
+name: 🐛 Bug Report
+description: Report a bug, broken install snippet, or sync failure.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue with MCPShelf!
+  - type: input
+    id: server_id
+    attributes:
+      label: Affected Server ID (if applicable)
+      placeholder: "e.g. io.github.RitualDev-Lab/mcpshelf"
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: Provide a clear and concise description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps or commands to reproduce the error (e.g., npx @ritualdev-lab/mcpshelf install ...).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
