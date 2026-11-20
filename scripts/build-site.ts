@@ -157,7 +157,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   }
 
   return `<!DOCTYPE html>
-<html lang="en" class="dark bg-[#07090e] text-slate-100">
+<html lang="en" class="dark bg-[#07090e] text-slate-100" style="background-color: #07090e !important; color: #f1f5f9 !important;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -319,6 +319,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <style>
     html, body {
       background-color: #07090e !important;
+      background: #07090e !important;
       color: #f1f5f9 !important;
     }
     .ambient-glow {
@@ -375,7 +376,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     ::-webkit-scrollbar-thumb:hover { background: #334155; }
   </style>
 </head>
-<body class="min-h-screen font-sans antialiased bg-[#07090e] text-slate-100 ambient-glow selection:bg-brand-500 selection:text-white">
+<body class="min-h-screen font-sans antialiased bg-[#07090e] text-slate-100 ambient-glow selection:bg-brand-500 selection:text-white" style="background-color: #07090e !important; color: #f1f5f9 !important;">
   <div class="fixed inset-0 grid-mesh pointer-events-none z-0"></div>
 
   <!-- Sticky Cyber Header -->
@@ -430,9 +431,9 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       <span class="text-slate-400">Daily Sync</span>
     </div>
     
-    <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-5 leading-[1.1]">
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-[#f8fafc] mb-5 leading-[1.1] drop-shadow-[0_2px_24px_rgba(99,102,241,0.2)]">
       The Open Registry for <br class="hidden sm:inline">
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-200 to-indigo-400">Autonomous AI Agent Tools</span>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-100 to-indigo-400">Autonomous AI Agent Tools</span>
     </h1>
     
     <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-400 mb-8 leading-relaxed">
@@ -1776,7 +1777,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
 
 function generateBoostHtml(categories: Category[], boostTiers: any): string {
   return `<!DOCTYPE html>
-<html lang="en" class="dark bg-[#07090e] text-slate-100">
+<html lang="en" class="dark bg-[#07090e] text-slate-100" style="background-color: #07090e !important; color: #f1f5f9 !important;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1807,9 +1808,16 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
   <meta name="twitter:description" content="Promote your Model Context Protocol (MCP) server with self-serve boosting.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/boost.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      background-color: #07090e !important;
+      background: #07090e !important;
+      color: #f1f5f9 !important;
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-amber-400 selection:text-black">
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+<body class="bg-[#07090e] text-slate-100 min-h-screen font-sans antialiased selection:bg-amber-400 selection:text-black" style="background-color: #07090e !important; color: #f1f5f9 !important;">
+  <header class="border-b border-white/[0.06] bg-[#07090e]/85 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="/" class="flex items-center space-x-2">
         <span class="text-2xl">⚡</span>
@@ -1906,7 +1914,7 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
 
 function generateSubmitHtml(categories: Category[]): string {
   return `<!DOCTYPE html>
-<html lang="en" class="dark bg-[#07090e] text-slate-100">
+<html lang="en" class="dark bg-[#07090e] text-slate-100" style="background-color: #07090e !important; color: #f1f5f9 !important;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1935,9 +1943,16 @@ function generateSubmitHtml(categories: Category[]): string {
   <meta name="twitter:description" content="Register your Model Context Protocol server on MCPShelf.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/submit.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      background-color: #07090e !important;
+      background: #07090e !important;
+      color: #f1f5f9 !important;
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+<body class="bg-[#07090e] text-slate-100 min-h-screen font-sans antialiased" style="background-color: #07090e !important; color: #f1f5f9 !important;">
+  <header class="border-b border-white/[0.06] bg-[#07090e]/85 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="/" class="flex items-center space-x-2">
         <span class="text-2xl">⚡</span>
@@ -2024,7 +2039,7 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
   const terminalSnippet = server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`;
 
   return `<!DOCTYPE html>
-<html lang="en" class="dark bg-[#07090e] text-slate-100">
+<html lang="en" class="dark bg-[#07090e] text-slate-100" style="background-color: #07090e !important; color: #f1f5f9 !important;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2119,16 +2134,20 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background-color: #030712; color: #f3f4f6; }
+    html, body {
+      background-color: #07090e !important;
+      background: #07090e !important;
+      color: #f1f5f9 !important;
+    }
     .glass-card {
-      background: rgba(17, 24, 39, 0.75);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #0c101a;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-emerald-500 selection:text-black">
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+<body class="bg-[#07090e] text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white" style="background-color: #07090e !important; color: #f1f5f9 !important;">
+  <header class="border-b border-white/[0.06] bg-[#07090e]/85 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="/" class="flex items-center space-x-2">
         <span class="text-2xl">⚡</span>

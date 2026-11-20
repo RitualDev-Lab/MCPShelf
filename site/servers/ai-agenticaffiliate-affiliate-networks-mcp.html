@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark bg-[#07090e] text-slate-100">
+<html lang="en" class="dark bg-[#07090e] text-slate-100" style="background-color: #07090e !important; color: #f1f5f9 !important;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,16 +94,20 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background-color: #030712; color: #f3f4f6; }
+    html, body {
+      background-color: #07090e !important;
+      background: #07090e !important;
+      color: #f1f5f9 !important;
+    }
     .glass-card {
-      background: rgba(17, 24, 39, 0.75);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #0c101a;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-emerald-500 selection:text-black">
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+<body class="bg-[#07090e] text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white" style="background-color: #07090e !important; color: #f1f5f9 !important;">
+  <header class="border-b border-white/[0.06] bg-[#07090e]/85 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="/" class="flex items-center space-x-2">
         <span class="text-2xl">⚡</span>

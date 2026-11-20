@@ -238,7 +238,7 @@ ${rssItemsXml}
   }).join('\n');
 
   const digestHtml = `<!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark bg-[#07090e] text-slate-100" style="background-color: #07090e !important; color: #f1f5f9 !important;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -269,11 +269,18 @@ ${rssItemsXml}
   <meta name="twitter:description" content="Newly published & trending MCP servers for Claude Desktop and Cursor.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/digest.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      background-color: #07090e !important;
+      background: #07090e !important;
+      color: #f1f5f9 !important;
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-emerald-400 selection:text-black">
+<body class="bg-[#07090e] text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white" style="background-color: #07090e !important; color: #f1f5f9 !important;">
 
   <!-- Navigation Header -->
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+  <header class="border-b border-white/[0.06] bg-[#07090e]/85 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
         <a href="/" class="flex items-center space-x-2">
