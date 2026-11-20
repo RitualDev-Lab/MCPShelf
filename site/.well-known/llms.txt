@@ -6,7 +6,7 @@
 - **Canonical URL**: https://mcp.ritualdev.in
 - **Repository**: https://github.com/RitualDev-Lab/MCPShelf
 - **Organization**: RitualDev Lab (https://ritualdev.in)
-- **Catalog Size**: 420+ verified production MCP servers
+- **Catalog Size**: 422+ verified production MCP servers
 - **Categories**: 8 curated categories
 - **Security Auditing**: 0.0 to 10.0 Trust Score with automated JSON schema validation and permission sandboxing
 - **Stack Builder**: Multi-server bundle configuration generator for Claude, Cursor, Windsurf, and Zed
@@ -41,14 +41,14 @@
 
 ## Categories & Top Audited Servers
 
-### 🛡️ Security & Guardrails (15 tools)
+### 🛡️ Security & Guardrails (16 tools)
 Secret redaction, prompt injection defense, sandboxing, and runtime security firewalls.
 
 - [AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html): Enterprise Zero-Leak Secret Defense & Kernel Sandbox for Autonomous AI Agents (Score: 9.8/10, Transport: stdio)
 - [DBShield Database Guardrail & Sandboxing MCP Server](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-dbshield.html): Safety-first Database Guardrail & Sandboxing MCP Server for AI Coding Agents (Score: 9.8/10, Transport: stdio)
 - [FinePrint AI Legal Risk & Contract Audit MCP Server](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-fineprint.html): Zero-cost in-memory legal terms, API policy & NDA scanner for autonomous coding agents (Score: 9.8/10, Transport: stdio)
+- [MCPShelf Model Context Protocol Registry, Search & Security Auditor](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html): Discover, audit trust scores, and 1-click install 400+ verified MCP servers for AI coding agents. (Score: 9.8/10, Transport: stdio)
 - [WebSecAuditor AI Cybersecurity & Vulnerability Auditor](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-web-sec-auditor.html): Enterprise-grade AI vulnerability auditor for web applications, APIs, and codebases. (Score: 9.8/10, Transport: stdio)
-- [Aetherya](https://mcp.ritualdev.in/servers/ai-aetherya-mcp.html): Test decisions on a synthetic audience: studies, site audits, copy tests and post simulations. (Score: 8/10, Transport: stdio)
 
 ### 🗄️ Databases & Storage (9 tools)
 SQL proxies, query guardrails, mock DB generators, vector indexes, and cloud storage.
@@ -62,13 +62,13 @@ SQL proxies, query guardrails, mock DB generators, vector indexes, and cloud sto
 ### 🛠️ Developer Tools (183 tools)
 Directory search, discovery, synthetic fixtures, AST analysis, and build orchestrators.
 
-- [MCPShelf Metaprotocol Registry, Terminal TUI & AI Agent Stack Builder](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html): The open Model Context Protocol registry, terminal explorer (npx @ritualdev-lab/mcpshelf explore), Python SDK (pip install mcpshelf), and metaprotocol stdio server for autonomous tool discovery in Claude and Cursor. (Score: 10/10, Transport: stdio)
 - [0si.ai Disclosures](https://mcp.ritualdev.in/servers/ai-0si-disclosures.html): Korean (DART/KIND) and US SEC filings with AI summaries, direction labels and market reaction. (Score: 7/10, Transport: stdio)
 - [13F.ai](https://mcp.ritualdev.in/servers/ai-13f-mcp.html): Public-filing data: 13F fund holdings, insider and Congress stock trades, lobbying, contracts. (Score: 7/10, Transport: stdio)
 - [1ClickWebsite](https://mcp.ritualdev.in/servers/ai-1clickwebsite-mcp.html): Build and edit WordPress websites for local service businesses and run Lead Gen demo-site batches. (Score: 7/10, Transport: stdio)
 - [1Court Directory](https://mcp.ritualdev.in/servers/ai-1court-state-court-directory.html): US county court directory: clerk, courthouse address, e-filing, filing fees, and case lookup. (Score: 7/10, Transport: stdio)
+- [A1 Lane](https://mcp.ritualdev.in/servers/ai-a1lane-a1lane.html): Draft, schedule and publish social posts and videos; delivery receipts, read-back where available. (Score: 8.5/10, Transport: stdio)
 
-### 💳 Billing & Monetization (12 tools)
+### 💳 Billing & Monetization (11 tools)
 Paywalls, capability tokens, credit middleware, and Dodo/Stripe payment links for AI agents.
 
 - [MCP Monetize - Drop-in Billing & Capability Token Engine](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcp-monetize.html): Drop-in billing, paywalls, and capability token middleware for MCP servers. (Score: 9.8/10, Transport: stdio)
@@ -77,7 +77,7 @@ Paywalls, capability tokens, credit middleware, and Dodo/Stripe payment links fo
 - [APIThreshold](https://mcp.ritualdev.in/servers/ai-apithreshold-apithreshold.html): Quality scoring and progressive gates for AI-generated API tests. Stripe/Twilio profiles. Free tier. (Score: 8/10, Transport: stdio)
 - [ARC (arcreport.ai): can an agent reach checkout?](https://mcp.ritualdev.in/servers/ai-arcreport-ask.html): Free open check: can an AI agent reach checkout on this store? Advisory; ARC stops before payment. (Score: 7/10, Transport: stdio)
 
-### 🤖 AI & Multi-Agent (154 tools)
+### 🤖 AI & Multi-Agent (156 tools)
 Agent memory, context optimization, progressive skill disclosure, and model routers.
 
 - [DevShelf Developer Directory & Tool Discovery MCP Server](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html): Discover 570+ developer tools, free APIs, AI agents, and open-source libraries. (Score: 9.8/10, Transport: stdio)
@@ -110,4 +110,4 @@ Headless browsers, DOM interaction, search APIs, and live web scraping.
 - [AIMochi](https://mcp.ritualdev.in/servers/ai-aimochi-notes.html): Read-only access to your AIMochi meeting notes: list, search and read transcripts and summaries. (Score: 7/10, Transport: stdio)
 
 ## Full Catalog Ingestion
-For full, unabridged schemas, install configs, and permission details for all 420 servers, query https://mcp.ritualdev.in/llms-full.txt
+For full, unabridged schemas, install configs, and permission details for all 422 servers, query https://mcp.ritualdev.in/llms-full.txt

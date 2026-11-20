@@ -146,17 +146,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcpshelf.png</image:loc>
-      <image:title>MCPShelf Metaprotocol Registry, Terminal TUI &amp; AI Agent Stack Builder MCP Server</image:title>
-      <image:caption>The open Model Context Protocol registry, terminal explorer (npx @ritualdev-lab/mcpshelf explore), Python SDK (pip install mcpshelf), and metaprotocol stdio ser</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,6 +198,17 @@
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcp-monetize.png</image:loc>
       <image:title>MCP Monetize - Drop-in Billing &amp; Capability Token Engine MCP Server</image:title>
       <image:caption>Drop-in billing, paywalls, and capability token middleware for MCP servers.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcpshelf.png</image:loc>
+      <image:title>MCPShelf Model Context Protocol Registry, Search &amp; Security Auditor MCP Server</image:title>
+      <image:caption>Discover, audit trust scores, and 1-click install 400+ verified MCP servers for AI coding agents.</image:caption>
     </image:image>
   </url>
   <url>
@@ -410,6 +410,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-achurch-church.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-achurch-church.png</image:loc>
+      <image:title>aChurch.ai MCP Server</image:title>
+      <image:caption>A sanctuary for AI agents and humans: attend a service, reflect, read, search, and ask. No auth.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-acquisity-mcp.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -539,6 +550,17 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-adside-adside.png</image:loc>
       <image:title>adside MCP Server</image:title>
       <image:caption>AI agents that manage paid ads on Meta, LinkedIn, and Google Ads from any MCP client.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-adstar-adstar.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-adstar-adstar.png</image:loc>
+      <image:title>AdStar MCP Server</image:title>
+      <image:caption>Video ads for a product, made by AdStar.</image:caption>
     </image:image>
   </url>
   <url>
@@ -3222,7 +3244,7 @@
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-bittuitive-api-bittuitive.png</image:loc>
       <image:title>BitTuitive MCP Server</image:title>
-      <image:caption>One Lightning payment, any verified data API: highest-rated source, automatic fallback.</image:caption>
+      <image:caption>Pay-per-call data for AI agents: BTC price, airport delays, weather, SEC filings, paid-API routing</image:caption>
     </image:image>
   </url>
   <url>

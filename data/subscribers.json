@@ -4,5 +4,11 @@
     "subscribedAt": "2026-11-01T00:00:00Z",
     "source": "genesis",
     "status": "active"
+  },
+  {
+    "email": "agent_1795157766236@testbench.ai",
+    "subscribedAt": "2026-11-20T06:56:06.237Z",
+    "source": "unit-test",
+    "status": "active"
   }
 ]
