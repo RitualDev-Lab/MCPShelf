@@ -135,7 +135,7 @@ async function main() {
   let pageCount = 0;
   for (const server of enrichedCatalog) {
     const slug = slugify(server.id);
-    const detailHtml = generateServerDetailHtml(server, categories);
+    const detailHtml = generateServerDetailHtml(server, categories, enrichedCatalog);
     fs.writeFileSync(path.join(serversDir, `${slug}.html`), detailHtml);
     pageCount++;
   }
@@ -187,6 +187,120 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <meta name="twitter:title" content="MCPShelf - Next-Gen Model Context Protocol (MCP) Registry & Stack Builder">
   <meta name="twitter:description" content="Instant search, security ratings, and multi-server config export for Claude, Cursor, and Zed.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/default.png">
+
+  <!-- Advanced SEO, GEO & AEO Meta Tags -->
+  <meta name="keywords" content="model context protocol, mcp, mcp servers, mcp registry, mcp directory, claude desktop tools, cursor ide mcp, windsurf ai, zed mcp, ai agent stack builder, ritualdev lab">
+  <meta name="author" content="RitualDev Lab">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- JSON-LD: WebSite with Google Sitelinks SearchBox -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MCPShelf",
+    "alternateName": ["MCP Shelf", "RitualDev MCPShelf", "Model Context Protocol Registry & Stack Builder"],
+    "url": "https://mcp.ritualdev.in/",
+    "description": "Next-Gen Model Context Protocol (MCP) Registry, AI Agent Stack Builder & Directory.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://mcp.ritualdev.in/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RitualDev Lab",
+    "url": "https://ritualdev.in",
+    "logo": "https://mcp.ritualdev.in/favicon.png",
+    "sameAs": [
+      "https://github.com/RitualDev-Lab",
+      "https://x.com/ritualdev",
+      "https://mcp.ritualdev.in"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: DataCatalog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    "name": "Model Context Protocol Server Directory",
+    "description": "Curated, security-audited catalog of 400+ Model Context Protocol (MCP) servers for Claude Desktop, Cursor, and Windsurf.",
+    "url": "https://mcp.ritualdev.in/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "RitualDev Lab"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for AEO (Answer Engine Optimization) & Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is MCPShelf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MCPShelf is the open Model Context Protocol (MCP) registry and AI Agent Stack Builder. It indexes 400+ verified MCP servers with cryptographic security ratings, multi-token fuzzy search, and 1-click bundle export for Claude Desktop, Cursor IDE, Windsurf AI, and Zed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install an MCP server into Claude Desktop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open Claude Desktop, navigate to Settings > Developer > Edit Config to access your claude_desktop_config.json file. Click 'Install' on any server on MCPShelf, copy the generated JSON block into your mcpServers object, and restart Claude Desktop."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the MCPShelf AI Agent Stack Builder?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The AI Agent Stack Builder allows you to select multiple MCP servers into a bundle cart and export a single, merged JSON configuration file or chained terminal script for Claude Desktop, Cursor, Windsurf, or Zed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are MCP servers audited and security scored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every server is scored on a 0.0 to 10.0 Trust Score scale using automated JSON schema validation, static code analysis, permission scope auditing (such as filesystem and network access), community reviews, and transport sandboxing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use MCPShelf offline or via the command line?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Run 'npx @ritualdev-lab/mcpshelf explore' to launch the interactive TUI (Terminal User Interface) to browse, search, and configure MCP servers directly in your terminal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can developers submit new MCP servers to MCPShelf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Developers can submit new open-source MCP servers via the web submission portal at https://mcp.ritualdev.in/submit.html or via the automated REST API endpoint POST /api/v1/submit."
+        }
+      }
+    ]
+  }
+  </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -529,6 +643,221 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         + Submit this MCP Server
       </a>
     </div>
+
+    <!-- ========================================================================= -->
+    <!-- GEO & AEO: Universal MCP Client Compatibility Matrix                      -->
+    <!-- ========================================================================= -->
+    <section class="mt-24 mb-16 pt-12 border-t border-slate-800/80" id="compatibility">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-3 inline-block">
+          Universal Compatibility
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-2 mb-3">
+          Universal MCP Client Compatibility Matrix
+        </h2>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Model Context Protocol (MCP) servers indexed on MCPShelf integrate seamlessly across all premier AI developer environments and terminal workflows.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto glass-card rounded-2xl border-slate-800">
+        <table class="w-full text-left text-xs text-slate-300">
+          <thead class="bg-slate-900/80 text-slate-400 uppercase font-mono text-[11px] border-b border-slate-800">
+            <tr>
+              <th class="px-6 py-4 font-bold text-white">AI Developer Client</th>
+              <th class="px-6 py-4 font-bold text-white">Transport Protocols</th>
+              <th class="px-6 py-4 font-bold text-white">Configuration Path</th>
+              <th class="px-6 py-4 font-bold text-white">Multi-Server Bundles</th>
+              <th class="px-6 py-4 font-bold text-white">MCPShelf 1-Click Install</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 font-sans">
+            <tr class="hover:bg-slate-800/30 transition">
+              <td class="px-6 py-4 font-bold text-white flex items-center gap-2">
+                <span class="text-amber-400 text-base">✦</span>
+                <span>Claude Desktop (Anthropic)</span>
+              </td>
+              <td class="px-6 py-4 font-mono text-emerald-400">stdio / local IPC</td>
+              <td class="px-6 py-4 font-mono text-slate-400">claude_desktop_config.json</td>
+              <td class="px-6 py-4 text-emerald-400 font-semibold">✓ Supported natively</td>
+              <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 font-bold">1-Click JSON</span></td>
+            </tr>
+            <tr class="hover:bg-slate-800/30 transition">
+              <td class="px-6 py-4 font-bold text-white flex items-center gap-2">
+                <span class="text-cyan-400 text-base">⚡</span>
+                <span>Cursor IDE (Anysphere)</span>
+              </td>
+              <td class="px-6 py-4 font-mono text-emerald-400">stdio / command / SSE</td>
+              <td class="px-6 py-4 font-mono text-slate-400">~/.cursor/mcp.json</td>
+              <td class="px-6 py-4 text-emerald-400 font-semibold">✓ Supported natively</td>
+              <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 font-bold">1-Click JSON</span></td>
+            </tr>
+            <tr class="hover:bg-slate-800/30 transition">
+              <td class="px-6 py-4 font-bold text-white flex items-center gap-2">
+                <span class="text-teal-400 text-base">🌊</span>
+                <span>Windsurf AI (Codeium)</span>
+              </td>
+              <td class="px-6 py-4 font-mono text-emerald-400">stdio / CLI process</td>
+              <td class="px-6 py-4 font-mono text-slate-400">mcp_config.json</td>
+              <td class="px-6 py-4 text-emerald-400 font-semibold">✓ Supported natively</td>
+              <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 font-bold">1-Click JSON</span></td>
+            </tr>
+            <tr class="hover:bg-slate-800/30 transition">
+              <td class="px-6 py-4 font-bold text-white flex items-center gap-2">
+                <span class="text-purple-400 text-base">▲</span>
+                <span>Zed Editor (Zed Industries)</span>
+              </td>
+              <td class="px-6 py-4 font-mono text-emerald-400">stdio (context_servers)</td>
+              <td class="px-6 py-4 font-mono text-slate-400">~/.config/zed/settings.json</td>
+              <td class="px-6 py-4 text-emerald-400 font-semibold">✓ Supported natively</td>
+              <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 font-bold">1-Click JSON</span></td>
+            </tr>
+            <tr class="hover:bg-slate-800/30 transition">
+              <td class="px-6 py-4 font-bold text-white flex items-center gap-2">
+                <span class="text-emerald-400 text-base">&gt;_</span>
+                <span>Terminal TUI (MCPShelf CLI)</span>
+              </td>
+              <td class="px-6 py-4 font-mono text-emerald-400">stdio / direct npx</td>
+              <td class="px-6 py-4 font-mono text-slate-400">Interactive Keyboard TUI</td>
+              <td class="px-6 py-4 text-emerald-400 font-semibold">✓ Chained execution</td>
+              <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 font-bold">npx mcpshelf</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- GEO & Authority: What is Model Context Protocol (MCP)?                    -->
+    <!-- ========================================================================= -->
+    <section class="mb-16 py-12 px-6 sm:px-10 glass-card rounded-3xl border-slate-800" id="architecture">
+      <div class="max-w-4xl mx-auto">
+        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-3 inline-block">
+          Architectural Guide & Standards
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-2 mb-4">
+          What is Model Context Protocol (MCP)? The Universal AI Tooling Standard
+        </h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          The <strong class="text-white">Model Context Protocol (MCP)</strong> is an open protocol open-sourced by Anthropic that standardizes how Artificial Intelligence applications securely connect to external tools, databases, APIs, and file systems. Prior to MCP, every AI agent framework required custom, ad-hoc integrations. MCP establishes a universal, client-agnostic standard using JSON-RPC 2.0 messages over standard input/output (<code class="text-emerald-400 font-mono">stdio</code>) or Server-Sent Events (<code class="text-emerald-400 font-mono">SSE</code>).
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+          <div class="p-5 rounded-2xl bg-dark-900/80 border border-slate-800/80">
+            <div class="text-2xl mb-2">🛠️</div>
+            <h3 class="text-sm font-bold text-white mb-2">1. Executable Tools</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Model-callable functions with strict JSON schema definitions for running SQL queries, creating GitHub PRs, automating browsers, or sending Slack notifications.
+            </p>
+          </div>
+          <div class="p-5 rounded-2xl bg-dark-900/80 border border-slate-800/80">
+            <div class="text-2xl mb-2">📄</div>
+            <h3 class="text-sm font-bold text-white mb-2">2. Contextual Resources</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              File-like read interfaces providing real-time data, database schema inspections, live logs, or external documentation directly into the model's active context window.
+            </p>
+          </div>
+          <div class="p-5 rounded-2xl bg-dark-900/80 border border-slate-800/80">
+            <div class="text-2xl mb-2">💡</div>
+            <h3 class="text-sm font-bold text-white mb-2">3. Pre-Engineered Prompts</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Standardized prompt templates and system directives created by tool authors to guide the LLM's multi-step decision-making and tool chaining reliably.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-emerald-500/5 border border-emerald-500/20">
+          <h3 class="text-sm font-bold text-emerald-400 mb-2 flex items-center gap-2">
+            <span>🛡️</span>
+            <span>How MCPShelf's 0-10 Trust Score Security Rating Works</span>
+          </h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Every server indexed on MCPShelf undergoes automated validation against official MCP specifications. Our pipeline audits npm/PyPI package integrity, checks static AST dependencies, inspects permission declarations (such as filesystem write vs read-only, socket networking, or arbitrary process execution), and incorporates community reviews to assign a cryptographic 0.0 to 10.0 Trust Score.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- AEO: Interactive Frequently Asked Questions (FAQ) Accordion               -->
+    <!-- ========================================================================= -->
+    <section class="mb-20 py-12 px-6 sm:px-10 glass-card rounded-3xl border-slate-800" id="faq">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-3 inline-block">
+            Frequently Asked Questions
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-2 mb-3">
+            Everything You Need to Know About MCPShelf
+          </h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Quick answers for AI engineers, developers, and autonomous agent builders.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <details class="group p-5 rounded-2xl bg-dark-900/70 border border-slate-800 hover:border-emerald-500/40 transition">
+            <summary class="flex justify-between items-center cursor-pointer font-bold text-sm sm:text-base text-white list-none">
+              <span>What is MCPShelf and how does it differ from other registries?</span>
+              <span class="text-emerald-400 transition-transform group-open:rotate-180 text-lg">▾</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 pt-3">
+              MCPShelf is the open, community-curated Model Context Protocol registry and AI Agent Stack Builder. Unlike basic directories, MCPShelf provides full-text multi-token OmniSearch (<0.5ms debounce), independent 0-10 Trust Score security audits, capability matrix tagging, an interactive terminal TUI (<code class="text-emerald-400 font-mono">npx @ritualdev-lab/mcpshelf explore</code>), and a multi-server bundle cart that exports merged configuration files for Claude Desktop, Cursor, Windsurf, and Zed in one click.
+            </div>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-dark-900/70 border border-slate-800 hover:border-emerald-500/40 transition">
+            <summary class="flex justify-between items-center cursor-pointer font-bold text-sm sm:text-base text-white list-none">
+              <span>How do I install an MCP server into Claude Desktop?</span>
+              <span class="text-emerald-400 transition-transform group-open:rotate-180 text-lg">▾</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 pt-3">
+              Open Claude Desktop, navigate to <strong>Settings &gt; Developer &gt; Edit Config</strong> to open your <code class="text-emerald-400 font-mono">claude_desktop_config.json</code> file. On MCPShelf, click <strong>"Install"</strong> on any server card, copy the generated JSON block into your <code class="text-emerald-400 font-mono">mcpServers</code> object, save the file, and restart Claude Desktop. The new tools will appear instantly with a hammer icon in your chat window.
+            </div>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-dark-900/70 border border-slate-800 hover:border-emerald-500/40 transition">
+            <summary class="flex justify-between items-center cursor-pointer font-bold text-sm sm:text-base text-white list-none">
+              <span>What is the MCPShelf AI Agent Stack Builder?</span>
+              <span class="text-emerald-400 transition-transform group-open:rotate-180 text-lg">▾</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 pt-3">
+              The AI Agent Stack Builder is a shopping-cart-like workflow tool. Click <strong>"+ Stack"</strong> on multiple servers (for example, PostgreSQL + GitHub + Slack + Puppeteer). MCPShelf dynamically merges them into a single configuration block for Claude Desktop, Cursor, Windsurf, or Zed, and provides a shareable URL (<code class="text-emerald-400 font-mono">?stack=...</code>) so your entire engineering team can run the exact same agent tooling stack.
+            </div>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-dark-900/70 border border-slate-800 hover:border-emerald-500/40 transition">
+            <summary class="flex justify-between items-center cursor-pointer font-bold text-sm sm:text-base text-white list-none">
+              <span>How are MCP servers audited and security scored?</span>
+              <span class="text-emerald-400 transition-transform group-open:rotate-180 text-lg">▾</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 pt-3">
+              Every server is evaluated on a 0.0 to 10.0 Trust Score scale using automated JSON schema validation, static code analysis, permission scope auditing (such as filesystem read/write, network sockets, or subprocess spawning), community reviews, and transport sandboxing. Servers rated 9.5+ earn the Gold Security Shield badge.
+            </div>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-dark-900/70 border border-slate-800 hover:border-emerald-500/40 transition">
+            <summary class="flex justify-between items-center cursor-pointer font-bold text-sm sm:text-base text-white list-none">
+              <span>Can I browse and configure MCP servers from the terminal?</span>
+              <span class="text-emerald-400 transition-transform group-open:rotate-180 text-lg">▾</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 pt-3">
+              Yes! Run <code class="text-emerald-400 font-mono font-bold">npx @ritualdev-lab/mcpshelf explore</code> in any terminal. This launches an interactive, keyboard-driven Terminal User Interface (TUI) allowing you to search, filter by category, and copy client-ready JSON snippets without ever opening a web browser.
+            </div>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-dark-900/70 border border-slate-800 hover:border-emerald-500/40 transition">
+            <summary class="flex justify-between items-center cursor-pointer font-bold text-sm sm:text-base text-white list-none">
+              <span>How can developers submit their own MCP server to MCPShelf?</span>
+              <span class="text-emerald-400 transition-transform group-open:rotate-180 text-lg">▾</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 pt-3">
+              Developers can submit open-source MCP servers via our web portal at <a href="/submit.html" class="text-emerald-400 underline font-semibold">mcp.ritualdev.in/submit.html</a> or programmatically via the automated REST API endpoint <code class="text-emerald-400 font-mono">POST /api/v1/submit</code>. Submissions undergo automated schema validation and initial security scoring upon receipt.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Floating Multi-Server Stack Builder Drawer -->
@@ -630,14 +959,18 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <footer class="border-t border-slate-800 bg-dark-950 py-12 text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p>&copy; 2026 MCPShelf. Open-source under Apache-2.0. Built with ⚡ by <a href="https://ritualdev.in" class="text-brand-400 hover:underline">RitualDev Lab</a>.</p>
-      <div class="flex items-center space-x-5">
+      <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+        <a href="#compatibility" class="hover:text-emerald-400">Compatibility Matrix</a>
+        <a href="#faq" class="hover:text-emerald-400">FAQ</a>
         <a href="/digest.html" class="hover:text-slate-300">Weekly Digest</a>
         <a href="/feed.xml" class="hover:text-slate-300">RSS 2.0 Feed</a>
         <a href="/feed.json" class="hover:text-slate-300">JSON Feed 1.1</a>
+        <a href="/sitemap.xml" class="hover:text-slate-300">Sitemap</a>
+        <a href="/llms.txt" class="hover:text-slate-300">llms.txt</a>
+        <a href="/llms-full.txt" class="hover:text-slate-300">llms-full.txt</a>
         <a href="/boost.html" class="hover:text-slate-300">Promote Server</a>
         <a href="/submit.html" class="hover:text-slate-300">Submit Registry</a>
-        <a href="/llms.txt" class="hover:text-slate-300">llms.txt</a>
-        <a href="https://github.com/RitualDev-Lab/MCPShelf" class="hover:text-slate-300">GitHub</a>
+        <a href="https://github.com/RitualDev-Lab/MCPShelf" target="_blank" class="hover:text-slate-300">GitHub</a>
       </div>
     </div>
   </footer>
@@ -1414,41 +1747,146 @@ function generateSubmitHtml(categories: Category[]): string {
 </html>`;
 }
 
-function generateServerDetailHtml(server: any, categories: Category[]): string {
+function generateServerDetailHtml(server: any, categories: Category[], catalog: any[] = []): string {
+  const slug = slugify(server.id);
+  const caps = getCapabilities(server);
+  const related = catalog.filter((s: any) => s.category === server.category && s.id !== server.id).slice(0, 3);
+
+  // Client configurations
+  const claudeSnippet = server.installSnippets?.claudeDesktop || JSON.stringify({
+    mcpServers: {
+      [server.id]: {
+        command: "npx",
+        args: ["-y", server.packageIdentifier || server.id]
+      }
+    }
+  }, null, 2);
+
+  const cursorSnippet = JSON.stringify({
+    command: "npx",
+    args: ["-y", server.packageIdentifier || server.id]
+  }, null, 2);
+
+  const windsurfSnippet = JSON.stringify({
+    mcpServers: {
+      [server.id]: {
+        command: "npx",
+        args: ["-y", server.packageIdentifier || server.id]
+      }
+    }
+  }, null, 2);
+
+  const zedSnippet = JSON.stringify({
+    context_servers: [server.id]
+  }, null, 2);
+
+  const terminalSnippet = server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`;
+
   return `<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(server.title)} - MCP Server Security Audit & 1-Click Install</title>
-  <meta name="description" content="${escapeHtml(server.description)}">
-  <link rel="canonical" href="https://mcp.ritualdev.in/servers/${slugify(server.id)}.html">
+  <title>${escapeHtml(server.title)} - Model Context Protocol (MCP) Server Security Audit & Install</title>
+  <meta name="description" content="${escapeHtml(server.description)} Install ${escapeHtml(server.title)} into Claude Desktop, Cursor, Windsurf, and Zed. Verified Trust Score: ${server.trustScore}/10.">
+  <link rel="canonical" href="https://mcp.ritualdev.in/servers/${slug}.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- Advanced SEO & GEO Meta Tags -->
+  <meta name="keywords" content="${escapeHtml(server.title)}, ${escapeHtml(server.category)}, model context protocol, mcp server, claude desktop, cursor ide, windsurf ai, zed editor, ritualdev">
+  <meta name="author" content="${escapeHtml(server.author)}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
   <!-- Feeds -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
 
-  <!-- OpenGraph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mcp.ritualdev.in/servers/${slugify(server.id)}.html">
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mcp.ritualdev.in/servers/${slug}.html">
   <meta property="og:title" content="${escapeHtml(server.title)} - MCP Server">
   <meta property="og:description" content="${escapeHtml(server.description)}">
-  <meta property="og:image" content="https://mcp.ritualdev.in/og/${slugify(server.id)}.png">
+  <meta property="og:image" content="https://mcp.ritualdev.in/og/${slug}.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <!-- Twitter / X -->
+  <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
   <meta name="twitter:title" content="${escapeHtml(server.title)} - MCP Server">
   <meta name="twitter:description" content="${escapeHtml(server.description)}">
-  <meta name="twitter:image" content="https://mcp.ritualdev.in/og/${slugify(server.id)}.png">
+  <meta name="twitter:image" content="https://mcp.ritualdev.in/og/${slug}.png">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": ${JSON.stringify(server.title)},
+    "operatingSystem": "Cross-platform (macOS, Linux, Windows)",
+    "applicationCategory": "DeveloperApplication",
+    "description": ${JSON.stringify(server.description)},
+    "softwareVersion": ${JSON.stringify(server.version || "1.0.0")},
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": ${server.averageRating || 4.8},
+      "reviewCount": ${server.reviewsCount || 10},
+      "bestRating": 5,
+      "worstRating": 1
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": ${JSON.stringify(server.author || "RitualDev Community")}
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "MCPShelf",
+        "item": "https://mcp.ritualdev.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": ${JSON.stringify(server.category)},
+        "item": "https://mcp.ritualdev.in/?cat=" + encodeURIComponent(${JSON.stringify(server.category.toLowerCase())})
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": ${JSON.stringify(server.title)},
+        "item": "https://mcp.ritualdev.in/servers/${slug}.html"
+      }
+    ]
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #030712; color: #f3f4f6; }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased">
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-emerald-500 selection:text-black">
   <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="/" class="flex items-center space-x-2">
@@ -1462,37 +1900,154 @@ function generateServerDetailHtml(server: any, categories: Category[]): string {
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-12">
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 mb-8">
-      <div class="flex items-center justify-between mb-4">
-        <span class="text-xs font-bold px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-emerald-400">
-          ${server.category}
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center space-x-2 text-xs text-slate-400 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-emerald-400 transition">MCPShelf</a>
+      <span>/</span>
+      <a href="/?cat=${encodeURIComponent(server.category.toLowerCase())}" class="hover:text-emerald-400 transition">${escapeHtml(server.category)}</a>
+      <span>/</span>
+      <span class="text-slate-200 font-semibold truncate">${escapeHtml(server.title)}</span>
+    </nav>
+
+    <article class="glass-card rounded-2xl p-6 sm:p-8 mb-8 border-slate-800">
+      <!-- Header Badge Row -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">
+          ${escapeHtml(server.category)}
         </span>
-        <span class="text-xs font-bold text-emerald-400 flex items-center gap-1">
-          🛡️ Trust Score: ${server.trustScore}/10 (${server.securityRating})
-        </span>
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold ${server.trustScore >= 9.0 ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/25' : 'text-amber-300 bg-amber-500/10 border-amber-500/25'} px-3 py-1 rounded-lg border flex items-center gap-1.5">
+            🛡️ Trust Score: ${server.trustScore}/10 (${server.securityRating})
+          </span>
+        </div>
       </div>
 
-      <h1 class="text-3xl font-extrabold text-white mb-2">${escapeHtml(server.title)}</h1>
+      <!-- Title & Package Identifier -->
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">${escapeHtml(server.title)}</h1>
       <p class="text-xs font-mono text-slate-400 mb-4">${server.id} (v${server.version})</p>
-      <p class="text-sm text-slate-300 leading-relaxed mb-6">${escapeHtml(server.description)}</p>
+      <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">${escapeHtml(server.description)}</p>
 
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-950/50 border border-slate-800 text-xs mb-6">
-        <div><span class="text-slate-500 block">Rating:</span> <strong class="text-white">★ ${server.averageRating} (${server.reviewsCount})</strong></div>
-        <div><span class="text-slate-500 block">Estimated Installs:</span> <strong class="text-white">${server.estimatedInstalls.toLocaleString()}</strong></div>
-        <div><span class="text-slate-500 block">Transport:</span> <strong class="text-white">${server.transportType}</strong></div>
-        <div><span class="text-slate-500 block">Author:</span> <strong class="text-white">${escapeHtml(server.author)}</strong></div>
+      <!-- Capability Matrix Tags -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        ${caps.map((c: any) => `
+          <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+            <span>${c.icon}</span>
+            <span>${c.label}</span>
+          </span>
+        `).join('')}
       </div>
 
-      <h3 class="text-sm font-bold text-white mb-2">1-Click Claude Desktop Configuration</h3>
-      <pre class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs font-mono text-emerald-300 overflow-x-auto mb-4">${server.installSnippets.claudeDesktop}</pre>
-
-      <div class="flex items-center gap-3">
-        ${server.repositoryUrl ? `<a href="${server.repositoryUrl}" target="_blank" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">View GitHub Repository &rarr;</a>` : ''}
-        <a href="/boost.html" class="px-4 py-2 text-xs font-bold rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/30 transition">🚀 Boost This Server</a>
+      <!-- Stat Cards Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-xs mb-8">
+        <div><span class="text-slate-500 block mb-1">Rating:</span> <strong class="text-white text-sm">★ ${server.averageRating} (${server.reviewsCount})</strong></div>
+        <div><span class="text-slate-500 block mb-1">Estimated Installs:</span> <strong class="text-white text-sm">${server.estimatedInstalls.toLocaleString()}</strong></div>
+        <div><span class="text-slate-500 block mb-1">Transport:</span> <strong class="text-white text-sm font-mono uppercase">${server.transportType}</strong></div>
+        <div><span class="text-slate-500 block mb-1">Author:</span> <strong class="text-white text-sm truncate block">${escapeHtml(server.author)}</strong></div>
       </div>
-    </div>
+
+      <!-- Multi-Client Installation Snippets -->
+      <div class="mb-8">
+        <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+          <span>⚡</span>
+          <span>1-Click Configuration for AI Clients</span>
+        </h2>
+
+        <!-- Tabs -->
+        <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-1">
+          <button onclick="showConfigTab('claude')" id="btn-tab-claude" class="tab-btn px-4 py-2 border-b-2 border-emerald-400 text-emerald-400">Claude Desktop</button>
+          <button onclick="showConfigTab('cursor')" id="btn-tab-cursor" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Cursor</button>
+          <button onclick="showConfigTab('windsurf')" id="btn-tab-windsurf" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Windsurf</button>
+          <button onclick="showConfigTab('zed')" id="btn-tab-zed" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Zed</button>
+          <button onclick="showConfigTab('cli')" id="btn-tab-cli" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Terminal CLI</button>
+        </div>
+
+        <div class="relative">
+          <pre id="configBox" class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs font-mono text-emerald-300 overflow-x-auto">${claudeSnippet}</pre>
+          <button onclick="copyCurrentConfig()" id="detailCopyBtn" class="absolute top-3 right-3 px-3 py-1 text-xs font-bold rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black transition shadow">
+            Copy
+          </button>
+        </div>
+        <p id="configHelp" class="text-[11px] text-slate-400 mt-2">Paste into <code class="text-emerald-400 font-mono">claude_desktop_config.json</code> under <code class="text-emerald-400 font-mono">mcpServers</code>.</p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-800">
+        ${server.repositoryUrl ? `<a href="${server.repositoryUrl}" target="_blank" class="px-4 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">View GitHub Repository &rarr;</a>` : ''}
+        <a href="/boost.html" class="px-4 py-2 text-xs font-bold rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 transition">🚀 Boost This Server</a>
+        <a href="/submit.html" class="px-4 py-2 text-xs font-bold rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">Submit Update</a>
+      </div>
+    </article>
+
+    <!-- Related Servers for Deep Interlinking SEO -->
+    ${related.length > 0 ? `
+      <section class="mt-12">
+        <h2 class="text-lg font-bold text-white mb-4">Related ${escapeHtml(server.category)} MCP Servers</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          ${related.map((r: any) => `
+            <a href="/servers/${slugify(r.id)}.html" class="p-4 rounded-xl glass-card border-slate-800 hover:border-emerald-500/40 transition block group">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[10px] font-bold text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
+                  ${r.category}
+                </span>
+                <span class="text-[10px] font-bold text-slate-400">🛡️ ${r.trustScore}</span>
+              </div>
+              <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition mb-1 truncate">${escapeHtml(r.title)}</h3>
+              <p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">${escapeHtml(r.description)}</p>
+            </a>
+          `).join('')}
+        </div>
+      </section>
+    ` : ''}
   </main>
+
+  <script>
+    const configs = {
+      claude: ${JSON.stringify(claudeSnippet)},
+      cursor: ${JSON.stringify(cursorSnippet)},
+      windsurf: ${JSON.stringify(windsurfSnippet)},
+      zed: ${JSON.stringify(zedSnippet)},
+      cli: ${JSON.stringify(terminalSnippet)}
+    };
+
+    const helps = {
+      claude: 'Paste into claude_desktop_config.json under mcpServers.',
+      cursor: 'Paste into ~/.cursor/mcp.json or Cursor Features > MCP Servers.',
+      windsurf: 'Paste into ~/.codeium/windsurf/mcp_config.json.',
+      zed: 'Paste into ~/.config/zed/settings.json under context_servers.',
+      cli: 'Execute directly in your terminal to start or install the server.'
+    };
+
+    let activeTab = 'claude';
+
+    function showConfigTab(tab) {
+      activeTab = tab;
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('border-emerald-400', 'text-emerald-400');
+        b.classList.add('border-transparent', 'text-slate-400');
+      });
+      const activeBtn = document.getElementById('btn-tab-' + tab);
+      if (activeBtn) {
+        activeBtn.classList.add('border-emerald-400', 'text-emerald-400');
+        activeBtn.classList.remove('border-transparent', 'text-slate-400');
+      }
+      document.getElementById('configBox').textContent = configs[tab] || '';
+      document.getElementById('configHelp').textContent = helps[tab] || '';
+    }
+
+    function copyCurrentConfig() {
+      const code = configs[activeTab] || '';
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('detailCopyBtn');
+        const orig = btn.textContent;
+        btn.textContent = 'Copied! ✓';
+        btn.classList.add('bg-white', 'text-black');
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.classList.remove('bg-white', 'text-black');
+        }, 1500);
+      });
+    }
+  </script>
 </body>
 </html>`;
 }

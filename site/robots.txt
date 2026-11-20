@@ -1,3 +1,52 @@
+# ==============================================================================
+# MCPShelf Robots Policy - Optimized for Web Search & AI Answer Engines (AEO/GEO)
+# ==============================================================================
+
 User-agent: *
 Allow: /
+
+# Explicit AI Agent & LLM Search Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Discovery Standards & Sitemaps
 Sitemap: https://mcp.ritualdev.in/sitemap.xml
+Sitemap: https://mcp.ritualdev.in/feed.xml
+LLMs-Txt: https://mcp.ritualdev.in/llms.txt
+LLMs-Full-Txt: https://mcp.ritualdev.in/llms-full.txt

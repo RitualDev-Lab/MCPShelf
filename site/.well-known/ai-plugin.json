@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "mcpshelf_registry",
+  "name_for_human": "MCPShelf MCP Registry & Directory",
+  "description_for_model": "Search, audit, and generate multi-server configurations for 400+ Model Context Protocol (MCP) servers. Provides client configs for Claude Desktop, Cursor, Windsurf, and Zed.",
+  "description_for_human": "Discover and 1-click install 400+ verified Model Context Protocol (MCP) servers.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://mcp.ritualdev.in/openapi.json"
+  },
+  "logo_url": "https://mcp.ritualdev.in/favicon.png",
+  "contact_email": "founder@ritualdev.in",
+  "legal_info_url": "https://mcp.ritualdev.in"
+}
