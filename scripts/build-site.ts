@@ -408,10 +408,10 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
           <span>🎒</span>
           <span>Stack (<span id="navStackCount">0</span>)</span>
         </button>
-        <button onclick="copyCliExplore()" title="Copy CLI Command" class="hidden md:inline-flex items-center space-x-1 px-2.5 py-1.5 text-xs font-mono bg-white/[0.03] border border-white/[0.08] rounded-lg text-slate-400 hover:text-indigo-300 hover:border-white/[0.15] transition">
-          <span class="text-indigo-400">&gt;_</span>
-          <span>npx mcpshelf</span>
-        </button>
+        <a href="#ecosystem" class="hidden md:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/25 transition">
+          <span>📦</span>
+          <span>NPX • Pip • MCP</span>
+        </a>
         <a href="/submit.html" class="inline-flex items-center px-3.5 py-1.5 text-xs font-bold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition shadow-lg shadow-indigo-600/20">
           + Submit MCP
         </a>
@@ -465,6 +465,43 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
           <span>🎒</span> Multi-Stack
         </div>
         <div class="text-[11px] text-slate-400 font-medium">Bundle Config Builder</div>
+      </div>
+    </div>
+
+    <!-- Multi-Ecosystem Quickstart Command Center -->
+    <div class="max-w-3xl mx-auto mb-10">
+      <div class="glass-card rounded-2xl p-2.5 sm:p-3 border border-indigo-500/25 shadow-2xl bg-[#0c101a]/95 backdrop-blur text-left">
+        <!-- Tabs & Badges -->
+        <div class="flex items-center justify-between border-b border-white/[0.06] pb-2.5 mb-3 px-1">
+          <div class="flex items-center space-x-1.5 sm:space-x-2">
+            <button type="button" onclick="switchEcoTab('npx')" id="ecoTab-npx" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition flex items-center gap-1.5">
+              <span>⚡</span> <span>NPX (Terminal TUI)</span>
+            </button>
+            <button type="button" onclick="switchEcoTab('pip')" id="ecoTab-pip" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-white/[0.03] text-slate-400 hover:text-white border border-transparent transition flex items-center gap-1.5">
+              <span>🐍</span> <span>PIP (Python SDK)</span>
+            </button>
+            <button type="button" onclick="switchEcoTab('mcp')" id="ecoTab-mcp" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-white/[0.03] text-slate-400 hover:text-white border border-transparent transition flex items-center gap-1.5">
+              <span>🤖</span> <span>Connect MCP Server</span>
+            </button>
+          </div>
+          <span class="text-[11px] font-mono text-indigo-400 font-semibold hidden sm:inline" id="ecoTabBadge">npm: @ritualdev-lab/mcpshelf</span>
+        </div>
+
+        <!-- Code Snippet Display -->
+        <div class="flex items-center justify-between bg-black/60 rounded-xl px-4 py-3 border border-white/[0.06] font-mono text-xs sm:text-sm">
+          <div class="flex items-center gap-2 sm:gap-3 overflow-x-auto text-slate-200">
+            <span class="text-indigo-400 select-none font-bold" id="ecoPromptChar">$</span>
+            <span id="ecoCommandSnippet" class="text-indigo-200 font-semibold tracking-wide">npx @ritualdev-lab/mcpshelf explore</span>
+          </div>
+          <button type="button" onclick="copyEcoCommand()" class="ml-3 px-3.5 py-1.5 text-xs font-sans font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition flex items-center gap-1.5 shrink-0 shadow-md shadow-indigo-600/20 active:scale-95">
+            <span id="ecoCopyIcon">📋</span>
+            <span id="ecoCopyText">Copy</span>
+          </button>
+        </div>
+        <div class="mt-2.5 px-2 text-[11px] text-slate-400 flex items-center justify-between flex-wrap gap-2" id="ecoTabSubtext">
+          <span>✨ Launches the interactive keyboard-driven Terminal Explorer without installing.</span>
+          <a href="#ecosystem" class="text-indigo-400 hover:text-indigo-300 font-semibold flex items-center gap-1">View SDK Docs &rarr;</a>
+        </div>
       </div>
     </div>
 
@@ -941,6 +978,126 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
           <p class="text-xs text-slate-300 leading-relaxed">
             Every server indexed on MCPShelf undergoes automated validation against official MCP specifications. Our pipeline audits npm/PyPI package integrity, checks static AST dependencies, inspects permission declarations (such as filesystem write vs read-only, socket networking, or arbitrary process execution), and incorporates community reviews to assign a cryptographic 0.0 to 10.0 Trust Score.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- DEVELOPER ECOSYSTEM: NPX, PIP & METAPROTOCOL MCP SERVER                   -->
+    <!-- ========================================================================= -->
+    <section class="mb-16 py-12 px-6 sm:px-10 glass-card rounded-3xl border-white/10 relative overflow-hidden" id="ecosystem">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-3 inline-block">
+            Official Packages & Runtime Tooling
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mt-2 mb-3">
+            Built for Terminal-First Hackers, Python Agents & Stdio MCP Hosts
+          </h2>
+          <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Query, audit, and install across 420+ Model Context Protocol servers and 570+ DevShelf tools using our official package ecosystem.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1: NPX Terminal TUI -->
+          <div class="glass-card rounded-2xl p-6 border-white/[0.08] hover:border-indigo-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/25 flex items-center justify-center text-xl">
+                  ⚡
+                </span>
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  npm v1.3.0
+                </span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Interactive Terminal TUI</h3>
+              <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                Full-featured terminal browser. Navigate with arrow keys, filter by 8 categories, view trust scores, and copy 1-click JSON configurations directly inside your shell.
+              </p>
+            </div>
+            <div>
+              <div class="bg-black/70 rounded-xl p-3 border border-white/[0.06] font-mono text-xs text-slate-300 mb-3 overflow-x-auto">
+                <div class="text-slate-500 mb-1"># Zero-install interactive explorer</div>
+                <div class="text-indigo-300 font-semibold">npx @ritualdev-lab/mcpshelf explore</div>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-white/[0.06]">
+                <a href="https://www.npmjs.com/package/@ritualdev-lab/mcpshelf" target="_blank" class="text-xs text-slate-400 hover:text-white transition flex items-center gap-1 font-mono">
+                  npmjs.com &rarr;
+                </a>
+                <button type="button" onclick="navigator.clipboard.writeText('npx @ritualdev-lab/mcpshelf explore'); showToast('Copied NPX command!');" class="text-xs text-indigo-400 hover:text-indigo-300 font-semibold">
+                  Copy Snippet
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Python SDK & CLI -->
+          <div class="glass-card rounded-2xl p-6 border-white/[0.08] hover:border-cyan-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/25 flex items-center justify-center text-xl">
+                  🐍
+                </span>
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                  PyPI v1.3.0
+                </span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Python SDK & CLI</h3>
+              <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                Programmatic Python client for LangChain, AutoGen, CrewAI, and autonomous AI agents. Search, filter, and verify trust scores directly in Python code.
+              </p>
+            </div>
+            <div>
+              <div class="bg-black/70 rounded-xl p-3 border border-white/[0.06] font-mono text-xs text-slate-300 mb-3 overflow-x-auto">
+                <div class="text-slate-500 mb-1"># Install from PyPI</div>
+                <div class="text-cyan-300 font-semibold mb-1">pip install mcpshelf</div>
+                <div class="text-slate-500">mcpshelf search database</div>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-white/[0.06]">
+                <a href="https://pypi.org/project/mcpshelf/" target="_blank" class="text-xs text-slate-400 hover:text-white transition flex items-center gap-1 font-mono">
+                  pypi.org &rarr;
+                </a>
+                <button type="button" onclick="navigator.clipboard.writeText('pip install mcpshelf'); showToast('Copied PIP command!');" class="text-xs text-cyan-400 hover:text-cyan-300 font-semibold">
+                  Copy Snippet
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Metaprotocol MCP Server -->
+          <div class="glass-card rounded-2xl p-6 border-white/[0.08] hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/25 flex items-center justify-center text-xl">
+                  🤖
+                </span>
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                  Stdio Server
+                </span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">MCPShelf Metaprotocol Server</h3>
+              <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                Connect MCPShelf itself into Claude Desktop, Cursor, Windsurf, or Zed. Gives your AI assistant 5 tools to dynamically discover, audit, and configure new tools during runtime.
+              </p>
+            </div>
+            <div>
+              <div class="bg-black/70 rounded-xl p-3 border border-white/[0.06] font-mono text-xs text-slate-300 mb-3 overflow-x-auto">
+                <pre class="text-purple-300 font-semibold text-[11px]">"mcpshelf": {
+  "command": "npx",
+  "args": ["-y", "@ritualdev-lab/mcpshelf", "mcp"]
+}</pre>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-white/[0.06]">
+                <a href="/servers/io-github-ritualdev-lab-mcpshelf.html" class="text-xs text-slate-400 hover:text-white transition flex items-center gap-1 font-mono">
+                  Server Details &rarr;
+                </a>
+                <button type="button" onclick="copyMcpServerConfig()" class="text-xs text-purple-400 hover:text-purple-300 font-semibold">
+                  Copy Config JSON
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1714,6 +1871,76 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     function copyCliExplore() {
       navigator.clipboard.writeText('npx @ritualdev-lab/mcpshelf explore').then(() => {
         showToast('Copied "npx @ritualdev-lab/mcpshelf explore" to clipboard!');
+      });
+    }
+
+    const ECO_COMMANDS = {
+      npx: {
+        prompt: '$',
+        snippet: 'npx @ritualdev-lab/mcpshelf explore',
+        copyValue: 'npx @ritualdev-lab/mcpshelf explore',
+        badge: 'npm: @ritualdev-lab/mcpshelf v1.3.0',
+        subtext: '✨ Launches the interactive keyboard-driven Terminal Explorer without installing.'
+      },
+      pip: {
+        prompt: '$',
+        snippet: 'pip install mcpshelf',
+        copyValue: 'pip install mcpshelf',
+        badge: 'PyPI: mcpshelf v1.3.0',
+        subtext: '🐍 Official Python SDK & CLI for LangChain, AutoGen, and CrewAI agents.'
+      },
+      mcp: {
+        prompt: 'JSON',
+        snippet: 'npx -y @ritualdev-lab/mcpshelf mcp',
+        copyValue: '{\\n  "mcpServers": {\\n    "mcpshelf": {\\n      "command": "npx",\\n      "args": ["-y", "@ritualdev-lab/mcpshelf", "mcp"]\\n    }\\n  }\\n}',
+        badge: 'Metaprotocol Stdio Server',
+        subtext: '🤖 Connect directly into Claude Desktop or Cursor for autonomous MCP discovery.'
+      }
+    };
+    let currentEcoTab = 'npx';
+    function switchEcoTab(tab) {
+      currentEcoTab = tab;
+      ['npx', 'pip', 'mcp'].forEach(t => {
+        const btn = document.getElementById('ecoTab-' + t);
+        if (btn) {
+          if (t === tab) {
+            btn.className = 'px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition flex items-center gap-1.5';
+          } else {
+            btn.className = 'px-3 py-1.5 text-xs font-semibold rounded-lg bg-white/[0.03] text-slate-400 hover:text-white border border-transparent transition flex items-center gap-1.5';
+          }
+        }
+      });
+      const data = ECO_COMMANDS[tab];
+      if (data) {
+        const promptEl = document.getElementById('ecoPromptChar');
+        const snipEl = document.getElementById('ecoCommandSnippet');
+        const badgeEl = document.getElementById('ecoTabBadge');
+        const subtextEl = document.getElementById('ecoTabSubtext');
+        if (promptEl) promptEl.textContent = data.prompt;
+        if (snipEl) snipEl.textContent = data.snippet;
+        if (badgeEl) badgeEl.textContent = data.badge;
+        if (subtextEl && subtextEl.firstElementChild) subtextEl.firstElementChild.textContent = data.subtext;
+      }
+    }
+    function copyEcoCommand() {
+      const data = ECO_COMMANDS[currentEcoTab];
+      const textToCopy = data.copyValue;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const copyText = document.getElementById('ecoCopyText');
+        const copyIcon = document.getElementById('ecoCopyIcon');
+        if (copyText) copyText.textContent = 'Copied!';
+        if (copyIcon) copyIcon.textContent = '✓';
+        setTimeout(() => {
+          if (copyText) copyText.textContent = 'Copy';
+          if (copyIcon) copyIcon.textContent = '📋';
+        }, 2000);
+        showToast('Copied ' + currentEcoTab.toUpperCase() + ' command to clipboard!');
+      });
+    }
+    function copyMcpServerConfig() {
+      const config = '{\\n  "mcpServers": {\\n    "mcpshelf": {\\n      "command": "npx",\\n      "args": ["-y", "@ritualdev-lab/mcpshelf", "mcp"]\\n    }\\n  }\\n}';
+      navigator.clipboard.writeText(config).then(() => {
+        showToast('Copied Claude / Cursor MCP Server config!');
       });
     }
 

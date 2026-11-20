@@ -146,6 +146,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcpshelf.png</image:loc>
+      <image:title>MCPShelf Metaprotocol Registry, Terminal TUI &amp; AI Agent Stack Builder MCP Server</image:title>
+      <image:caption>The open Model Context Protocol registry, terminal explorer (npx @ritualdev-lab/mcpshelf explore), Python SDK (pip install mcpshelf), and metaprotocol stdio ser</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>

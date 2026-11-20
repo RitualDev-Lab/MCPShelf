@@ -4,7 +4,7 @@
       "name": "Category Spotlight",
       "priceUSD": 19,
       "badge": "Promoted",
-      "searchMultiplier": 2.0,
+      "searchMultiplier": 2,
       "perks": [
         "Pinned to top 3 slots in primary category",
         "Transparent 'Promoted' badge",
@@ -16,7 +16,7 @@
       "name": "Homepage Hero Boost",
       "priceUSD": 49,
       "badge": "Featured Hero",
-      "searchMultiplier": 4.0,
+      "searchMultiplier": 4,
       "perks": [
         "Featured in top Hero banner across the entire marketplace",
         "Prominent card highlighting on all search queries",
@@ -28,7 +28,7 @@
       "name": "Enterprise Verified Partner",
       "priceUSD": 99,
       "badge": "Verified Partner",
-      "searchMultiplier": 5.0,
+      "searchMultiplier": 5,
       "perks": [
         "Official Gold Shield Verification Checkmark",
         "Dedicated Security Audit & Compliance verification badge",
@@ -38,6 +38,15 @@
     }
   },
   "activeBoosts": [
+    {
+      "serverId": "io.github.RitualDev-Lab/mcpshelf",
+      "tier": "hero",
+      "badge": "Official Metaprotocol MCP",
+      "customCallout": "Official Registry MCP Server, Terminal TUI & Python SDK for Autonomous AI Agents",
+      "startedAt": "2026-11-20T00:00:00Z",
+      "expiresAt": "2027-12-31T23:59:59Z",
+      "verifiedStatus": "audit-passed"
+    },
     {
       "serverId": "io.github.RitualDev-Lab/agentshield",
       "tier": "hero",

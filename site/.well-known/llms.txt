@@ -6,7 +6,7 @@
 - **Canonical URL**: https://mcp.ritualdev.in
 - **Repository**: https://github.com/RitualDev-Lab/MCPShelf
 - **Organization**: RitualDev Lab (https://ritualdev.in)
-- **Catalog Size**: 419+ verified production MCP servers
+- **Catalog Size**: 420+ verified production MCP servers
 - **Categories**: 8 curated categories
 - **Security Auditing**: 0.0 to 10.0 Trust Score with automated JSON schema validation and permission sandboxing
 - **Stack Builder**: Multi-server bundle configuration generator for Claude, Cursor, Windsurf, and Zed
@@ -59,14 +59,14 @@ SQL proxies, query guardrails, mock DB generators, vector indexes, and cloud sto
 - [Azquo](https://mcp.ritualdev.in/servers/ai-azquo-azquo.html): Shared memory for AI agents: a hierarchical database where totals add up and writes are attributed. (Score: 7/10, Transport: stdio)
 - [BidBetter collector-car values](https://mcp.ritualdev.in/servers/ai-bidbetter-collector-car-values.html): Collector-car values from completed auction sales: median, 25th-75th band and sale count by model. (Score: 7/10, Transport: stdio)
 
-### 🛠️ Developer Tools (182 tools)
+### 🛠️ Developer Tools (183 tools)
 Directory search, discovery, synthetic fixtures, AST analysis, and build orchestrators.
 
+- [MCPShelf Metaprotocol Registry, Terminal TUI & AI Agent Stack Builder](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html): The open Model Context Protocol registry, terminal explorer (npx @ritualdev-lab/mcpshelf explore), Python SDK (pip install mcpshelf), and metaprotocol stdio server for autonomous tool discovery in Claude and Cursor. (Score: 10/10, Transport: stdio)
 - [0si.ai Disclosures](https://mcp.ritualdev.in/servers/ai-0si-disclosures.html): Korean (DART/KIND) and US SEC filings with AI summaries, direction labels and market reaction. (Score: 7/10, Transport: stdio)
 - [13F.ai](https://mcp.ritualdev.in/servers/ai-13f-mcp.html): Public-filing data: 13F fund holdings, insider and Congress stock trades, lobbying, contracts. (Score: 7/10, Transport: stdio)
 - [1ClickWebsite](https://mcp.ritualdev.in/servers/ai-1clickwebsite-mcp.html): Build and edit WordPress websites for local service businesses and run Lead Gen demo-site batches. (Score: 7/10, Transport: stdio)
 - [1Court Directory](https://mcp.ritualdev.in/servers/ai-1court-state-court-directory.html): US county court directory: clerk, courthouse address, e-filing, filing fees, and case lookup. (Score: 7/10, Transport: stdio)
-- [A1 Lane](https://mcp.ritualdev.in/servers/ai-a1lane-a1lane.html): Draft, schedule and publish social posts and videos; delivery receipts, read-back where available. (Score: 8.5/10, Transport: stdio)
 
 ### 💳 Billing & Monetization (12 tools)
 Paywalls, capability tokens, credit middleware, and Dodo/Stripe payment links for AI agents.
@@ -110,4 +110,4 @@ Headless browsers, DOM interaction, search APIs, and live web scraping.
 - [AIMochi](https://mcp.ritualdev.in/servers/ai-aimochi-notes.html): Read-only access to your AIMochi meeting notes: list, search and read transcripts and summaries. (Score: 7/10, Transport: stdio)
 
 ## Full Catalog Ingestion
-For full, unabridged schemas, install configs, and permission details for all 419 servers, query https://mcp.ritualdev.in/llms-full.txt
+For full, unabridged schemas, install configs, and permission details for all 420 servers, query https://mcp.ritualdev.in/llms-full.txt

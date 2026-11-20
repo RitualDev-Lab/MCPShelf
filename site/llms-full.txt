@@ -1,13 +1,39 @@
 # MCPShelf Complete Catalog & Architectural Manifest
 Canonical Registry: https://mcp.ritualdev.in
-Total Verified Servers: 419
-Generated At: 2026-11-20T06:12:32.821Z
+Total Verified Servers: 420
+Generated At: 2026-11-20T06:23:58.392Z
 
 ================================================================================
 INDEX OF ALL PRODUCTION MCP SERVERS
 ================================================================================
 
---- [1/419] AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox ---
+--- [1/420] MCPShelf Metaprotocol Registry, Terminal TUI & AI Agent Stack Builder ---
+ID: io.github.RitualDev-Lab/mcpshelf
+Package: @ritualdev-lab/mcpshelf
+Category: developer-tools
+Trust Score: 10/10 (Verified Official)
+Transport: stdio
+Author: RitualDev-Lab
+Repository: https://github.com/RitualDev-Lab/MCPShelf
+URL: https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html
+Description: The open Model Context Protocol registry, terminal explorer (npx @ritualdev-lab/mcpshelf explore), Python SDK (pip install mcpshelf), and metaprotocol stdio server for autonomous tool discovery in Claude and Cursor.
+Claude Desktop Snippet:
+{
+  "mcpServers": {
+    "mcpshelf": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ritualdev-lab/mcpshelf",
+        "mcp"
+      ]
+    }
+  }
+}
+Direct Terminal Run:
+npx -y @ritualdev-lab/mcpshelf explore
+
+--- [2/420] AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox ---
 ID: io.github.RitualDev-Lab/agentshield
 Package: @ritualdev-lab/agentshield
 Category: security
@@ -32,7 +58,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/agentshield
 
---- [2/419] DBShield Database Guardrail & Sandboxing MCP Server ---
+--- [3/420] DBShield Database Guardrail & Sandboxing MCP Server ---
 ID: io.github.RitualDev-Lab/dbshield
 Package: @ritualdev-lab/dbshield
 Category: security
@@ -57,7 +83,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/dbshield
 
---- [3/419] DevShelf Developer Directory & Tool Discovery MCP Server ---
+--- [4/420] DevShelf Developer Directory & Tool Discovery MCP Server ---
 ID: io.github.RitualDev-Lab/devshelf
 Package: @ritualdev-lab/devshelf
 Category: ai-agents
@@ -82,7 +108,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/devshelf
 
---- [4/419] FinePrint AI Legal Risk & Contract Audit MCP Server ---
+--- [5/420] FinePrint AI Legal Risk & Contract Audit MCP Server ---
 ID: io.github.RitualDev-Lab/fineprint
 Package: @ritualdev-lab/fineprint
 Category: security
@@ -107,7 +133,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/fineprint
 
---- [5/419] MCP Monetize - Drop-in Billing & Capability Token Engine ---
+--- [6/420] MCP Monetize - Drop-in Billing & Capability Token Engine ---
 ID: io.github.RitualDev-Lab/mcp-monetize
 Package: @ritualdev-lab/mcp-monetize
 Category: monetization
@@ -132,7 +158,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/mcp-monetize
 
---- [6/419] MockForge AI Relational Mock Database & Fixture Generator ---
+--- [7/420] MockForge AI Relational Mock Database & Fixture Generator ---
 ID: io.github.RitualDev-Lab/mockforge
 Package: @ritualdev-lab/mockforge
 Category: databases
@@ -157,7 +183,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/mockforge
 
---- [7/419] SkillPrism MCP Context Optimizer & Tool Search Proxy ---
+--- [8/420] SkillPrism MCP Context Optimizer & Tool Search Proxy ---
 ID: io.github.RitualDev-Lab/skillprism
 Package: @ritualdev-lab/skillprism
 Category: ai-agents
@@ -182,7 +208,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/skillprism
 
---- [8/419] WebSecAuditor AI Cybersecurity & Vulnerability Auditor ---
+--- [9/420] WebSecAuditor AI Cybersecurity & Vulnerability Auditor ---
 ID: io.github.RitualDev-Lab/web-sec-auditor
 Package: @ritualdev-lab/web-sec-auditor
 Category: security
@@ -207,7 +233,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/web-sec-auditor
 
---- [9/419] 0si.ai Disclosures ---
+--- [10/420] 0si.ai Disclosures ---
 ID: ai.0si/disclosures
 Package: N/A
 Category: developer-tools
@@ -232,7 +258,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.0si/disclosures
 
---- [10/419] 1325.AI ---
+--- [11/420] 1325.AI ---
 ID: ai.1325/mcp
 Package: N/A
 Category: web-automation
@@ -257,7 +283,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.1325/mcp
 
---- [11/419] 13F.ai ---
+--- [12/420] 13F.ai ---
 ID: ai.13f/mcp
 Package: N/A
 Category: developer-tools
@@ -282,7 +308,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.13f/mcp
 
---- [12/419] 1ClickWebsite ---
+--- [13/420] 1ClickWebsite ---
 ID: ai.1clickwebsite/mcp
 Package: N/A
 Category: developer-tools
@@ -307,7 +333,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.1clickwebsite/mcp
 
---- [13/419] 1Court Directory ---
+--- [14/420] 1Court Directory ---
 ID: ai.1court.state/court-directory
 Package: N/A
 Category: developer-tools
@@ -332,7 +358,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.1court.state/court-directory
 
---- [14/419] 28/28 Agent Service Desk: Fix & Verify ---
+--- [15/420] 28/28 Agent Service Desk: Fix & Verify ---
 ID: ai.28in28/agent-service-desk
 Package: N/A
 Category: ai-agents
@@ -357,7 +383,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.28in28/agent-service-desk
 
---- [15/419] 2kw.ai ---
+--- [16/420] 2kw.ai ---
 ID: ai.2kw/mcp-server
 Package: @2kw/ai-mcp-server
 Category: ai-agents
@@ -382,7 +408,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @2kw/ai-mcp-server
 
---- [16/419] 4ai – premium .ai domains for sale ---
+--- [17/420] 4ai – premium .ai domains for sale ---
 ID: ai.4ai/domains
 Package: N/A
 Category: web-automation
@@ -407,7 +433,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.4ai/domains
 
---- [17/419] 69.ai ---
+--- [18/420] 69.ai ---
 ID: ai.69ai/69ai
 Package: N/A
 Category: ai-agents
@@ -432,7 +458,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.69ai/69ai
 
---- [18/419] A1 Lane ---
+--- [19/420] A1 Lane ---
 ID: ai.a1lane/a1lane
 Package: N/A
 Category: developer-tools
@@ -457,7 +483,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.a1lane/a1lane
 
---- [19/419] A2UI Atomic Catalog ---
+--- [20/420] A2UI Atomic Catalog ---
 ID: ai.a2uicatalog/catalog
 Package: N/A
 Category: ai-agents
@@ -482,7 +508,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.a2uicatalog/catalog
 
---- [20/419] A2UI Atomic Catalog docs ---
+--- [21/420] A2UI Atomic Catalog docs ---
 ID: ai.a2uicatalog/docs
 Package: N/A
 Category: web-automation
@@ -507,7 +533,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.a2uicatalog/docs
 
---- [21/419] Aard ---
+--- [22/420] Aard ---
 ID: ai.aard/aard
 Package: N/A
 Category: developer-tools
@@ -532,7 +558,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aard/aard
 
---- [22/419] ABMeter ---
+--- [23/420] ABMeter ---
 ID: ai.abmeter/abmeter
 Package: N/A
 Category: developer-tools
@@ -557,7 +583,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.abmeter/abmeter
 
---- [23/419] Achromat Machine Operational Memory ---
+--- [24/420] Achromat Machine Operational Memory ---
 ID: ai.achromat/mcp-server
 Package: @achromat-ai/mcp-server
 Category: ai-agents
@@ -582,7 +608,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @achromat-ai/mcp-server
 
---- [24/419] Acquisity ---
+--- [25/420] Acquisity ---
 ID: ai.acquisity/mcp
 Package: N/A
 Category: productivity
@@ -607,7 +633,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.acquisity/mcp
 
---- [25/419] Acubic ---
+--- [26/420] Acubic ---
 ID: ai.acubic/acubic
 Package: N/A
 Category: developer-tools
@@ -632,7 +658,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.acubic/acubic
 
---- [26/419] AdAdvisor MCP Server ---
+--- [27/420] AdAdvisor MCP Server ---
 ID: ai.adadvisor/mcp-server
 Package: N/A
 Category: developer-tools
@@ -657,7 +683,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adadvisor/mcp-server
 
---- [27/419] Adako: ad ops for AI assistants ---
+--- [28/420] Adako: ad ops for AI assistants ---
 ID: ai.adako/ads
 Package: N/A
 Category: developer-tools
@@ -682,7 +708,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adako/ads
 
---- [28/419] adeu ---
+--- [29/420] adeu ---
 ID: ai.adeu/adeu
 Package: @adeu/mcp-server
 Category: developer-tools
@@ -707,7 +733,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @adeu/mcp-server
 
---- [29/419] adkix ---
+--- [30/420] adkix ---
 ID: ai.adkix/adkix
 Package: N/A
 Category: developer-tools
@@ -732,7 +758,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adkix/adkix
 
---- [30/419] Admux ---
+--- [31/420] Admux ---
 ID: ai.admux/admux
 Package: N/A
 Category: developer-tools
@@ -757,7 +783,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.admux/admux
 
---- [31/419] adplane ---
+--- [32/420] adplane ---
 ID: ai.adplane/google-ads
 Package: N/A
 Category: developer-tools
@@ -782,7 +808,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adplane/google-ads
 
---- [32/419] Adrails ---
+--- [33/420] Adrails ---
 ID: ai.adrails/adrails
 Package: N/A
 Category: ai-agents
@@ -807,7 +833,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adrails/adrails
 
---- [33/419] Adrio ---
+--- [34/420] Adrio ---
 ID: ai.adrio/adrio
 Package: N/A
 Category: web-automation
@@ -832,7 +858,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adrio/adrio
 
---- [34/419] Adsap ---
+--- [35/420] Adsap ---
 ID: ai.adsap/adsap
 Package: N/A
 Category: developer-tools
@@ -857,7 +883,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adsap/adsap
 
---- [35/419] adside ---
+--- [36/420] adside ---
 ID: ai.adside/adside
 Package: N/A
 Category: ai-agents
@@ -882,7 +908,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adside/adside
 
---- [36/419] adtest-mcp ---
+--- [37/420] adtest-mcp ---
 ID: ai.adtest/adtest-mcp
 Package: adtest-mcp
 Category: developer-tools
@@ -907,7 +933,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y adtest-mcp
 
---- [37/419] Advisors AI — Route a Store Need to a Service ---
+--- [38/420] Advisors AI — Route a Store Need to a Service ---
 ID: ai.advisorsai/service-navigator
 Package: N/A
 Category: developer-tools
@@ -932,7 +958,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.advisorsai/service-navigator
 
---- [38/419] AdWeave — Meta Ads MCP Server ---
+--- [39/420] AdWeave — Meta Ads MCP Server ---
 ID: ai.adweave/meta-ads-mcp
 Package: N/A
 Category: developer-tools
@@ -957,7 +983,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adweave/meta-ads-mcp
 
---- [39/419] Aether Wealth ---
+--- [40/420] Aether Wealth ---
 ID: ai.aetherwealth/mcp
 Package: @aetherwealth/mcp
 Category: productivity
@@ -982,7 +1008,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aetherwealth/mcp
 
---- [40/419] Aetherya ---
+--- [41/420] Aetherya ---
 ID: ai.aetherya/mcp
 Package: @aetherya/mcp
 Category: security
@@ -1007,7 +1033,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aetherya/mcp
 
---- [41/419] Aevia ---
+--- [42/420] Aevia ---
 ID: ai.aeviamodeler/aevia
 Package: N/A
 Category: databases
@@ -1032,7 +1058,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aeviamodeler/aevia
 
---- [42/419] Affiliate Networks MCP ---
+--- [43/420] Affiliate Networks MCP ---
 ID: ai.agenticaffiliate/affiliate-networks-mcp
 Package: affiliate-networks-mcp
 Category: ai-agents
@@ -1057,7 +1083,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y affiliate-networks-mcp
 
---- [43/419] Affogato ---
+--- [44/420] Affogato ---
 ID: ai.affogato/affogato
 Package: N/A
 Category: developer-tools
@@ -1082,7 +1108,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.affogato/affogato
 
---- [44/419] AFG: agents hire agents (test money) ---
+--- [45/420] AFG: agents hire agents (test money) ---
 ID: ai.afg/afg
 Package: N/A
 Category: security
@@ -1107,7 +1133,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.afg/afg
 
---- [45/419] AFMR Discovery ---
+--- [46/420] AFMR Discovery ---
 ID: ai.afmr/discovery
 Package: N/A
 Category: developer-tools
@@ -1132,7 +1158,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.afmr/discovery
 
---- [46/419] Agenlify AI Agent Directory ---
+--- [47/420] Agenlify AI Agent Directory ---
 ID: ai.agenlify/catalog
 Package: N/A
 Category: ai-agents
@@ -1157,7 +1183,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenlify/catalog
 
---- [47/419] Agent Blueprint ---
+--- [48/420] Agent Blueprint ---
 ID: ai.agentblueprint/agent-blueprint
 Package: N/A
 Category: ai-agents
@@ -1182,7 +1208,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentblueprint/agent-blueprint
 
---- [48/419] Agent NEO ---
+--- [49/420] Agent NEO ---
 ID: ai.agent-neo/neo
 Package: N/A
 Category: ai-agents
@@ -1207,7 +1233,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agent-neo/neo
 
---- [49/419] Agent Ready Report ---
+--- [50/420] Agent Ready Report ---
 ID: ai.agenticplug/agent-ready-report
 Package: N/A
 Category: ai-agents
@@ -1232,7 +1258,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticplug/agent-ready-report
 
---- [50/419] agent-bev ---
+--- [51/420] agent-bev ---
 ID: ai.agent-bev/bev-door
 Package: @agent-bev/mcp-server
 Category: ai-agents
@@ -1257,7 +1283,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agent-bev/mcp-server
 
---- [51/419] agent-bev Library ---
+--- [52/420] agent-bev Library ---
 ID: ai.agent-bev/library
 Package: N/A
 Category: ai-agents
@@ -1282,7 +1308,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agent-bev/library
 
---- [52/419] agent-cronjob ---
+--- [53/420] agent-cronjob ---
 ID: ai.agentasy/cronjob
 Package: N/A
 Category: ai-agents
@@ -1307,7 +1333,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentasy/cronjob
 
---- [53/419] agentberg ---
+--- [54/420] agentberg ---
 ID: ai.agentberg/agentberg
 Package: N/A
 Category: ai-agents
@@ -1332,7 +1358,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentberg/agentberg
 
---- [54/419] Agentboard ---
+--- [55/420] Agentboard ---
 ID: ai.agentboard/agentboard
 Package: N/A
 Category: ai-agents
@@ -1357,7 +1383,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentboard/agentboard
 
---- [55/419] AgentCV ---
+--- [56/420] AgentCV ---
 ID: ai.agentcv/registry
 Package: N/A
 Category: ai-agents
@@ -1382,7 +1408,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentcv/registry
 
---- [56/419] AgentDM: Agent to Agent Communication Platform ---
+--- [57/420] AgentDM: Agent to Agent Communication Platform ---
 ID: ai.agentdm/agentdm
 Package: N/A
 Category: ai-agents
@@ -1407,7 +1433,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentdm/agentdm
 
---- [57/419] Agentgates Compute ---
+--- [58/420] Agentgates Compute ---
 ID: ai.agentgates/compute
 Package: N/A
 Category: ai-agents
@@ -1432,7 +1458,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentgates/compute
 
---- [58/419] Agentgates Wallet ---
+--- [59/420] Agentgates Wallet ---
 ID: ai.agentgates/mcp
 Package: N/A
 Category: ai-agents
@@ -1457,7 +1483,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentgates/mcp
 
---- [59/419] Agentic Blue ---
+--- [60/420] Agentic Blue ---
 ID: ai.agenticblue/agentic-blue
 Package: N/A
 Category: ai-agents
@@ -1482,7 +1508,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticblue/agentic-blue
 
---- [60/419] Agentic Engineering Periodic System ---
+--- [61/420] Agentic Engineering Periodic System ---
 ID: academy.ase/periodic-system
 Package: N/A
 Category: ai-agents
@@ -1507,7 +1533,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y academy.ase/periodic-system
 
---- [61/419] Agentic Fabrication Network (AFN) ---
+--- [62/420] Agentic Fabrication Network (AFN) ---
 ID: ai.agenticfabricationnetwork/ufp
 Package: N/A
 Category: ai-agents
@@ -1532,7 +1558,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticfabricationnetwork/ufp
 
---- [62/419] Agentic News ---
+--- [63/420] Agentic News ---
 ID: ai.agentic-news/mcp
 Package: N/A
 Category: ai-agents
@@ -1557,7 +1583,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentic-news/mcp
 
---- [63/419] Agentic Shelf ---
+--- [64/420] Agentic Shelf ---
 ID: ai.agenticshelf/mcp
 Package: N/A
 Category: ai-agents
@@ -1582,7 +1608,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticshelf/mcp
 
---- [64/419] Agentic Terminal Directory ---
+--- [65/420] Agentic Terminal Directory ---
 ID: ai.agenticterminal/directory
 Package: N/A
 Category: monetization
@@ -1607,7 +1633,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticterminal/directory
 
---- [65/419] AgenticBooks ---
+--- [66/420] AgenticBooks ---
 ID: ai.agenticbooks/books
 Package: N/A
 Category: monetization
@@ -1632,7 +1658,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticbooks/books
 
---- [66/419] AgenticCart: AI readiness checks for online stores ---
+--- [67/420] AgenticCart: AI readiness checks for online stores ---
 ID: ai.agenticcart/agenticcart
 Package: N/A
 Category: ai-agents
@@ -1657,7 +1683,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticcart/agenticcart
 
---- [67/419] AgentMash ---
+--- [68/420] AgentMash ---
 ID: ai.agentmash/agentmash
 Package: N/A
 Category: ai-agents
@@ -1682,7 +1708,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentmash/agentmash
 
---- [68/419] AgentMesh ---
+--- [69/420] AgentMesh ---
 ID: ai.agentmesh/mesh
 Package: N/A
 Category: ai-agents
@@ -1707,7 +1733,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentmesh/mesh
 
---- [69/419] AgentPlaybooks ---
+--- [70/420] AgentPlaybooks ---
 ID: ai.agentplaybooks/agentplaybooks
 Package: N/A
 Category: security
@@ -1732,7 +1758,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentplaybooks/agentplaybooks
 
---- [70/419] agentra ---
+--- [71/420] agentra ---
 ID: ai.agentrapay/agentra
 Package: N/A
 Category: ai-agents
@@ -1757,7 +1783,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentrapay/agentra
 
---- [71/419] AgentRoam ---
+--- [72/420] AgentRoam ---
 ID: ai.agentroam/agentroam
 Package: N/A
 Category: ai-agents
@@ -1782,7 +1808,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentroam/agentroam
 
---- [72/419] AgentsIndex ---
+--- [73/420] AgentsIndex ---
 ID: ai.agentsindex/mcp
 Package: N/A
 Category: ai-agents
@@ -1807,7 +1833,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentsindex/mcp
 
---- [73/419] AgentsRank ---
+--- [74/420] AgentsRank ---
 ID: ai.agentsrank/agentsrank
 Package: N/A
 Category: ai-agents
@@ -1832,7 +1858,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentsrank/agentsrank
 
---- [74/419] AgentTrust — Identity & Trust for A2A Agents ---
+--- [75/420] AgentTrust — Identity & Trust for A2A Agents ---
 ID: ai.agenttrust/mcp-server
 Package: @agenttrust/mcp-server
 Category: ai-agents
@@ -1857,7 +1883,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agenttrust/mcp-server
 
---- [75/419] AgentUI Apps ---
+--- [76/420] AgentUI Apps ---
 ID: ai.agentui/apps
 Package: N/A
 Category: ai-agents
@@ -1882,7 +1908,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentui/apps
 
---- [76/419] AgentUtility Agentops ---
+--- [77/420] AgentUtility Agentops ---
 ID: ai.agentutility/mcp-agentops
 Package: @agentutility/mcp-agentops
 Category: ai-agents
@@ -1907,7 +1933,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-agentops
 
---- [77/419] AgentUtility Bestiary ---
+--- [78/420] AgentUtility Bestiary ---
 ID: ai.agentutility/mcp-bestiary
 Package: @agentutility/mcp-bestiary
 Category: ai-agents
@@ -1932,7 +1958,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-bestiary
 
---- [78/419] AgentUtility Browser Workflow ---
+--- [79/420] AgentUtility Browser Workflow ---
 ID: ai.agentutility/mcp-browser-workflow
 Package: @agentutility/mcp-browser-workflow
 Category: ai-agents
@@ -1957,7 +1983,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-browser-workflow
 
---- [79/419] AgentUtility Compose ---
+--- [80/420] AgentUtility Compose ---
 ID: ai.agentutility/mcp-compose
 Package: @agentutility/mcp-compose
 Category: ai-agents
@@ -1982,7 +2008,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-compose
 
---- [80/419] AgentUtility Edge Finance ---
+--- [81/420] AgentUtility Edge Finance ---
 ID: ai.agentutility/mcp-edge-finance
 Package: @agentutility/mcp-edge-finance
 Category: ai-agents
@@ -2007,7 +2033,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-edge-finance
 
---- [81/419] AgentUtility Edge Market ---
+--- [82/420] AgentUtility Edge Market ---
 ID: ai.agentutility/mcp-edge-market
 Package: @agentutility/mcp-edge-market
 Category: ai-agents
@@ -2032,7 +2058,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-edge-market
 
---- [82/419] AgentUtility Locale ---
+--- [83/420] AgentUtility Locale ---
 ID: ai.agentutility/mcp-locale
 Package: @agentutility/mcp-locale
 Category: ai-agents
@@ -2057,7 +2083,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-locale
 
---- [83/419] AgentUtility Matchpoint ---
+--- [84/420] AgentUtility Matchpoint ---
 ID: ai.agentutility/mcp-matchpoint
 Package: @agentutility/mcp-matchpoint
 Category: ai-agents
@@ -2082,7 +2108,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-matchpoint
 
---- [84/419] AgentUtility Mediakit ---
+--- [85/420] AgentUtility Mediakit ---
 ID: ai.agentutility/mcp-mediakit
 Package: @agentutility/mcp-mediakit
 Category: ai-agents
@@ -2107,7 +2133,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-mediakit
 
---- [85/419] AgentUtility Model Router ---
+--- [86/420] AgentUtility Model Router ---
 ID: ai.agentutility/mcp-model-router
 Package: @agentutility/mcp-model-router
 Category: ai-agents
@@ -2132,7 +2158,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-model-router
 
---- [86/419] AgentUtility Prooflayer ---
+--- [87/420] AgentUtility Prooflayer ---
 ID: ai.agentutility/mcp-prooflayer
 Package: @agentutility/mcp-prooflayer
 Category: ai-agents
@@ -2157,7 +2183,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-prooflayer
 
---- [87/419] AgentUtility Retail ---
+--- [88/420] AgentUtility Retail ---
 ID: ai.agentutility/mcp-retail
 Package: @agentutility/mcp-retail
 Category: ai-agents
@@ -2182,7 +2208,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-retail
 
---- [88/419] AgentUtility Rollforge ---
+--- [89/420] AgentUtility Rollforge ---
 ID: ai.agentutility/mcp-rollforge
 Package: @agentutility/mcp-rollforge
 Category: ai-agents
@@ -2207,7 +2233,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-rollforge
 
---- [89/419] AgentUtility Statline ---
+--- [90/420] AgentUtility Statline ---
 ID: ai.agentutility/mcp-statline
 Package: @agentutility/mcp-statline
 Category: ai-agents
@@ -2232,7 +2258,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-statline
 
---- [90/419] AgentUtility Synthforge ---
+--- [91/420] AgentUtility Synthforge ---
 ID: ai.agentutility/mcp-synthforge
 Package: @agentutility/mcp-synthforge
 Category: ai-agents
@@ -2257,7 +2283,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-synthforge
 
---- [91/419] AgentUtility Web Probe ---
+--- [92/420] AgentUtility Web Probe ---
 ID: ai.agentutility/mcp-web-probe
 Package: @agentutility/mcp-web-probe
 Category: ai-agents
@@ -2282,7 +2308,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-web-probe
 
---- [92/419] AgentUtility Wordmint ---
+--- [93/420] AgentUtility Wordmint ---
 ID: ai.agentutility/mcp-wordmint
 Package: @agentutility/mcp-wordmint
 Category: ai-agents
@@ -2307,7 +2333,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-wordmint
 
---- [93/419] AGILEX Docs ---
+--- [94/420] AGILEX Docs ---
 ID: ai.agilex.service/docs
 Package: N/A
 Category: developer-tools
@@ -2332,7 +2358,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agilex.service/docs
 
---- [94/419] Agimon ---
+--- [95/420] Agimon ---
 ID: ai.agimon/agimon
 Package: N/A
 Category: developer-tools
@@ -2357,7 +2383,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agimon/agimon
 
---- [95/419] Aginera ---
+--- [96/420] Aginera ---
 ID: ai.aginera/preconstruction
 Package: N/A
 Category: developer-tools
@@ -2382,7 +2408,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aginera/preconstruction
 
---- [96/419] Agothe Agent Contract Preflight ---
+--- [97/420] Agothe Agent Contract Preflight ---
 ID: ai.agothe.mcp-chatgpt/agent-contract-preflight
 Package: N/A
 Category: ai-agents
@@ -2407,7 +2433,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agothe.mcp-chatgpt/agent-contract-preflight
 
---- [97/419] Ahel ---
+--- [98/420] Ahel ---
 ID: ai.ahel/ahel
 Package: N/A
 Category: ai-agents
@@ -2432,7 +2458,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ahel/ahel
 
---- [98/419] AI Advisor Lab — Team Operations ---
+--- [99/420] AI Advisor Lab — Team Operations ---
 ID: ai.aiadvisorlab/teamops
 Package: N/A
 Category: developer-tools
@@ -2457,7 +2483,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aiadvisorlab/teamops
 
---- [99/419] AI Media Studio ---
+--- [100/420] AI Media Studio ---
 ID: ai.b77/ai-media-studio
 Package: N/A
 Category: ai-agents
@@ -2482,7 +2508,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/ai-media-studio
 
---- [100/419] AI Photo Animator ---
+--- [101/420] AI Photo Animator ---
 ID: ai.aiphotoanimator/photo-animator
 Package: N/A
 Category: developer-tools
@@ -2507,7 +2533,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aiphotoanimator/photo-animator
 
---- [101/419] AI-Advisors ---
+--- [102/420] AI-Advisors ---
 ID: ai.ai-advisors/mcp
 Package: N/A
 Category: security
@@ -2532,7 +2558,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ai-advisors/mcp
 
---- [102/419] AI-Portal Enterprise GenAI Briefing ---
+--- [103/420] AI-Portal Enterprise GenAI Briefing ---
 ID: ai.ai-portal/ai-portal
 Package: N/A
 Category: ai-agents
@@ -2557,7 +2583,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ai-portal/ai-portal
 
---- [103/419] Aidoo for Odoo ---
+--- [104/420] Aidoo for Odoo ---
 ID: ai.aidoo/aidoo
 Package: N/A
 Category: developer-tools
@@ -2582,7 +2608,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aidoo/aidoo
 
---- [104/419] aigamedev.ai ---
+--- [105/420] aigamedev.ai ---
 ID: ai.aigamedev/aigamedev
 Package: N/A
 Category: ai-agents
@@ -2607,7 +2633,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aigamedev/aigamedev
 
---- [105/419] AIM SHIELD ---
+--- [106/420] AIM SHIELD ---
 ID: ai.aim-shield/mcp
 Package: N/A
 Category: developer-tools
@@ -2632,7 +2658,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aim-shield/mcp
 
---- [106/419] AIMentionTracker ---
+--- [107/420] AIMentionTracker ---
 ID: ai.aimentiontracker/mcp
 Package: @aimentiontracker/mcp
 Category: developer-tools
@@ -2657,7 +2683,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aimentiontracker/mcp
 
---- [107/419] AIMochi ---
+--- [108/420] AIMochi ---
 ID: ai.aimochi/notes
 Package: N/A
 Category: web-automation
@@ -2682,7 +2708,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aimochi/notes
 
---- [108/419] AirboxShip Shipping (public) ---
+--- [109/420] AirboxShip Shipping (public) ---
 ID: ai.airboxship/shipping-public
 Package: N/A
 Category: developer-tools
@@ -2707,7 +2733,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.airboxship/shipping-public
 
---- [109/419] AirPulse ---
+--- [110/420] AirPulse ---
 ID: ai.airpulse/airpulse
 Package: N/A
 Category: security
@@ -2732,7 +2758,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.airpulse/airpulse
 
---- [110/419] AirShelf Catalog ---
+--- [111/420] AirShelf Catalog ---
 ID: ai.airshelf/catalog
 Package: N/A
 Category: ai-agents
@@ -2757,7 +2783,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.airshelf/catalog
 
---- [111/419] AIS Agent Flight Recorder — dead-man alerts & resume for AI agents ---
+--- [112/420] AIS Agent Flight Recorder — dead-man alerts & resume for AI agents ---
 ID: ai.aislabs/recorder
 Package: N/A
 Category: ai-agents
@@ -2782,7 +2808,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aislabs/recorder
 
---- [112/419] AIS CVE Priorities — daily exploit-ranked patch list for AI agents ---
+--- [113/420] AIS CVE Priorities — daily exploit-ranked patch list for AI agents ---
 ID: ai.aislabs/cve
 Package: N/A
 Category: ai-agents
@@ -2807,7 +2833,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aislabs/cve
 
---- [113/419] AIS Gateway — the campus front desk for AIS MCP buildings ---
+--- [114/420] AIS Gateway — the campus front desk for AIS MCP buildings ---
 ID: ai.aislabs/gateway
 Package: N/A
 Category: developer-tools
@@ -2832,7 +2858,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aislabs/gateway
 
---- [114/419] Aisma ---
+--- [115/420] Aisma ---
 ID: ai.aisma/aisma
 Package: N/A
 Category: developer-tools
@@ -2857,7 +2883,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aisma/aisma
 
---- [115/419] AISTLabs ---
+--- [116/420] AISTLabs ---
 ID: ai.aistlabs/aistlabs
 Package: N/A
 Category: ai-agents
@@ -2882,7 +2908,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aistlabs/aistlabs
 
---- [116/419] AITOPIA ---
+--- [117/420] AITOPIA ---
 ID: ai.aitopia/aitopia
 Package: N/A
 Category: developer-tools
@@ -2907,7 +2933,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aitopia/aitopia
 
---- [117/419] AiVikings.ai ---
+--- [118/420] AiVikings.ai ---
 ID: ai.aivikings/registrar
 Package: N/A
 Category: ai-agents
@@ -2932,7 +2958,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aivikings/registrar
 
---- [118/419] AIﾉアカリ☆ Agent Trust Receipt ---
+--- [119/420] AIﾉアカリ☆ Agent Trust Receipt ---
 ID: ai.ai-akari/agent-trust-receipt
 Package: N/A
 Category: ai-agents
@@ -2957,7 +2983,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ai-akari/agent-trust-receipt
 
---- [119/419] AIﾉアカリ☆ One-Minute Akari ---
+--- [120/420] AIﾉアカリ☆ One-Minute Akari ---
 ID: ai.ai-akari/one-minute-akari
 Package: N/A
 Category: developer-tools
@@ -2982,7 +3008,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ai-akari/one-minute-akari
 
---- [120/419] AkaPhone ---
+--- [121/420] AkaPhone ---
 ID: ai.akaphone/akaphone
 Package: N/A
 Category: ai-agents
@@ -3007,7 +3033,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.akaphone/akaphone
 
---- [121/419] AkkruData ---
+--- [122/420] AkkruData ---
 ID: ai.akkrudata/akkrudata
 Package: N/A
 Category: developer-tools
@@ -3032,7 +3058,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.akkrudata/akkrudata
 
---- [122/419] Alcock Arena ---
+--- [123/420] Alcock Arena ---
 ID: ai.alcock/arena
 Package: N/A
 Category: developer-tools
@@ -3057,7 +3083,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alcock/arena
 
---- [123/419] Aldro: small-business tax ---
+--- [124/420] Aldro: small-business tax ---
 ID: ai.aldro/tax
 Package: N/A
 Category: developer-tools
@@ -3082,7 +3108,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aldro/tax
 
---- [124/419] Alexein AI ---
+--- [125/420] Alexein AI ---
 ID: ai.alexein/memory
 Package: N/A
 Category: ai-agents
@@ -3107,7 +3133,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alexein/memory
 
---- [125/419] Alexey Sound — sound recordist, Dubai ---
+--- [126/420] Alexey Sound — sound recordist, Dubai ---
 ID: ae.alexeysound/alexey-sound
 Package: N/A
 Category: developer-tools
@@ -3132,7 +3158,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.alexeysound/alexey-sound
 
---- [126/419] AlgoriQ ---
+--- [127/420] AlgoriQ ---
 ID: ai.algoriq/mcp
 Package: N/A
 Category: web-automation
@@ -3157,7 +3183,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.algoriq/mcp
 
---- [127/419] Almost Impossible ---
+--- [128/420] Almost Impossible ---
 ID: agency.almostimpossible/site
 Package: N/A
 Category: developer-tools
@@ -3182,7 +3208,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.almostimpossible/site
 
---- [128/419] Alpha Bazaar Arena ---
+--- [129/420] Alpha Bazaar Arena ---
 ID: ai.alphabazaar/arena
 Package: N/A
 Category: ai-agents
@@ -3207,7 +3233,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alphabazaar/arena
 
---- [129/419] AlphaCreek SEC Filings MCP ---
+--- [130/420] AlphaCreek SEC Filings MCP ---
 ID: ai.alphacreek/alphacreek-mcp
 Package: N/A
 Category: developer-tools
@@ -3232,7 +3258,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alphacreek/alphacreek-mcp
 
---- [130/419] Alpic ---
+--- [131/420] Alpic ---
 ID: ai.alpic.mcp/alpic-mcp
 Package: N/A
 Category: developer-tools
@@ -3257,7 +3283,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alpic.mcp/alpic-mcp
 
---- [131/419] AlpiX ---
+--- [132/420] AlpiX ---
 ID: ai.alpic.alpix/Alpix
 Package: N/A
 Category: ai-agents
@@ -3282,7 +3308,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alpic.alpix/Alpix
 
---- [132/419] Alvin's Club BrandPilot ---
+--- [133/420] Alvin's Club BrandPilot ---
 ID: ai.alvinsclub.studio/brandpilot
 Package: N/A
 Category: developer-tools
@@ -3307,7 +3333,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/brandpilot
 
---- [133/419] Alvin's Club Channel ---
+--- [134/420] Alvin's Club Channel ---
 ID: ai.alvinsclub.studio/channel
 Package: N/A
 Category: developer-tools
@@ -3332,7 +3358,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/channel
 
---- [134/419] Alvin's Club Studio ---
+--- [135/420] Alvin's Club Studio ---
 ID: ai.alvinsclub.studio/studio
 Package: N/A
 Category: developer-tools
@@ -3357,7 +3383,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/studio
 
---- [135/419] Alwen ---
+--- [136/420] Alwen ---
 ID: ai.alwen/alwen
 Package: N/A
 Category: ai-agents
@@ -3382,7 +3408,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alwen/alwen
 
---- [136/419] Amazon Seller MCP Server — AgentXray ---
+--- [137/420] Amazon Seller MCP Server — AgentXray ---
 ID: ai.agentxray/amazon-seller-mcp
 Package: N/A
 Category: ai-agents
@@ -3407,7 +3433,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentxray/amazon-seller-mcp
 
---- [137/419] Amazon Seller MCP Server — AgentXray ---
+--- [138/420] Amazon Seller MCP Server — AgentXray ---
 ID: ai.agentxray/mcp
 Package: N/A
 Category: ai-agents
@@ -3432,7 +3458,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentxray/mcp
 
---- [138/419] Ambix ---
+--- [139/420] Ambix ---
 ID: ai.ambix/ambix
 Package: N/A
 Category: ai-agents
@@ -3457,7 +3483,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ambix/ambix
 
---- [139/419] Amdahl ---
+--- [140/420] Amdahl ---
 ID: ai.amdahl/amdahl
 Package: N/A
 Category: developer-tools
@@ -3482,7 +3508,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.amdahl/amdahl
 
---- [140/419] amigurumi.ai ---
+--- [141/420] amigurumi.ai ---
 ID: ai.amigurumi/patterns
 Package: N/A
 Category: developer-tools
@@ -3507,7 +3533,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.amigurumi/patterns
 
---- [141/419] Analytics Legends — SAP AI & Analytics MCP Server ---
+--- [142/420] Analytics Legends — SAP AI & Analytics MCP Server ---
 ID: ai.analyticslegends/sap-analytics
 Package: N/A
 Category: ai-agents
@@ -3532,7 +3558,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.analyticslegends/sap-analytics
 
---- [142/419] Anam ---
+--- [143/420] Anam ---
 ID: ai.anam/anam
 Package: N/A
 Category: developer-tools
@@ -3557,7 +3583,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anam/anam
 
---- [143/419] AnimeAPI ---
+--- [144/420] AnimeAPI ---
 ID: ai.animeapi/mcp
 Package: N/A
 Category: developer-tools
@@ -3582,7 +3608,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.animeapi/mcp
 
---- [144/419] Anki MCP Server ---
+--- [145/420] Anki MCP Server ---
 ID: ai.ankimcp/anki-mcp-server
 Package: @ankimcp/anki-mcp-server
 Category: developer-tools
@@ -3607,7 +3633,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ankimcp/anki-mcp-server
 
---- [145/419] AnkiDecks ---
+--- [146/420] AnkiDecks ---
 ID: ai.ankidecks/ankidecks
 Package: N/A
 Category: developer-tools
@@ -3632,7 +3658,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankidecks/ankidecks
 
---- [146/419] AnkiMCP Server ---
+--- [147/420] AnkiMCP Server ---
 ID: ai.ankimcp/anki-mcp-server-addon
 Package: N/A
 Category: developer-tools
@@ -3657,7 +3683,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankimcp/anki-mcp-server-addon
 
---- [147/419] Ankra ---
+--- [148/420] Ankra ---
 ID: ai.ankra/platform
 Package: N/A
 Category: security
@@ -3682,7 +3708,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankra/platform
 
---- [148/419] Ankra Docs ---
+--- [149/420] Ankra Docs ---
 ID: ai.ankra/docs
 Package: N/A
 Category: productivity
@@ -3707,7 +3733,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankra/docs
 
---- [149/419] Annsa ---
+--- [150/420] Annsa ---
 ID: ai.annsa/annsa
 Package: annsa
 Category: databases
@@ -3732,7 +3758,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y annsa
 
---- [150/419] AnomalyArmor ---
+--- [151/420] AnomalyArmor ---
 ID: ai.anomalyarmor/armor-mcp
 Package: armor-mcp
 Category: developer-tools
@@ -3756,7 +3782,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx armor-mcp
 
---- [151/419] AnyForge ---
+--- [152/420] AnyForge ---
 ID: ai.anyforge/anyforge
 Package: @anyforge/mcp-server
 Category: developer-tools
@@ -3781,7 +3807,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @anyforge/mcp-server
 
---- [152/419] Anyreach ---
+--- [153/420] Anyreach ---
 ID: ai.anyreach/anyreach
 Package: N/A
 Category: ai-agents
@@ -3806,7 +3832,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anyreach/anyreach
 
---- [153/419] AnyShare by Anysoft ---
+--- [154/420] AnyShare by Anysoft ---
 ID: ai.anysoft.share/anyshare
 Package: N/A
 Category: developer-tools
@@ -3831,7 +3857,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anysoft.share/anyshare
 
---- [154/419] anzenna ---
+--- [155/420] anzenna ---
 ID: ai.anzenna/anzenna
 Package: N/A
 Category: developer-tools
@@ -3856,7 +3882,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anzenna/anzenna
 
---- [155/419] Apatero Studio ---
+--- [156/420] Apatero Studio ---
 ID: ai.apatero/studio
 Package: N/A
 Category: developer-tools
@@ -3881,7 +3907,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apatero/studio
 
---- [156/419] Apex AI Academy ---
+--- [157/420] Apex AI Academy ---
 ID: academy.apexai/apex-ai-academy
 Package: N/A
 Category: ai-agents
@@ -3906,7 +3932,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y academy.apexai/apex-ai-academy
 
---- [157/419] APEX Runner Crypto Signals ---
+--- [158/420] APEX Runner Crypto Signals ---
 ID: ai.apexrunner/signals
 Package: N/A
 Category: ai-agents
@@ -3931,7 +3957,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apexrunner/signals
 
---- [158/419] APIANT ---
+--- [159/420] APIANT ---
 ID: ai.apiant/apiant
 Package: N/A
 Category: developer-tools
@@ -3956,7 +3982,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apiant/apiant
 
---- [159/419] APIPod ---
+--- [160/420] APIPod ---
 ID: ai.apipod/mcp
 Package: N/A
 Category: developer-tools
@@ -3981,7 +4007,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apipod/mcp
 
---- [160/419] APIR Agent Verification ---
+--- [161/420] APIR Agent Verification ---
 ID: ai.apir/verify
 Package: N/A
 Category: ai-agents
@@ -4006,7 +4032,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apir/verify
 
---- [161/419] APIThreshold ---
+--- [162/420] APIThreshold ---
 ID: ai.apithreshold/apithreshold
 Package: ghcr.io/apithreshold/apithreshold:0.1.0
 Category: monetization
@@ -4031,7 +4057,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ghcr.io/apithreshold/apithreshold:0.1.0
 
---- [162/419] apitree — AI-Native API Marketplace ---
+--- [163/420] apitree — AI-Native API Marketplace ---
 ID: ai.apitree/apitree
 Package: N/A
 Category: ai-agents
@@ -4056,7 +4082,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apitree/apitree
 
---- [163/419] Apogee: Bulk Ad Launcher for Meta, TikTok & Snapchat ---
+--- [164/420] Apogee: Bulk Ad Launcher for Meta, TikTok & Snapchat ---
 ID: ad.apogee/apogee
 Package: N/A
 Category: developer-tools
@@ -4081,7 +4107,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.apogee/apogee
 
---- [164/419] AppDeploy ---
+--- [165/420] AppDeploy ---
 ID: ai.appdeploy/deploy-app
 Package: N/A
 Category: developer-tools
@@ -4106,7 +4132,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.appdeploy/deploy-app
 
---- [165/419] AppGoat ---
+--- [166/420] AppGoat ---
 ID: ai.appgoat/mcp
 Package: N/A
 Category: developer-tools
@@ -4131,7 +4157,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.appgoat/mcp
 
---- [166/419] Apple Search Ads ---
+--- [167/420] Apple Search Ads ---
 ID: ai.b77/apple-search-ads
 Package: N/A
 Category: web-automation
@@ -4156,7 +4182,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/apple-search-ads
 
---- [167/419] AQL PropertyCheck — check one exact address (Gold Coast & Brisbane) ---
+--- [168/420] AQL PropertyCheck — check one exact address (Gold Coast & Brisbane) ---
 ID: ai.alphaquantlabs/propertycheck
 Package: N/A
 Category: ai-agents
@@ -4181,7 +4207,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alphaquantlabs/propertycheck
 
---- [168/419] Arabic Name Calligraphy ---
+--- [169/420] Arabic Name Calligraphy ---
 ID: ai.arabickeyboard/name-calligraphy
 Package: N/A
 Category: developer-tools
@@ -4206,7 +4232,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arabickeyboard/name-calligraphy
 
---- [169/419] ARC (arcreport.ai): can an agent reach checkout? ---
+--- [170/420] ARC (arcreport.ai): can an agent reach checkout? ---
 ID: ai.arcreport/ask
 Package: N/A
 Category: monetization
@@ -4231,7 +4257,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcreport/ask
 
---- [170/419] ARC: agent checkout reachability ---
+--- [171/420] ARC: agent checkout reachability ---
 ID: ai.arcreport/mcp
 Package: N/A
 Category: ai-agents
@@ -4256,7 +4282,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcreport/mcp
 
---- [171/419] Arcangel AI ---
+--- [172/420] Arcangel AI ---
 ID: ai.arcangel/arcangel
 Package: @arcangel.ai/mcp
 Category: developer-tools
@@ -4281,7 +4307,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @arcangel.ai/mcp
 
---- [172/419] Arcangel Trademark Search ---
+--- [173/420] Arcangel Trademark Search ---
 ID: ai.arcangel/trademark-search
 Package: N/A
 Category: web-automation
@@ -4306,7 +4332,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcangel/trademark-search
 
---- [173/419] Arcdeck ---
+--- [174/420] Arcdeck ---
 ID: ai.arcdeck/arcdeck
 Package: N/A
 Category: developer-tools
@@ -4331,7 +4357,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcdeck/arcdeck
 
---- [174/419] Archome AI ---
+--- [175/420] Archome AI ---
 ID: ai.archome/archome
 Package: N/A
 Category: developer-tools
@@ -4356,7 +4382,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.archome/archome
 
---- [175/419] Arclan MCP Registry ---
+--- [176/420] Arclan MCP Registry ---
 ID: ai.arclan/registry
 Package: N/A
 Category: developer-tools
@@ -4381,7 +4407,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arclan/registry
 
---- [176/419] Ari by Ariso ---
+--- [177/420] Ari by Ariso ---
 ID: ai.ariso/ari
 Package: N/A
 Category: ai-agents
@@ -4406,7 +4432,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ariso/ari
 
---- [177/419] Arihaan Jobs ---
+--- [178/420] Arihaan Jobs ---
 ID: ai.arihaan/jobs
 Package: N/A
 Category: web-automation
@@ -4431,7 +4457,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arihaan/jobs
 
---- [178/419] Arketo ---
+--- [179/420] Arketo ---
 ID: ai.arketo/arketo
 Package: N/A
 Category: security
@@ -4456,7 +4482,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arketo/arketo
 
---- [179/419] ARPI MCP ---
+--- [180/420] ARPI MCP ---
 ID: ai.arpi/arpi-mcp
 Package: N/A
 Category: developer-tools
@@ -4481,7 +4507,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arpi/arpi-mcp
 
---- [180/419] artidrop ---
+--- [181/420] artidrop ---
 ID: ai.artidrop/artidrop
 Package: N/A
 Category: developer-tools
@@ -4506,7 +4532,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artidrop/artidrop
 
---- [181/419] Artifactry ---
+--- [182/420] Artifactry ---
 ID: ai.artifactry/artifactry
 Package: N/A
 Category: web-automation
@@ -4531,7 +4557,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artifactry/artifactry
 
---- [182/419] Artil — Email, SMS & Messaging for AI Agents ---
+--- [183/420] Artil — Email, SMS & Messaging for AI Agents ---
 ID: ai.artil/artil
 Package: N/A
 Category: ai-agents
@@ -4556,7 +4582,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artil/artil
 
---- [183/419] ARVX ---
+--- [184/420] ARVX ---
 ID: ai.arvx/arvx
 Package: N/A
 Category: developer-tools
@@ -4581,7 +4607,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arvx/arvx
 
---- [184/419] Ask Gina ---
+--- [185/420] Ask Gina ---
 ID: ai.askgina/gina
 Package: N/A
 Category: web-automation
@@ -4606,7 +4632,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/gina
 
---- [185/419] Ask Gina Perps ---
+--- [186/420] Ask Gina Perps ---
 ID: ai.askgina/perps
 Package: N/A
 Category: developer-tools
@@ -4631,7 +4657,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/perps
 
---- [186/419] Ask Gina Predictions ---
+--- [187/420] Ask Gina Predictions ---
 ID: ai.askgina/predictions
 Package: N/A
 Category: developer-tools
@@ -4656,7 +4682,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/predictions
 
---- [187/419] Ask Gina Spot ---
+--- [188/420] Ask Gina Spot ---
 ID: ai.askgina/spot
 Package: N/A
 Category: developer-tools
@@ -4681,7 +4707,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/spot
 
---- [188/419] Ask Your Audience ---
+--- [189/420] Ask Your Audience ---
 ID: ai.askyouraudience/ask-your-audience
 Package: N/A
 Category: productivity
@@ -4706,7 +4732,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askyouraudience/ask-your-audience
 
---- [189/419] Askadia ---
+--- [190/420] Askadia ---
 ID: ai.askadia/askadia
 Package: N/A
 Category: developer-tools
@@ -4731,7 +4757,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askadia/askadia
 
---- [190/419] Askline ---
+--- [191/420] Askline ---
 ID: ai.askline/askline
 Package: N/A
 Category: developer-tools
@@ -4756,7 +4782,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askline/askline
 
---- [191/419] AskWatch Google Search Console MCP ---
+--- [192/420] AskWatch Google Search Console MCP ---
 ID: ai.askwatch/gsc
 Package: N/A
 Category: cloud-infra
@@ -4781,7 +4807,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askwatch/gsc
 
---- [192/419] asms ---
+--- [193/420] asms ---
 ID: ai.asms/asms
 Package: N/A
 Category: ai-agents
@@ -4806,7 +4832,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.asms/asms
 
---- [193/419] ASRM (AI Search Rank Monitor) ---
+--- [194/420] ASRM (AI Search Rank Monitor) ---
 ID: ai.asrm/asrm
 Package: N/A
 Category: web-automation
@@ -4831,7 +4857,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.asrm/asrm
 
---- [194/419] AssetLog ---
+--- [195/420] AssetLog ---
 ID: ai.assetlog/assetlog
 Package: N/A
 Category: web-automation
@@ -4856,7 +4882,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.assetlog/assetlog
 
---- [195/419] Assistable ---
+--- [196/420] Assistable ---
 ID: ai.assistable/assistable
 Package: N/A
 Category: ai-agents
@@ -4881,7 +4907,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.assistable/assistable
 
---- [196/419] Atako ---
+--- [197/420] Atako ---
 ID: ai.atako/mcp
 Package: N/A
 Category: ai-agents
@@ -4906,7 +4932,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atako/mcp
 
---- [197/419] Atalay ---
+--- [198/420] Atalay ---
 ID: ai.atalay/mcp
 Package: N/A
 Category: productivity
@@ -4931,7 +4957,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atalay/mcp
 
---- [198/419] aTars MCP ---
+--- [199/420] aTars MCP ---
 ID: ai.aarna/atars-mcp
 Package: N/A
 Category: ai-agents
@@ -4956,7 +4982,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aarna/atars-mcp
 
---- [199/419] Athaus für Makler ---
+--- [200/420] Athaus für Makler ---
 ID: ai.athaus/makler
 Package: N/A
 Category: ai-agents
@@ -4981,7 +5007,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.athaus/makler
 
---- [200/419] Athaus Immobiliensuche ---
+--- [201/420] Athaus Immobiliensuche ---
 ID: ai.athaus/immobiliensuche
 Package: N/A
 Category: web-automation
@@ -5006,7 +5032,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.athaus/immobiliensuche
 
---- [201/419] AthenaHQ ---
+--- [202/420] AthenaHQ ---
 ID: ai.athenahq/mcp
 Package: N/A
 Category: web-automation
@@ -5031,7 +5057,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.athenahq/mcp
 
---- [202/419] atlas-mcp ---
+--- [203/420] atlas-mcp ---
 ID: ai.atlasverified/atlas-mcp
 Package: N/A
 Category: developer-tools
@@ -5056,7 +5082,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atlasverified/atlas-mcp
 
---- [203/419] Atlaso Memory ---
+--- [204/420] Atlaso Memory ---
 ID: ai.atlaso/mcp
 Package: N/A
 Category: ai-agents
@@ -5081,7 +5107,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atlaso/mcp
 
---- [204/419] Atmark ---
+--- [205/420] Atmark ---
 ID: ai.atmark/atmark
 Package: N/A
 Category: ai-agents
@@ -5106,7 +5132,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atmark/atmark
 
---- [205/419] Atmy air quality ---
+--- [206/420] Atmy air quality ---
 ID: ai.atmy/air-quality
 Package: atmy-mcp
 Category: developer-tools
@@ -5131,7 +5157,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y atmy-mcp
 
---- [206/419] AtomSell ---
+--- [207/420] AtomSell ---
 ID: ai.atomsell/atomsell
 Package: N/A
 Category: ai-agents
@@ -5156,7 +5182,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atomsell/atomsell
 
---- [207/419] Atria ---
+--- [208/420] Atria ---
 ID: ai.askatria/atria
 Package: N/A
 Category: ai-agents
@@ -5181,7 +5207,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askatria/atria
 
---- [208/419] Attestari ---
+--- [209/420] Attestari ---
 ID: ai.attestari/attestari
 Package: attestari-mcp
 Category: ai-agents
@@ -5205,7 +5231,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx attestari-mcp
 
---- [209/419] AudioMap ---
+--- [210/420] AudioMap ---
 ID: ai.audiomap/audiomap
 Package: N/A
 Category: web-automation
@@ -5230,7 +5256,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audiomap/audiomap
 
---- [210/419] AudioPod AI ---
+--- [211/420] AudioPod AI ---
 ID: ai.audiopod/audiopod
 Package: N/A
 Category: developer-tools
@@ -5255,7 +5281,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audiopod/audiopod
 
---- [211/419] AudioPod AI (core) ---
+--- [212/420] AudioPod AI (core) ---
 ID: ai.audiopod/audiopod-core
 Package: N/A
 Category: developer-tools
@@ -5280,7 +5306,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audiopod/audiopod-core
 
---- [212/419] audit ---
+--- [213/420] audit ---
 ID: ai.beket/audit
 Package: N/A
 Category: security
@@ -5305,7 +5331,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beket/audit
 
---- [213/419] Audo ---
+--- [214/420] Audo ---
 ID: ai.audo/audo
 Package: N/A
 Category: developer-tools
@@ -5330,7 +5356,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audo/audo
 
---- [214/419] Augenix ---
+--- [215/420] Augenix ---
 ID: ai.augenix/build
 Package: N/A
 Category: monetization
@@ -5355,7 +5381,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augenix/build
 
---- [215/419] Augmap ---
+--- [216/420] Augmap ---
 ID: ai.augmap/maps
 Package: N/A
 Category: developer-tools
@@ -5380,7 +5406,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augmap/maps
 
---- [216/419] Aunoo Agentic ---
+--- [217/420] Aunoo Agentic ---
 ID: ai.aunoo/agentic
 Package: N/A
 Category: ai-agents
@@ -5405,7 +5431,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aunoo/agentic
 
---- [217/419] Auralogs ---
+--- [218/420] Auralogs ---
 ID: ai.auralogs/auralogs
 Package: N/A
 Category: web-automation
@@ -5430,7 +5456,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.auralogs/auralogs
 
---- [218/419] Auten ---
+--- [219/420] Auten ---
 ID: ai.auten/mcp
 Package: @autenai/mcp
 Category: developer-tools
@@ -5455,7 +5481,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @autenai/mcp
 
---- [219/419] AutEng Docs — Agent Document Workspace & Publishing ---
+--- [220/420] AutEng Docs — Agent Document Workspace & Publishing ---
 ID: ai.auteng/docs
 Package: N/A
 Category: ai-agents
@@ -5480,7 +5506,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.auteng/docs
 
---- [220/419] AutEng MCP - Markdown Publishing & Document Share Links ---
+--- [221/420] AutEng MCP - Markdown Publishing & Document Share Links ---
 ID: ai.auteng/mcp
 Package: N/A
 Category: developer-tools
@@ -5505,7 +5531,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.auteng/mcp
 
---- [221/419] Authoryze ---
+--- [222/420] Authoryze ---
 ID: ai.authoryze/authoryze
 Package: N/A
 Category: ai-agents
@@ -5530,7 +5556,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.authoryze/authoryze
 
---- [222/419] Autoblogging.ai ---
+--- [223/420] Autoblogging.ai ---
 ID: ai.autoblogging/autoblogging
 Package: N/A
 Category: web-automation
@@ -5555,7 +5581,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autoblogging/autoblogging
 
---- [223/419] AutoPoster AI ---
+--- [224/420] AutoPoster AI ---
 ID: ai.autoposter/autoposter
 Package: N/A
 Category: developer-tools
@@ -5580,7 +5606,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autoposter/autoposter
 
---- [224/419] Autoposting ---
+--- [225/420] Autoposting ---
 ID: ai.autoposting/autoposting
 Package: N/A
 Category: developer-tools
@@ -5605,7 +5631,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autoposting/autoposting
 
---- [225/419] AutoRFP.ai ---
+--- [226/420] AutoRFP.ai ---
 ID: ai.autorfp/mcp
 Package: N/A
 Category: web-automation
@@ -5630,7 +5656,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autorfp/mcp
 
---- [226/419] AutoTracks ---
+--- [227/420] AutoTracks ---
 ID: ai.autotracks/autotracks
 Package: N/A
 Category: developer-tools
@@ -5655,7 +5681,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autotracks/autotracks
 
---- [227/419] Autovox ---
+--- [228/420] Autovox ---
 ID: ai.autovox/autovox
 Package: N/A
 Category: productivity
@@ -5680,7 +5706,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autovox/autovox
 
---- [228/419] Autron ---
+--- [229/420] Autron ---
 ID: ai.autron/autron
 Package: N/A
 Category: developer-tools
@@ -5705,7 +5731,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autron/autron
 
---- [229/419] Auxen ---
+--- [230/420] Auxen ---
 ID: ai.auxen/auxen
 Package: N/A
 Category: developer-tools
@@ -5730,7 +5756,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.auxen/auxen
 
---- [230/419] Avasis Agent Platform ---
+--- [231/420] Avasis Agent Platform ---
 ID: ai.avasis.agents/avasis
 Package: N/A
 Category: ai-agents
@@ -5755,7 +5781,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avasis.agents/avasis
 
---- [231/419] Aviado AI ---
+--- [232/420] Aviado AI ---
 ID: ai.aviado/health
 Package: N/A
 Category: developer-tools
@@ -5780,7 +5806,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aviado/health
 
---- [232/419] Avlira Back Office ---
+--- [233/420] Avlira Back Office ---
 ID: ai.avlira/back-office
 Package: N/A
 Category: ai-agents
@@ -5805,7 +5831,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avlira/back-office
 
---- [233/419] AwardCast Federal Contracts ---
+--- [234/420] AwardCast Federal Contracts ---
 ID: ai.awardcast/federal-contracts
 Package: N/A
 Category: developer-tools
@@ -5830,7 +5856,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.awardcast/federal-contracts
 
---- [234/419] awen ---
+--- [235/420] awen ---
 ID: ai.awen/awen
 Package: N/A
 Category: ai-agents
@@ -5855,7 +5881,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.awen/awen
 
---- [235/419] AwrAIter — Telegram channels ---
+--- [236/420] AwrAIter — Telegram channels ---
 ID: ai.awraiter/telegram
 Package: N/A
 Category: developer-tools
@@ -5880,7 +5906,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.awraiter/telegram
 
---- [236/419] Axon NeuroAutomata ---
+--- [237/420] Axon NeuroAutomata ---
 ID: ai.axonagentic/neuroautomata
 Package: N/A
 Category: ai-agents
@@ -5905,7 +5931,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.axonagentic/neuroautomata
 
---- [237/419] Azquo ---
+--- [238/420] Azquo ---
 ID: ai.azquo/azquo
 Package: N/A
 Category: databases
@@ -5930,7 +5956,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.azquo/azquo
 
---- [238/419] b/cited ---
+--- [239/420] b/cited ---
 ID: ai.bcited/bcited
 Package: N/A
 Category: developer-tools
@@ -5955,7 +5981,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bcited/bcited
 
---- [239/419] B4 Index ---
+--- [240/420] B4 Index ---
 ID: ai.benroberts/b4-index
 Package: N/A
 Category: developer-tools
@@ -5980,7 +6006,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.benroberts/b4-index
 
---- [240/419] backengine-mcp ---
+--- [241/420] backengine-mcp ---
 ID: ai.backengine/backengine-mcp
 Package: N/A
 Category: ai-agents
@@ -6005,7 +6031,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.backengine/backengine-mcp
 
---- [241/419] backrow ---
+--- [242/420] backrow ---
 ID: ai.backrow/backrow
 Package: N/A
 Category: ai-agents
@@ -6030,7 +6056,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.backrow/backrow
 
---- [242/419] Balanços.AI ---
+--- [243/420] Balanços.AI ---
 ID: ai.balancos/mcp
 Package: N/A
 Category: developer-tools
@@ -6055,7 +6081,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.balancos/mcp
 
---- [243/419] BallotData ---
+--- [244/420] BallotData ---
 ID: ai.ballotdata/mcp
 Package: N/A
 Category: developer-tools
@@ -6080,7 +6106,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ballotdata/mcp
 
---- [244/419] BAMF.ai ---
+--- [245/420] BAMF.ai ---
 ID: ai.bamf/bamf
 Package: N/A
 Category: ai-agents
@@ -6105,7 +6131,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bamf/bamf
 
---- [245/419] bananabread ---
+--- [246/420] bananabread ---
 ID: ai.bananabread/bananabread
 Package: N/A
 Category: developer-tools
@@ -6130,7 +6156,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bananabread/bananabread
 
---- [246/419] Bankrolled.ai Agent Hub ---
+--- [247/420] Bankrolled.ai Agent Hub ---
 ID: ai.bankrolled/agent-hub
 Package: N/A
 Category: monetization
@@ -6155,7 +6181,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bankrolled/agent-hub
 
---- [247/419] Bareun — Korean NLP & Spell/Grammar Checking ---
+--- [248/420] Bareun — Korean NLP & Spell/Grammar Checking ---
 ID: ai.bareun/bareun
 Package: N/A
 Category: developer-tools
@@ -6180,7 +6206,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bareun/bareun
 
---- [248/419] BaseEdge Labs Account ---
+--- [249/420] BaseEdge Labs Account ---
 ID: ai.baseedgelabs/account
 Package: N/A
 Category: developer-tools
@@ -6205,7 +6231,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baseedgelabs/account
 
---- [249/419] BaseEdge Labs Catalog ---
+--- [250/420] BaseEdge Labs Catalog ---
 ID: ai.baseedgelabs/catalog
 Package: N/A
 Category: developer-tools
@@ -6230,7 +6256,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baseedgelabs/catalog
 
---- [250/419] baselight ---
+--- [251/420] baselight ---
 ID: ai.baselight/baselight
 Package: N/A
 Category: developer-tools
@@ -6255,7 +6281,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baselight/baselight
 
---- [251/419] baseray ---
+--- [252/420] baseray ---
 ID: ai.baseray/baseray
 Package: N/A
 Category: developer-tools
@@ -6280,7 +6306,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baseray/baseray
 
---- [252/419] basethread ---
+--- [253/420] basethread ---
 ID: ai.basethread/basethread
 Package: N/A
 Category: ai-agents
@@ -6305,7 +6331,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.basethread/basethread
 
---- [253/419] Bassethound by NimbleBrain ---
+--- [254/420] Bassethound by NimbleBrain ---
 ID: ai.bassethound/bassethound
 Package: N/A
 Category: ai-agents
@@ -6330,7 +6356,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bassethound/bassethound
 
---- [254/419] BaziChart ---
+--- [255/420] BaziChart ---
 ID: ai.bazichart/bazichart-mcp
 Package: N/A
 Category: developer-tools
@@ -6355,7 +6381,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bazichart/bazichart-mcp
 
---- [255/419] BeachClubs.ae ---
+--- [256/420] BeachClubs.ae ---
 ID: ae.beachclubs/mcp
 Package: N/A
 Category: web-automation
@@ -6380,7 +6406,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.beachclubs/mcp
 
---- [256/419] BeatBandit MCP ---
+--- [257/420] BeatBandit MCP ---
 ID: ai.beatbandit/beatbandit
 Package: N/A
 Category: developer-tools
@@ -6405,7 +6431,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beatbandit/beatbandit
 
---- [257/419] Beatra ---
+--- [258/420] Beatra ---
 ID: ai.beatra/beatra
 Package: N/A
 Category: ai-agents
@@ -6430,7 +6456,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beatra/beatra
 
---- [258/419] Beatview ---
+--- [259/420] Beatview ---
 ID: ai.beatview/beatview
 Package: N/A
 Category: ai-agents
@@ -6455,7 +6481,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beatview/beatview
 
---- [259/419] beauty ---
+--- [260/420] beauty ---
 ID: ai.adoraads/beauty
 Package: N/A
 Category: developer-tools
@@ -6480,7 +6506,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adoraads/beauty
 
---- [260/419] Beefi ---
+--- [261/420] Beefi ---
 ID: ai.beefi/mcp
 Package: N/A
 Category: developer-tools
@@ -6505,7 +6531,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beefi/mcp
 
---- [261/419] BeevR ---
+--- [262/420] BeevR ---
 ID: ai.beevr/beevr
 Package: N/A
 Category: developer-tools
@@ -6530,7 +6556,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beevr/beevr
 
---- [262/419] BeliefState ---
+--- [263/420] BeliefState ---
 ID: ai.beliefstate/investor-research
 Package: N/A
 Category: web-automation
@@ -6555,7 +6581,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beliefstate/investor-research
 
---- [263/419] BenchGecko ---
+--- [264/420] BenchGecko ---
 ID: ai.benchgecko/benchgecko
 Package: N/A
 Category: developer-tools
@@ -6580,7 +6606,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.benchgecko/benchgecko
 
---- [264/419] BenchLM Data ---
+--- [265/420] BenchLM Data ---
 ID: ai.benchlm/data
 Package: N/A
 Category: developer-tools
@@ -6605,7 +6631,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.benchlm/data
 
---- [265/419] Best AI Search Agency AEO Report ---
+--- [266/420] Best AI Search Agency AEO Report ---
 ID: ai.aeoengine/best-ai-search-agency-aeo-report
 Package: N/A
 Category: security
@@ -6630,7 +6656,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aeoengine/best-ai-search-agency-aeo-report
 
---- [266/419] BetSlip Doctor ---
+--- [267/420] BetSlip Doctor ---
 ID: ai.betslipdoctor/mcp
 Package: N/A
 Category: ai-agents
@@ -6655,7 +6681,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.betslipdoctor/mcp
 
---- [267/419] BetterPost ---
+--- [268/420] BetterPost ---
 ID: ai.betterpost/server
 Package: N/A
 Category: developer-tools
@@ -6680,7 +6706,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.betterpost/server
 
---- [268/419] bevGTIN ---
+--- [269/420] bevGTIN ---
 ID: ai.agent-bev/bevgtin
 Package: N/A
 Category: ai-agents
@@ -6705,7 +6731,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agent-bev/bevgtin
 
---- [269/419] Bezal — Local Business Intelligence for AI Agents ---
+--- [270/420] Bezal — Local Business Intelligence for AI Agents ---
 ID: ai.bezal/local-commerce
 Package: N/A
 Category: ai-agents
@@ -6730,7 +6756,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bezal/local-commerce
 
---- [270/419] BidBetter collector-car values ---
+--- [271/420] BidBetter collector-car values ---
 ID: ai.bidbetter/collector-car-values
 Package: N/A
 Category: databases
@@ -6755,7 +6781,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bidbetter/collector-car-values
 
---- [271/419] bidclub ---
+--- [272/420] bidclub ---
 ID: ai.bidclub/bidclub
 Package: N/A
 Category: web-automation
@@ -6780,7 +6806,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bidclub/bidclub
 
---- [272/419] BidDeed MCP ---
+--- [273/420] BidDeed MCP ---
 ID: ai.biddeed/biddeed-mcp
 Package: N/A
 Category: developer-tools
@@ -6805,7 +6831,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.biddeed/biddeed-mcp
 
---- [273/419] Biel.ai ---
+--- [274/420] Biel.ai ---
 ID: ai.biel/biel-ai
 Package: N/A
 Category: developer-tools
@@ -6830,7 +6856,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.biel/biel-ai
 
---- [274/419] Bindry ---
+--- [275/420] Bindry ---
 ID: ai.bindry/bindry
 Package: N/A
 Category: developer-tools
@@ -6855,7 +6881,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bindry/bindry
 
---- [275/419] bitHuman ---
+--- [276/420] bitHuman ---
 ID: ai.bithuman/characters
 Package: N/A
 Category: developer-tools
@@ -6880,7 +6906,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bithuman/characters
 
---- [276/419] bitHuman docs ---
+--- [277/420] bitHuman docs ---
 ID: ai.bithuman/docs
 Package: N/A
 Category: web-automation
@@ -6905,7 +6931,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bithuman/docs
 
---- [277/419] bitroad ---
+--- [278/420] bitroad ---
 ID: ai.bitroad/bitroad
 Package: N/A
 Category: ai-agents
@@ -6930,7 +6956,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bitroad/bitroad
 
---- [278/419] BittleBits GEO Assistant ---
+--- [279/420] BittleBits GEO Assistant ---
 ID: ai.bittlebits/bittlebits
 Package: N/A
 Category: developer-tools
@@ -6955,7 +6981,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bittlebits/bittlebits
 
---- [279/419] BitTuitive ---
+--- [280/420] BitTuitive ---
 ID: ai.bittuitive.api/bittuitive
 Package: N/A
 Category: monetization
@@ -6980,7 +7006,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bittuitive.api/bittuitive
 
---- [280/419] BizMuse AI Music Video ---
+--- [281/420] BizMuse AI Music Video ---
 ID: ai.bizmuse/bizmuse
 Package: bizmuse-mcp
 Category: developer-tools
@@ -7005,7 +7031,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y bizmuse-mcp
 
---- [281/419] blast-radius ---
+--- [282/420] blast-radius ---
 ID: ai.blast-radius/blast-radius
 Package: N/A
 Category: developer-tools
@@ -7030,7 +7056,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blast-radius/blast-radius
 
---- [282/419] Blaze ---
+--- [283/420] Blaze ---
 ID: ai.blaze.app/blaze
 Package: N/A
 Category: productivity
@@ -7055,7 +7081,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blaze.app/blaze
 
---- [283/419] BliniBot Agent Lounge ---
+--- [284/420] BliniBot Agent Lounge ---
 ID: ai.blinibot/agent-lounge
 Package: N/A
 Category: ai-agents
@@ -7080,7 +7106,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blinibot/agent-lounge
 
---- [284/419] Blipsmith Sound Effects ---
+--- [285/420] Blipsmith Sound Effects ---
 ID: ai.blipsmith/sound-effects
 Package: N/A
 Category: ai-agents
@@ -7105,7 +7131,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blipsmith/sound-effects
 
---- [285/419] BlitzAPI ---
+--- [286/420] BlitzAPI ---
 ID: ai.blitz-api/b2b-data
 Package: N/A
 Category: productivity
@@ -7130,7 +7156,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blitz-api/b2b-data
 
---- [286/419] Bloopo — Creative MCP ---
+--- [287/420] Bloopo — Creative MCP ---
 ID: ai.bloopo/bloopo
 Package: N/A
 Category: web-automation
@@ -7155,7 +7181,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bloopo/bloopo
 
---- [287/419] Bluebox ---
+--- [288/420] Bluebox ---
 ID: ai.bluebox/mcp
 Package: N/A
 Category: developer-tools
@@ -7180,7 +7206,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluebox/mcp
 
---- [288/419] BlueNexus Universal MCP ---
+--- [289/420] BlueNexus Universal MCP ---
 ID: ai.bluenexus/universal-mcp
 Package: N/A
 Category: developer-tools
@@ -7205,7 +7231,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluenexus/universal-mcp
 
---- [289/419] bluerate: Find a Mortgage Loan Officer ---
+--- [290/420] bluerate: Find a Mortgage Loan Officer ---
 ID: ai.bluerate/loan-officers
 Package: N/A
 Category: developer-tools
@@ -7230,7 +7256,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluerate/loan-officers
 
---- [290/419] BnBGenius MCP for Airbnb hosts ---
+--- [291/420] BnBGenius MCP for Airbnb hosts ---
 ID: ai.bnbgenius/mcp
 Package: N/A
 Category: developer-tools
@@ -7255,7 +7281,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bnbgenius/mcp
 
---- [291/419] BoardMark ---
+--- [292/420] BoardMark ---
 ID: ai.boardmark/boardmark
 Package: N/A
 Category: developer-tools
@@ -7280,7 +7306,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boardmark/boardmark
 
---- [292/419] Bobos Dispatcher ---
+--- [293/420] Bobos Dispatcher ---
 ID: ai.bobos/dispatcher
 Package: N/A
 Category: developer-tools
@@ -7305,7 +7331,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bobos/dispatcher
 
---- [293/419] bodenrichtwert.ai — Verlässliche Bodenrichtwerte für Mensch und KI ---
+--- [294/420] bodenrichtwert.ai — Verlässliche Bodenrichtwerte für Mensch und KI ---
 ID: ai.bodenrichtwert/mcp
 Package: N/A
 Category: ai-agents
@@ -7330,7 +7356,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bodenrichtwert/mcp
 
---- [294/419] Bolt Claw ---
+--- [295/420] Bolt Claw ---
 ID: ai.boltclaw/boltclaw
 Package: N/A
 Category: developer-tools
@@ -7355,7 +7381,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boltclaw/boltclaw
 
---- [295/419] Bolt Claw documentation ---
+--- [296/420] Bolt Claw documentation ---
 ID: ai.boltclaw/docs
 Package: N/A
 Category: web-automation
@@ -7380,7 +7406,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boltclaw/docs
 
---- [296/419] bolthub ---
+--- [297/420] bolthub ---
 ID: ai.bolthub/mcp
 Package: @bolthub/mcp
 Category: developer-tools
@@ -7405,7 +7431,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @bolthub/mcp
 
---- [297/419] bolthub Marketplace ---
+--- [298/420] bolthub Marketplace ---
 ID: ai.bolthub/registry
 Package: @bolthub/mcp-registry
 Category: monetization
@@ -7430,7 +7456,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @bolthub/mcp-registry
 
---- [298/419] Boolsai Directory ---
+--- [299/420] Boolsai Directory ---
 ID: ai.boolsai/directory
 Package: N/A
 Category: developer-tools
@@ -7455,7 +7481,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/directory
 
---- [299/419] Boolsai Grep ---
+--- [300/420] Boolsai Grep ---
 ID: ai.boolsai/grep
 Package: N/A
 Category: developer-tools
@@ -7480,7 +7506,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/grep
 
---- [300/419] Boolsai Scan ---
+--- [301/420] Boolsai Scan ---
 ID: ai.boolsai/scan
 Package: N/A
 Category: developer-tools
@@ -7505,7 +7531,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/scan
 
---- [301/419] Boolsai Signals ---
+--- [302/420] Boolsai Signals ---
 ID: ai.boolsai/signals
 Package: N/A
 Category: web-automation
@@ -7530,7 +7556,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/signals
 
---- [302/419] Boomlink ---
+--- [303/420] Boomlink ---
 ID: ai.boomlink/boomlink
 Package: N/A
 Category: databases
@@ -7555,7 +7581,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boomlink/boomlink
 
---- [303/419] Boon ---
+--- [304/420] Boon ---
 ID: ai.boon/boon
 Package: N/A
 Category: developer-tools
@@ -7580,7 +7606,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boon/boon
 
---- [304/419] Booqer ---
+--- [305/420] Booqer ---
 ID: ai.booqer/booqer
 Package: N/A
 Category: developer-tools
@@ -7605,7 +7631,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.booqer/booqer
 
---- [305/419] bootkey ---
+--- [306/420] bootkey ---
 ID: ai.bootkey/bootkey
 Package: N/A
 Category: ai-agents
@@ -7630,7 +7656,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bootkey/bootkey
 
---- [306/419] boqo ---
+--- [307/420] boqo ---
 ID: ai.boqo/boqo
 Package: N/A
 Category: ai-agents
@@ -7655,7 +7681,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boqo/boqo
 
---- [307/419] Bordet AI ---
+--- [308/420] Bordet AI ---
 ID: ai.bordet/bordet
 Package: N/A
 Category: ai-agents
@@ -7680,7 +7706,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bordet/bordet
 
---- [308/419] BorealHost ---
+--- [309/420] BorealHost ---
 ID: ai.borealhost/mcp
 Package: borealhost-mcp
 Category: ai-agents
@@ -7704,7 +7730,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx borealhost-mcp
 
---- [309/419] Bot Appétit ---
+--- [310/420] Bot Appétit ---
 ID: ai.botappetit/bot-appetit
 Package: N/A
 Category: developer-tools
@@ -7729,7 +7755,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.botappetit/bot-appetit
 
---- [310/419] Bot Office ---
+--- [311/420] Bot Office ---
 ID: ai.aibotoffice/bot-office
 Package: N/A
 Category: ai-agents
@@ -7754,7 +7780,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aibotoffice/bot-office
 
---- [311/419] BotInfo — Advanced Robot Market Data ---
+--- [312/420] BotInfo — Advanced Robot Market Data ---
 ID: ai.botinfo/robot-market-data
 Package: N/A
 Category: developer-tools
@@ -7779,7 +7805,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.botinfo/robot-market-data
 
---- [312/419] boundaryai ---
+--- [313/420] boundaryai ---
 ID: ai.boundaryai/boundaryai
 Package: N/A
 Category: ai-agents
@@ -7804,7 +7830,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boundaryai/boundaryai
 
---- [313/419] Bourdon ---
+--- [314/420] Bourdon ---
 ID: ai.bourdon/bourdon
 Package: bourdon
 Category: ai-agents
@@ -7828,7 +7854,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx bourdon
 
---- [314/419] Bowmark ---
+--- [315/420] Bowmark ---
 ID: ai.bowmark/bowmark
 Package: N/A
 Category: developer-tools
@@ -7853,7 +7879,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bowmark/bowmark
 
---- [315/419] Brainy Prices — UAE Cost of Living ---
+--- [316/420] Brainy Prices — UAE Cost of Living ---
 ID: ae.brainy/grocery-prices
 Package: N/A
 Category: developer-tools
@@ -7878,7 +7904,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.brainy/grocery-prices
 
---- [316/419] Bureau public reader ---
+--- [317/420] Bureau public reader ---
 ID: agency.thebureauoflostcontext/bureau-public
 Package: N/A
 Category: ai-agents
@@ -7903,7 +7929,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.thebureauoflostcontext/bureau-public
 
---- [317/419] Business Contact Finder ---
+--- [318/420] Business Contact Finder ---
 ID: agency.ottobot/business-contact-finder
 Package: N/A
 Category: developer-tools
@@ -7928,7 +7954,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.ottobot/business-contact-finder
 
---- [318/419] catalog ---
+--- [319/420] catalog ---
 ID: ai.askmiles/catalog
 Package: N/A
 Category: monetization
@@ -7953,7 +7979,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askmiles/catalog
 
---- [319/419] Chess Results ---
+--- [320/420] Chess Results ---
 ID: ai.b77/chess-results
 Package: N/A
 Category: developer-tools
@@ -7978,7 +8004,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/chess-results
 
---- [320/419] computeback ---
+--- [321/420] computeback ---
 ID: ai.autonomad/computeback
 Package: @autonomad1/computeback-mcp
 Category: ai-agents
@@ -8003,7 +8029,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @autonomad1/computeback-mcp
 
---- [321/419] contextburn ---
+--- [322/420] contextburn ---
 ID: ai.arsentev/contextburn
 Package: contextburn
 Category: ai-agents
@@ -8027,7 +8053,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx contextburn
 
---- [322/419] contextlayer-mcp ---
+--- [323/420] contextlayer-mcp ---
 ID: ai.autoblocks/contextlayer-mcp
 Package: @contextlayer/mcp
 Category: ai-agents
@@ -8052,7 +8078,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @contextlayer/mcp
 
---- [323/419] Contractor Licence Changes ---
+--- [324/420] Contractor Licence Changes ---
 ID: agency.ottobot/contractor-license-changes
 Package: N/A
 Category: developer-tools
@@ -8077,7 +8103,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.ottobot/contractor-license-changes
 
---- [324/419] CounterScript - Drug Price Benchmarks ---
+--- [325/420] CounterScript - Drug Price Benchmarks ---
 ID: ai.agentlookups/counterscript
 Package: N/A
 Category: ai-agents
@@ -8102,7 +8128,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/counterscript
 
---- [325/419] ctxl ---
+--- [326/420] ctxl ---
 ID: ai.autoblocks/ctxl
 Package: ctxl
 Category: ai-agents
@@ -8127,7 +8153,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ctxl
 
---- [326/419] ctxl-mcp ---
+--- [327/420] ctxl-mcp ---
 ID: ai.autoblocks/ctxl-mcp
 Package: ctxl-mcp
 Category: ai-agents
@@ -8152,7 +8178,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ctxl-mcp
 
---- [327/419] Discond ---
+--- [328/420] Discond ---
 ID: ae.discond/discond
 Package: N/A
 Category: developer-tools
@@ -8177,7 +8203,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.discond/discond
 
---- [328/419] docs-mcp ---
+--- [329/420] docs-mcp ---
 ID: ac.tandem/docs-mcp
 Package: N/A
 Category: ai-agents
@@ -8202,7 +8228,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ac.tandem/docs-mcp
 
---- [329/419] Dubai Data — Dubai real estate statistics ---
+--- [330/420] Dubai Data — Dubai real estate statistics ---
 ID: ae.datadubai/dubai-real-estate
 Package: N/A
 Category: developer-tools
@@ -8227,7 +8253,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.datadubai/dubai-real-estate
 
---- [330/419] EasyVoice text to speech ---
+--- [331/420] EasyVoice text to speech ---
 ID: ae.easyvoice/tts
 Package: N/A
 Category: developer-tools
@@ -8252,7 +8278,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.easyvoice/tts
 
---- [331/419] emailwarmup ---
+--- [332/420] emailwarmup ---
 ID: ai.bobwork/emailwarmup
 Package: N/A
 Category: productivity
@@ -8277,7 +8303,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bobwork/emailwarmup
 
---- [332/419] enforcement-database ---
+--- [333/420] enforcement-database ---
 ID: ai.argushq/enforcement-database
 Package: N/A
 Category: databases
@@ -8302,7 +8328,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.argushq/enforcement-database
 
---- [333/419] Events.Aero ---
+--- [334/420] Events.Aero ---
 ID: aero.events/events
 Package: N/A
 Category: developer-tools
@@ -8327,7 +8353,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y aero.events/events
 
---- [334/419] Excellent ---
+--- [335/420] Excellent ---
 ID: ai.beexcellent/excellent
 Package: N/A
 Category: developer-tools
@@ -8352,7 +8378,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beexcellent/excellent
 
---- [335/419] Excellent Reference (free) ---
+--- [336/420] Excellent Reference (free) ---
 ID: ai.beexcellent/reference
 Package: N/A
 Category: developer-tools
@@ -8377,7 +8403,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beexcellent/reference
 
---- [336/419] EXTREMELY agency ---
+--- [337/420] EXTREMELY agency ---
 ID: agency.extremely/agency
 Package: @extremely-agency/mcp
 Category: ai-agents
@@ -8402,7 +8428,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @extremely-agency/mcp
 
---- [337/419] Fabric Verify ---
+--- [338/420] Fabric Verify ---
 ID: ai.augmentev/fabric-verify
 Package: @augmentev/fabric-verify-mcp
 Category: ai-agents
@@ -8427,7 +8453,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @augmentev/fabric-verify-mcp
 
---- [338/419] Feedback ---
+--- [339/420] Feedback ---
 ID: ai.b77/feedback
 Package: N/A
 Category: databases
@@ -8452,7 +8478,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/feedback
 
---- [339/419] Fenlight ---
+--- [340/420] Fenlight ---
 ID: ae.waggle/fenlight
 Package: N/A
 Category: web-automation
@@ -8477,7 +8503,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.waggle/fenlight
 
---- [340/419] Fibalo ---
+--- [341/420] Fibalo ---
 ID: ai.b77/fibalo
 Package: N/A
 Category: developer-tools
@@ -8502,7 +8528,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/fibalo
 
---- [341/419] File Storage ---
+--- [342/420] File Storage ---
 ID: ai.b77/file-storage
 Package: N/A
 Category: ai-agents
@@ -8527,7 +8553,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/file-storage
 
---- [342/419] Framerfy ---
+--- [343/420] Framerfy ---
 ID: ae.framerfy/store-builder
 Package: N/A
 Category: developer-tools
@@ -8552,7 +8578,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.framerfy/store-builder
 
---- [343/419] GENOSYS UAE ---
+--- [344/420] GENOSYS UAE ---
 ID: ae.genosys/genosys
 Package: N/A
 Category: developer-tools
@@ -8577,7 +8603,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.genosys/genosys
 
---- [344/419] Getlead ---
+--- [345/420] Getlead ---
 ID: ad.getle/leads
 Package: N/A
 Category: productivity
@@ -8602,7 +8628,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.getle/leads
 
---- [345/419] goji ---
+--- [346/420] goji ---
 ID: agency.goji/goji
 Package: N/A
 Category: developer-tools
@@ -8627,7 +8653,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.goji/goji
 
---- [346/419] Google Ads ---
+--- [347/420] Google Ads ---
 ID: ai.b77/google-ads
 Package: N/A
 Category: developer-tools
@@ -8652,7 +8678,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/google-ads
 
---- [347/419] Google News ---
+--- [348/420] Google News ---
 ID: ai.b77/google-news
 Package: N/A
 Category: web-automation
@@ -8677,7 +8703,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/google-news
 
---- [348/419] Google Search Console ---
+--- [349/420] Google Search Console ---
 ID: ai.b77/google-search-console
 Package: N/A
 Category: web-automation
@@ -8702,7 +8728,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/google-search-console
 
---- [349/419] google-ads ---
+--- [350/420] google-ads ---
 ID: ai.adramp/google-ads
 Package: N/A
 Category: developer-tools
@@ -8727,7 +8753,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adramp/google-ads
 
---- [350/419] Graffeo Coffee Roasting ---
+--- [351/420] Graffeo Coffee Roasting ---
 ID: ai.agenticshelf/graffeo
 Package: N/A
 Category: ai-agents
@@ -8752,7 +8778,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticshelf/graffeo
 
---- [351/419] Granek Signal ---
+--- [352/420] Granek Signal ---
 ID: agency.granek.signal/signal
 Package: N/A
 Category: developer-tools
@@ -8777,7 +8803,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.granek.signal/signal
 
---- [352/419] GreenLight - Plug-in Solar Law Registry ---
+--- [353/420] GreenLight - Plug-in Solar Law Registry ---
 ID: ai.agentlookups/greenlight
 Package: N/A
 Category: ai-agents
@@ -8802,7 +8828,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/greenlight
 
---- [353/419] groTAX by Grovisor ---
+--- [354/420] groTAX by Grovisor ---
 ID: ae.grovisor/grotax
 Package: N/A
 Category: developer-tools
@@ -8827,7 +8853,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.grovisor/grotax
 
---- [354/419] GroundRules - US Law Text ---
+--- [355/420] GroundRules - US Law Text ---
 ID: ai.agentlookups/groundrules
 Package: N/A
 Category: ai-agents
@@ -8852,7 +8878,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/groundrules
 
---- [355/419] GroundTruth - Environmental Records ---
+--- [356/420] GroundTruth - Environmental Records ---
 ID: ai.agentlookups/groundtruth
 Package: N/A
 Category: ai-agents
@@ -8877,7 +8903,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/groundtruth
 
---- [356/419] gtm-engineer ---
+--- [357/420] gtm-engineer ---
 ID: ai.artemisgtm/gtm-engineer
 Package: N/A
 Category: developer-tools
@@ -8902,7 +8928,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artemisgtm/gtm-engineer
 
---- [357/419] Harness ---
+--- [358/420] Harness ---
 ID: ai.autonomous.harness/harness
 Package: @autonomous-ai/harness-mcp
 Category: ai-agents
@@ -8927,7 +8953,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @autonomous-ai/harness-mcp
 
---- [358/419] hood. — .hood name service ---
+--- [359/420] hood. — .hood name service ---
 ID: ag.hood/name-service
 Package: N/A
 Category: developer-tools
@@ -8952,7 +8978,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ag.hood/name-service
 
---- [359/419] ideation ---
+--- [360/420] ideation ---
 ID: ai.actwise/ideation
 Package: N/A
 Category: developer-tools
@@ -8977,7 +9003,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.actwise/ideation
 
---- [360/419] inference.sh ---
+--- [361/420] inference.sh ---
 ID: ac.inference.sh/mcp
 Package: N/A
 Category: ai-agents
@@ -9002,7 +9028,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ac.inference.sh/mcp
 
---- [361/419] Inferventis MCP Server ---
+--- [362/420] Inferventis MCP Server ---
 ID: ai.bankee/inferventis-mcp
 Package: N/A
 Category: ai-agents
@@ -9027,7 +9053,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bankee/inferventis-mcp
 
---- [362/419] Inside Ads ---
+--- [363/420] Inside Ads ---
 ID: ad.inside/inside-ads
 Package: N/A
 Category: developer-tools
@@ -9052,7 +9078,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.inside/inside-ads
 
---- [363/419] JustIdea Agency ---
+--- [364/420] JustIdea Agency ---
 ID: agency.justidea/justidea-agency
 Package: N/A
 Category: developer-tools
@@ -9077,7 +9103,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.justidea/justidea-agency
 
---- [364/419] Kinnovis Self-Storage ---
+--- [365/420] Kinnovis Self-Storage ---
 ID: ai.b77/kinnovis-storage
 Package: N/A
 Category: ai-agents
@@ -9102,7 +9128,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/kinnovis-storage
 
---- [365/419] Knowledge Base ---
+--- [366/420] Knowledge Base ---
 ID: ai.b77/knowledge-base
 Package: N/A
 Category: web-automation
@@ -9127,7 +9153,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/knowledge-base
 
---- [366/419] Licensed House Painters ---
+--- [367/420] Licensed House Painters ---
 ID: agency.ottobot/licensed-house-painters
 Package: N/A
 Category: developer-tools
@@ -9152,7 +9178,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.ottobot/licensed-house-painters
 
---- [367/419] LifeClaw ---
+--- [368/420] LifeClaw ---
 ID: ai.agentese.lifeclaw/lifeclaw
 Package: N/A
 Category: ai-agents
@@ -9177,7 +9203,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentese.lifeclaw/lifeclaw
 
---- [368/419] lomi. ---
+--- [369/420] lomi. ---
 ID: africa.lomi/mcp
 Package: N/A
 Category: monetization
@@ -9202,7 +9228,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y africa.lomi/mcp
 
---- [369/419] mcp ---
+--- [370/420] mcp ---
 ID: ai.aient/mcp
 Package: N/A
 Category: productivity
@@ -9227,7 +9253,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aient/mcp
 
---- [370/419] mcp ---
+--- [371/420] mcp ---
 ID: ai.aivonic/mcp
 Package: N/A
 Category: developer-tools
@@ -9252,7 +9278,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aivonic/mcp
 
---- [371/419] mcp ---
+--- [372/420] mcp ---
 ID: ai.astrofabric/mcp
 Package: N/A
 Category: ai-agents
@@ -9277,7 +9303,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.astrofabric/mcp
 
---- [372/419] Mizan ---
+--- [373/420] Mizan ---
 ID: ac.mizan/registry
 Package: N/A
 Category: developer-tools
@@ -9302,7 +9328,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ac.mizan/registry
 
---- [373/419] Moha: hire in the UAE ---
+--- [374/420] Moha: hire in the UAE ---
 ID: ae.employerofrecord/moha
 Package: N/A
 Category: developer-tools
@@ -9327,7 +9353,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.employerofrecord/moha
 
---- [374/419] Moha: your account ---
+--- [375/420] Moha: your account ---
 ID: ae.employerofrecord/moha-account
 Package: N/A
 Category: developer-tools
@@ -9352,7 +9378,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.employerofrecord/moha-account
 
---- [375/419] MRK Dubai Property ---
+--- [376/420] MRK Dubai Property ---
 ID: ae.mrk/dubai-property
 Package: N/A
 Category: developer-tools
@@ -9377,7 +9403,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.mrk/dubai-property
 
---- [376/419] Nightscout ---
+--- [377/420] Nightscout ---
 ID: ai.b77/nightscout
 Package: N/A
 Category: developer-tools
@@ -9402,7 +9428,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/nightscout
 
---- [377/419] One-Page Readiness Check — 10 Signals, Arabic or English ---
+--- [378/420] One-Page Readiness Check — 10 Signals, Arabic or English ---
 ID: ai.advisorsai/store-readiness
 Package: N/A
 Category: developer-tools
@@ -9427,7 +9453,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.advisorsai/store-readiness
 
---- [378/419] overassessed ---
+--- [379/420] overassessed ---
 ID: ai.agentlookups/overassessed
 Package: N/A
 Category: ai-agents
@@ -9452,7 +9478,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/overassessed
 
---- [379/419] Pantheon ---
+--- [380/420] Pantheon ---
 ID: ad.pantheon/mcp
 Package: N/A
 Category: developer-tools
@@ -9477,7 +9503,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.pantheon/mcp
 
---- [380/419] paseo ---
+--- [381/420] paseo ---
 ID: ai.augmentev/paseo
 Package: N/A
 Category: ai-agents
@@ -9502,7 +9528,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augmentev/paseo
 
---- [381/419] Plant Guide: Dubai gardening research ---
+--- [382/420] Plant Guide: Dubai gardening research ---
 ID: ae.plantguide/dubai-gardening
 Package: N/A
 Category: web-automation
@@ -9527,7 +9553,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.plantguide/dubai-gardening
 
---- [382/419] Plumbline - Contractor License Checks ---
+--- [383/420] Plumbline - Contractor License Checks ---
 ID: ai.agentlookups/plumbline
 Package: N/A
 Category: ai-agents
@@ -9552,7 +9578,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/plumbline
 
---- [383/419] Pre-Trip compliance scanner ---
+--- [384/420] Pre-Trip compliance scanner ---
 ID: agency.kesey/pretrip
 Package: pretrip-mcp
 Category: developer-tools
@@ -9577,7 +9603,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y pretrip-mcp
 
---- [384/419] Project Desk ---
+--- [385/420] Project Desk ---
 ID: ai.atlier/project-desk
 Package: N/A
 Category: ai-agents
@@ -9602,7 +9628,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atlier/project-desk
 
---- [385/419] Projectory ---
+--- [386/420] Projectory ---
 ID: ae.projectory/mcp
 Package: N/A
 Category: web-automation
@@ -9627,7 +9653,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.projectory/mcp
 
---- [386/419] Propick Integration MCP ---
+--- [387/420] Propick Integration MCP ---
 ID: ae.propick/propick
 Package: N/A
 Category: developer-tools
@@ -9652,7 +9678,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.propick/propick
 
---- [387/419] PuroAir ---
+--- [388/420] PuroAir ---
 ID: ai.agenticshelf/puroair
 Package: N/A
 Category: ai-agents
@@ -9677,7 +9703,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticshelf/puroair
 
---- [388/419] quant-research ---
+--- [389/420] quant-research ---
 ID: ai.avasis/quant-research
 Package: N/A
 Category: web-automation
@@ -9702,7 +9728,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avasis/quant-research
 
---- [389/419] Reasonbook ---
+--- [390/420] Reasonbook ---
 ID: ai.aquex/reasonbook
 Package: @aquex/reasonbook
 Category: ai-agents
@@ -9727,7 +9753,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aquex/reasonbook
 
---- [390/419] regulatory ---
+--- [391/420] regulatory ---
 ID: ai.bizmoon/regulatory
 Package: N/A
 Category: developer-tools
@@ -9752,7 +9778,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bizmoon/regulatory
 
---- [391/419] resolver ---
+--- [392/420] resolver ---
 ID: ai.anha/resolver
 Package: N/A
 Category: ai-agents
@@ -9777,7 +9803,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anha/resolver
 
---- [392/419] seal ---
+--- [393/420] seal ---
 ID: ai.aqta/seal
 Package: N/A
 Category: developer-tools
@@ -9802,7 +9828,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aqta/seal
 
---- [393/419] SEO & GEO by Alvin's Club ---
+--- [394/420] SEO & GEO by Alvin's Club ---
 ID: ai.alvinsclub.studio/seo
 Package: N/A
 Category: security
@@ -9827,7 +9853,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/seo
 
---- [394/419] SEO Content Factory ---
+--- [395/420] SEO Content Factory ---
 ID: ai.b77/seo-content-factory
 Package: N/A
 Category: developer-tools
@@ -9852,7 +9878,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/seo-content-factory
 
---- [395/419] Service Engineer AI ---
+--- [396/420] Service Engineer AI ---
 ID: academy.serviceengineer/se-ai
 Package: N/A
 Category: developer-tools
@@ -9877,7 +9903,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y academy.serviceengineer/se-ai
 
---- [396/419] Singapore new launches ---
+--- [397/420] Singapore new launches ---
 ID: ai.bluebed.property/new-launches
 Package: N/A
 Category: developer-tools
@@ -9902,7 +9928,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluebed.property/new-launches
 
---- [397/419] snag ---
+--- [398/420] snag ---
 ID: ac.snag/snag
 Package: N/A
 Category: ai-agents
@@ -9927,7 +9953,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ac.snag/snag
 
---- [398/419] Spoon Scout - Food Contaminant Lookup ---
+--- [399/420] Spoon Scout - Food Contaminant Lookup ---
 ID: ai.agentlookups/spoon-scout
 Package: N/A
 Category: ai-agents
@@ -9952,7 +9978,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/spoon-scout
 
---- [399/419] spotdb ---
+--- [400/420] spotdb ---
 ID: ai.aliengiraffe/spotdb
 Package: docker.io/aliengiraffe/spotdb:0.1.0
 Category: security
@@ -9977,7 +10003,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y docker.io/aliengiraffe/spotdb:0.1.0
 
---- [400/419] stage1 ---
+--- [401/420] stage1 ---
 ID: ai.aquex/stage1
 Package: @aquex/stage1
 Category: developer-tools
@@ -10002,7 +10028,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aquex/stage1
 
---- [401/419] StartupList Africa ---
+--- [402/420] StartupList Africa ---
 ID: africa.startuplist/mcp
 Package: N/A
 Category: web-automation
@@ -10027,7 +10053,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y africa.startuplist/mcp
 
---- [402/419] supershopping ---
+--- [403/420] supershopping ---
 ID: ai.atdev/supershopping
 Package: N/A
 Category: developer-tools
@@ -10052,7 +10078,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atdev/supershopping
 
---- [403/419] Switchboard ---
+--- [404/420] Switchboard ---
 ID: ai.anywhereintelligence/switchboard
 Package: N/A
 Category: ai-agents
@@ -10077,7 +10103,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anywhereintelligence/switchboard
 
---- [404/419] Teamwork ---
+--- [405/420] Teamwork ---
 ID: ai.b77/teamwork
 Package: N/A
 Category: developer-tools
@@ -10102,7 +10128,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/teamwork
 
---- [405/419] test-mcp-server ---
+--- [406/420] test-mcp-server ---
 ID: ai.alpic.test/test-mcp-server
 Package: N/A
 Category: developer-tools
@@ -10127,7 +10153,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alpic.test/test-mcp-server
 
---- [406/419] Third Hemisphere AI Authority Index ---
+--- [407/420] Third Hemisphere AI Authority Index ---
 ID: agency.thirdhemisphere/ai-authority-index
 Package: N/A
 Category: developer-tools
@@ -10152,7 +10178,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.thirdhemisphere/ai-authority-index
 
---- [407/419] tide ---
+--- [408/420] tide ---
 ID: ad.tide/mcp
 Package: N/A
 Category: databases
@@ -10177,7 +10203,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.tide/mcp
 
---- [408/419] Time ---
+--- [409/420] Time ---
 ID: ai.b77/time
 Package: N/A
 Category: developer-tools
@@ -10202,7 +10228,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/time
 
---- [409/419] Tipline: unofficial GTA 6 guide ---
+--- [410/420] Tipline: unofficial GTA 6 guide ---
 ID: ae.brainy.tipline/gta6
 Package: N/A
 Category: developer-tools
@@ -10227,7 +10253,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.brainy.tipline/gta6
 
---- [410/419] trading ---
+--- [411/420] trading ---
 ID: agency.lona/trading
 Package: N/A
 Category: developer-tools
@@ -10252,7 +10278,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.lona/trading
 
---- [411/419] travel ---
+--- [412/420] travel ---
 ID: ai.autonomad/travel
 Package: autonomad-travel
 Category: developer-tools
@@ -10277,7 +10303,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y autonomad-travel
 
---- [412/419] Travel World ---
+--- [413/420] Travel World ---
 ID: ai.augworlds/travel-world
 Package: N/A
 Category: ai-agents
@@ -10302,7 +10328,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augworlds/travel-world
 
---- [413/419] Tributs ---
+--- [414/420] Tributs ---
 ID: ad.tributs/mcp
 Package: N/A
 Category: developer-tools
@@ -10327,7 +10353,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.tributs/mcp
 
---- [414/419] UGC, the Human Ad Network ---
+--- [415/420] UGC, the Human Ad Network ---
 ID: africa.ugc/ugc
 Package: N/A
 Category: developer-tools
@@ -10352,7 +10378,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y africa.ugc/ugc
 
---- [415/419] Vera ---
+--- [416/420] Vera ---
 ID: ae.waggle/vera
 Package: N/A
 Category: monetization
@@ -10377,7 +10403,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.waggle/vera
 
---- [416/419] Web Analytics ---
+--- [417/420] Web Analytics ---
 ID: ai.b77/web-analytics
 Package: N/A
 Category: developer-tools
@@ -10402,7 +10428,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/web-analytics
 
---- [417/419] Web Content & URL Tools ---
+--- [418/420] Web Content & URL Tools ---
 ID: ai.avaloncompany/web-content-url-tools
 Package: N/A
 Category: productivity
@@ -10427,7 +10453,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avaloncompany/web-content-url-tools
 
---- [418/419] Web Search API for all your agents and LLMs ---
+--- [419/420] Web Search API for all your agents and LLMs ---
 ID: ai.blopus/search
 Package: N/A
 Category: ai-agents
@@ -10452,7 +10478,7 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blopus/search
 
---- [419/419] zoll.agency ---
+--- [420/420] zoll.agency ---
 ID: agency.zoll/ausfuhr
 Package: N/A
 Category: developer-tools
