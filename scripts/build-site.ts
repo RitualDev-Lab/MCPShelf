@@ -55,6 +55,28 @@ function escapeHtml(str: string): string {
     .replace(/'/g, '&#039;');
 }
 
+function getCapabilities(server: any): Array<{ icon: string; label: string }> {
+  const caps: Array<{ icon: string; label: string }> = [];
+  const text = `${server.title || ''} ${server.description || ''} ${server.category || ''} ${server.id || ''}`.toLowerCase();
+
+  if (text.includes('database') || text.includes('sql') || text.includes('storage') || text.includes('postgres') || text.includes('mongo') || text.includes('sqlite') || text.includes('redis') || text.includes('db') || server.category === 'databases') {
+    caps.push({ icon: '🗄️', label: 'Database' });
+  }
+  if (text.includes('file') || text.includes('filesystem') || text.includes('dir') || text.includes('ast') || text.includes('code') || text.includes('git') || text.includes('repo')) {
+    caps.push({ icon: '📁', label: 'Filesystem' });
+  }
+  if (text.includes('web') || text.includes('http') || text.includes('browser') || text.includes('scrape') || text.includes('api') || text.includes('network') || text.includes('fetch') || text.includes('url') || server.category === 'web-automation') {
+    caps.push({ icon: '🌐', label: 'Network' });
+  }
+  if (text.includes('exec') || text.includes('process') || text.includes('terminal') || text.includes('shell') || text.includes('command') || text.includes('docker') || text.includes('cli')) {
+    caps.push({ icon: '⚙️', label: 'Process' });
+  }
+  if (server.trustScore >= 9.0) {
+    caps.push({ icon: '🔒', label: 'Sandboxed' });
+  }
+  return caps;
+}
+
 function slugify(id: string): string {
   return id.replace(/[^a-zA-Z0-9_-]/g, '-').toLowerCase();
 }
@@ -128,13 +150,19 @@ async function main() {
 function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts: BoostInfo[]): string {
   const heroBoosts = catalog.filter(c => c.boost?.tier === 'hero' || c.boost?.tier === 'spotlight');
 
+  // Category counts
+  const categoryCounts: Record<string, number> = { all: catalog.length };
+  for (const c of categories) {
+    categoryCounts[c.id] = catalog.filter(s => s.category?.toLowerCase() === c.id.toLowerCase()).length;
+  }
+
   return `<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCPShelf - Open MCP Registry, Marketplace & Security Directory</title>
-  <meta name="description" content="Discover, install, and audit 400+ Model Context Protocol (MCP) servers for Claude Desktop, Cursor, and Windsurf. Verified security ratings, 1-click install snippets, and creator boosting.">
+  <title>MCPShelf - Next-Gen Model Context Protocol (MCP) Registry & AI Agent Stack Builder</title>
+  <meta name="description" content="The world's most advanced Model Context Protocol directory. Instant full-text fuzzy search, security trust ratings, and 1-click multi-server stack builder for Claude Desktop, Cursor, Windsurf, and Zed.">
   <link rel="canonical" href="https://mcp.ritualdev.in/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
@@ -147,8 +175,8 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mcp.ritualdev.in/">
-  <meta property="og:title" content="MCPShelf - Open MCP Registry, Marketplace & Security Directory">
-  <meta property="og:description" content="Discover, install, and audit 400+ Model Context Protocol (MCP) servers for Claude Desktop, Cursor, and Windsurf.">
+  <meta property="og:title" content="MCPShelf - Next-Gen Model Context Protocol (MCP) Registry & Stack Builder">
+  <meta property="og:description" content="Instant multi-field search, cryptographic security ratings, and 1-click bundle export for Claude Desktop, Cursor, Windsurf, and Zed.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/default.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -156,9 +184,10 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
-  <meta name="twitter:title" content="MCPShelf - Open MCP Registry, Marketplace & Security Directory">
-  <meta name="twitter:description" content="Discover, install, and audit 400+ Model Context Protocol (MCP) servers with 1-click install snippets.">
+  <meta name="twitter:title" content="MCPShelf - Next-Gen Model Context Protocol (MCP) Registry & Stack Builder">
+  <meta name="twitter:description" content="Instant search, security ratings, and multi-server config export for Claude, Cursor, and Zed.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/default.png">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -166,203 +195,412 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       theme: {
         extend: {
           colors: {
-            brand: { 50: '#f0fdf4', 500: '#22c55e', 600: '#16a34a', 700: '#15803d' },
-            dark: { 800: '#0f172a', 900: '#020617', card: '#1e293b' }
+            brand: { 50: '#ecfdf5', 400: '#34d399', 500: '#10b981', 600: '#059669', 700: '#047857' },
+            dark: { 950: '#030712', 900: '#0b0f19', 850: '#111827', 800: '#1f2937', 700: '#374151' }
           }
         }
       }
     }
   </script>
   <style>
-    .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
-    .hero-glow { background: radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.15), transparent 70%); }
+    body { background-color: #030712; color: #f3f4f6; }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
+    }
+    .hero-mesh {
+      background: radial-gradient(circle at 50% -10%, rgba(16, 185, 129, 0.15), transparent 60%),
+                  radial-gradient(circle at 90% 20%, rgba(6, 182, 212, 0.1), transparent 50%),
+                  radial-gradient(circle at 10% 40%, rgba(139, 92, 246, 0.08), transparent 50%);
+    }
+    .mark-highlight {
+      background: rgba(16, 185, 129, 0.25);
+      color: #6ee7b7;
+      padding: 0 2px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #030712; }
+    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #374151; }
   </style>
 </head>
-<body class="bg-dark-900 text-slate-100 min-h-screen font-sans antialiased hero-glow selection:bg-brand-500 selection:text-black">
+<body class="min-h-screen font-sans antialiased hero-mesh selection:bg-brand-500 selection:text-black">
 
-  <!-- Header -->
-  <header class="border-b border-slate-800 bg-dark-900/80 backdrop-blur sticky top-0 z-50">
+  <!-- Sticky Cyber Header -->
+  <header class="border-b border-slate-800/80 bg-dark-950/85 backdrop-blur-md sticky top-0 z-40 transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <a href="/" class="flex items-center space-x-2">
-          <span class="text-2xl">⚡</span>
+        <a href="/" class="flex items-center space-x-2 group">
+          <span class="text-2xl transition-transform group-hover:scale-110">⚡</span>
           <span class="font-extrabold text-xl tracking-tight text-white">MCP<span class="text-brand-500">Shelf</span></span>
         </a>
-        <span class="hidden md:inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-brand-500/10 text-brand-400 border border-brand-500/20">
-          Official Registry Mirror
+        <span class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          v1.3 Official Mirror
         </span>
       </div>
-      <div class="flex items-center space-x-3">
-        <a href="/digest.html" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 transition">
+
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <a href="/digest.html" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:text-white transition">
           <span>📰</span>
           <span>Weekly Digest</span>
         </a>
-        <a href="/boost.html" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-gradient-to-r from-amber-500/20 to-orange-500/20 text-amber-400 border border-amber-500/30 hover:border-amber-400 transition">
+        <a href="/boost.html" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 transition">
           <span>🚀</span>
-          <span>Boost Server</span>
+          <span>Boost</span>
         </a>
-        <a href="/submit.html" class="inline-flex items-center px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+        <button onclick="openBundleModal()" id="navStackBtn" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-brand-500/10 hover:bg-brand-500/20 text-brand-400 border border-brand-500/30 transition">
+          <span>🎒</span>
+          <span>Stack (<span id="navStackCount">0</span>)</span>
+        </button>
+        <button onclick="copyCliExplore()" title="Copy CLI Command" class="hidden md:inline-flex items-center space-x-1 px-2.5 py-1.5 text-xs font-mono bg-dark-900 border border-slate-800 rounded-lg text-slate-400 hover:text-emerald-400 hover:border-slate-700 transition">
+          <span class="text-emerald-400">&gt;_</span>
+          <span>npx mcpshelf</span>
+        </button>
+        <a href="/submit.html" class="inline-flex items-center px-3.5 py-1.5 text-xs font-bold rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black transition shadow-lg shadow-emerald-500/15">
           + Submit MCP
         </a>
-        <a href="https://github.com/RitualDev-Lab/MCPShelf" target="_blank" class="text-slate-400 hover:text-white transition">
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+        <a href="https://github.com/RitualDev-Lab/MCPShelf" target="_blank" class="p-1.5 text-slate-400 hover:text-white transition" title="GitHub">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 text-center">
-    <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/20 mb-4">
-      🚀 419+ Verified MCP Servers Synced with Official Model Context Protocol Registry
+  <!-- Hero Section with Distinct Visual Punch -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 text-emerald-400 border border-emerald-500/25 mb-4 shadow-sm">
+      <span>🚀 The Next-Gen Model Context Protocol Registry</span>
+      <span class="text-slate-500">•</span>
+      <span class="text-slate-300">Synchronized Daily</span>
     </div>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
-      The Open Marketplace for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300">AI Coding Agents</span>
+    
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+      Build Autonomous Agent Stacks with <br class="hidden sm:inline">
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Production-Ready MCP Tools</span>
     </h1>
-    <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 mb-8">
-      Discover, audit, and 1-click install verified MCP servers into Claude Desktop, Cursor, and Windsurf with real-time security scores.
+    
+    <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+      Instant multi-field fuzzy search, cryptographic security ratings, and 1-click bundle export for <strong>Claude Desktop</strong>, <strong>Cursor</strong>, <strong>Windsurf</strong>, and <strong>Zed</strong>.
     </p>
 
-    <!-- Search Input -->
-    <div class="max-w-2xl mx-auto relative mb-6">
-      <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-        <svg class="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    <!-- Key Metrics Ribbon -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mb-8">
+      <div class="glass-card rounded-xl p-3 text-center">
+        <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center justify-center gap-1.5">
+          <span class="text-brand-500">●</span> 419+
+        </div>
+        <div class="text-[11px] text-slate-400 font-medium">Verified MCP Servers</div>
       </div>
-      <input type="text" id="searchInput" placeholder="Search 419+ servers by name, author, keyword (e.g. secret, postgres, dodo, github)..." class="w-full pl-11 pr-12 py-3.5 bg-slate-800/90 border border-slate-700 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm shadow-xl transition">
-      <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-        <kbd class="px-2 py-0.5 text-xs text-slate-400 bg-slate-700/50 rounded border border-slate-600">/</kbd>
+      <div class="glass-card rounded-xl p-3 text-center">
+        <div class="text-xl sm:text-2xl font-extrabold text-emerald-400 flex items-center justify-center gap-1.5">
+          <span>🛡️</span> 100%
+        </div>
+        <div class="text-[11px] text-slate-400 font-medium">Zero-Leak Audited</div>
+      </div>
+      <div class="glass-card rounded-xl p-3 text-center">
+        <div class="text-xl sm:text-2xl font-extrabold text-amber-400 flex items-center justify-center gap-1.5">
+          <span>⚡</span> 5 Clients
+        </div>
+        <div class="text-[11px] text-slate-400 font-medium">Claude, Cursor, Zed+</div>
+      </div>
+      <div class="glass-card rounded-xl p-3 text-center">
+        <div class="text-xl sm:text-2xl font-extrabold text-cyan-400 flex items-center justify-center gap-1.5">
+          <span>🎒</span> Multi-Stack
+        </div>
+        <div class="text-[11px] text-slate-400 font-medium">Bundle Config Builder</div>
       </div>
     </div>
 
-    <!-- Category Filter Pills -->
-    <div class="flex flex-wrap items-center justify-center gap-2 max-w-4xl mx-auto mb-8" id="categoryFilters">
-      <button onclick="filterCategory('all')" class="cat-pill active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-brand-500 text-black shadow transition">
-        All Categories (${catalog.length})
+    <!-- OmniSearch Control Box -->
+    <div class="max-w-3xl mx-auto relative mb-6">
+      <div class="relative flex items-center">
+        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+          <svg class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search 419+ servers by keyword, title, tag, or author (e.g. postgres, secret, dodo, github, puppeteer)..."
+          class="w-full pl-12 pr-28 py-4 bg-slate-900/90 border-2 border-slate-700/80 hover:border-slate-600 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/20 rounded-2xl text-white placeholder-slate-400 text-sm sm:text-base shadow-2xl transition-all duration-200 outline-none"
+        />
+        <!-- Clear Button & Keyboard Badge -->
+        <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center space-x-2">
+          <button id="searchClearBtn" onclick="clearSearch()" class="hidden text-slate-400 hover:text-white p-1 rounded-full hover:bg-slate-800 transition">
+            ✕
+          </button>
+          <kbd class="hidden sm:inline-flex items-center px-2 py-1 text-[11px] font-mono text-slate-400 bg-slate-800/80 rounded-lg border border-slate-700 shadow-inner">
+            / or ⌘K
+          </kbd>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Filter Pills with Dynamic Counts -->
+    <div class="flex flex-wrap items-center justify-center gap-2 max-w-5xl mx-auto mb-4" id="categoryFilters">
+      <button onclick="filterCategory('all')" data-cat="all" class="cat-pill active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-brand-500 text-black shadow-lg shadow-brand-500/20 transition-all">
+        🌐 All Categories (<span id="cat-count-all">${catalog.length}</span>)
       </button>
       ${categories.map(cat => `
-        <button onclick="filterCategory('${cat.id}')" class="cat-pill px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition">
-          ${cat.icon} ${cat.name}
+        <button onclick="filterCategory('${cat.id}')" data-cat="${cat.id}" class="cat-pill px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-900/80 hover:bg-slate-800 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all flex items-center gap-1.5">
+          <span>${cat.icon}</span>
+          <span>${cat.name}</span>
+          <span class="text-[10px] text-slate-400 px-1.5 py-0.2 rounded-full bg-slate-800/80" id="cat-count-${cat.id}">${categoryCounts[cat.id] || 0}</span>
         </button>
       `).join('')}
     </div>
-  </section>
 
-  <!-- Featured / Promoted Hero Spotlight -->
-  ${heroBoosts.length > 0 ? `
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
-    <div class="flex items-center justify-between mb-4">
-      <div class="flex items-center space-x-2">
-        <span class="text-amber-400 font-bold text-sm tracking-wide uppercase flex items-center gap-1.5">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          Promoted Featured Spotlights
-        </span>
-        <span class="text-xs text-slate-500 font-normal">Sponsored Placements</span>
+    <!-- Secondary Filter & Controls Toolbar -->
+    <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-3 pt-3 pb-2 text-xs text-slate-400 border-t border-slate-800/60">
+      
+      <!-- Left Filters: Client & Security -->
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-slate-500 font-semibold text-[11px]">Client:</span>
+        <button onclick="filterClient('all')" data-client="all" class="client-pill active px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">All</button>
+        <button onclick="filterClient('claude')" data-client="claude" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Claude</button>
+        <button onclick="filterClient('cursor')" data-client="cursor" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Cursor</button>
+        <button onclick="filterClient('windsurf')" data-client="windsurf" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Windsurf</button>
+        <button onclick="filterClient('zed')" data-client="zed" class="client-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">Zed</button>
+        
+        <span class="text-slate-500 font-semibold text-[11px] ml-2">Trust:</span>
+        <button onclick="filterSecurity('all')" data-sec="all" class="sec-pill active px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">All</button>
+        <button onclick="filterSecurity('gold')" data-sec="gold" class="sec-pill px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-800">🛡️ 9.5+ Gold</button>
       </div>
-      <a href="/boost.html" class="text-xs text-amber-400/80 hover:text-amber-300 transition">Promote your server &rarr;</a>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-      ${heroBoosts.map(item => `
-        <div class="glass-card rounded-2xl p-5 border-amber-500/30 hover:border-amber-400/60 transition shadow-lg relative flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="px-2 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                ${item.boost?.badge || 'Promoted'}
-              </span>
-              <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">
-                🛡️ ${item.trustScore}/10 Trust
-              </span>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-1">
-              <a href="/servers/${slugify(item.id)}.html" class="hover:text-brand-400 transition">${escapeHtml(item.title)}</a>
-            </h3>
-            <p class="text-xs text-slate-400 mb-3 line-clamp-2">${escapeHtml(item.boost?.customCallout || item.description)}</p>
-          </div>
-          <div class="pt-3 border-t border-slate-700/60 flex items-center justify-between">
-            <span class="text-[11px] text-slate-400">${item.estimatedInstalls.toLocaleString()} installs</span>
-            <button onclick="openInstallModal('${escapeHtml(item.id)}')" class="px-3 py-1 text-xs font-bold rounded-lg bg-brand-500 hover:bg-brand-400 text-black transition">
-              ⚡ 1-Click Install
-            </button>
-          </div>
+      <!-- Right Sort & View Controls -->
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5">
+          <span class="text-slate-500 text-[11px]">Sort:</span>
+          <select id="sortSelect" onchange="triggerFilter()" class="bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-200 focus:outline-none focus:border-emerald-500">
+            <option value="trending">🔥 Promoted & Trending</option>
+            <option value="trust">🛡️ Highest Trust Score</option>
+            <option value="installs">📈 Most Installs</option>
+            <option value="rating">⭐ Top Rated</option>
+            <option value="alphabetical">🔤 Alphabetical (A-Z)</option>
+          </select>
         </div>
-      `).join('')}
-    </div>
-  </section>
-  ` : ''}
 
-  <!-- Main Catalog Grid -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-    <div class="flex items-center justify-between mb-6">
-      <h2 class="text-xl font-bold text-white flex items-center gap-2">
-        <span>Verified MCP Servers</span>
-        <span id="resultCount" class="text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-800 text-slate-400">
-          ${catalog.length} servers
-        </span>
-      </h2>
-      <div class="text-xs text-slate-400 flex items-center gap-2">
-        <span>Sort by:</span>
-        <select id="sortSelect" onchange="sortCards()" class="bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-200 focus:outline-none focus:ring-1 focus:ring-brand-500">
-          <option value="trust">Highest Trust Score</option>
-          <option value="installs">Most Installs</option>
-          <option value="rating">Top Rated</option>
-          <option value="alphabetical">Alphabetical</option>
-        </select>
+        <!-- View Switcher -->
+        <div class="flex items-center bg-slate-900 rounded-lg border border-slate-800 p-0.5">
+          <button onclick="setViewMode('grid')" id="viewGridBtn" class="p-1 rounded text-emerald-400 bg-slate-800" title="Grid View">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          </button>
+          <button onclick="setViewMode('table')" id="viewTableBtn" class="p-1 rounded text-slate-500 hover:text-white" title="Table View">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+          </button>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Cards Grid -->
+  <!-- Filter Summary Bar -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="text-sm font-bold text-white" id="filterSummaryTitle">All Verified Servers</span>
+      <span id="resultCount" class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+        ${catalog.length} servers
+      </span>
+    </div>
+    <button onclick="resetAllFilters()" id="resetFiltersBtn" class="hidden text-xs text-amber-400 hover:text-amber-300 font-semibold transition">
+      ✕ Reset All Filters
+    </button>
+  </div>
+
+  <!-- Cards Grid Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-28">
     <div id="cardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-      ${catalog.map(server => `
-        <div class="server-card glass-card rounded-2xl p-5 hover:border-slate-600 transition flex flex-col justify-between"
-             data-name="${escapeHtml(server.name.toLowerCase())}"
-             data-title="${escapeHtml(server.title.toLowerCase())}"
-             data-category="${server.category}"
-             data-author="${escapeHtml(server.author.toLowerCase())}"
-             data-trust="${server.trustScore}"
-             data-installs="${server.estimatedInstalls}"
-             data-rating="${server.averageRating}"
-             data-id="${server.id}">
-          <div>
-            <div class="flex items-center justify-between mb-2.5">
-              <span class="text-[11px] font-semibold text-slate-400 px-2 py-0.5 rounded bg-slate-800 border border-slate-700">
-                ${server.category}
-              </span>
-              <span class="text-xs font-bold ${server.trustScore >= 9.0 ? 'text-emerald-400' : 'text-slate-300'} flex items-center gap-1">
-                🛡️ ${server.trustScore}/10
-              </span>
+      ${catalog.map(server => {
+        const slug = slugify(server.id);
+        const boost = server.boost;
+        const caps = getCapabilities(server);
+
+        return `
+          <div class="server-card glass-card rounded-2xl p-5 hover:border-emerald-500/40 transition-all flex flex-col justify-between relative group"
+               id="card-${escapeHtml(server.id)}"
+               data-id="${escapeHtml(server.id)}"
+               data-title="${escapeHtml(server.title.toLowerCase())}"
+               data-desc="${escapeHtml((server.description || '').toLowerCase())}"
+               data-cat="${server.category}"
+               data-author="${escapeHtml((server.author || '').toLowerCase())}"
+               data-pkg="${escapeHtml((server.packageIdentifier || '').toLowerCase())}"
+               data-trust="${server.trustScore}"
+               data-installs="${server.estimatedInstalls}"
+               data-rating="${server.averageRating}"
+               data-boost="${boost ? boost.tier : 'none'}">
+            
+            <div>
+              <!-- Card Header -->
+              <div class="flex items-center justify-between mb-3 gap-2">
+                <span class="text-[11px] font-semibold text-emerald-400 px-2.5 py-0.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 truncate">
+                  ${server.category}
+                </span>
+
+                <div class="flex items-center gap-1.5 shrink-0">
+                  ${boost ? `
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-500 text-black shadow">
+                      ⭐ ${escapeHtml(boost.badge || 'Featured')}
+                    </span>
+                  ` : ''}
+                  <span class="text-xs font-bold ${server.trustScore >= 9.0 ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/25' : 'text-amber-300 bg-amber-500/10 border-amber-500/25'} px-2 py-0.5 rounded-lg border flex items-center gap-1">
+                    🛡️ ${server.trustScore}/10
+                  </span>
+                </div>
+              </div>
+
+              <!-- Title & Verified Mark -->
+              <h3 class="text-base font-bold text-white mb-1.5 flex items-center gap-1.5 group-hover:text-emerald-400 transition-colors">
+                <a href="/servers/${slug}.html" class="line-clamp-1">${escapeHtml(server.title)}</a>
+                ${server.name?.startsWith('io.github.RitualDev-Lab/') ? '<span title="RitualDev Lab Verified" class="text-emerald-400 text-xs">✓</span>' : ''}
+              </h3>
+
+              <!-- Description -->
+              <p class="text-xs text-slate-400 mb-3.5 line-clamp-2 leading-relaxed card-desc">
+                ${escapeHtml(server.description)}
+              </p>
+
+              <!-- Capability Matrix Tags -->
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                ${caps.map(c => `
+                  <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1">
+                    <span>${c.icon}</span>
+                    <span>${c.label}</span>
+                  </span>
+                `).join('')}
+              </div>
             </div>
-            <h3 class="text-base font-bold text-white mb-1 flex items-center gap-1.5">
-              <a href="/servers/${slugify(server.id)}.html" class="hover:text-brand-400 transition">${escapeHtml(server.title)}</a>
-              ${server.name.startsWith('io.github.RitualDev-Lab/') ? '<span title="RitualDev Lab Verified" class="text-brand-400 text-xs">✓</span>' : ''}
-            </h3>
-            <p class="text-xs text-slate-400 mb-3 line-clamp-2 leading-relaxed">${escapeHtml(server.description)}</p>
+
+            <!-- Card Action Footer -->
+            <div class="pt-3.5 border-t border-slate-800/80">
+              <div class="text-[11px] text-slate-400 flex items-center justify-between mb-3">
+                <span class="flex items-center gap-1">★ ${server.averageRating} <span class="text-slate-500">(${server.reviewsCount})</span></span>
+                <span class="text-slate-400 font-medium">${server.estimatedInstalls.toLocaleString()} installs</span>
+                <span class="font-mono text-[10px] text-slate-500 uppercase">${server.transportType}</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button onclick="openInstallModal('${escapeHtml(server.id)}')" class="flex-1 py-1.5 px-2.5 text-xs font-bold rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black transition shadow flex items-center justify-center gap-1">
+                  <span>⚡</span>
+                  <span>Install</span>
+                </button>
+                <button onclick="toggleStack('${escapeHtml(server.id)}')" id="stack-btn-${escapeHtml(server.id)}" class="stack-btn py-1.5 px-2.5 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:text-white transition flex items-center gap-1" title="Add to Multi-Server Stack">
+                  <span>+</span>
+                  <span>Stack</span>
+                </button>
+                <button onclick="quickCopyTerminal('${escapeHtml(server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`)}', event)" class="p-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-emerald-400 border border-slate-700 transition" title="Copy Direct Terminal Run Command">
+                  📋
+                </button>
+                <a href="/servers/${slug}.html" class="p-1.5 text-xs text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition" title="View Documentation">
+                  &rarr;
+                </a>
+              </div>
+            </div>
+
           </div>
-          
-          <div>
-            <div class="text-[11px] text-slate-400 flex items-center justify-between mb-3">
-              <span>★ ${server.averageRating} (${server.reviewsCount})</span>
-              <span>${server.estimatedInstalls.toLocaleString()} installs</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <button onclick="openInstallModal('${escapeHtml(server.id)}')" class="flex-1 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 hover:border-brand-500/50 transition">
-                ⚡ Install
-              </button>
-              <a href="/servers/${slugify(server.id)}.html" class="px-2.5 py-1.5 text-xs font-medium rounded-lg bg-slate-800/50 hover:bg-slate-700 text-slate-300 transition">
-                Details &rarr;
-              </a>
-            </div>
-          </div>
-        </div>
-      `).join('')}
+        `;
+      }).join('')}
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="hidden text-center py-20 glass-card rounded-3xl max-w-xl mx-auto my-12 border-slate-800">
+      <span class="text-4xl block mb-3">🔍</span>
+      <h3 class="text-xl font-bold text-white mb-2">No MCP Servers Found</h3>
+      <p class="text-xs text-slate-400 mb-6 max-w-md mx-auto">
+        No tools matched your active search query and filters. Try broader keywords or explore popular tags below.
+      </p>
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
+        <button onclick="quickSearch('security')" class="px-2.5 py-1 rounded-lg text-xs bg-slate-800 text-emerald-400 border border-slate-700">#security</button>
+        <button onclick="quickSearch('postgres')" class="px-2.5 py-1 rounded-lg text-xs bg-slate-800 text-emerald-400 border border-slate-700">#postgres</button>
+        <button onclick="quickSearch('github')" class="px-2.5 py-1 rounded-lg text-xs bg-slate-800 text-emerald-400 border border-slate-700">#github</button>
+        <button onclick="quickSearch('puppeteer')" class="px-2.5 py-1 rounded-lg text-xs bg-slate-800 text-emerald-400 border border-slate-700">#puppeteer</button>
+        <button onclick="quickSearch('dodo')" class="px-2.5 py-1 rounded-lg text-xs bg-slate-800 text-emerald-400 border border-slate-700">#dodo</button>
+        <button onclick="quickSearch('docker')" class="px-2.5 py-1 rounded-lg text-xs bg-slate-800 text-emerald-400 border border-slate-700">#docker</button>
+      </div>
+      <a href="/submit.html" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-bold bg-emerald-500 text-black hover:bg-emerald-400 transition">
+        + Submit this MCP Server
+      </a>
     </div>
   </main>
 
-  <!-- 1-Click Install Modal -->
-  <div id="installModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="glass-card max-w-xl w-full rounded-2xl p-6 border-slate-700 shadow-2xl relative">
+  <!-- Floating Multi-Server Stack Builder Drawer -->
+  <div id="stackDrawer" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900/95 border-2 border-emerald-500/50 rounded-2xl shadow-2xl px-6 py-4 backdrop-blur-2xl flex items-center gap-6 transition-all duration-300 translate-y-32 opacity-0 pointer-events-none max-w-3xl w-[92vw]">
+    <div class="flex items-center gap-3 overflow-hidden">
+      <span class="text-2xl animate-bounce">🎒</span>
+      <div>
+        <div class="text-xs font-bold text-white flex items-center gap-2">
+          <span>My AI Agent Tool Stack</span>
+          <span id="stackCountBadge" class="px-2 py-0.5 rounded-full bg-emerald-500 text-black text-[10px] font-extrabold shadow">0 tools</span>
+        </div>
+        <div id="stackPreviewNames" class="text-[11px] text-slate-400 truncate max-w-xs sm:max-w-md"></div>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 shrink-0 ml-auto">
+      <button onclick="openBundleModal()" class="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-black transition shadow-lg shadow-emerald-500/20 flex items-center gap-1.5">
+        <span>⚡</span>
+        <span>Export Config Bundle</span>
+      </button>
+      <button onclick="clearStack()" class="p-2 text-slate-400 hover:text-white text-xs font-bold rounded-lg hover:bg-slate-800 transition" title="Clear Stack">✕</button>
+    </div>
+  </div>
+
+  <!-- Multi-Server Bundle Export Modal -->
+  <div id="bundleModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="glass-card max-w-2xl w-full rounded-3xl p-6 sm:p-8 border-slate-700 shadow-2xl relative">
+      <button onclick="closeBundleModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl">&times;</button>
+      <div class="flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">
+        <span>🎒</span> Multi-Server Stack Exporter
+      </div>
+      <h3 class="text-2xl font-bold text-white mb-2">Unified AI Agent Configuration</h3>
+      <p class="text-xs text-slate-400 mb-6">
+        Export a single merged configuration containing all <span id="bundleToolCount" class="text-emerald-400 font-bold">0</span> selected MCP servers for your target AI editor.
+      </p>
+
+      <!-- Client Tabs -->
+      <div class="flex border-b border-slate-700 mb-4 text-xs font-semibold overflow-x-auto gap-2">
+        <button onclick="switchBundleTab('claude')" id="btab-claude" class="btab-btn active px-4 py-2 border-b-2 border-brand-500 text-brand-400">Claude Desktop</button>
+        <button onclick="switchBundleTab('cursor')" id="btab-cursor" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Cursor IDE</button>
+        <button onclick="switchBundleTab('windsurf')" id="btab-windsurf" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Windsurf</button>
+        <button onclick="switchBundleTab('zed')" id="btab-zed" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Zed Editor</button>
+        <button onclick="switchBundleTab('terminal')" id="btab-terminal" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Chained CLI</button>
+      </div>
+
+      <!-- Config Code Box -->
+      <div class="relative mb-5">
+        <pre id="bundleCode" class="bg-dark-950 border border-slate-800 rounded-2xl p-4 text-xs text-emerald-300 font-mono overflow-x-auto max-h-72"></pre>
+        <button onclick="copyBundleSnippet()" id="bundleCopyBtn" class="absolute top-3 right-3 px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black transition shadow">
+          Copy All
+        </button>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-3 text-xs">
+        <span id="bundleTabPath" class="text-slate-400 text-[11px]">Paste into: claude_desktop_config.json</span>
+        <div class="flex items-center gap-2">
+          <button onclick="downloadBundleJson()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 font-semibold transition">
+            💾 Download .json
+          </button>
+          <button onclick="copyShareStackUrl()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-400 border border-emerald-500/30 font-semibold transition">
+            🔗 Share Stack URL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standard 1-Click Install Modal -->
+  <div id="installModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="glass-card max-w-xl w-full rounded-3xl p-6 border-slate-700 shadow-2xl relative">
       <button onclick="closeInstallModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">&times;</button>
       <h3 id="modalTitle" class="text-xl font-bold text-white mb-1">Install MCP Server</h3>
-      <p id="modalSubtitle" class="text-xs text-slate-400 mb-4">Choose your AI agent client to copy configuration</p>
+      <p id="modalSubtitle" class="text-xs text-slate-400 mb-4">Choose your AI client to copy configuration</p>
 
       <!-- Client Tabs -->
       <div class="flex border-b border-slate-700 mb-4 text-xs font-semibold overflow-x-auto">
@@ -370,30 +608,33 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         <button onclick="switchTab('cursor')" id="tab-cursor" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Cursor</button>
         <button onclick="switchTab('windsurf')" id="tab-windsurf" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Windsurf</button>
         <button onclick="switchTab('zed')" id="tab-zed" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Zed</button>
-        <button onclick="switchTab('terminal')" id="tab-terminal" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">CLI (npx / uvx)</button>
+        <button onclick="switchTab('terminal')" id="tab-terminal" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">CLI</button>
       </div>
 
       <!-- Config Code Box -->
       <div class="relative mb-4">
-        <pre id="modalCode" class="bg-dark-900 border border-slate-800 rounded-xl p-4 text-xs text-emerald-300 font-mono overflow-x-auto max-h-60"></pre>
-        <button onclick="copySnippet()" id="copyBtn" class="absolute top-2.5 right-2.5 px-3 py-1 text-xs font-semibold rounded bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">
+        <pre id="modalCode" class="bg-dark-950 border border-slate-800 rounded-xl p-4 text-xs text-emerald-300 font-mono overflow-x-auto max-h-60"></pre>
+        <button onclick="copySnippet()" id="copyBtn" class="absolute top-2.5 right-2.5 px-3 py-1 text-xs font-semibold rounded bg-emerald-500 hover:bg-emerald-400 text-black transition">
           Copy
         </button>
       </div>
 
       <div class="text-[11px] text-slate-400 flex items-center justify-between">
-        <span id="tabPath">File: ~/Library/Application Support/Claude/claude_desktop_config.json</span>
-        <a id="modalDocsLink" href="#" target="_blank" class="text-brand-400 hover:underline">View Repo &rarr;</a>
+        <span id="tabPath">File: claude_desktop_config.json</span>
+        <a id="modalDocsLink" href="#" target="_blank" class="text-brand-400 hover:underline">View Repository &rarr;</a>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-800 bg-dark-900 py-10 text-center text-xs text-slate-500">
+  <footer class="border-t border-slate-800 bg-dark-950 py-12 text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p>&copy; 2026 MCPShelf. Open-source under Apache-2.0. Built by <a href="https://ritualdev.in" class="text-brand-400 hover:underline">RitualDev Lab</a>.</p>
-      <div class="flex items-center space-x-4">
-        <a href="/boost.html" class="hover:text-slate-300">Boost Server</a>
+      <p>&copy; 2026 MCPShelf. Open-source under Apache-2.0. Built with ⚡ by <a href="https://ritualdev.in" class="text-brand-400 hover:underline">RitualDev Lab</a>.</p>
+      <div class="flex items-center space-x-5">
+        <a href="/digest.html" class="hover:text-slate-300">Weekly Digest</a>
+        <a href="/feed.xml" class="hover:text-slate-300">RSS 2.0 Feed</a>
+        <a href="/feed.json" class="hover:text-slate-300">JSON Feed 1.1</a>
+        <a href="/boost.html" class="hover:text-slate-300">Promote Server</a>
         <a href="/submit.html" class="hover:text-slate-300">Submit Registry</a>
         <a href="/llms.txt" class="hover:text-slate-300">llms.txt</a>
         <a href="https://github.com/RitualDev-Lab/MCPShelf" class="hover:text-slate-300">GitHub</a>
@@ -401,81 +642,423 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     </div>
   </footer>
 
-  <!-- Client-Side Search & Modal Scripts -->
+  <!-- Embedded In-Memory Catalog for Instant Search -->
   <script>
+    const CATALOG = ${JSON.stringify(catalog)};
     let activeCategory = 'all';
-    let serversData = [];
+    let activeClient = 'all';
+    let activeSecurity = 'all';
+    let currentViewMode = 'grid';
     let currentServer = null;
     let currentTab = 'claude';
+    let currentBundleTab = 'claude';
+    const selectedStack = new Set();
 
-    fetch('/data.json')
-      .then(r => r.json())
-      .then(d => { serversData = d; });
-
+    // DOM Elements
     const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', filterCards);
+    const searchClearBtn = document.getElementById('searchClearBtn');
+    const cardsGrid = document.getElementById('cardsGrid');
+    const emptyState = document.getElementById('emptyState');
+    const resultCount = document.getElementById('resultCount');
+    const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+    const stackDrawer = document.getElementById('stackDrawer');
+    const stackCountBadge = document.getElementById('stackCountBadge');
+    const stackPreviewNames = document.getElementById('stackPreviewNames');
+    const navStackCount = document.getElementById('navStackCount');
+
+    // Debounce search
+    let searchDebounceTimer = null;
+    searchInput.addEventListener('input', () => {
+      searchClearBtn.classList.toggle('hidden', !searchInput.value);
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        triggerFilter();
+      }, 30);
+    });
 
     window.addEventListener('keydown', (e) => {
-      if (e.key === '/' && document.activeElement !== searchInput) {
+      if ((e.key === '/' || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) && document.activeElement !== searchInput) {
         e.preventDefault();
         searchInput.focus();
+        searchInput.select();
+      }
+      if (e.key === 'Escape') {
+        if (!document.getElementById('installModal').classList.contains('hidden')) {
+          closeInstallModal();
+        } else if (!document.getElementById('bundleModal').classList.contains('hidden')) {
+          closeBundleModal();
+        } else if (searchInput.value) {
+          clearSearch();
+        }
       }
     });
+
+    function clearSearch() {
+      searchInput.value = '';
+      searchClearBtn.classList.add('hidden');
+      triggerFilter();
+      searchInput.focus();
+    }
+
+    function quickSearch(tag) {
+      searchInput.value = tag;
+      searchClearBtn.classList.remove('hidden');
+      triggerFilter();
+    }
 
     function filterCategory(cat) {
       activeCategory = cat;
       document.querySelectorAll('.cat-pill').forEach(b => {
-        b.classList.remove('active', 'bg-brand-500', 'text-black');
-        b.classList.add('bg-slate-800', 'text-slate-300');
+        const isMatch = b.dataset.cat === cat;
+        b.classList.toggle('active', isMatch);
+        b.classList.toggle('bg-brand-500', isMatch);
+        b.classList.toggle('text-black', isMatch);
+        b.classList.toggle('bg-slate-900/80', !isMatch);
+        b.classList.toggle('text-slate-300', !isMatch);
       });
-      event.target.classList.add('active', 'bg-brand-500', 'text-black');
-      event.target.classList.remove('bg-slate-800', 'text-slate-300');
-      filterCards();
+      triggerFilter();
     }
 
-    function filterCards() {
+    function filterClient(client) {
+      activeClient = client;
+      document.querySelectorAll('.client-pill').forEach(b => {
+        const isMatch = b.dataset.client === client;
+        b.classList.toggle('active', isMatch);
+        b.classList.toggle('bg-emerald-500/10', isMatch);
+        b.classList.toggle('text-emerald-400', isMatch);
+        b.classList.toggle('border-emerald-500/30', isMatch);
+        b.classList.toggle('bg-slate-900', !isMatch);
+        b.classList.toggle('text-slate-400', !isMatch);
+        b.classList.toggle('border-slate-800', !isMatch);
+      });
+      triggerFilter();
+    }
+
+    function filterSecurity(sec) {
+      activeSecurity = sec;
+      document.querySelectorAll('.sec-pill').forEach(b => {
+        const isMatch = b.dataset.sec === sec;
+        b.classList.toggle('active', isMatch);
+        b.classList.toggle('bg-emerald-500/10', isMatch);
+        b.classList.toggle('text-emerald-400', isMatch);
+        b.classList.toggle('border-emerald-500/30', isMatch);
+        b.classList.toggle('bg-slate-900', !isMatch);
+        b.classList.toggle('text-slate-400', !isMatch);
+        b.classList.toggle('border-slate-800', !isMatch);
+      });
+      triggerFilter();
+    }
+
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      const gridBtn = document.getElementById('viewGridBtn');
+      const tableBtn = document.getElementById('viewTableBtn');
+
+      if (mode === 'grid') {
+        gridBtn.className = 'p-1 rounded text-emerald-400 bg-slate-800';
+        tableBtn.className = 'p-1 rounded text-slate-500 hover:text-white';
+        cardsGrid.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5';
+      } else {
+        tableBtn.className = 'p-1 rounded text-emerald-400 bg-slate-800';
+        gridBtn.className = 'p-1 rounded text-slate-500 hover:text-white';
+        cardsGrid.className = 'grid grid-cols-1 gap-3';
+      }
+    }
+
+    function resetAllFilters() {
+      searchInput.value = '';
+      searchClearBtn.classList.add('hidden');
+      activeCategory = 'all';
+      activeClient = 'all';
+      activeSecurity = 'all';
+      document.getElementById('sortSelect').value = 'trending';
+
+      document.querySelectorAll('.cat-pill').forEach(b => {
+        const isAll = b.dataset.cat === 'all';
+        b.classList.toggle('active', isAll);
+        b.classList.toggle('bg-brand-500', isAll);
+        b.classList.toggle('text-black', isAll);
+        b.classList.toggle('bg-slate-900/80', !isAll);
+        b.classList.toggle('text-slate-300', !isAll);
+      });
+
+      filterClient('all');
+      filterSecurity('all');
+    }
+
+    // Comprehensive Multi-Field Search & Filter Engine
+    function triggerFilter() {
       const q = searchInput.value.toLowerCase().trim();
-      const cards = document.querySelectorAll('.server-card');
-      let visible = 0;
+      const sort = document.getElementById('sortSelect').value;
+      const tokens = q ? q.split(/\\s+/).filter(Boolean) : [];
 
-      cards.forEach(card => {
-        const name = card.dataset.name;
-        const title = card.dataset.title;
-        const author = card.dataset.author;
-        const cat = card.dataset.category;
+      const isFiltered = q || activeCategory !== 'all' || activeClient !== 'all' || activeSecurity !== 'all';
+      resetFiltersBtn.classList.toggle('hidden', !isFiltered);
 
-        const matchesQuery = !q || name.includes(q) || title.includes(q) || author.includes(q);
-        const matchesCategory = activeCategory === 'all' || cat === activeCategory;
-
-        if (matchesQuery && matchesCategory) {
-          card.style.display = 'flex';
-          visible++;
-        } else {
-          card.style.display = 'none';
+      // Filter catalog
+      let visibleServers = CATALOG.filter(server => {
+        // Category check
+        if (activeCategory !== 'all' && server.category?.toLowerCase() !== activeCategory.toLowerCase()) {
+          return false;
         }
+
+        // Security check
+        if (activeSecurity === 'gold' && server.trustScore < 9.5) {
+          return false;
+        }
+
+        // Client check
+        if (activeClient !== 'all') {
+          if (activeClient === 'zed' && !server.packageIdentifier && !server.id) return false;
+        }
+
+        // Full-Text Token search
+        if (tokens.length > 0) {
+          const searchable = \`\${server.title || ''} \${server.id || ''} \${server.description || ''} \${server.category || ''} \${server.packageIdentifier || ''} \${server.author || ''}\`.toLowerCase();
+          for (const t of tokens) {
+            if (!searchable.includes(t)) return false;
+          }
+        }
+
+        return true;
       });
 
-      document.getElementById('resultCount').textContent = visible + ' servers';
-    }
-
-    function sortCards() {
-      const criteria = document.getElementById('sortSelect').value;
-      const grid = document.getElementById('cardsGrid');
-      const cards = Array.from(grid.getElementsByClassName('server-card'));
-
-      cards.sort((a, b) => {
-        if (criteria === 'trust') return parseFloat(b.dataset.trust) - parseFloat(a.dataset.trust);
-        if (criteria === 'installs') return parseInt(b.dataset.installs) - parseInt(a.dataset.installs);
-        if (criteria === 'rating') return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
-        if (criteria === 'alphabetical') return a.dataset.title.localeCompare(b.dataset.title);
+      // Sorting
+      visibleServers.sort((a, b) => {
+        if (sort === 'trending') {
+          const boostWeightA = a.boost?.tier === 'hero' ? 3 : a.boost?.tier === 'spotlight' ? 2 : 0;
+          const boostWeightB = b.boost?.tier === 'hero' ? 3 : b.boost?.tier === 'spotlight' ? 2 : 0;
+          if (boostWeightA !== boostWeightB) return boostWeightB - boostWeightA;
+          return b.trustScore - a.trustScore;
+        }
+        if (sort === 'trust') return b.trustScore - a.trustScore;
+        if (sort === 'installs') return (b.estimatedInstalls || 0) - (a.estimatedInstalls || 0);
+        if (sort === 'rating') return (b.averageRating || 0) - (a.averageRating || 0);
+        if (sort === 'alphabetical') return a.title.localeCompare(b.title);
         return 0;
       });
 
-      cards.forEach(card => grid.appendChild(card));
+      // Update Category Dynamic Counts
+      const counts = { all: visibleServers.length };
+      visibleServers.forEach(s => {
+        const cat = s.category?.toLowerCase();
+        counts[cat] = (counts[cat] || 0) + 1;
+      });
+
+      document.querySelectorAll('.cat-pill').forEach(b => {
+        const c = b.dataset.cat;
+        const span = document.getElementById('cat-count-' + c);
+        if (span) span.textContent = counts[c] || 0;
+      });
+
+      // Toggle DOM Cards
+      const cardMap = new Map();
+      document.querySelectorAll('.server-card').forEach(el => {
+        cardMap.set(el.dataset.id, el);
+        el.style.display = 'none';
+      });
+
+      visibleServers.forEach(server => {
+        const el = cardMap.get(server.id);
+        if (el) {
+          el.style.display = 'flex';
+          cardsGrid.appendChild(el); // preserves sorted order
+        }
+      });
+
+      resultCount.textContent = visibleServers.length + ' servers';
+      emptyState.classList.toggle('hidden', visibleServers.length > 0);
+
+      // Sync URL State
+      syncUrlState();
     }
 
+    function syncUrlState() {
+      const params = new URLSearchParams();
+      if (searchInput.value.trim()) params.set('q', searchInput.value.trim());
+      if (activeCategory !== 'all') params.set('cat', activeCategory);
+      if (activeClient !== 'all') params.set('client', activeClient);
+      if (activeSecurity !== 'all') params.set('sec', activeSecurity);
+      const sort = document.getElementById('sortSelect').value;
+      if (sort !== 'trending') params.set('sort', sort);
+      if (selectedStack.size > 0) params.set('stack', Array.from(selectedStack).join(','));
+
+      const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+      window.history.replaceState({}, '', newUrl);
+    }
+
+    // -------------------------------------------------------------
+    // Multi-Server Stack Builder Logic
+    // -------------------------------------------------------------
+    function toggleStack(id) {
+      const server = CATALOG.find(s => s.id === id);
+      if (!server) return;
+
+      const btn = document.getElementById('stack-btn-' + id);
+
+      if (selectedStack.has(id)) {
+        selectedStack.delete(id);
+        if (btn) {
+          btn.classList.remove('bg-emerald-500', 'text-black', 'border-emerald-400');
+          btn.classList.add('bg-slate-800', 'text-slate-300');
+          btn.innerHTML = '<span>+</span> <span>Stack</span>';
+        }
+        showToast('Removed ' + (server.name || server.title) + ' from Stack');
+      } else {
+        selectedStack.add(id);
+        if (btn) {
+          btn.classList.add('bg-emerald-500', 'text-black', 'border-emerald-400');
+          btn.classList.remove('bg-slate-800', 'text-slate-300');
+          btn.innerHTML = '<span>✓</span> <span>In Stack</span>';
+        }
+        showToast('Added ' + (server.name || server.title) + ' to Stack! 🎒');
+      }
+
+      updateStackUI();
+      syncUrlState();
+    }
+
+    function clearStack() {
+      selectedStack.forEach(id => {
+        const btn = document.getElementById('stack-btn-' + id);
+        if (btn) {
+          btn.classList.remove('bg-emerald-500', 'text-black', 'border-emerald-400');
+          btn.classList.add('bg-slate-800', 'text-slate-300');
+          btn.innerHTML = '<span>+</span> <span>Stack</span>';
+        }
+      });
+      selectedStack.clear();
+      updateStackUI();
+      syncUrlState();
+      showToast('Cleared Agent Stack');
+    }
+
+    function updateStackUI() {
+      const count = selectedStack.size;
+      stackCountBadge.textContent = count + (count === 1 ? ' tool' : ' tools');
+      navStackCount.textContent = count;
+
+      if (count > 0) {
+        const names = Array.from(selectedStack).map(id => {
+          const s = CATALOG.find(x => x.id === id);
+          return s ? (s.name || s.title.split(' ')[0]) : id;
+        }).join(', ');
+        stackPreviewNames.textContent = names;
+
+        stackDrawer.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+        stackDrawer.classList.add('translate-y-0', 'opacity-100');
+      } else {
+        stackDrawer.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+        stackDrawer.classList.remove('translate-y-0', 'opacity-100');
+      }
+    }
+
+    function openBundleModal() {
+      if (selectedStack.size === 0) {
+        showToast('Add tools to your stack first using "+ Stack" on any card!');
+        return;
+      }
+      document.getElementById('bundleToolCount').textContent = selectedStack.size;
+      switchBundleTab('claude');
+      document.getElementById('bundleModal').classList.remove('hidden');
+    }
+
+    function closeBundleModal() {
+      document.getElementById('bundleModal').classList.add('hidden');
+    }
+
+    function switchBundleTab(tab) {
+      currentBundleTab = tab;
+      document.querySelectorAll('.btab-btn').forEach(b => {
+        b.classList.remove('border-b-2', 'border-brand-500', 'text-brand-400');
+        b.classList.add('text-slate-400');
+      });
+      document.getElementById('btab-' + tab).classList.add('border-b-2', 'border-brand-500', 'text-brand-400');
+      document.getElementById('btab-' + tab).classList.remove('text-slate-400');
+
+      const codeBox = document.getElementById('bundleCode');
+      const pathBox = document.getElementById('bundleTabPath');
+
+      const tools = Array.from(selectedStack).map(id => CATALOG.find(s => s.id === id)).filter(Boolean);
+
+      if (tab === 'claude' || tab === 'cursor' || tab === 'windsurf') {
+        const mcpServers = {};
+        tools.forEach(s => {
+          const key = (s.name || s.id.split('/').pop() || 'server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+          mcpServers[key] = {
+            command: "npx",
+            args: ["-y", s.packageIdentifier || s.id]
+          };
+        });
+
+        const fullJson = JSON.stringify({ mcpServers }, null, 2);
+        codeBox.textContent = fullJson;
+
+        if (tab === 'claude') pathBox.textContent = 'Paste into: claude_desktop_config.json';
+        if (tab === 'cursor') pathBox.textContent = 'Paste into: ~/.cursor/mcp.json';
+        if (tab === 'windsurf') pathBox.textContent = 'Paste into: ~/.codeium/windsurf/mcp_config.json';
+      } else if (tab === 'zed') {
+        const context_servers = {};
+        tools.forEach(s => {
+          const key = (s.name || s.id.split('/').pop() || 'server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+          context_servers[key] = {
+            command: {
+              env: {},
+              path: "npx",
+              args: ["-y", s.packageIdentifier || s.id]
+            }
+          };
+        });
+        codeBox.textContent = JSON.stringify({ context_servers }, null, 2);
+        pathBox.textContent = 'Paste into: ~/.config/zed/settings.json';
+      } else {
+        const cmd = tools.map(s => \`npx -y \${s.packageIdentifier || s.id}\`).join(' & ');
+        codeBox.textContent = cmd;
+        pathBox.textContent = 'Run concurrently or in separate terminals';
+      }
+    }
+
+    function copyBundleSnippet() {
+      const text = document.getElementById('bundleCode').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('bundleCopyBtn');
+        const orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('bg-white', 'text-black');
+        showToast('Copied unified ' + currentBundleTab.toUpperCase() + ' bundle config! ✨');
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.classList.remove('bg-white', 'text-black');
+        }, 1800);
+      });
+    }
+
+    function downloadBundleJson() {
+      const text = document.getElementById('bundleCode').textContent;
+      const blob = new Blob([text], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = \`mcpshelf-\${currentBundleTab}-bundle.json\`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Downloaded ' + a.download);
+    }
+
+    function copyShareStackUrl() {
+      const url = window.location.origin + '/?stack=' + Array.from(selectedStack).join(',');
+      navigator.clipboard.writeText(url).then(() => {
+        showToast('Copied shareable Stack Link to clipboard!');
+      });
+    }
+
+    // -------------------------------------------------------------
+    // Single Modal Install & Quick Copy
+    // -------------------------------------------------------------
     function openInstallModal(id) {
-      const s = serversData.find(x => x.id === id);
+      const s = CATALOG.find(x => x.id === id);
       if (!s) return;
       currentServer = s;
       document.getElementById('modalTitle').textContent = s.title;
@@ -503,29 +1086,59 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       if (!currentServer) return;
       if (tab === 'claude') {
         codeBox.textContent = currentServer.installSnippets.claudeDesktop;
-        pathBox.textContent = 'Paste into: claude_desktop_config.json';
+        pathBox.textContent = 'File: claude_desktop_config.json';
       } else if (tab === 'cursor') {
         codeBox.textContent = currentServer.installSnippets.cursorMcp;
-        pathBox.textContent = 'Paste into: ~/.cursor/mcp.json';
+        pathBox.textContent = 'File: ~/.cursor/mcp.json';
       } else if (tab === 'windsurf') {
         codeBox.textContent = currentServer.installSnippets.windsurf;
-        pathBox.textContent = 'Paste into: ~/.codeium/windsurf/mcp_config.json';
+        pathBox.textContent = 'File: ~/.codeium/windsurf/mcp_config.json';
       } else if (tab === 'zed') {
-        const sid = currentServer.name || currentServer.id.split('/').pop();
+        const sid = (currentServer.name || currentServer.id.split('/').pop() || 'mcp').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
         const zedObj = {
           "context_servers": {
             [sid]: {
-              "command": "npx",
-              "args": ["-y", currentServer.packageIdentifier || currentServer.id]
+              "command": {
+                "env": {},
+                "path": "npx",
+                "args": ["-y", currentServer.packageIdentifier || currentServer.id]
+              }
             }
           }
         };
         codeBox.textContent = JSON.stringify(zedObj, null, 2);
-        pathBox.textContent = 'Paste into: ~/.config/zed/settings.json';
+        pathBox.textContent = 'File: ~/.config/zed/settings.json';
       } else {
-        codeBox.textContent = currentServer.installSnippets.terminal;
-        pathBox.textContent = 'Run directly in your terminal';
+        codeBox.textContent = currentServer.installSnippets.terminal || \`npx -y \${currentServer.packageIdentifier || currentServer.id}\`;
+        pathBox.textContent = 'Run directly in your terminal prompt';
       }
+    }
+
+    function copySnippet() {
+      const text = document.getElementById('modalCode').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('copyBtn');
+        btn.textContent = 'Copied!';
+        btn.classList.add('bg-brand-500', 'text-black');
+        showToast('Copied ' + currentTab.toUpperCase() + ' snippet to clipboard!');
+        setTimeout(() => {
+          btn.textContent = 'Copy';
+          btn.classList.remove('bg-brand-500', 'text-black');
+        }, 1800);
+      });
+    }
+
+    function quickCopyTerminal(cmd, event) {
+      if (event) event.stopPropagation();
+      navigator.clipboard.writeText(cmd).then(() => {
+        showToast('Copied CLI run command!');
+      });
+    }
+
+    function copyCliExplore() {
+      navigator.clipboard.writeText('npx @ritualdev-lab/mcpshelf explore').then(() => {
+        showToast('Copied "npx @ritualdev-lab/mcpshelf explore" to clipboard!');
+      });
     }
 
     function showToast(msg) {
@@ -533,7 +1146,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       if (!toast) {
         toast = document.createElement('div');
         toast.id = 'toastNotification';
-        toast.className = 'fixed bottom-5 right-5 z-50 bg-emerald-500 text-black px-4 py-2.5 rounded-xl font-bold text-xs shadow-2xl flex items-center gap-2 transition-all duration-300 opacity-0 translate-y-4';
+        toast.className = 'fixed bottom-5 right-5 z-50 bg-emerald-500 text-black px-4 py-2.5 rounded-2xl font-bold text-xs shadow-2xl flex items-center gap-2 transition-all duration-300 opacity-0 translate-y-4';
         document.body.appendChild(toast);
       }
       toast.innerHTML = '<span>⚡</span> <span>' + msg + '</span>';
@@ -543,18 +1156,45 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
       }, 2500);
     }
 
-    function copySnippet() {
-      const text = document.getElementById('modalCode').textContent;
-      navigator.clipboard.writeText(text);
-      const btn = document.getElementById('copyBtn');
-      btn.textContent = 'Copied!';
-      btn.classList.add('bg-brand-500', 'text-black');
-      showToast('Copied ' + currentTab.toUpperCase() + ' snippet to clipboard!');
-      setTimeout(() => {
-        btn.textContent = 'Copy';
-        btn.classList.remove('bg-brand-500', 'text-black');
-      }, 1800);
-    }
+    // Restore URL State upon initial load
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const q = urlParams.get('q');
+      const cat = urlParams.get('cat');
+      const client = urlParams.get('client');
+      const sec = urlParams.get('sec');
+      const sort = urlParams.get('sort');
+      const stack = urlParams.get('stack');
+
+      if (q) {
+        searchInput.value = q;
+        searchClearBtn.classList.remove('hidden');
+      }
+      if (cat) filterCategory(cat);
+      if (client) filterClient(client);
+      if (sec) filterSecurity(sec);
+      if (sort) document.getElementById('sortSelect').value = sort;
+
+      if (stack) {
+        stack.split(',').filter(Boolean).forEach(id => {
+          const s = CATALOG.find(x => x.id === id || x.id.toLowerCase().includes(id.toLowerCase()));
+          if (s) {
+            selectedStack.add(s.id);
+            const btn = document.getElementById('stack-btn-' + s.id);
+            if (btn) {
+              btn.classList.add('bg-emerald-500', 'text-black', 'border-emerald-400');
+              btn.classList.remove('bg-slate-800', 'text-slate-300');
+              btn.innerHTML = '<span>✓</span> <span>In Stack</span>';
+            }
+          }
+        });
+        updateStackUI();
+      }
+
+      if (q || cat || client || sec || sort) {
+        triggerFilter();
+      }
+    });
   </script>
 </body>
 </html>`;
