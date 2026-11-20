@@ -26,6 +26,11 @@ Sitemap: https://mcp.ritualdev.in/sitemap.xml
 ## Overview
 MCPShelf (https://mcp.ritualdev.in) is the community mirror and marketplace for Model Context Protocol servers.
 
+## Feeds & Weekly Digest
+- Weekly AI Agent Digest: https://mcp.ritualdev.in/digest.html
+- RSS 2.0 Feed: https://mcp.ritualdev.in/feed.xml
+- JSON Feed 1.1: https://mcp.ritualdev.in/feed.json
+
 ## Top Verified MCP Servers
 `;
   for (const s of catalog.slice(0, 50)) {
@@ -36,6 +41,7 @@ MCPShelf (https://mcp.ritualdev.in) is the community mirror and marketplace for 
   // Sitemap.xml
   const urls: string[] = [
     'https://mcp.ritualdev.in/',
+    'https://mcp.ritualdev.in/digest.html',
     'https://mcp.ritualdev.in/boost.html',
     'https://mcp.ritualdev.in/submit.html'
   ];

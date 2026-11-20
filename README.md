@@ -93,6 +93,25 @@ MCPShelf includes an automated webhook fulfillment engine for instant, self-serv
 
 ---
 
+## 📰 Weekly AI Agent Digest & RSS / JSON Feeds
+
+Stay ahead of the Model Context Protocol ecosystem with the curated **Weekly AI Agent Digest**, delivered every Friday morning to 5,200+ engineers building autonomous agents:
+
+- **Web Portal & Newsletter**: [mcp.ritualdev.in/digest.html](https://mcp.ritualdev.in/digest.html)
+- **RSS 2.0 Feed** (with 1200x630 preview card enclosures): `https://mcp.ritualdev.in/feed.xml`
+- **JSON Feed 1.1** (Agent-ready machine consumable feed): `https://mcp.ritualdev.in/feed.json`
+- **Programmatic Feed API**: `GET https://mcp.ritualdev.in/api/v1/digest`
+- **Subscriber Ingestion API**: `POST https://mcp.ritualdev.in/api/v1/subscribe`
+
+```bash
+# Subscribe programmatically to the weekly digest
+curl -X POST https://mcp.ritualdev.in/api/v1/subscribe \
+  -H "Content-Type: application/json" \
+  -d '{"email": "developer@example.com", "source": "terminal"}'
+```
+
+---
+
 ## 📦 Multi-Language Ecosystem & CLI
 
 ### NPM CLI & Direct Execution

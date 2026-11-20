@@ -22,6 +22,8 @@ const PORT = Number(process.env.PORT) || 4000;
 const MCPSHELF_CATALOG = path.resolve(__dirname, '..', 'data', 'catalog.json');
 const DEVSHELF_TOOLS = path.resolve(__dirname, '..', 'data', 'devshelf-tools.json');
 const SUBMISSIONS_FILE = path.resolve(__dirname, '..', 'data', 'submissions.json');
+const SUBSCRIBERS_FILE = path.resolve(__dirname, '..', 'data', 'subscribers.json');
+const FEED_JSON_FILE = path.resolve(__dirname, '..', 'site', 'feed.json');
 
 export interface ServerRecord {
   id: string;
@@ -166,6 +168,8 @@ export function createApiServer() {
           devToolDetail: 'GET /api/v1/tools/:id',
           sponsors: 'GET /api/v1/sponsors',
           dodoWebhook: 'POST /api/v1/webhooks/dodo',
+          digest: 'GET /api/v1/digest',
+          subscribe: 'POST /api/v1/subscribe',
           submitUnified: 'POST /api/v1/submit',
           submitMcp: 'POST /api/v1/mcpshelf/submit',
           submitDevTool: 'POST /api/v1/devshelf/submit'
@@ -327,6 +331,66 @@ export function createApiServer() {
       return;
     }
 
+    // 9. Weekly Digest Feed (GET /api/v1/digest or /api/v1/feed)
+    if ((pathname === '/api/v1/digest' || pathname === '/api/v1/feed') && req.method === 'GET') {
+      if (fs.existsSync(FEED_JSON_FILE)) {
+        try {
+          const feed = JSON.parse(fs.readFileSync(FEED_JSON_FILE, 'utf-8'));
+          return sendJson(200, feed);
+        } catch {}
+      }
+      return sendJson(200, {
+        title: 'MCPShelf - Weekly AI Agent Digest',
+        description: 'Feed temporarily unavailable or building.',
+        items: []
+      });
+    }
+
+    // 10. Newsletter Subscription (POST /api/v1/subscribe)
+    if (pathname === '/api/v1/subscribe' && req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => { body += chunk; });
+      req.on('end', () => {
+        try {
+          const payload = JSON.parse(body);
+          const email = (payload.email || '').trim().toLowerCase();
+          if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            return sendJson(400, { success: false, error: 'Valid email address is required' });
+          }
+
+          let subscribers: any[] = [];
+          if (fs.existsSync(SUBSCRIBERS_FILE)) {
+            try { subscribers = JSON.parse(fs.readFileSync(SUBSCRIBERS_FILE, 'utf-8')); } catch {}
+          }
+
+          const existing = subscribers.find(s => s.email?.toLowerCase() === email);
+          if (existing) {
+            return sendJson(200, { success: true, message: 'You are already subscribed to Weekly AI Agent Digest!' });
+          }
+
+          subscribers.push({
+            email,
+            subscribedAt: new Date().toISOString(),
+            source: payload.source || 'api',
+            status: 'active'
+          });
+
+          // Atomic write
+          const tmp = `${SUBSCRIBERS_FILE}.${Date.now()}.${Math.random().toString(36).substring(2, 7)}.tmp`;
+          fs.writeFileSync(tmp, JSON.stringify(subscribers, null, 2), 'utf-8');
+          fs.renameSync(tmp, SUBSCRIBERS_FILE);
+
+          return sendJson(201, {
+            success: true,
+            message: 'Successfully subscribed to Weekly AI Agent Digest! Check your inbox every Friday.'
+          });
+        } catch (err: any) {
+          return sendJson(400, { success: false, error: `Invalid JSON body: ${err.message}` });
+        }
+      });
+      return;
+    }
+
     return sendJson(404, {
       error: 'Route not found',
       validEndpoints: [
@@ -336,6 +400,8 @@ export function createApiServer() {
         'GET /api/v1/tools',
         'GET /api/v1/tools/:id',
         'GET /api/v1/sponsors',
+        'GET /api/v1/digest',
+        'POST /api/v1/subscribe',
         'POST /api/v1/webhooks/dodo',
         'POST /api/v1/submit',
         'POST /api/v1/mcpshelf/submit',

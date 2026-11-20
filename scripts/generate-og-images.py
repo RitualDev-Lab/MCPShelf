@@ -181,6 +181,16 @@ def main():
     )
     print("  ✓ Generated site/og/submit.png")
 
+    # 4. Weekly Digest Card
+    generate_static_card(
+        title="Weekly AI Agent Digest • MCPShelf Marketplace",
+        subtitle="Newly published, trending, and security-verified Model Context Protocol (MCP) servers for Claude & Cursor.",
+        badge="WEEKLY DIGEST & RSS",
+        cmd="subscribe https://mcp.ritualdev.in/digest.html",
+        out_path=OG_DIR / "digest.png"
+    )
+    print("  ✓ Generated site/og/digest.png")
+
     # 4. Server-Specific Cards
     catalog_path = DATA_DIR / "catalog.json"
     if not catalog_path.exists():

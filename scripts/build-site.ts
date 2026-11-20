@@ -1,5 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
+import { generateDigestFiles } from './generate-digest.js';
 
 interface EnrichedServer {
   id: string;
@@ -118,6 +119,9 @@ async function main() {
   }
   console.log(`  📑 Built ${pageCount} individual server detail pages in site/servers/*.html`);
 
+  // Build Weekly AI Agent Digest & RSS/JSON Feeds
+  generateDigestFiles();
+
   console.log('✅ [MCPShelf SSG] Build complete!');
 }
 
@@ -135,6 +139,10 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
+  <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
@@ -185,6 +193,10 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         </span>
       </div>
       <div class="flex items-center space-x-3">
+        <a href="/digest.html" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 transition">
+          <span>📰</span>
+          <span>Weekly Digest</span>
+        </a>
         <a href="/boost.html" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-gradient-to-r from-amber-500/20 to-orange-500/20 text-amber-400 border border-amber-500/30 hover:border-amber-400 transition">
           <span>🚀</span>
           <span>Boost Server</span>
@@ -561,6 +573,10 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
+  <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mcp.ritualdev.in/boost.html">
@@ -585,7 +601,10 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
         <span class="text-2xl">⚡</span>
         <span class="font-extrabold text-xl tracking-tight text-white">MCP<span class="text-emerald-400">Shelf</span></span>
       </a>
-      <a href="/" class="text-xs font-semibold text-slate-400 hover:text-white transition">&larr; Back to Marketplace</a>
+      <div class="flex items-center space-x-4">
+        <a href="/digest.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition">📰 Weekly Digest</a>
+        <a href="/" class="text-xs font-semibold text-slate-400 hover:text-white transition">&larr; Back to Marketplace</a>
+      </div>
     </div>
   </header>
 
@@ -682,6 +701,10 @@ function generateSubmitHtml(categories: Category[]): string {
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
+  <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mcp.ritualdev.in/submit.html">
@@ -706,7 +729,10 @@ function generateSubmitHtml(categories: Category[]): string {
         <span class="text-2xl">⚡</span>
         <span class="font-extrabold text-xl tracking-tight text-white">MCP<span class="text-emerald-400">Shelf</span></span>
       </a>
-      <a href="/" class="text-xs font-semibold text-slate-400 hover:text-white transition">&larr; Back to Marketplace</a>
+      <div class="flex items-center space-x-4">
+        <a href="/digest.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition">📰 Weekly Digest</a>
+        <a href="/" class="text-xs font-semibold text-slate-400 hover:text-white transition">&larr; Back to Marketplace</a>
+      </div>
     </div>
   </header>
 
@@ -761,6 +787,10 @@ function generateServerDetailHtml(server: any, categories: Category[]): string {
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
+  <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+
   <!-- OpenGraph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mcp.ritualdev.in/servers/${slugify(server.id)}.html">
@@ -785,7 +815,10 @@ function generateServerDetailHtml(server: any, categories: Category[]): string {
         <span class="text-2xl">⚡</span>
         <span class="font-extrabold text-xl tracking-tight text-white">MCP<span class="text-emerald-400">Shelf</span></span>
       </a>
-      <a href="/" class="text-xs font-semibold text-slate-400 hover:text-white transition">&larr; Back to Directory</a>
+      <div class="flex items-center space-x-4">
+        <a href="/digest.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition">📰 Weekly Digest</a>
+        <a href="/" class="text-xs font-semibold text-slate-400 hover:text-white transition">&larr; Back to Directory</a>
+      </div>
     </div>
   </header>
 

@@ -4,6 +4,11 @@
 ## Overview
 MCPShelf (https://mcp.ritualdev.in) is the community mirror and marketplace for Model Context Protocol servers.
 
+## Feeds & Weekly Digest
+- Weekly AI Agent Digest: https://mcp.ritualdev.in/digest.html
+- RSS 2.0 Feed: https://mcp.ritualdev.in/feed.xml
+- JSON Feed 1.1: https://mcp.ritualdev.in/feed.json
+
 ## Top Verified MCP Servers
 - [AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html): Enterprise Zero-Leak Secret Defense & Kernel Sandbox for Autonomous AI Agents (Category: security, Trust Score: 9.8/10)
 - [DBShield Database Guardrail & Sandboxing MCP Server](https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-dbshield.html): Safety-first Database Guardrail & Sandboxing MCP Server for AI Coding Agents (Category: security, Trust Score: 9.8/10)
