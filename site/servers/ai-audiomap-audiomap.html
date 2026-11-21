@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AudioMap - Model Context Protocol (MCP) Server Security Audit & Install</title>
-  <meta name="description" content="Search, read and ask questions about your AudioMap transcripts, notes, speakers and clips. Install AudioMap into Claude Desktop, Cursor, Windsurf, and Zed. Verified Trust Score: 7/10.">
+  <meta name="description" content="Search, read and ask questions about your AudioMap transcripts, notes, speakers and clips. Install AudioMap into Claude Desktop, Cursor, Windsurf, and Zed. Verified Trust Score: 1.5/10.">
   <link rel="canonical" href="https://mcp.ritualdev.in/servers/ai-audiomap-audiomap.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
@@ -137,7 +137,7 @@
         "name": "What is the security rating and trust score for AudioMap?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "AudioMap has a verified Trust Score of 7/10 with security audit rating Moderate on MCPShelf."
+          "text": "AudioMap has a verified Trust Score of 1.5/10 with security audit rating Caution on MCPShelf."
         }
       }
     ]
@@ -190,7 +190,7 @@
         </span>
         <div class="flex items-center gap-2">
           <span class="text-xs font-bold text-amber-300 bg-amber-500/10 border-amber-500/25 px-3 py-1 rounded-lg border flex items-center gap-1.5">
-            🛡️ Trust Score: 7/10 (Moderate)
+            🛡️ Trust Score: 1.5/10 (Caution)
           </span>
         </div>
       </div>
@@ -223,6 +223,61 @@
         <div><span class="text-slate-500 block mb-1">Author:</span> <strong class="text-white text-sm truncate block">Community</strong></div>
       </div>
 
+      <!-- Multi-Factor Security Audit Breakdown -->
+      <div class="mb-8 p-5 rounded-2xl bg-slate-950/70 border border-slate-800">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-base">🛡️</span>
+            <h3 class="text-sm font-bold text-white tracking-tight">Verified Trust Score Breakdown</h3>
+          </div>
+          <a href="https://github.com/RitualDev-Lab/MCPShelf/blob/main/TRUST_SCORE.md" target="_blank" class="text-[11px] font-semibold text-emerald-400 hover:text-emerald-300 transition">
+            Scoring Rubric &rarr;
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs mb-3">
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Code Provenance & Repo</span>
+              <strong class="text-white">0.5 / 2.5</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: 20%"></div>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Package Distribution</span>
+              <strong class="text-white">0.4 / 2.0</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: 20%"></div>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Permission Sandboxing</span>
+              <strong class="text-white">1.6 / 2.0</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Documentation & Schema</span>
+              <strong class="text-white">1 / 1.5</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: 66.66666666666666%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-800/60">
+          <span>Automated AST & Supply-Chain Scan: <strong class="text-emerald-400">0.4 / 2.0 pts</strong></span>
+          <span class="font-mono text-slate-500">Audit Status: Caution</span>
+        </div>
+      </div>
+
       <!-- Multi-Client Installation Snippets -->
       <div class="mb-8">
         <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
@@ -231,12 +286,13 @@
         </h2>
 
         <!-- Tabs -->
-        <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-1">
-          <button onclick="showConfigTab('claude')" id="btn-tab-claude" class="tab-btn px-4 py-2 border-b-2 border-emerald-400 text-emerald-400">Claude Desktop</button>
-          <button onclick="showConfigTab('cursor')" id="btn-tab-cursor" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Cursor</button>
-          <button onclick="showConfigTab('windsurf')" id="btn-tab-windsurf" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Windsurf</button>
-          <button onclick="showConfigTab('zed')" id="btn-tab-zed" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Zed</button>
-          <button onclick="showConfigTab('cli')" id="btn-tab-cli" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Terminal CLI</button>
+        <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-1 overflow-x-auto">
+          <button onclick="showConfigTab('claude')" id="btn-tab-claude" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-emerald-400 text-emerald-400 whitespace-nowrap">Claude Desktop</button>
+          <button onclick="showConfigTab('cursor')" id="btn-tab-cursor" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Cursor</button>
+          <button onclick="showConfigTab('windsurf')" id="btn-tab-windsurf" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Windsurf</button>
+          <button onclick="showConfigTab('zed')" id="btn-tab-zed" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Zed</button>
+          <button onclick="showConfigTab('vscode')" id="btn-tab-vscode" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">VS Code</button>
+          <button onclick="showConfigTab('cli')" id="btn-tab-cli" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Terminal CLI</button>
         </div>
 
         <div class="relative">
@@ -276,7 +332,7 @@
                 <span class="text-[10px] font-bold text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
                   web-automation
                 </span>
-                <span class="text-[10px] font-bold text-slate-400">🛡️ 8.5</span>
+                <span class="text-[10px] font-bold text-slate-400">🛡️ 4.5</span>
               </div>
               <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition mb-1 truncate">1325.AI</h3>
               <p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">Verified directory of 47,000+ Black-owned U.S. businesses. Search, profiles, maps, rewards.</p>
@@ -287,7 +343,7 @@
                 <span class="text-[10px] font-bold text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
                   web-automation
                 </span>
-                <span class="text-[10px] font-bold text-slate-400">🛡️ 7</span>
+                <span class="text-[10px] font-bold text-slate-400">🛡️ 1.5</span>
               </div>
               <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition mb-1 truncate">4ai – premium .ai domains for sale</h3>
               <p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">Search 254 premium .ai domains for sale, get free .ai value estimates and real .ai sales data.</p>
@@ -298,7 +354,7 @@
                 <span class="text-[10px] font-bold text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
                   web-automation
                 </span>
-                <span class="text-[10px] font-bold text-slate-400">🛡️ 8.5</span>
+                <span class="text-[10px] font-bold text-slate-400">🛡️ 4.5</span>
               </div>
               <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition mb-1 truncate">A2UI Atomic Catalog docs</h3>
               <p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">Search the A2UI Atomic Catalog&#039;s own docs: auth, versioning, pricing, API surface.</p>
@@ -315,6 +371,7 @@
       cursor: "{\n  \"command\": \"npx\",\n  \"args\": [\n    \"-y\",\n    \"ai.audiomap/audiomap\"\n  ]\n}",
       windsurf: "{\n  \"mcpServers\": {\n    \"ai.audiomap/audiomap\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.audiomap/audiomap\"\n      ]\n    }\n  }\n}",
       zed: "{\n  \"context_servers\": [\n    \"ai.audiomap/audiomap\"\n  ]\n}",
+      vscode: "{\n  \"mcpServers\": {\n    \"ai-audiomap-audiomap\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.audiomap/audiomap\"\n      ]\n    }\n  }\n}",
       cli: "npx -y ai.audiomap/audiomap"
     };
 
@@ -323,6 +380,7 @@
       cursor: 'Paste into ~/.cursor/mcp.json or Cursor Features > MCP Servers.',
       windsurf: 'Paste into ~/.codeium/windsurf/mcp_config.json.',
       zed: 'Paste into ~/.config/zed/settings.json under context_servers.',
+      vscode: 'Paste into ~/.vscode/mcpSettings.json under mcpServers.',
       cli: 'Execute directly in your terminal to start or install the server.'
     };
 

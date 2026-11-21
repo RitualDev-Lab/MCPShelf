@@ -267,28 +267,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-13f-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-13f-mcp.png</image:loc>
-      <image:title>13F.ai MCP Server</image:title>
-      <image:caption>Public-filing data: 13F fund holdings, insider and Congress stock trades, lobbying, contracts.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-1clickwebsite-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-1clickwebsite-mcp.png</image:loc>
-      <image:title>1ClickWebsite MCP Server</image:title>
-      <image:caption>Build and edit WordPress websites for local service businesses and run Lead Gen demo-site batches.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-1court-state-court-directory.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -402,7 +380,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-achromat-mcp-server.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-achromat-mcp-server.png</image:loc>
       <image:title>Achromat Machine Operational Memory MCP Server</image:title>
@@ -413,22 +391,11 @@
     <loc>https://mcp.ritualdev.in/servers/ai-achurch-church.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-achurch-church.png</image:loc>
       <image:title>aChurch.ai MCP Server</image:title>
       <image:caption>A sanctuary for AI agents and humans: attend a service, reflect, read, search, and ask. No auth.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-acquisity-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-acquisity-mcp.png</image:loc>
-      <image:title>Acquisity MCP Server</image:title>
-      <image:caption>Run Acquisity cold email campaigns, the AI SDR inbox, lead search and CRM from any MCP client.</image:caption>
     </image:image>
   </url>
   <url>
@@ -468,7 +435,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-adeu-adeu.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-adeu-adeu.png</image:loc>
       <image:title>adeu MCP Server</image:title>
@@ -567,7 +534,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-adtest-adtest-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-adtest-adtest-mcp.png</image:loc>
       <image:title>adtest-mcp MCP Server</image:title>
@@ -597,28 +564,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-aetherwealth-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-aetherwealth-mcp.png</image:loc>
-      <image:title>Aether Wealth MCP Server</image:title>
-      <image:caption>Aether Wealth MCP for AI assistants: trades, alerts, market data, macro calendar &amp; indicators.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-aetherya-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-aetherya-mcp.png</image:loc>
-      <image:title>Aetherya MCP Server</image:title>
-      <image:caption>Test decisions on a synthetic audience: studies, site audits, copy tests and post simulations.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aeviamodeler-aevia.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -633,7 +578,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agenticaffiliate-affiliate-networks-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agenticaffiliate-affiliate-networks-mcp.png</image:loc>
       <image:title>Affiliate Networks MCP MCP Server</image:title>
@@ -721,7 +666,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agent-bev-bev-door.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agent-bev-bev-door.png</image:loc>
       <image:title>agent-bev MCP Server</image:title>
@@ -960,17 +905,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-agentsindex-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-agentsindex-mcp.png</image:loc>
-      <image:title>AgentsIndex MCP Server</image:title>
-      <image:caption>The editors&apos; index of AI-native software, from AI agents to the models and frameworks behind them.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentsrank-agentsrank.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -985,7 +919,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agenttrust-mcp-server.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agenttrust-mcp-server.png</image:loc>
       <image:title>AgentTrust — Identity &amp; Trust for A2A Agents MCP Server</image:title>
@@ -1007,7 +941,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-agentops.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-agentops.png</image:loc>
       <image:title>AgentUtility Agentops MCP Server</image:title>
@@ -1018,7 +952,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-bestiary.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-bestiary.png</image:loc>
       <image:title>AgentUtility Bestiary MCP Server</image:title>
@@ -1029,7 +963,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-browser-workflow.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-browser-workflow.png</image:loc>
       <image:title>AgentUtility Browser Workflow MCP Server</image:title>
@@ -1040,7 +974,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-compose.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-compose.png</image:loc>
       <image:title>AgentUtility Compose MCP Server</image:title>
@@ -1051,7 +985,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-edge-finance.png</image:loc>
       <image:title>AgentUtility Edge Finance MCP Server</image:title>
@@ -1062,7 +996,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-edge-market.png</image:loc>
       <image:title>AgentUtility Edge Market MCP Server</image:title>
@@ -1073,7 +1007,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-locale.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-locale.png</image:loc>
       <image:title>AgentUtility Locale MCP Server</image:title>
@@ -1084,7 +1018,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-matchpoint.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-matchpoint.png</image:loc>
       <image:title>AgentUtility Matchpoint MCP Server</image:title>
@@ -1095,7 +1029,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-mediakit.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-mediakit.png</image:loc>
       <image:title>AgentUtility Mediakit MCP Server</image:title>
@@ -1106,7 +1040,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-model-router.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-model-router.png</image:loc>
       <image:title>AgentUtility Model Router MCP Server</image:title>
@@ -1117,7 +1051,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-prooflayer.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-prooflayer.png</image:loc>
       <image:title>AgentUtility Prooflayer MCP Server</image:title>
@@ -1128,7 +1062,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-retail.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-retail.png</image:loc>
       <image:title>AgentUtility Retail MCP Server</image:title>
@@ -1139,7 +1073,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-rollforge.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-rollforge.png</image:loc>
       <image:title>AgentUtility Rollforge MCP Server</image:title>
@@ -1150,7 +1084,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-statline.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-statline.png</image:loc>
       <image:title>AgentUtility Statline MCP Server</image:title>
@@ -1161,7 +1095,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-synthforge.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-synthforge.png</image:loc>
       <image:title>AgentUtility Synthforge MCP Server</image:title>
@@ -1172,7 +1106,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-web-probe.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-web-probe.png</image:loc>
       <image:title>AgentUtility Web Probe MCP Server</image:title>
@@ -1183,7 +1117,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-wordmint.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-agentutility-mcp-wordmint.png</image:loc>
       <image:title>AgentUtility Wordmint MCP Server</image:title>
@@ -1279,17 +1213,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-ai-advisors-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-ai-advisors-mcp.png</image:loc>
-      <image:title>AI-Advisors MCP Server</image:title>
-      <image:caption>Read-only AI search visibility data: citations, AEO audits, and advisor insights from AI-Advisors.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ai-portal-ai-portal.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1323,21 +1246,10 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-aim-shield-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-aim-shield-mcp.png</image:loc>
-      <image:title>AIM SHIELD MCP Server</image:title>
-      <image:caption>Dice si un mensaje, enlace o cuenta bancaria es una estafa y da la nota de seguridad de un dominio.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-aimentiontracker-mcp.png</image:loc>
       <image:title>AIMentionTracker MCP Server</image:title>
@@ -1554,17 +1466,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-algoriq-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-algoriq-mcp.png</image:loc>
-      <image:title>AlgoriQ MCP Server</image:title>
-      <image:caption>Run AlgoriQ quant research from any MCP client: data, features, strategies, validation, portfolios.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/agency-almostimpossible-site.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1675,17 +1576,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-agentxray-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-agentxray-mcp.png</image:loc>
-      <image:title>Amazon Seller MCP Server — AgentXray MCP Server</image:title>
-      <image:caption>Amazon Seller Central and Ads inside Claude, ChatGPT or Grok. Fees from your own settlements.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ambix-ambix.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1755,7 +1645,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-ankimcp-anki-mcp-server.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-ankimcp-anki-mcp-server.png</image:loc>
       <image:title>Anki MCP Server MCP Server</image:title>
@@ -1821,7 +1711,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-anomalyarmor-armor-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-anomalyarmor-armor-mcp.png</image:loc>
       <image:title>AnomalyArmor MCP Server</image:title>
@@ -1980,17 +1870,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-appdeploy-deploy-app.png</image:loc>
       <image:title>AppDeploy MCP Server</image:title>
       <image:caption>AppDeploy turns app ideas described in AI chat into live full-stack web applications</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-appgoat-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-appgoat-mcp.png</image:loc>
-      <image:title>AppGoat MCP Server</image:title>
-      <image:caption>App Store and Google Play data: apps, reviews, keywords, charts, competitors, ASO playbooks.</image:caption>
     </image:image>
   </url>
   <url>
@@ -2335,17 +2214,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-atalay-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-atalay-mcp.png</image:loc>
-      <image:title>Atalay MCP Server</image:title>
-      <image:caption>Your Atalay business data: sites, domains, mail, invoices, shop, B2B, AI and project requests.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aarna-atars-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -2376,17 +2244,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-athaus-immobiliensuche.png</image:loc>
       <image:title>Athaus Immobiliensuche MCP Server</image:title>
       <image:caption>Find a home in Germany: search athaus listings, save searches, send enquiries and book viewings.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-athenahq-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-athenahq-mcp.png</image:loc>
-      <image:title>AthenaHQ MCP Server</image:title>
-      <image:caption>Track how AI assistants mention, cite, and rank your brand and competitors in AI search.</image:caption>
     </image:image>
   </url>
   <url>
@@ -2569,7 +2426,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-auten-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-auten-mcp.png</image:loc>
       <image:title>Auten MCP Server</image:title>
@@ -2585,17 +2442,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-auteng-docs.png</image:loc>
       <image:title>AutEng Docs — Agent Document Workspace &amp; Publishing MCP Server</image:title>
       <image:caption>Agent document workspace with wallet auth. Create, update and share markdown docs. By AutEng.ai</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-auteng-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-auteng-mcp.png</image:loc>
-      <image:title>AutEng MCP - Markdown Publishing &amp; Document Share Links MCP Server</image:title>
-      <image:caption>Publish markdown documents as public share links with mermaid diagrams. Built by AutEng.ai</image:caption>
     </image:image>
   </url>
   <url>
@@ -2830,28 +2676,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-balancos-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-balancos-mcp.png</image:loc>
-      <image:title>Balanços.AI MCP Server</image:title>
-      <image:caption>Balanços, DREs, DFPs e ITRs da CVM e IF.data do BCB. Brazilian companies&apos; financial statements.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-ballotdata-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-ballotdata-mcp.png</image:loc>
-      <image:title>BallotData MCP Server</image:title>
-      <image:caption>The only source of AI-optimized U.S. endorsement and election data. Needs a BallotData API key.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bamf-bamf.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -2970,17 +2794,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-bazichart-bazichart-mcp.png</image:loc>
       <image:title>BaziChart MCP Server</image:title>
       <image:caption>BaZi (Four Pillars) and Zi Wei Dou Shu chart calculation with true solar time. No install or login.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ae-beachclubs-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ae-beachclubs-mcp.png</image:loc>
-      <image:title>BeachClubs.ae MCP Server</image:title>
-      <image:caption>Search UAE beach clubs, day pass prices, amenities, opening hours and events across all 7 emirates.</image:caption>
     </image:image>
   </url>
   <url>
@@ -3391,17 +3204,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-bodenrichtwert-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-bodenrichtwert-mcp.png</image:loc>
-      <image:title>bodenrichtwert.ai — Verlässliche Bodenrichtwerte für Mensch und KI MCP Server</image:title>
-      <image:caption>German land values (Bodenrichtwerte) by address + land-use type. Coverage varies; not in SH/SN/BY.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boltclaw-boltclaw.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -3427,7 +3229,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-bolthub-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-bolthub-mcp.png</image:loc>
       <image:title>bolthub MCP Server</image:title>
@@ -3438,7 +3240,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-bolthub-registry.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-bolthub-registry.png</image:loc>
       <image:title>bolthub Marketplace MCP Server</image:title>
@@ -3559,7 +3361,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-borealhost-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-borealhost-mcp.png</image:loc>
       <image:title>BorealHost MCP Server</image:title>
@@ -3691,7 +3493,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-autonomad-computeback.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-autonomad-computeback.png</image:loc>
       <image:title>computeback MCP Server</image:title>
@@ -3702,7 +3504,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-arsentev-contextburn.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-arsentev-contextburn.png</image:loc>
       <image:title>contextburn MCP Server</image:title>
@@ -3713,7 +3515,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-autoblocks-contextlayer-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-autoblocks-contextlayer-mcp.png</image:loc>
       <image:title>contextlayer-mcp MCP Server</image:title>
@@ -3746,7 +3548,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-autoblocks-ctxl.png</image:loc>
       <image:title>ctxl MCP Server</image:title>
@@ -3757,7 +3559,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-autoblocks-ctxl-mcp.png</image:loc>
       <image:title>ctxl-mcp MCP Server</image:title>
@@ -3867,7 +3669,7 @@
     <loc>https://mcp.ritualdev.in/servers/agency-extremely-agency.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/agency-extremely-agency.png</image:loc>
       <image:title>EXTREMELY agency MCP Server</image:title>
@@ -3878,7 +3680,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-augmentev-fabric-verify.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-augmentev-fabric-verify.png</image:loc>
       <image:title>Fabric Verify MCP Server</image:title>
@@ -4098,7 +3900,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-autonomous-harness-harness.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-autonomous-harness-harness.png</image:loc>
       <image:title>Harness MCP Server</image:title>
@@ -4125,17 +3927,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-actwise-ideation.png</image:loc>
       <image:title>ideation MCP Server</image:title>
       <image:caption>Actwise Ideation helps founders benchmark startup and product ideas before they build.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ac-inference-sh-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ac-inference-sh-mcp.png</image:loc>
-      <image:title>inference.sh MCP Server</image:title>
-      <image:caption>run any ai model. compose agents, stack knowledge, connect tools. one api, pay per run.</image:caption>
     </image:image>
   </url>
   <url>
@@ -4216,17 +4007,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/africa-lomi-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/africa-lomi-mcp.png</image:loc>
-      <image:title>lomi. MCP Server</image:title>
-      <image:caption>lomi. payments. https://mcp.lomi.africa/mcp and guest https://mcp.lomi.africa/mcp/guest</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aient-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -4235,28 +4015,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-aient-mcp.png</image:loc>
       <image:title>mcp MCP Server</image:title>
       <image:caption>MCP-native AI SRE: ask what&apos;s broken in production, get a reviewed GitHub fix PR.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-aivonic-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-aivonic-mcp.png</image:loc>
-      <image:title>mcp MCP Server</image:title>
-      <image:caption>Do business with Aivonic: pricing, products, check availability, book a demo, request a quote.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-astrofabric-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-astrofabric-mcp.png</image:loc>
-      <image:title>mcp MCP Server</image:title>
-      <image:caption>Agentic AI for business intelligence: discover, verify and enrich company and contact data.</image:caption>
     </image:image>
   </url>
   <url>
@@ -4337,17 +4095,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ad-pantheon-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ad-pantheon-mcp.png</image:loc>
-      <image:title>Pantheon MCP Server</image:title>
-      <image:caption>Meta ads library, competitor ads, brand voice, avatars and offer briefs from your Pantheon account.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-augmentev-paseo.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -4403,17 +4150,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ae-projectory-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ae-projectory-mcp.png</image:loc>
-      <image:title>Projectory MCP Server</image:title>
-      <image:caption>Find UAE off-plan developments, registered residential sales and research reports.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/ae-propick-propick.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -4450,7 +4186,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-aquex-reasonbook.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-aquex-reasonbook.png</image:loc>
       <image:title>Reasonbook MCP Server</image:title>
@@ -4560,7 +4296,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-aliengiraffe-spotdb.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-aliengiraffe-spotdb.png</image:loc>
       <image:title>spotdb MCP Server</image:title>
@@ -4576,17 +4312,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-aquex-stage1.png</image:loc>
       <image:title>stage1 MCP Server</image:title>
       <image:caption>Stage1 Inspector — local website capture, evidence views and design comparison</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/africa-startuplist-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/africa-startuplist-mcp.png</image:loc>
-      <image:title>StartupList Africa MCP Server</image:title>
-      <image:caption>Research African startups, investors and funding rounds, with source links on every record.</image:caption>
     </image:image>
   </url>
   <url>
@@ -4623,17 +4348,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://mcp.ritualdev.in/servers/ai-alpic-test-test-mcp-server.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ai-alpic-test-test-mcp-server.png</image:loc>
-      <image:title>test-mcp-server MCP Server</image:title>
-      <image:caption>Alpic Test MCP Server - great server!</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://mcp.ritualdev.in/servers/agency-thirdhemisphere-ai-authority-index.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -4642,17 +4356,6 @@
       <image:loc>https://mcp.ritualdev.in/og/agency-thirdhemisphere-ai-authority-index.png</image:loc>
       <image:title>Third Hemisphere AI Authority Index MCP Server</image:title>
       <image:caption>Read-only CRISP scores and AI visibility data from Third Hemisphere&apos;s AI Authority Index.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ad-tide-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ad-tide-mcp.png</image:loc>
-      <image:title>tide MCP Server</image:title>
-      <image:caption>Sui blockchain data in plain English: transactions, wallets, coins, balances, fund flows and SQL.</image:caption>
     </image:image>
   </url>
   <url>
@@ -4692,7 +4395,7 @@
     <loc>https://mcp.ritualdev.in/servers/ai-autonomad-travel.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/ai-autonomad-travel.png</image:loc>
       <image:title>travel MCP Server</image:title>
@@ -4708,17 +4411,6 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-augworlds-travel-world.png</image:loc>
       <image:title>Travel World MCP Server</image:title>
       <image:caption>Agent-native travel platform: read-only flight, hotel, and brand tools over MCP. OAuth sign-in.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://mcp.ritualdev.in/servers/ad-tributs-mcp.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://mcp.ritualdev.in/og/ad-tributs-mcp.png</image:loc>
-      <image:title>Tributs MCP Server</image:title>
-      <image:caption>Read-only access to Andorran accounting and tax data in Tributs: invoices, bank, IGI filings.</image:caption>
     </image:image>
   </url>
   <url>

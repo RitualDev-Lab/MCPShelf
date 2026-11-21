@@ -14,7 +14,7 @@ def load_local_or_remote(filename: str, remote_url: str):
         except Exception:
             pass
     try:
-        req = urllib.request.Request(remote_url, headers={"User-Agent": "mcpshelf-python/1.1.0"})
+        req = urllib.request.Request(remote_url, headers={"User-Agent": "mcpshelf-python/1.3.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except Exception as e:
@@ -30,7 +30,31 @@ def main():
     args = sys.argv[1:]
     if not args or args[0] in ("-h", "--help", "help"):
         print("""
-⚡ MCPShelf Python CLI - Open Registry for MCP Servers & Dev Tools (https://mcp.ritualdev.in)
+⚡ MCPShelf Python CLI - Open Model Context Protocol Registry (https://mcp.ritualdev.in)
+
+Usage:
+    mcpshelf mcp              Run official stdio Model Context Protocol (MCP) server
+    mcpshelf list             List trending and top-rated MCP servers
+    mcpshelf search <query>   Search servers by keyword, category, or author
+    mcpshelf tools <query>    Search 570+ verified DevShelf developer tools
+    mcpshelf audit <id>       Inspect security trust rating and permission report
+    mcpshelf get <id>         Output full JSON manifest and client install configs
+    mcpshelf --version        Show version
+""")
+        return
+
+    cmd = args[0].lower()
+
+    if cmd in ("-v", "--version", "version"):
+        print("mcpshelf v1.3.0")
+        return
+
+    if cmd in ("mcp", "serve", "stdio"):
+        from mcpshelf.server import main as run_server
+        run_server()
+        return
+
+    if cmd == "list":CPShelf Python CLI - Open Registry for MCP Servers & Dev Tools (https://mcp.ritualdev.in)
 
 Usage:
   mcpshelf explore              Interactive terminal browser & installer

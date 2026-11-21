@@ -1,56 +1,5 @@
 [
   {
-    "id": "ai.acquisity/mcp",
-    "name": "ai.acquisity/mcp",
-    "title": "Acquisity",
-    "description": "Run Acquisity cold email campaigns, the AI SDR inbox, lead search and CRM from any MCP client.",
-    "version": "2.0.1",
-    "category": "productivity",
-    "author": "Community",
-    "repositoryUrl": "",
-    "websiteUrl": "",
-    "isOfficialLatest": true,
-    "publishedAt": "2026-11-16T05:42:09.003661Z",
-    "trustScore": 7,
-    "securityRating": "Moderate",
-    "reviewsCount": 9,
-    "averageRating": 4.9,
-    "estimatedInstalls": 4413,
-    "transportType": "stdio",
-    "installSnippets": {
-      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.acquisity/mcp\"\n      ]\n    }\n  }\n}",
-      "cursorMcp": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.acquisity/mcp\"\n      ]\n    }\n  }\n}",
-      "windsurf": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.acquisity/mcp\"\n      ]\n    }\n  }\n}",
-      "terminal": "npx -y ai.acquisity/mcp"
-    }
-  },
-  {
-    "id": "ai.aetherwealth/mcp",
-    "name": "ai.aetherwealth/mcp",
-    "title": "Aether Wealth",
-    "description": "Aether Wealth MCP for AI assistants: trades, alerts, market data, macro calendar & indicators.",
-    "version": "0.2.17",
-    "category": "productivity",
-    "author": "Community",
-    "repositoryUrl": "",
-    "websiteUrl": "",
-    "isOfficialLatest": true,
-    "publishedAt": "2026-09-20T16:33:06.187417Z",
-    "trustScore": 8,
-    "securityRating": "High",
-    "reviewsCount": 3,
-    "averageRating": 4.9,
-    "estimatedInstalls": 5680,
-    "transportType": "stdio",
-    "packageIdentifier": "@aetherwealth/mcp",
-    "installSnippets": {
-      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@aetherwealth/mcp\"\n      ]\n    }\n  }\n}",
-      "cursorMcp": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@aetherwealth/mcp\"\n      ]\n    }\n  }\n}",
-      "windsurf": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@aetherwealth/mcp\"\n      ]\n    }\n  }\n}",
-      "terminal": "npx -y @aetherwealth/mcp"
-    }
-  },
-  {
     "id": "ai.ankra/docs",
     "name": "ai.ankra/docs",
     "title": "Ankra Docs",
@@ -62,8 +11,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-06T10:52:28.634425Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 4.5,
+    "securityRating": "Caution",
     "reviewsCount": 16,
     "averageRating": 4.7,
     "estimatedInstalls": 3177,
@@ -73,6 +22,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"docs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ankra/docs\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"docs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ankra/docs\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.ankra/docs"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -87,8 +43,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-14T16:15:10.649432Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 4.5,
+    "securityRating": "Caution",
     "reviewsCount": 6,
     "averageRating": 4.6,
     "estimatedInstalls": 4983,
@@ -98,31 +54,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"ask-your-audience\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askyouraudience/ask-your-audience\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"ask-your-audience\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askyouraudience/ask-your-audience\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.askyouraudience/ask-your-audience"
-    }
-  },
-  {
-    "id": "ai.atalay/mcp",
-    "name": "ai.atalay/mcp",
-    "title": "Atalay",
-    "description": "Your Atalay business data: sites, domains, mail, invoices, shop, B2B, AI and project requests.",
-    "version": "1.5.0",
-    "category": "productivity",
-    "author": "Community",
-    "repositoryUrl": "",
-    "websiteUrl": "",
-    "isOfficialLatest": true,
-    "publishedAt": "2026-10-10T12:45:12.801859Z",
-    "trustScore": 7,
-    "securityRating": "Moderate",
-    "reviewsCount": 11,
-    "averageRating": 4.7,
-    "estimatedInstalls": 1500,
-    "transportType": "stdio",
-    "installSnippets": {
-      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atalay/mcp\"\n      ]\n    }\n  }\n}",
-      "cursorMcp": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atalay/mcp\"\n      ]\n    }\n  }\n}",
-      "windsurf": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atalay/mcp\"\n      ]\n    }\n  }\n}",
-      "terminal": "npx -y ai.atalay/mcp"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -137,8 +75,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-10-20T12:48:50.326243Z",
-    "trustScore": 7,
-    "securityRating": "Moderate",
+    "trustScore": 1.5,
+    "securityRating": "Caution",
     "reviewsCount": 22,
     "averageRating": 5,
     "estimatedInstalls": 9183,
@@ -148,6 +86,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"autovox\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.autovox/autovox\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"autovox\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.autovox/autovox\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.autovox/autovox"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -162,8 +107,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-10-27T21:57:21.937101Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 4.5,
+    "securityRating": "Caution",
     "reviewsCount": 4,
     "averageRating": 4.6,
     "estimatedInstalls": 2240,
@@ -173,6 +118,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"blaze\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.blaze.app/blaze\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"blaze\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.blaze.app/blaze\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.blaze.app/blaze"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -187,8 +139,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-10-19T12:34:28.754717Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 4.5,
+    "securityRating": "Caution",
     "reviewsCount": 17,
     "averageRating": 4.9,
     "estimatedInstalls": 8037,
@@ -198,6 +150,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"b2b-data\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.blitz-api/b2b-data\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"b2b-data\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.blitz-api/b2b-data\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.blitz-api/b2b-data"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -212,8 +171,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-02T13:29:36.928492Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 4.5,
+    "securityRating": "Caution",
     "reviewsCount": 17,
     "averageRating": 5,
     "estimatedInstalls": 3672,
@@ -223,6 +182,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"emailwarmup\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bobwork/emailwarmup\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"emailwarmup\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bobwork/emailwarmup\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.bobwork/emailwarmup"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -237,8 +203,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-10-26T22:16:48.897897Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 4.5,
+    "securityRating": "Caution",
     "reviewsCount": 15,
     "averageRating": 5,
     "estimatedInstalls": 4356,
@@ -248,6 +214,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"leads\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ad.getle/leads\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"leads\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ad.getle/leads\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ad.getle/leads"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -262,8 +235,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-06-11T10:40:20.47951Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 3.5,
+    "securityRating": "Caution",
     "reviewsCount": 24,
     "averageRating": 4.8,
     "estimatedInstalls": 4527,
@@ -273,6 +246,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aient/mcp\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aient/mcp\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.aient/mcp"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   },
   {
@@ -287,8 +267,8 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-10-03T14:09:40.783985Z",
-    "trustScore": 8.5,
-    "securityRating": "High",
+    "trustScore": 4.5,
+    "securityRating": "Caution",
     "reviewsCount": 6,
     "averageRating": 4.7,
     "estimatedInstalls": 6208,
@@ -298,6 +278,13 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"web-content-url-tools\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.avaloncompany/web-content-url-tools\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"web-content-url-tools\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.avaloncompany/web-content-url-tools\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.avaloncompany/web-content-url-tools"
+    },
+    "trustBreakdown": {
+      "codeProvenance": 2.1,
+      "packageVerification": 0.4,
+      "permissionSandboxing": 1.6,
+      "documentationCompliance": 1,
+      "securityAudit": 0.4
     }
   }
 ]

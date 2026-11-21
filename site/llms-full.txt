@@ -1,17 +1,17 @@
 # MCPShelf Complete Catalog & Architectural Manifest
 Canonical Registry: https://mcp.ritualdev.in
-Total Verified Servers: 422
-Generated At: 2026-11-21T05:31:09.203Z
+Total Verified Servers: 394
+Generated At: 2026-11-21T05:48:44.567Z
 
 ================================================================================
 INDEX OF ALL PRODUCTION MCP SERVERS
 ================================================================================
 
---- [1/422] AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox ---
+--- [1/394] AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox ---
 ID: io.github.RitualDev-Lab/agentshield
 Package: @ritualdev-lab/agentshield
 Category: security
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/AgentShield
@@ -32,11 +32,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/agentshield
 
---- [2/422] DBShield Database Guardrail & Sandboxing MCP Server ---
+--- [2/394] DBShield Database Guardrail & Sandboxing MCP Server ---
 ID: io.github.RitualDev-Lab/dbshield
 Package: @ritualdev-lab/dbshield
 Category: security
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/DBShield
@@ -57,11 +57,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/dbshield
 
---- [3/422] DevShelf Developer Directory & Tool Discovery MCP Server ---
+--- [3/394] DevShelf Developer Directory & Tool Discovery MCP Server ---
 ID: io.github.RitualDev-Lab/devshelf
 Package: @ritualdev-lab/devshelf
 Category: ai-agents
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/DevShelf
@@ -82,11 +82,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/devshelf
 
---- [4/422] FinePrint AI Legal Risk & Contract Audit MCP Server ---
+--- [4/394] FinePrint AI Legal Risk & Contract Audit MCP Server ---
 ID: io.github.RitualDev-Lab/fineprint
 Package: @ritualdev-lab/fineprint
 Category: security
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/FinePrintAI
@@ -107,11 +107,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/fineprint
 
---- [5/422] MCP Monetize - Drop-in Billing & Capability Token Engine ---
+--- [5/394] MCP Monetize - Drop-in Billing & Capability Token Engine ---
 ID: io.github.RitualDev-Lab/mcp-monetize
 Package: @ritualdev-lab/mcp-monetize
 Category: monetization
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/mcp-monetize
@@ -132,11 +132,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/mcp-monetize
 
---- [6/422] MCPShelf Model Context Protocol Registry, Search & Security Auditor ---
+--- [6/394] MCPShelf Model Context Protocol Registry, Search & Security Auditor ---
 ID: io.github.RitualDev-Lab/mcpshelf
 Package: @ritualdev-lab/mcpshelf
 Category: security
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/MCPShelf
@@ -157,11 +157,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/mcpshelf
 
---- [7/422] MockForge AI Relational Mock Database & Fixture Generator ---
+--- [7/394] MockForge AI Relational Mock Database & Fixture Generator ---
 ID: io.github.RitualDev-Lab/mockforge
 Package: @ritualdev-lab/mockforge
 Category: databases
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/MockForge
@@ -182,11 +182,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/mockforge
 
---- [8/422] SkillPrism MCP Context Optimizer & Tool Search Proxy ---
+--- [8/394] SkillPrism MCP Context Optimizer & Tool Search Proxy ---
 ID: io.github.RitualDev-Lab/skillprism
 Package: @ritualdev-lab/skillprism
 Category: ai-agents
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/SkillPrism
@@ -207,11 +207,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/skillprism
 
---- [9/422] WebSecAuditor AI Cybersecurity & Vulnerability Auditor ---
+--- [9/394] WebSecAuditor AI Cybersecurity & Vulnerability Auditor ---
 ID: io.github.RitualDev-Lab/web-sec-auditor
 Package: @ritualdev-lab/web-sec-auditor
 Category: security
-Trust Score: 9.8/10 (Very High)
+Trust Score: 9.7/10 (Very High)
 Transport: stdio
 Author: RitualDev-Lab
 Repository: https://github.com/RitualDev-Lab/web-sec-auditor
@@ -232,11 +232,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ritualdev-lab/web-sec-auditor
 
---- [10/422] 0si.ai Disclosures ---
+--- [10/394] 0si.ai Disclosures ---
 ID: ai.0si/disclosures
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -257,11 +257,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.0si/disclosures
 
---- [11/422] 1325.AI ---
+--- [11/394] 1325.AI ---
 ID: ai.1325/mcp
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/1325ai/1325ai
@@ -282,61 +282,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.1325/mcp
 
---- [12/422] 13F.ai ---
-ID: ai.13f/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-13f-mcp.html
-Description: Public-filing data: 13F fund holdings, insider and Congress stock trades, lobbying, contracts.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.13f/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.13f/mcp
-
---- [13/422] 1ClickWebsite ---
-ID: ai.1clickwebsite/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-1clickwebsite-mcp.html
-Description: Build and edit WordPress websites for local service businesses and run Lead Gen demo-site batches.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.1clickwebsite/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.1clickwebsite/mcp
-
---- [14/422] 1Court Directory ---
+--- [12/394] 1Court Directory ---
 ID: ai.1court.state/court-directory
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -357,11 +307,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.1court.state/court-directory
 
---- [15/422] 28/28 Agent Service Desk: Fix & Verify ---
+--- [13/394] 28/28 Agent Service Desk: Fix & Verify ---
 ID: ai.28in28/agent-service-desk
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -382,11 +332,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.28in28/agent-service-desk
 
---- [16/422] 2kw.ai ---
+--- [14/394] 2kw.ai ---
 ID: ai.2kw/mcp-server
 Package: @2kw/ai-mcp-server
 Category: ai-agents
-Trust Score: 8/10 (High)
+Trust Score: 4/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -407,11 +357,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @2kw/ai-mcp-server
 
---- [17/422] 4ai – premium .ai domains for sale ---
+--- [15/394] 4ai – premium .ai domains for sale ---
 ID: ai.4ai/domains
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -432,11 +382,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.4ai/domains
 
---- [18/422] 69.ai ---
+--- [16/394] 69.ai ---
 ID: ai.69ai/69ai
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -457,11 +407,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.69ai/69ai
 
---- [19/422] A1 Lane ---
+--- [17/394] A1 Lane ---
 ID: ai.a1lane/a1lane
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/a1lane/a1lane-mcp
@@ -482,11 +432,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.a1lane/a1lane
 
---- [20/422] A2UI Atomic Catalog ---
+--- [18/394] A2UI Atomic Catalog ---
 ID: ai.a2uicatalog/catalog
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/a2uicatalog/a2ui
@@ -507,11 +457,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.a2uicatalog/catalog
 
---- [21/422] A2UI Atomic Catalog docs ---
+--- [19/394] A2UI Atomic Catalog docs ---
 ID: ai.a2uicatalog/docs
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/a2uicatalog/a2ui
@@ -532,11 +482,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.a2uicatalog/docs
 
---- [22/422] Aard ---
+--- [20/394] Aard ---
 ID: ai.aard/aard
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -557,11 +507,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aard/aard
 
---- [23/422] ABMeter ---
+--- [21/394] ABMeter ---
 ID: ai.abmeter/abmeter
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/abmeter/abmeter
@@ -582,11 +532,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.abmeter/abmeter
 
---- [24/422] Achromat Machine Operational Memory ---
+--- [22/394] Achromat Machine Operational Memory ---
 ID: ai.achromat/mcp-server
 Package: @achromat-ai/mcp-server
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/achromat-ai/achromat-mcp-server
@@ -607,11 +557,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @achromat-ai/mcp-server
 
---- [25/422] aChurch.ai ---
+--- [23/394] aChurch.ai ---
 ID: ai.achurch/church
 Package: mcp-church
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/a-church-ai/church
@@ -632,36 +582,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y mcp-church
 
---- [26/422] Acquisity ---
-ID: ai.acquisity/mcp
-Package: N/A
-Category: productivity
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-acquisity-mcp.html
-Description: Run Acquisity cold email campaigns, the AI SDR inbox, lead search and CRM from any MCP client.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.acquisity/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.acquisity/mcp
-
---- [27/422] Acubic ---
+--- [24/394] Acubic ---
 ID: ai.acubic/acubic
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -682,11 +607,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.acubic/acubic
 
---- [28/422] AdAdvisor MCP Server ---
+--- [25/394] AdAdvisor MCP Server ---
 ID: ai.adadvisor/mcp-server
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -707,11 +632,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adadvisor/mcp-server
 
---- [29/422] Adako: ad ops for AI assistants ---
+--- [26/394] Adako: ad ops for AI assistants ---
 ID: ai.adako/ads
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ruslan2027/adako-mcp
@@ -732,11 +657,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adako/ads
 
---- [30/422] adeu ---
+--- [27/394] adeu ---
 ID: ai.adeu/adeu
 Package: @adeu/mcp-server
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.5/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/dealfluence/adeu
@@ -757,11 +682,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @adeu/mcp-server
 
---- [31/422] adkix ---
+--- [28/394] adkix ---
 ID: ai.adkix/adkix
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -782,11 +707,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adkix/adkix
 
---- [32/422] Admux ---
+--- [29/394] Admux ---
 ID: ai.admux/admux
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -807,11 +732,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.admux/admux
 
---- [33/422] adplane ---
+--- [30/394] adplane ---
 ID: ai.adplane/google-ads
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -832,11 +757,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adplane/google-ads
 
---- [34/422] Adrails ---
+--- [31/394] Adrails ---
 ID: ai.adrails/adrails
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/devthomy/adrails-mcp
@@ -857,11 +782,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adrails/adrails
 
---- [35/422] Adrio ---
+--- [32/394] Adrio ---
 ID: ai.adrio/adrio
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -882,11 +807,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adrio/adrio
 
---- [36/422] Adsap ---
+--- [33/394] Adsap ---
 ID: ai.adsap/adsap
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -907,11 +832,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adsap/adsap
 
---- [37/422] adside ---
+--- [34/394] adside ---
 ID: ai.adside/adside
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -932,11 +857,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adside/adside
 
---- [38/422] AdStar ---
+--- [35/394] AdStar ---
 ID: ai.adstar/adstar
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -957,11 +882,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adstar/adstar
 
---- [39/422] adtest-mcp ---
+--- [36/394] adtest-mcp ---
 ID: ai.adtest/adtest-mcp
 Package: adtest-mcp
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/menaker/adtest-mcp
@@ -982,11 +907,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y adtest-mcp
 
---- [40/422] Advisors AI — Route a Store Need to a Service ---
+--- [37/394] Advisors AI — Route a Store Need to a Service ---
 ID: ai.advisorsai/service-navigator
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1007,11 +932,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.advisorsai/service-navigator
 
---- [41/422] AdWeave — Meta Ads MCP Server ---
+--- [38/394] AdWeave — Meta Ads MCP Server ---
 ID: ai.adweave/meta-ads-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1032,61 +957,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adweave/meta-ads-mcp
 
---- [42/422] Aether Wealth ---
-ID: ai.aetherwealth/mcp
-Package: @aetherwealth/mcp
-Category: productivity
-Trust Score: 8/10 (High)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-aetherwealth-mcp.html
-Description: Aether Wealth MCP for AI assistants: trades, alerts, market data, macro calendar & indicators.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@aetherwealth/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y @aetherwealth/mcp
-
---- [43/422] Aetherya ---
-ID: ai.aetherya/mcp
-Package: @aetherya/mcp
-Category: security
-Trust Score: 8/10 (High)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-aetherya-mcp.html
-Description: Test decisions on a synthetic audience: studies, site audits, copy tests and post simulations.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@aetherya/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y @aetherya/mcp
-
---- [44/422] Aevia ---
+--- [39/394] Aevia ---
 ID: ai.aeviamodeler/aevia
 Package: N/A
 Category: databases
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1107,11 +982,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aeviamodeler/aevia
 
---- [45/422] Affiliate Networks MCP ---
+--- [40/394] Affiliate Networks MCP ---
 ID: ai.agenticaffiliate/affiliate-networks-mcp
 Package: affiliate-networks-mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/bobberrisford/affiliatemcp
@@ -1132,11 +1007,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y affiliate-networks-mcp
 
---- [46/422] Affogato ---
+--- [41/394] Affogato ---
 ID: ai.affogato/affogato
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1157,11 +1032,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.affogato/affogato
 
---- [47/422] AFG: agents hire agents (test money) ---
+--- [42/394] AFG: agents hire agents (test money) ---
 ID: ai.afg/afg
 Package: N/A
 Category: security
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1182,11 +1057,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.afg/afg
 
---- [48/422] AFMR Discovery ---
+--- [43/394] AFMR Discovery ---
 ID: ai.afmr/discovery
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1207,11 +1082,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.afmr/discovery
 
---- [49/422] Agenlify AI Agent Directory ---
+--- [44/394] Agenlify AI Agent Directory ---
 ID: ai.agenlify/catalog
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1232,11 +1107,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenlify/catalog
 
---- [50/422] Agent Blueprint ---
+--- [45/394] Agent Blueprint ---
 ID: ai.agentblueprint/agent-blueprint
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/agent-blueprint/agent-blueprint-website
@@ -1257,11 +1132,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentblueprint/agent-blueprint
 
---- [51/422] Agent NEO ---
+--- [46/394] Agent NEO ---
 ID: ai.agent-neo/neo
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1282,11 +1157,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agent-neo/neo
 
---- [52/422] Agent Ready Report ---
+--- [47/394] Agent Ready Report ---
 ID: ai.agenticplug/agent-ready-report
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1307,11 +1182,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticplug/agent-ready-report
 
---- [53/422] agent-bev ---
+--- [48/394] agent-bev ---
 ID: ai.agent-bev/bev-door
 Package: @agent-bev/mcp-server
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/agent-bev/bev-door
@@ -1332,11 +1207,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agent-bev/mcp-server
 
---- [54/422] agent-bev Library ---
+--- [49/394] agent-bev Library ---
 ID: ai.agent-bev/library
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1357,11 +1232,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agent-bev/library
 
---- [55/422] agent-cronjob ---
+--- [50/394] agent-cronjob ---
 ID: ai.agentasy/cronjob
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1382,11 +1257,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentasy/cronjob
 
---- [56/422] agentberg ---
+--- [51/394] agentberg ---
 ID: ai.agentberg/agentberg
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Agentberg/agentberg
@@ -1407,11 +1282,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentberg/agentberg
 
---- [57/422] Agentboard ---
+--- [52/394] Agentboard ---
 ID: ai.agentboard/agentboard
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1432,11 +1307,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentboard/agentboard
 
---- [58/422] AgentCV ---
+--- [53/394] AgentCV ---
 ID: ai.agentcv/registry
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1457,11 +1332,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentcv/registry
 
---- [59/422] AgentDM: Agent to Agent Communication Platform ---
+--- [54/394] AgentDM: Agent to Agent Communication Platform ---
 ID: ai.agentdm/agentdm
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/agentdmai/agentdm
@@ -1482,11 +1357,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentdm/agentdm
 
---- [60/422] Agentgates Compute ---
+--- [55/394] Agentgates Compute ---
 ID: ai.agentgates/compute
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/agentgates-ai/agentgates
@@ -1507,11 +1382,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentgates/compute
 
---- [61/422] Agentgates Wallet ---
+--- [56/394] Agentgates Wallet ---
 ID: ai.agentgates/mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/agentgates-ai/agentgates
@@ -1532,11 +1407,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentgates/mcp
 
---- [62/422] Agentic Blue ---
+--- [57/394] Agentic Blue ---
 ID: ai.agenticblue/agentic-blue
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1557,11 +1432,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticblue/agentic-blue
 
---- [63/422] Agentic Engineering Periodic System ---
+--- [58/394] Agentic Engineering Periodic System ---
 ID: academy.ase/periodic-system
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1582,11 +1457,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y academy.ase/periodic-system
 
---- [64/422] Agentic Fabrication Network (AFN) ---
+--- [59/394] Agentic Fabrication Network (AFN) ---
 ID: ai.agenticfabricationnetwork/ufp
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1607,11 +1482,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticfabricationnetwork/ufp
 
---- [65/422] Agentic News ---
+--- [60/394] Agentic News ---
 ID: ai.agentic-news/mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/u00dxk2/agentic-news
@@ -1632,11 +1507,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentic-news/mcp
 
---- [66/422] Agentic Shelf ---
+--- [61/394] Agentic Shelf ---
 ID: ai.agenticshelf/mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/vboykoCTO/agentic-shelf
@@ -1657,11 +1532,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticshelf/mcp
 
---- [67/422] Agentic Terminal Directory ---
+--- [62/394] Agentic Terminal Directory ---
 ID: ai.agenticterminal/directory
 Package: N/A
 Category: monetization
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/observer-protocol/at-directory
@@ -1682,11 +1557,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticterminal/directory
 
---- [68/422] AgenticBooks ---
+--- [63/394] AgenticBooks ---
 ID: ai.agenticbooks/books
 Package: N/A
 Category: monetization
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AgenticBooks/agenticbooks
@@ -1707,11 +1582,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticbooks/books
 
---- [69/422] AgenticCart: AI readiness checks for online stores ---
+--- [64/394] AgenticCart: AI readiness checks for online stores ---
 ID: ai.agenticcart/agenticcart
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1732,11 +1607,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticcart/agenticcart
 
---- [70/422] AgentMash ---
+--- [65/394] AgentMash ---
 ID: ai.agentmash/agentmash
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/RamyaChinnadurai/agentmash-mcp
@@ -1757,11 +1632,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentmash/agentmash
 
---- [71/422] AgentMesh ---
+--- [66/394] AgentMesh ---
 ID: ai.agentmesh/mesh
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1782,11 +1657,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentmesh/mesh
 
---- [72/422] AgentPlaybooks ---
+--- [67/394] AgentPlaybooks ---
 ID: ai.agentplaybooks/agentplaybooks
 Package: N/A
 Category: security
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/matebenyovszky/agentplaybooks
@@ -1807,11 +1682,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentplaybooks/agentplaybooks
 
---- [73/422] agentra ---
+--- [68/394] agentra ---
 ID: ai.agentrapay/agentra
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1832,11 +1707,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentrapay/agentra
 
---- [74/422] AgentRoam ---
+--- [69/394] AgentRoam ---
 ID: ai.agentroam/agentroam
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/adiny/nomad-crypto-travel
@@ -1857,36 +1732,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentroam/agentroam
 
---- [75/422] AgentsIndex ---
-ID: ai.agentsindex/mcp
-Package: N/A
-Category: ai-agents
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-agentsindex-mcp.html
-Description: The editors' index of AI-native software, from AI agents to the models and frameworks behind them.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.agentsindex/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.agentsindex/mcp
-
---- [76/422] AgentsRank ---
+--- [70/394] AgentsRank ---
 ID: ai.agentsrank/agentsrank
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1907,11 +1757,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentsrank/agentsrank
 
---- [77/422] AgentTrust — Identity & Trust for A2A Agents ---
+--- [71/394] AgentTrust — Identity & Trust for A2A Agents ---
 ID: ai.agenttrust/mcp-server
 Package: @agenttrust/mcp-server
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/agenttrust/mcp-server
@@ -1932,11 +1782,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agenttrust/mcp-server
 
---- [78/422] AgentUI Apps ---
+--- [72/394] AgentUI Apps ---
 ID: ai.agentui/apps
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -1957,11 +1807,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentui/apps
 
---- [79/422] AgentUtility Agentops ---
+--- [73/394] AgentUtility Agentops ---
 ID: ai.agentutility/mcp-agentops
 Package: @agentutility/mcp-agentops
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -1982,11 +1832,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-agentops
 
---- [80/422] AgentUtility Bestiary ---
+--- [74/394] AgentUtility Bestiary ---
 ID: ai.agentutility/mcp-bestiary
 Package: @agentutility/mcp-bestiary
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2007,11 +1857,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-bestiary
 
---- [81/422] AgentUtility Browser Workflow ---
+--- [75/394] AgentUtility Browser Workflow ---
 ID: ai.agentutility/mcp-browser-workflow
 Package: @agentutility/mcp-browser-workflow
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2032,11 +1882,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-browser-workflow
 
---- [82/422] AgentUtility Compose ---
+--- [76/394] AgentUtility Compose ---
 ID: ai.agentutility/mcp-compose
 Package: @agentutility/mcp-compose
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2057,11 +1907,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-compose
 
---- [83/422] AgentUtility Edge Finance ---
+--- [77/394] AgentUtility Edge Finance ---
 ID: ai.agentutility/mcp-edge-finance
 Package: @agentutility/mcp-edge-finance
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2082,11 +1932,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-edge-finance
 
---- [84/422] AgentUtility Edge Market ---
+--- [78/394] AgentUtility Edge Market ---
 ID: ai.agentutility/mcp-edge-market
 Package: @agentutility/mcp-edge-market
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2107,11 +1957,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-edge-market
 
---- [85/422] AgentUtility Locale ---
+--- [79/394] AgentUtility Locale ---
 ID: ai.agentutility/mcp-locale
 Package: @agentutility/mcp-locale
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2132,11 +1982,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-locale
 
---- [86/422] AgentUtility Matchpoint ---
+--- [80/394] AgentUtility Matchpoint ---
 ID: ai.agentutility/mcp-matchpoint
 Package: @agentutility/mcp-matchpoint
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2157,11 +2007,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-matchpoint
 
---- [87/422] AgentUtility Mediakit ---
+--- [81/394] AgentUtility Mediakit ---
 ID: ai.agentutility/mcp-mediakit
 Package: @agentutility/mcp-mediakit
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2182,11 +2032,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-mediakit
 
---- [88/422] AgentUtility Model Router ---
+--- [82/394] AgentUtility Model Router ---
 ID: ai.agentutility/mcp-model-router
 Package: @agentutility/mcp-model-router
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2207,11 +2057,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-model-router
 
---- [89/422] AgentUtility Prooflayer ---
+--- [83/394] AgentUtility Prooflayer ---
 ID: ai.agentutility/mcp-prooflayer
 Package: @agentutility/mcp-prooflayer
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2232,11 +2082,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-prooflayer
 
---- [90/422] AgentUtility Retail ---
+--- [84/394] AgentUtility Retail ---
 ID: ai.agentutility/mcp-retail
 Package: @agentutility/mcp-retail
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2257,11 +2107,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-retail
 
---- [91/422] AgentUtility Rollforge ---
+--- [85/394] AgentUtility Rollforge ---
 ID: ai.agentutility/mcp-rollforge
 Package: @agentutility/mcp-rollforge
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2282,11 +2132,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-rollforge
 
---- [92/422] AgentUtility Statline ---
+--- [86/394] AgentUtility Statline ---
 ID: ai.agentutility/mcp-statline
 Package: @agentutility/mcp-statline
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2307,11 +2157,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-statline
 
---- [93/422] AgentUtility Synthforge ---
+--- [87/394] AgentUtility Synthforge ---
 ID: ai.agentutility/mcp-synthforge
 Package: @agentutility/mcp-synthforge
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2332,11 +2182,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-synthforge
 
---- [94/422] AgentUtility Web Probe ---
+--- [88/394] AgentUtility Web Probe ---
 ID: ai.agentutility/mcp-web-probe
 Package: @agentutility/mcp-web-probe
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2357,11 +2207,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-web-probe
 
---- [95/422] AgentUtility Wordmint ---
+--- [89/394] AgentUtility Wordmint ---
 ID: ai.agentutility/mcp-wordmint
 Package: @agentutility/mcp-wordmint
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/rooz21/x402
@@ -2382,11 +2232,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @agentutility/mcp-wordmint
 
---- [96/422] AGILEX Docs ---
+--- [90/394] AGILEX Docs ---
 ID: ai.agilex.service/docs
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/wgjsg/agilex-docs-mcp
@@ -2407,11 +2257,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agilex.service/docs
 
---- [97/422] Agimon ---
+--- [91/394] Agimon ---
 ID: ai.agimon/agimon
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2432,11 +2282,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agimon/agimon
 
---- [98/422] Aginera ---
+--- [92/394] Aginera ---
 ID: ai.aginera/preconstruction
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2457,11 +2307,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aginera/preconstruction
 
---- [99/422] Agothe Agent Contract Preflight ---
+--- [93/394] Agothe Agent Contract Preflight ---
 ID: ai.agothe.mcp-chatgpt/agent-contract-preflight
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2482,11 +2332,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agothe.mcp-chatgpt/agent-contract-preflight
 
---- [100/422] Ahel ---
+--- [94/394] Ahel ---
 ID: ai.ahel/ahel
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ahel-technologies/ahel
@@ -2507,11 +2357,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ahel/ahel
 
---- [101/422] AI Advisor Lab — Team Operations ---
+--- [95/394] AI Advisor Lab — Team Operations ---
 ID: ai.aiadvisorlab/teamops
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2532,11 +2382,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aiadvisorlab/teamops
 
---- [102/422] AI Media Studio ---
+--- [96/394] AI Media Studio ---
 ID: ai.b77/ai-media-studio
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2557,11 +2407,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/ai-media-studio
 
---- [103/422] AI Photo Animator ---
+--- [97/394] AI Photo Animator ---
 ID: ai.aiphotoanimator/photo-animator
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2582,36 +2432,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aiphotoanimator/photo-animator
 
---- [104/422] AI-Advisors ---
-ID: ai.ai-advisors/mcp
-Package: N/A
-Category: security
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-ai-advisors-mcp.html
-Description: Read-only AI search visibility data: citations, AEO audits, and advisor insights from AI-Advisors.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.ai-advisors/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.ai-advisors/mcp
-
---- [105/422] AI-Portal Enterprise GenAI Briefing ---
+--- [98/394] AI-Portal Enterprise GenAI Briefing ---
 ID: ai.ai-portal/ai-portal
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2632,11 +2457,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ai-portal/ai-portal
 
---- [106/422] Aidoo for Odoo ---
+--- [99/394] Aidoo for Odoo ---
 ID: ai.aidoo/aidoo
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/eantoniomota/aidoo-mcp
@@ -2657,11 +2482,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aidoo/aidoo
 
---- [107/422] aigamedev.ai ---
+--- [100/394] aigamedev.ai ---
 ID: ai.aigamedev/aigamedev
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2682,36 +2507,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aigamedev/aigamedev
 
---- [108/422] AIM SHIELD ---
-ID: ai.aim-shield/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-aim-shield-mcp.html
-Description: Dice si un mensaje, enlace o cuenta bancaria es una estafa y da la nota de seguridad de un dominio.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.aim-shield/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.aim-shield/mcp
-
---- [109/422] AIMentionTracker ---
+--- [101/394] AIMentionTracker ---
 ID: ai.aimentiontracker/mcp
 Package: @aimentiontracker/mcp
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/aimentiontracker/mcp
@@ -2732,11 +2532,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aimentiontracker/mcp
 
---- [110/422] AIMochi ---
+--- [102/394] AIMochi ---
 ID: ai.aimochi/notes
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2757,11 +2557,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aimochi/notes
 
---- [111/422] AirboxShip Shipping (public) ---
+--- [103/394] AirboxShip Shipping (public) ---
 ID: ai.airboxship/shipping-public
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2782,11 +2582,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.airboxship/shipping-public
 
---- [112/422] AirPulse ---
+--- [104/394] AirPulse ---
 ID: ai.airpulse/airpulse
 Package: N/A
 Category: security
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2807,11 +2607,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.airpulse/airpulse
 
---- [113/422] AirShelf Catalog ---
+--- [105/394] AirShelf Catalog ---
 ID: ai.airshelf/catalog
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2832,11 +2632,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.airshelf/catalog
 
---- [114/422] AIS Agent Flight Recorder — dead-man alerts & resume for AI agents ---
+--- [106/394] AIS Agent Flight Recorder — dead-man alerts & resume for AI agents ---
 ID: ai.aislabs/recorder
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2857,11 +2657,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aislabs/recorder
 
---- [115/422] AIS CVE Priorities — daily exploit-ranked patch list for AI agents ---
+--- [107/394] AIS CVE Priorities — daily exploit-ranked patch list for AI agents ---
 ID: ai.aislabs/cve
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2882,11 +2682,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aislabs/cve
 
---- [116/422] AIS Gateway — the campus front desk for AIS MCP buildings ---
+--- [108/394] AIS Gateway — the campus front desk for AIS MCP buildings ---
 ID: ai.aislabs/gateway
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -2907,11 +2707,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aislabs/gateway
 
---- [117/422] Aisma ---
+--- [109/394] Aisma ---
 ID: ai.aisma/aisma
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/lex2029/aisma-mcp
@@ -2932,11 +2732,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aisma/aisma
 
---- [118/422] AISTLabs ---
+--- [110/394] AISTLabs ---
 ID: ai.aistlabs/aistlabs
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/aistlabs-ai/aistlabs-mcp
@@ -2957,11 +2757,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aistlabs/aistlabs
 
---- [119/422] AITOPIA ---
+--- [111/394] AITOPIA ---
 ID: ai.aitopia/aitopia
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AITOPIAai/skills
@@ -2982,11 +2782,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aitopia/aitopia
 
---- [120/422] AiVikings.ai ---
+--- [112/394] AiVikings.ai ---
 ID: ai.aivikings/registrar
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AIvikings/aivikings-mcp
@@ -3007,11 +2807,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aivikings/registrar
 
---- [121/422] AIﾉアカリ☆ Agent Trust Receipt ---
+--- [113/394] AIﾉアカリ☆ Agent Trust Receipt ---
 ID: ai.ai-akari/agent-trust-receipt
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AInoAKARI/AInoAKARI
@@ -3032,11 +2832,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ai-akari/agent-trust-receipt
 
---- [122/422] AIﾉアカリ☆ One-Minute Akari ---
+--- [114/394] AIﾉアカリ☆ One-Minute Akari ---
 ID: ai.ai-akari/one-minute-akari
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AInoAKARI/arigatou-kawaii-lp
@@ -3057,11 +2857,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ai-akari/one-minute-akari
 
---- [123/422] AkaPhone ---
+--- [115/394] AkaPhone ---
 ID: ai.akaphone/akaphone
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3082,11 +2882,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.akaphone/akaphone
 
---- [124/422] AkkruData ---
+--- [116/394] AkkruData ---
 ID: ai.akkrudata/akkrudata
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3107,11 +2907,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.akkrudata/akkrudata
 
---- [125/422] Alcock Arena ---
+--- [117/394] Alcock Arena ---
 ID: ai.alcock/arena
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3132,11 +2932,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alcock/arena
 
---- [126/422] Aldro: small-business tax ---
+--- [118/394] Aldro: small-business tax ---
 ID: ai.aldro/tax
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3157,11 +2957,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aldro/tax
 
---- [127/422] Alexein AI ---
+--- [119/394] Alexein AI ---
 ID: ai.alexein/memory
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3182,11 +2982,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alexein/memory
 
---- [128/422] Alexey Sound — sound recordist, Dubai ---
+--- [120/394] Alexey Sound — sound recordist, Dubai ---
 ID: ae.alexeysound/alexey-sound
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3207,36 +3007,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.alexeysound/alexey-sound
 
---- [129/422] AlgoriQ ---
-ID: ai.algoriq/mcp
-Package: N/A
-Category: web-automation
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-algoriq-mcp.html
-Description: Run AlgoriQ quant research from any MCP client: data, features, strategies, validation, portfolios.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.algoriq/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.algoriq/mcp
-
---- [130/422] Almost Impossible ---
+--- [121/394] Almost Impossible ---
 ID: agency.almostimpossible/site
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3257,11 +3032,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.almostimpossible/site
 
---- [131/422] Alpha Bazaar Arena ---
+--- [122/394] Alpha Bazaar Arena ---
 ID: ai.alphabazaar/arena
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/alphabazaar/skills
@@ -3282,11 +3057,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alphabazaar/arena
 
---- [132/422] AlphaCreek SEC Filings MCP ---
+--- [123/394] AlphaCreek SEC Filings MCP ---
 ID: ai.alphacreek/alphacreek-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3307,11 +3082,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alphacreek/alphacreek-mcp
 
---- [133/422] Alpic ---
+--- [124/394] Alpic ---
 ID: ai.alpic.mcp/alpic-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3332,11 +3107,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alpic.mcp/alpic-mcp
 
---- [134/422] AlpiX ---
+--- [125/394] AlpiX ---
 ID: ai.alpic.alpix/Alpix
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3357,11 +3132,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alpic.alpix/Alpix
 
---- [135/422] Alvin's Club BrandPilot ---
+--- [126/394] Alvin's Club BrandPilot ---
 ID: ai.alvinsclub.studio/brandpilot
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3382,11 +3157,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/brandpilot
 
---- [136/422] Alvin's Club Channel ---
+--- [127/394] Alvin's Club Channel ---
 ID: ai.alvinsclub.studio/channel
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3407,11 +3182,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/channel
 
---- [137/422] Alvin's Club Studio ---
+--- [128/394] Alvin's Club Studio ---
 ID: ai.alvinsclub.studio/studio
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3432,11 +3207,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/studio
 
---- [138/422] Alwen ---
+--- [129/394] Alwen ---
 ID: ai.alwen/alwen
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3457,11 +3232,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alwen/alwen
 
---- [139/422] Amazon Seller MCP Server — AgentXray ---
+--- [130/394] Amazon Seller MCP Server — AgentXray ---
 ID: ai.agentxray/amazon-seller-mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3482,36 +3257,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentxray/amazon-seller-mcp
 
---- [140/422] Amazon Seller MCP Server — AgentXray ---
-ID: ai.agentxray/mcp
-Package: N/A
-Category: ai-agents
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-agentxray-mcp.html
-Description: Amazon Seller Central and Ads inside Claude, ChatGPT or Grok. Fees from your own settlements.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.agentxray/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.agentxray/mcp
-
---- [141/422] Ambix ---
+--- [131/394] Ambix ---
 ID: ai.ambix/ambix
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ambix-ai/mcp
@@ -3532,11 +3282,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ambix/ambix
 
---- [142/422] Amdahl ---
+--- [132/394] Amdahl ---
 ID: ai.amdahl/amdahl
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3557,11 +3307,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.amdahl/amdahl
 
---- [143/422] amigurumi.ai ---
+--- [133/394] amigurumi.ai ---
 ID: ai.amigurumi/patterns
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3582,11 +3332,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.amigurumi/patterns
 
---- [144/422] Analytics Legends — SAP AI & Analytics MCP Server ---
+--- [134/394] Analytics Legends — SAP AI & Analytics MCP Server ---
 ID: ai.analyticslegends/sap-analytics
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/analyticslegends/analytics-legends-mcp
@@ -3607,11 +3357,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.analyticslegends/sap-analytics
 
---- [145/422] Anam ---
+--- [135/394] Anam ---
 ID: ai.anam/anam
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3632,11 +3382,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anam/anam
 
---- [146/422] AnimeAPI ---
+--- [136/394] AnimeAPI ---
 ID: ai.animeapi/mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/animeapi-ai/animeapi-mcp
@@ -3657,11 +3407,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.animeapi/mcp
 
---- [147/422] Anki MCP Server ---
+--- [137/394] Anki MCP Server ---
 ID: ai.ankimcp/anki-mcp-server
 Package: @ankimcp/anki-mcp-server
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ankimcp/anki-mcp-server
@@ -3682,11 +3432,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @ankimcp/anki-mcp-server
 
---- [148/422] AnkiDecks ---
+--- [138/394] AnkiDecks ---
 ID: ai.ankidecks/ankidecks
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/jjman2321/ankidecks-mcp
@@ -3707,11 +3457,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankidecks/ankidecks
 
---- [149/422] AnkiMCP Server ---
+--- [139/394] AnkiMCP Server ---
 ID: ai.ankimcp/anki-mcp-server-addon
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ankimcp/anki-mcp-server-addon
@@ -3732,11 +3482,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankimcp/anki-mcp-server-addon
 
---- [150/422] Ankra ---
+--- [140/394] Ankra ---
 ID: ai.ankra/platform
 Package: N/A
 Category: security
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ankraio/cursor-plugin
@@ -3757,11 +3507,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankra/platform
 
---- [151/422] Ankra Docs ---
+--- [141/394] Ankra Docs ---
 ID: ai.ankra/docs
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ankraio/cursor-plugin
@@ -3782,11 +3532,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ankra/docs
 
---- [152/422] Annsa ---
+--- [142/394] Annsa ---
 ID: ai.annsa/annsa
 Package: annsa
 Category: databases
-Trust Score: 8/10 (High)
+Trust Score: 3.2/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3807,11 +3557,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y annsa
 
---- [153/422] AnomalyArmor ---
+--- [143/394] AnomalyArmor ---
 ID: ai.anomalyarmor/armor-mcp
 Package: armor-mcp
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/anomalyarmor/agents
@@ -3831,11 +3581,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx armor-mcp
 
---- [154/422] AnyForge ---
+--- [144/394] AnyForge ---
 ID: ai.anyforge/anyforge
 Package: @anyforge/mcp-server
 Category: developer-tools
-Trust Score: 8/10 (High)
+Trust Score: 4/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3856,11 +3606,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @anyforge/mcp-server
 
---- [155/422] Anyreach ---
+--- [145/394] Anyreach ---
 ID: ai.anyreach/anyreach
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3881,11 +3631,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anyreach/anyreach
 
---- [156/422] AnyShare by Anysoft ---
+--- [146/394] AnyShare by Anysoft ---
 ID: ai.anysoft.share/anyshare
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3906,11 +3656,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anysoft.share/anyshare
 
---- [157/422] anzenna ---
+--- [147/394] anzenna ---
 ID: ai.anzenna/anzenna
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3931,11 +3681,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anzenna/anzenna
 
---- [158/422] Apatero Studio ---
+--- [148/394] Apatero Studio ---
 ID: ai.apatero/studio
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -3956,11 +3706,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apatero/studio
 
---- [159/422] Apex AI Academy ---
+--- [149/394] Apex AI Academy ---
 ID: academy.apexai/apex-ai-academy
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ApexAI-Academy/sample-agents
@@ -3981,11 +3731,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y academy.apexai/apex-ai-academy
 
---- [160/422] APEX Runner Crypto Signals ---
+--- [150/394] APEX Runner Crypto Signals ---
 ID: ai.apexrunner/signals
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4006,11 +3756,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apexrunner/signals
 
---- [161/422] APIANT ---
+--- [151/394] APIANT ---
 ID: ai.apiant/apiant
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4031,11 +3781,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apiant/apiant
 
---- [162/422] APIPod ---
+--- [152/394] APIPod ---
 ID: ai.apipod/mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/geniuspath/apipod-agent-plugins
@@ -4056,11 +3806,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apipod/mcp
 
---- [163/422] APIR Agent Verification ---
+--- [153/394] APIR Agent Verification ---
 ID: ai.apir/verify
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4081,11 +3831,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apir/verify
 
---- [164/422] APIThreshold ---
+--- [154/394] APIThreshold ---
 ID: ai.apithreshold/apithreshold
 Package: ghcr.io/apithreshold/apithreshold:0.1.0
 Category: monetization
-Trust Score: 8/10 (High)
+Trust Score: 4/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4106,11 +3856,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ghcr.io/apithreshold/apithreshold:0.1.0
 
---- [165/422] apitree — AI-Native API Marketplace ---
+--- [155/394] apitree — AI-Native API Marketplace ---
 ID: ai.apitree/apitree
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4131,11 +3881,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.apitree/apitree
 
---- [166/422] Apogee: Bulk Ad Launcher for Meta, TikTok & Snapchat ---
+--- [156/394] Apogee: Bulk Ad Launcher for Meta, TikTok & Snapchat ---
 ID: ad.apogee/apogee
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/ApogeeGIT/apogee-mcp
@@ -4156,11 +3906,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.apogee/apogee
 
---- [167/422] AppDeploy ---
+--- [157/394] AppDeploy ---
 ID: ai.appdeploy/deploy-app
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4181,36 +3931,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.appdeploy/deploy-app
 
---- [168/422] AppGoat ---
-ID: ai.appgoat/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-appgoat-mcp.html
-Description: App Store and Google Play data: apps, reviews, keywords, charts, competitors, ASO playbooks.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.appgoat/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.appgoat/mcp
-
---- [169/422] Apple Search Ads ---
+--- [158/394] Apple Search Ads ---
 ID: ai.b77/apple-search-ads
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4231,11 +3956,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/apple-search-ads
 
---- [170/422] AQL PropertyCheck — check one exact address (Gold Coast & Brisbane) ---
+--- [159/394] AQL PropertyCheck — check one exact address (Gold Coast & Brisbane) ---
 ID: ai.alphaquantlabs/propertycheck
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4256,11 +3981,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alphaquantlabs/propertycheck
 
---- [171/422] Arabic Name Calligraphy ---
+--- [160/394] Arabic Name Calligraphy ---
 ID: ai.arabickeyboard/name-calligraphy
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4281,11 +4006,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arabickeyboard/name-calligraphy
 
---- [172/422] ARC (arcreport.ai): can an agent reach checkout? ---
+--- [161/394] ARC (arcreport.ai): can an agent reach checkout? ---
 ID: ai.arcreport/ask
 Package: N/A
 Category: monetization
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4306,11 +4031,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcreport/ask
 
---- [173/422] ARC: agent checkout reachability ---
+--- [162/394] ARC: agent checkout reachability ---
 ID: ai.arcreport/mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/abab7575/arc-mcp
@@ -4331,11 +4056,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcreport/mcp
 
---- [174/422] Arcangel AI ---
+--- [163/394] Arcangel AI ---
 ID: ai.arcangel/arcangel
 Package: @arcangel.ai/mcp
 Category: developer-tools
-Trust Score: 8/10 (High)
+Trust Score: 4/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4356,11 +4081,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @arcangel.ai/mcp
 
---- [175/422] Arcangel Trademark Search ---
+--- [164/394] Arcangel Trademark Search ---
 ID: ai.arcangel/trademark-search
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4381,11 +4106,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcangel/trademark-search
 
---- [176/422] Arcdeck ---
+--- [165/394] Arcdeck ---
 ID: ai.arcdeck/arcdeck
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4406,11 +4131,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arcdeck/arcdeck
 
---- [177/422] Archome AI ---
+--- [166/394] Archome AI ---
 ID: ai.archome/archome
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4431,11 +4156,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.archome/archome
 
---- [178/422] Arclan MCP Registry ---
+--- [167/394] Arclan MCP Registry ---
 ID: ai.arclan/registry
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4456,11 +4181,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arclan/registry
 
---- [179/422] Ari by Ariso ---
+--- [168/394] Ari by Ariso ---
 ID: ai.ariso/ari
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4481,11 +4206,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.ariso/ari
 
---- [180/422] Arihaan Jobs ---
+--- [169/394] Arihaan Jobs ---
 ID: ai.arihaan/jobs
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4506,11 +4231,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arihaan/jobs
 
---- [181/422] Arketo ---
+--- [170/394] Arketo ---
 ID: ai.arketo/arketo
 Package: N/A
 Category: security
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4531,11 +4256,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arketo/arketo
 
---- [182/422] ARPI MCP ---
+--- [171/394] ARPI MCP ---
 ID: ai.arpi/arpi-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/arpi-ai/arpi-mcp
@@ -4556,11 +4281,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arpi/arpi-mcp
 
---- [183/422] artidrop ---
+--- [172/394] artidrop ---
 ID: ai.artidrop/artidrop
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4581,11 +4306,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artidrop/artidrop
 
---- [184/422] Artifactry ---
+--- [173/394] Artifactry ---
 ID: ai.artifactry/artifactry
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4606,11 +4331,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artifactry/artifactry
 
---- [185/422] Artil — Email, SMS & Messaging for AI Agents ---
+--- [174/394] Artil — Email, SMS & Messaging for AI Agents ---
 ID: ai.artil/artil
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/artilai/mcp
@@ -4631,11 +4356,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artil/artil
 
---- [186/422] ARVX ---
+--- [175/394] ARVX ---
 ID: ai.arvx/arvx
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/centricai/arvx-mcp
@@ -4656,11 +4381,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.arvx/arvx
 
---- [187/422] Ask Gina ---
+--- [176/394] Ask Gina ---
 ID: ai.askgina/gina
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/askgina/plugins
@@ -4681,11 +4406,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/gina
 
---- [188/422] Ask Gina Perps ---
+--- [177/394] Ask Gina Perps ---
 ID: ai.askgina/perps
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/askgina/plugins
@@ -4706,11 +4431,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/perps
 
---- [189/422] Ask Gina Predictions ---
+--- [178/394] Ask Gina Predictions ---
 ID: ai.askgina/predictions
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/askgina/plugins
@@ -4731,11 +4456,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/predictions
 
---- [190/422] Ask Gina Spot ---
+--- [179/394] Ask Gina Spot ---
 ID: ai.askgina/spot
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/askgina/plugins
@@ -4756,11 +4481,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askgina/spot
 
---- [191/422] Ask Your Audience ---
+--- [180/394] Ask Your Audience ---
 ID: ai.askyouraudience/ask-your-audience
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Ask-Your-Audience/askyouraudience
@@ -4781,11 +4506,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askyouraudience/ask-your-audience
 
---- [192/422] Askadia ---
+--- [181/394] Askadia ---
 ID: ai.askadia/askadia
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4806,11 +4531,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askadia/askadia
 
---- [193/422] Askline ---
+--- [182/394] Askline ---
 ID: ai.askline/askline
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4831,11 +4556,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askline/askline
 
---- [194/422] AskWatch Google Search Console MCP ---
+--- [183/394] AskWatch Google Search Console MCP ---
 ID: ai.askwatch/gsc
 Package: N/A
 Category: cloud-infra
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4856,11 +4581,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askwatch/gsc
 
---- [195/422] asms ---
+--- [184/394] asms ---
 ID: ai.asms/asms
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/asms-ai/asms-mcp
@@ -4881,11 +4606,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.asms/asms
 
---- [196/422] ASRM (AI Search Rank Monitor) ---
+--- [185/394] ASRM (AI Search Rank Monitor) ---
 ID: ai.asrm/asrm
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4906,11 +4631,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.asrm/asrm
 
---- [197/422] AssetLog ---
+--- [186/394] AssetLog ---
 ID: ai.assetlog/assetlog
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4931,11 +4656,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.assetlog/assetlog
 
---- [198/422] Assistable ---
+--- [187/394] Assistable ---
 ID: ai.assistable/assistable
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -4956,11 +4681,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.assistable/assistable
 
---- [199/422] Atako ---
+--- [188/394] Atako ---
 ID: ai.atako/mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/aiybiz/atako-mcp
@@ -4981,36 +4706,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atako/mcp
 
---- [200/422] Atalay ---
-ID: ai.atalay/mcp
-Package: N/A
-Category: productivity
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-atalay-mcp.html
-Description: Your Atalay business data: sites, domains, mail, invoices, shop, B2B, AI and project requests.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.atalay/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.atalay/mcp
-
---- [201/422] aTars MCP ---
+--- [189/394] aTars MCP ---
 ID: ai.aarna/atars-mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5031,11 +4731,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aarna/atars-mcp
 
---- [202/422] Athaus für Makler ---
+--- [190/394] Athaus für Makler ---
 ID: ai.athaus/makler
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5056,11 +4756,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.athaus/makler
 
---- [203/422] Athaus Immobiliensuche ---
+--- [191/394] Athaus Immobiliensuche ---
 ID: ai.athaus/immobiliensuche
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5081,36 +4781,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.athaus/immobiliensuche
 
---- [204/422] AthenaHQ ---
-ID: ai.athenahq/mcp
-Package: N/A
-Category: web-automation
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-athenahq-mcp.html
-Description: Track how AI assistants mention, cite, and rank your brand and competitors in AI search.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.athenahq/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.athenahq/mcp
-
---- [205/422] atlas-mcp ---
+--- [192/394] atlas-mcp ---
 ID: ai.atlasverified/atlas-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5131,11 +4806,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atlasverified/atlas-mcp
 
---- [206/422] Atlaso Memory ---
+--- [193/394] Atlaso Memory ---
 ID: ai.atlaso/mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/atlaso-labs/mcp
@@ -5156,11 +4831,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atlaso/mcp
 
---- [207/422] Atmark ---
+--- [194/394] Atmark ---
 ID: ai.atmark/atmark
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/atmark-ai/atmark-mcp
@@ -5181,11 +4856,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atmark/atmark
 
---- [208/422] Atmy air quality ---
+--- [195/394] Atmy air quality ---
 ID: ai.atmy/air-quality
 Package: atmy-mcp
 Category: developer-tools
-Trust Score: 8/10 (High)
+Trust Score: 3.2/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5206,11 +4881,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y atmy-mcp
 
---- [209/422] AtomSell ---
+--- [196/394] AtomSell ---
 ID: ai.atomsell/atomsell
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5231,11 +4906,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atomsell/atomsell
 
---- [210/422] Atria ---
+--- [197/394] Atria ---
 ID: ai.askatria/atria
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5256,11 +4931,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askatria/atria
 
---- [211/422] Attestari ---
+--- [198/394] Attestari ---
 ID: ai.attestari/attestari
 Package: attestari-mcp
 Category: ai-agents
-Trust Score: 8/10 (High)
+Trust Score: 3.2/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5280,11 +4955,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx attestari-mcp
 
---- [212/422] AudioMap ---
+--- [199/394] AudioMap ---
 ID: ai.audiomap/audiomap
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5305,11 +4980,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audiomap/audiomap
 
---- [213/422] AudioPod AI ---
+--- [200/394] AudioPod AI ---
 ID: ai.audiopod/audiopod
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AudiopodAI/audiopod-mcp
@@ -5330,11 +5005,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audiopod/audiopod
 
---- [214/422] AudioPod AI (core) ---
+--- [201/394] AudioPod AI (core) ---
 ID: ai.audiopod/audiopod-core
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AudiopodAI/audiopod-mcp
@@ -5355,11 +5030,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audiopod/audiopod-core
 
---- [215/422] audit ---
+--- [202/394] audit ---
 ID: ai.beket/audit
 Package: N/A
 Category: security
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5380,11 +5055,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beket/audit
 
---- [216/422] Audo ---
+--- [203/394] Audo ---
 ID: ai.audo/audo
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/audo-ai/audo-mcp
@@ -5405,11 +5080,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.audo/audo
 
---- [217/422] Augenix ---
+--- [204/394] Augenix ---
 ID: ai.augenix/build
 Package: N/A
 Category: monetization
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5430,11 +5105,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augenix/build
 
---- [218/422] Augmap ---
+--- [205/394] Augmap ---
 ID: ai.augmap/maps
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5455,11 +5130,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augmap/maps
 
---- [219/422] Aunoo Agentic ---
+--- [206/394] Aunoo Agentic ---
 ID: ai.aunoo/agentic
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5480,11 +5155,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aunoo/agentic
 
---- [220/422] Auralogs ---
+--- [207/394] Auralogs ---
 ID: ai.auralogs/auralogs
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/auralogs-ai/auralogs-mcp
@@ -5505,11 +5180,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.auralogs/auralogs
 
---- [221/422] Auten ---
+--- [208/394] Auten ---
 ID: ai.auten/mcp
 Package: @autenai/mcp
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/auten-ai/auten-mcp
@@ -5530,11 +5205,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @autenai/mcp
 
---- [222/422] AutEng Docs — Agent Document Workspace & Publishing ---
+--- [209/394] AutEng Docs — Agent Document Workspace & Publishing ---
 ID: ai.auteng/docs
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5555,36 +5230,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.auteng/docs
 
---- [223/422] AutEng MCP - Markdown Publishing & Document Share Links ---
-ID: ai.auteng/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-auteng-mcp.html
-Description: Publish markdown documents as public share links with mermaid diagrams. Built by AutEng.ai
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.auteng/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.auteng/mcp
-
---- [224/422] Authoryze ---
+--- [210/394] Authoryze ---
 ID: ai.authoryze/authoryze
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/kevinfee3/authoryze-mcp
@@ -5605,11 +5255,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.authoryze/authoryze
 
---- [225/422] Autoblogging.ai ---
+--- [211/394] Autoblogging.ai ---
 ID: ai.autoblogging/autoblogging
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5630,11 +5280,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autoblogging/autoblogging
 
---- [226/422] AutoPoster AI ---
+--- [212/394] AutoPoster AI ---
 ID: ai.autoposter/autoposter
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5655,11 +5305,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autoposter/autoposter
 
---- [227/422] Autoposting ---
+--- [213/394] Autoposting ---
 ID: ai.autoposting/autoposting
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5680,11 +5330,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autoposting/autoposting
 
---- [228/422] AutoRFP.ai ---
+--- [214/394] AutoRFP.ai ---
 ID: ai.autorfp/mcp
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AutoRFP/mcp
@@ -5705,11 +5355,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autorfp/mcp
 
---- [229/422] AutoTracks ---
+--- [215/394] AutoTracks ---
 ID: ai.autotracks/autotracks
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5730,11 +5380,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autotracks/autotracks
 
---- [230/422] Autovox ---
+--- [216/394] Autovox ---
 ID: ai.autovox/autovox
 Package: N/A
 Category: productivity
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5755,11 +5405,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autovox/autovox
 
---- [231/422] Autron ---
+--- [217/394] Autron ---
 ID: ai.autron/autron
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5780,11 +5430,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.autron/autron
 
---- [232/422] Auxen ---
+--- [218/394] Auxen ---
 ID: ai.auxen/auxen
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/auxen-ai/auxen-mcp
@@ -5805,11 +5455,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.auxen/auxen
 
---- [233/422] Avasis Agent Platform ---
+--- [219/394] Avasis Agent Platform ---
 ID: ai.avasis.agents/avasis
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5830,11 +5480,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avasis.agents/avasis
 
---- [234/422] Aviado AI ---
+--- [220/394] Aviado AI ---
 ID: ai.aviado/health
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/kipmcc/aviado-mcp
@@ -5855,11 +5505,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aviado/health
 
---- [235/422] Avlira Back Office ---
+--- [221/394] Avlira Back Office ---
 ID: ai.avlira/back-office
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5880,11 +5530,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avlira/back-office
 
---- [236/422] AwardCast Federal Contracts ---
+--- [222/394] AwardCast Federal Contracts ---
 ID: ai.awardcast/federal-contracts
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5905,11 +5555,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.awardcast/federal-contracts
 
---- [237/422] awen ---
+--- [223/394] awen ---
 ID: ai.awen/awen
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5930,11 +5580,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.awen/awen
 
---- [238/422] AwrAIter — Telegram channels ---
+--- [224/394] AwrAIter — Telegram channels ---
 ID: ai.awraiter/telegram
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/MediaZione/AwrAiter
@@ -5955,11 +5605,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.awraiter/telegram
 
---- [239/422] Axon NeuroAutomata ---
+--- [225/394] Axon NeuroAutomata ---
 ID: ai.axonagentic/neuroautomata
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -5980,11 +5630,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.axonagentic/neuroautomata
 
---- [240/422] Azquo ---
+--- [226/394] Azquo ---
 ID: ai.azquo/azquo
 Package: N/A
 Category: databases
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6005,11 +5655,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.azquo/azquo
 
---- [241/422] b/cited ---
+--- [227/394] b/cited ---
 ID: ai.bcited/bcited
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/cmunkres/bcited-cf
@@ -6030,11 +5680,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bcited/bcited
 
---- [242/422] B4 Index ---
+--- [228/394] B4 Index ---
 ID: ai.benroberts/b4-index
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6055,11 +5705,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.benroberts/b4-index
 
---- [243/422] backengine-mcp ---
+--- [229/394] backengine-mcp ---
 ID: ai.backengine/backengine-mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/BackEngine-ai/backengine-mcp
@@ -6080,11 +5730,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.backengine/backengine-mcp
 
---- [244/422] backrow ---
+--- [230/394] backrow ---
 ID: ai.backrow/backrow
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6105,61 +5755,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.backrow/backrow
 
---- [245/422] Balanços.AI ---
-ID: ai.balancos/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-balancos-mcp.html
-Description: Balanços, DREs, DFPs e ITRs da CVM e IF.data do BCB. Brazilian companies' financial statements.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.balancos/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.balancos/mcp
-
---- [246/422] BallotData ---
-ID: ai.ballotdata/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-ballotdata-mcp.html
-Description: The only source of AI-optimized U.S. endorsement and election data. Needs a BallotData API key.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.ballotdata/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.ballotdata/mcp
-
---- [247/422] BAMF.ai ---
+--- [231/394] BAMF.ai ---
 ID: ai.bamf/bamf
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/houstongolden/bamfaiapp
@@ -6180,11 +5780,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bamf/bamf
 
---- [248/422] bananabread ---
+--- [232/394] bananabread ---
 ID: ai.bananabread/bananabread
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6205,11 +5805,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bananabread/bananabread
 
---- [249/422] Bankrolled.ai Agent Hub ---
+--- [233/394] Bankrolled.ai Agent Hub ---
 ID: ai.bankrolled/agent-hub
 Package: N/A
 Category: monetization
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Bankrolled/bankrolled-ai-mcp
@@ -6230,11 +5830,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bankrolled/agent-hub
 
---- [250/422] Bareun — Korean NLP & Spell/Grammar Checking ---
+--- [234/394] Bareun — Korean NLP & Spell/Grammar Checking ---
 ID: ai.bareun/bareun
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/gih2yun/bareun-mcp
@@ -6255,11 +5855,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bareun/bareun
 
---- [251/422] BaseEdge Labs Account ---
+--- [235/394] BaseEdge Labs Account ---
 ID: ai.baseedgelabs/account
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6280,11 +5880,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baseedgelabs/account
 
---- [252/422] BaseEdge Labs Catalog ---
+--- [236/394] BaseEdge Labs Catalog ---
 ID: ai.baseedgelabs/catalog
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6305,11 +5905,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baseedgelabs/catalog
 
---- [253/422] baselight ---
+--- [237/394] baselight ---
 ID: ai.baselight/baselight
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6330,11 +5930,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baselight/baselight
 
---- [254/422] baseray ---
+--- [238/394] baseray ---
 ID: ai.baseray/baseray
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6355,11 +5955,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.baseray/baseray
 
---- [255/422] basethread ---
+--- [239/394] basethread ---
 ID: ai.basethread/basethread
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/navbuildz/basethread-mcp
@@ -6380,11 +5980,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.basethread/basethread
 
---- [256/422] Bassethound by NimbleBrain ---
+--- [240/394] Bassethound by NimbleBrain ---
 ID: ai.bassethound/bassethound
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6405,11 +6005,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bassethound/bassethound
 
---- [257/422] BaziChart ---
+--- [241/394] BaziChart ---
 ID: ai.bazichart/bazichart-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/bazichart/bazichart-mcp
@@ -6430,36 +6030,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bazichart/bazichart-mcp
 
---- [258/422] BeachClubs.ae ---
-ID: ae.beachclubs/mcp
-Package: N/A
-Category: web-automation
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ae-beachclubs-mcp.html
-Description: Search UAE beach clubs, day pass prices, amenities, opening hours and events across all 7 emirates.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ae.beachclubs/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ae.beachclubs/mcp
-
---- [259/422] BeatBandit MCP ---
+--- [242/394] BeatBandit MCP ---
 ID: ai.beatbandit/beatbandit
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6480,11 +6055,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beatbandit/beatbandit
 
---- [260/422] Beatra ---
+--- [243/394] Beatra ---
 ID: ai.beatra/beatra
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6505,11 +6080,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beatra/beatra
 
---- [261/422] Beatview ---
+--- [244/394] Beatview ---
 ID: ai.beatview/beatview
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6530,11 +6105,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beatview/beatview
 
---- [262/422] beauty ---
+--- [245/394] beauty ---
 ID: ai.adoraads/beauty
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/DIGIBIZ360-COM/adoraads
@@ -6555,11 +6130,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adoraads/beauty
 
---- [263/422] Beefi ---
+--- [246/394] Beefi ---
 ID: ai.beefi/mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/capaxelabs/beefi-ai-mcp
@@ -6580,11 +6155,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beefi/mcp
 
---- [264/422] BeevR ---
+--- [247/394] BeevR ---
 ID: ai.beevr/beevr
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6605,11 +6180,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beevr/beevr
 
---- [265/422] BeliefState ---
+--- [248/394] BeliefState ---
 ID: ai.beliefstate/investor-research
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Antcolombo/beliefstate-agent-integrations
@@ -6630,11 +6205,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beliefstate/investor-research
 
---- [266/422] BenchGecko ---
+--- [249/394] BenchGecko ---
 ID: ai.benchgecko/benchgecko
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/BenchGecko/datasets
@@ -6655,11 +6230,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.benchgecko/benchgecko
 
---- [267/422] BenchLM Data ---
+--- [250/394] BenchLM Data ---
 ID: ai.benchlm/data
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6680,11 +6255,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.benchlm/data
 
---- [268/422] Best AI Search Agency AEO Report ---
+--- [251/394] Best AI Search Agency AEO Report ---
 ID: ai.aeoengine/best-ai-search-agency-aeo-report
 Package: N/A
 Category: security
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6705,11 +6280,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aeoengine/best-ai-search-agency-aeo-report
 
---- [269/422] BetSlip Doctor ---
+--- [252/394] BetSlip Doctor ---
 ID: ai.betslipdoctor/mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/opspot-ai/betslipdoctor-mcp
@@ -6730,11 +6305,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.betslipdoctor/mcp
 
---- [270/422] BetterPost ---
+--- [253/394] BetterPost ---
 ID: ai.betterpost/server
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/betterpost/betterpost-plugin
@@ -6755,11 +6330,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.betterpost/server
 
---- [271/422] bevGTIN ---
+--- [254/394] bevGTIN ---
 ID: ai.agent-bev/bevgtin
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/agent-bev/bevgtin
@@ -6780,11 +6355,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agent-bev/bevgtin
 
---- [272/422] Bezal — Local Business Intelligence for AI Agents ---
+--- [255/394] Bezal — Local Business Intelligence for AI Agents ---
 ID: ai.bezal/local-commerce
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6805,11 +6380,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bezal/local-commerce
 
---- [273/422] BidBetter collector-car values ---
+--- [256/394] BidBetter collector-car values ---
 ID: ai.bidbetter/collector-car-values
 Package: N/A
 Category: databases
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6830,11 +6405,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bidbetter/collector-car-values
 
---- [274/422] bidclub ---
+--- [257/394] bidclub ---
 ID: ai.bidclub/bidclub
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6855,11 +6430,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bidclub/bidclub
 
---- [275/422] BidDeed MCP ---
+--- [258/394] BidDeed MCP ---
 ID: ai.biddeed/biddeed-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/breverdbidder/cli-anything-biddeed
@@ -6880,11 +6455,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.biddeed/biddeed-mcp
 
---- [276/422] Biel.ai ---
+--- [259/394] Biel.ai ---
 ID: ai.biel/biel-ai
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/TechDocsStudio/biel-mcp
@@ -6905,11 +6480,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.biel/biel-ai
 
---- [277/422] Bindry ---
+--- [260/394] Bindry ---
 ID: ai.bindry/bindry
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6930,11 +6505,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bindry/bindry
 
---- [278/422] bitHuman ---
+--- [261/394] bitHuman ---
 ID: ai.bithuman/characters
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -6955,11 +6530,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bithuman/characters
 
---- [279/422] bitHuman docs ---
+--- [262/394] bitHuman docs ---
 ID: ai.bithuman/docs
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 2.9/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://gitlab.com/projects/87208064
@@ -6980,11 +6555,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bithuman/docs
 
---- [280/422] bitroad ---
+--- [263/394] bitroad ---
 ID: ai.bitroad/bitroad
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/bitroadai/bitroad-mcp
@@ -7005,11 +6580,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bitroad/bitroad
 
---- [281/422] BittleBits GEO Assistant ---
+--- [264/394] BittleBits GEO Assistant ---
 ID: ai.bittlebits/bittlebits
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/bittlebitsai/bittlebits-plugin
@@ -7030,11 +6605,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bittlebits/bittlebits
 
---- [282/422] BitTuitive ---
+--- [265/394] BitTuitive ---
 ID: ai.bittuitive.api/bittuitive
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7055,11 +6630,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bittuitive.api/bittuitive
 
---- [283/422] BizMuse AI Music Video ---
+--- [266/394] BizMuse AI Music Video ---
 ID: ai.bizmuse/bizmuse
 Package: bizmuse-mcp
 Category: developer-tools
-Trust Score: 8/10 (High)
+Trust Score: 3.2/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7080,11 +6655,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y bizmuse-mcp
 
---- [284/422] blast-radius ---
+--- [267/394] blast-radius ---
 ID: ai.blast-radius/blast-radius
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/kipmcc/blast-radius-live
@@ -7105,11 +6680,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blast-radius/blast-radius
 
---- [285/422] Blaze ---
+--- [268/394] Blaze ---
 ID: ai.blaze.app/blaze
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/almanaclabs/blaze-mcp
@@ -7130,11 +6705,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blaze.app/blaze
 
---- [286/422] BliniBot Agent Lounge ---
+--- [269/394] BliniBot Agent Lounge ---
 ID: ai.blinibot/agent-lounge
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7155,11 +6730,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blinibot/agent-lounge
 
---- [287/422] Blipsmith Sound Effects ---
+--- [270/394] Blipsmith Sound Effects ---
 ID: ai.blipsmith/sound-effects
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7180,11 +6755,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blipsmith/sound-effects
 
---- [288/422] BlitzAPI ---
+--- [271/394] BlitzAPI ---
 ID: ai.blitz-api/b2b-data
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/api-blitz/skills
@@ -7205,11 +6780,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blitz-api/b2b-data
 
---- [289/422] Bloopo — Creative MCP ---
+--- [272/394] Bloopo — Creative MCP ---
 ID: ai.bloopo/bloopo
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/BloopodotAI/bloopo-marketplace
@@ -7230,11 +6805,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bloopo/bloopo
 
---- [290/422] Bluebox ---
+--- [273/394] Bluebox ---
 ID: ai.bluebox/mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/bluebox-hq/skills
@@ -7255,11 +6830,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluebox/mcp
 
---- [291/422] BlueNexus Universal MCP ---
+--- [274/394] BlueNexus Universal MCP ---
 ID: ai.bluenexus/universal-mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7280,11 +6855,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluenexus/universal-mcp
 
---- [292/422] bluerate: Find a Mortgage Loan Officer ---
+--- [275/394] bluerate: Find a Mortgage Loan Officer ---
 ID: ai.bluerate/loan-officers
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7305,11 +6880,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluerate/loan-officers
 
---- [293/422] BnBGenius MCP for Airbnb hosts ---
+--- [276/394] BnBGenius MCP for Airbnb hosts ---
 ID: ai.bnbgenius/mcp
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/wildcard-llc/bnbgenius-mcp
@@ -7330,11 +6905,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bnbgenius/mcp
 
---- [294/422] BoardMark ---
+--- [277/394] BoardMark ---
 ID: ai.boardmark/boardmark
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7355,11 +6930,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boardmark/boardmark
 
---- [295/422] Bobos Dispatcher ---
+--- [278/394] Bobos Dispatcher ---
 ID: ai.bobos/dispatcher
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7380,36 +6955,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bobos/dispatcher
 
---- [296/422] bodenrichtwert.ai — Verlässliche Bodenrichtwerte für Mensch und KI ---
-ID: ai.bodenrichtwert/mcp
-Package: N/A
-Category: ai-agents
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-bodenrichtwert-mcp.html
-Description: German land values (Bodenrichtwerte) by address + land-use type. Coverage varies; not in SH/SN/BY.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.bodenrichtwert/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.bodenrichtwert/mcp
-
---- [297/422] Bolt Claw ---
+--- [279/394] Bolt Claw ---
 ID: ai.boltclaw/boltclaw
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7430,11 +6980,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boltclaw/boltclaw
 
---- [298/422] Bolt Claw documentation ---
+--- [280/394] Bolt Claw documentation ---
 ID: ai.boltclaw/docs
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7455,11 +7005,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boltclaw/docs
 
---- [299/422] bolthub ---
+--- [281/394] bolthub ---
 ID: ai.bolthub/mcp
 Package: @bolthub/mcp
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/signaltech-org/bolthub-sdk
@@ -7480,11 +7030,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @bolthub/mcp
 
---- [300/422] bolthub Marketplace ---
+--- [282/394] bolthub Marketplace ---
 ID: ai.bolthub/registry
 Package: @bolthub/mcp-registry
 Category: monetization
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/signaltech-org/bolthub-sdk
@@ -7505,11 +7055,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @bolthub/mcp-registry
 
---- [301/422] Boolsai Directory ---
+--- [283/394] Boolsai Directory ---
 ID: ai.boolsai/directory
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Boolsai-ai/mcp
@@ -7530,11 +7080,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/directory
 
---- [302/422] Boolsai Grep ---
+--- [284/394] Boolsai Grep ---
 ID: ai.boolsai/grep
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Boolsai-ai/mcp
@@ -7555,11 +7105,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/grep
 
---- [303/422] Boolsai Scan ---
+--- [285/394] Boolsai Scan ---
 ID: ai.boolsai/scan
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Boolsai-ai/mcp
@@ -7580,11 +7130,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/scan
 
---- [304/422] Boolsai Signals ---
+--- [286/394] Boolsai Signals ---
 ID: ai.boolsai/signals
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Boolsai-ai/mcp
@@ -7605,11 +7155,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boolsai/signals
 
---- [305/422] Boomlink ---
+--- [287/394] Boomlink ---
 ID: ai.boomlink/boomlink
 Package: N/A
 Category: databases
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7630,11 +7180,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boomlink/boomlink
 
---- [306/422] Boon ---
+--- [288/394] Boon ---
 ID: ai.boon/boon
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7655,11 +7205,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boon/boon
 
---- [307/422] Booqer ---
+--- [289/394] Booqer ---
 ID: ai.booqer/booqer
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7680,11 +7230,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.booqer/booqer
 
---- [308/422] bootkey ---
+--- [290/394] bootkey ---
 ID: ai.bootkey/bootkey
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7705,11 +7255,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bootkey/bootkey
 
---- [309/422] boqo ---
+--- [291/394] boqo ---
 ID: ai.boqo/boqo
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7730,11 +7280,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boqo/boqo
 
---- [310/422] Bordet AI ---
+--- [292/394] Bordet AI ---
 ID: ai.bordet/bordet
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7755,11 +7305,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bordet/bordet
 
---- [311/422] BorealHost ---
+--- [293/394] BorealHost ---
 ID: ai.borealhost/mcp
 Package: borealhost-mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/alainsvrd/borealhost-mcp
@@ -7779,11 +7329,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx borealhost-mcp
 
---- [312/422] Bot Appétit ---
+--- [294/394] Bot Appétit ---
 ID: ai.botappetit/bot-appetit
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7804,11 +7354,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.botappetit/bot-appetit
 
---- [313/422] Bot Office ---
+--- [295/394] Bot Office ---
 ID: ai.aibotoffice/bot-office
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7829,11 +7379,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aibotoffice/bot-office
 
---- [314/422] BotInfo — Advanced Robot Market Data ---
+--- [296/394] BotInfo — Advanced Robot Market Data ---
 ID: ai.botinfo/robot-market-data
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7854,11 +7404,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.botinfo/robot-market-data
 
---- [315/422] boundaryai ---
+--- [297/394] boundaryai ---
 ID: ai.boundaryai/boundaryai
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/skvcool-rgb/BoundaryAI
@@ -7879,11 +7429,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.boundaryai/boundaryai
 
---- [316/422] Bourdon ---
+--- [298/394] Bourdon ---
 ID: ai.bourdon/bourdon
 Package: bourdon
 Category: ai-agents
-Trust Score: 8/10 (High)
+Trust Score: 3.2/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7903,11 +7453,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx bourdon
 
---- [317/422] Bowmark ---
+--- [299/394] Bowmark ---
 ID: ai.bowmark/bowmark
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Metroxe/bowmark
@@ -7928,11 +7478,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bowmark/bowmark
 
---- [318/422] Brainy Prices — UAE Cost of Living ---
+--- [300/394] Brainy Prices — UAE Cost of Living ---
 ID: ae.brainy/grocery-prices
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7953,11 +7503,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.brainy/grocery-prices
 
---- [319/422] Bureau public reader ---
+--- [301/394] Bureau public reader ---
 ID: agency.thebureauoflostcontext/bureau-public
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -7978,11 +7528,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.thebureauoflostcontext/bureau-public
 
---- [320/422] Business Contact Finder ---
+--- [302/394] Business Contact Finder ---
 ID: agency.ottobot/business-contact-finder
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.1/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/modelcontextprotocol/registry
@@ -8003,11 +7553,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.ottobot/business-contact-finder
 
---- [321/422] catalog ---
+--- [303/394] catalog ---
 ID: ai.askmiles/catalog
 Package: N/A
 Category: monetization
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8028,11 +7578,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.askmiles/catalog
 
---- [322/422] Chess Results ---
+--- [304/394] Chess Results ---
 ID: ai.b77/chess-results
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8053,11 +7603,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/chess-results
 
---- [323/422] computeback ---
+--- [305/394] computeback ---
 ID: ai.autonomad/computeback
 Package: @autonomad1/computeback-mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Autonomad1/computeback-mcp
@@ -8078,11 +7628,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @autonomad1/computeback-mcp
 
---- [324/422] contextburn ---
+--- [306/394] contextburn ---
 ID: ai.arsentev/contextburn
 Package: contextburn
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/arsentev-ai/contextburn
@@ -8102,11 +7652,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 uvx contextburn
 
---- [325/422] contextlayer-mcp ---
+--- [307/394] contextlayer-mcp ---
 ID: ai.autoblocks/contextlayer-mcp
 Package: @contextlayer/mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/autoblocksai/ctxl
@@ -8127,11 +7677,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @contextlayer/mcp
 
---- [326/422] Contractor Licence Changes ---
+--- [308/394] Contractor Licence Changes ---
 ID: agency.ottobot/contractor-license-changes
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.1/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/modelcontextprotocol/registry
@@ -8152,11 +7702,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.ottobot/contractor-license-changes
 
---- [327/422] CounterScript - Drug Price Benchmarks ---
+--- [309/394] CounterScript - Drug Price Benchmarks ---
 ID: ai.agentlookups/counterscript
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8177,11 +7727,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/counterscript
 
---- [328/422] ctxl ---
+--- [310/394] ctxl ---
 ID: ai.autoblocks/ctxl
 Package: ctxl
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/autoblocksai/ctxl
@@ -8202,11 +7752,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ctxl
 
---- [329/422] ctxl-mcp ---
+--- [311/394] ctxl-mcp ---
 ID: ai.autoblocks/ctxl-mcp
 Package: ctxl-mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/autoblocksai/ctxl
@@ -8227,11 +7777,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ctxl-mcp
 
---- [330/422] Discond ---
+--- [312/394] Discond ---
 ID: ae.discond/discond
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8252,11 +7802,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.discond/discond
 
---- [331/422] docs-mcp ---
+--- [313/394] docs-mcp ---
 ID: ac.tandem/docs-mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/frumu-ai/tandem
@@ -8277,11 +7827,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ac.tandem/docs-mcp
 
---- [332/422] Dubai Data — Dubai real estate statistics ---
+--- [314/394] Dubai Data — Dubai real estate statistics ---
 ID: ae.datadubai/dubai-real-estate
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/datadubai/dubai-real-estate-dld
@@ -8302,11 +7852,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.datadubai/dubai-real-estate
 
---- [333/422] EasyVoice text to speech ---
+--- [315/394] EasyVoice text to speech ---
 ID: ae.easyvoice/tts
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8327,11 +7877,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.easyvoice/tts
 
---- [334/422] emailwarmup ---
+--- [316/394] emailwarmup ---
 ID: ai.bobwork/emailwarmup
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Agent-Operating-System/emailwarmup-mcp
@@ -8352,11 +7902,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bobwork/emailwarmup
 
---- [335/422] enforcement-database ---
+--- [317/394] enforcement-database ---
 ID: ai.argushq/enforcement-database
 Package: N/A
 Category: databases
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/andrewjgaber-commits/empire-distribution
@@ -8377,11 +7927,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.argushq/enforcement-database
 
---- [336/422] Events.Aero ---
+--- [318/394] Events.Aero ---
 ID: aero.events/events
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8402,11 +7952,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y aero.events/events
 
---- [337/422] Excellent ---
+--- [319/394] Excellent ---
 ID: ai.beexcellent/excellent
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8427,11 +7977,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beexcellent/excellent
 
---- [338/422] Excellent Reference (free) ---
+--- [320/394] Excellent Reference (free) ---
 ID: ai.beexcellent/reference
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8452,11 +8002,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.beexcellent/reference
 
---- [339/422] EXTREMELY agency ---
+--- [321/394] EXTREMELY agency ---
 ID: agency.extremely/agency
 Package: @extremely-agency/mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/maxkxd/extremely-autonomous-agents
@@ -8477,11 +8027,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @extremely-agency/mcp
 
---- [340/422] Fabric Verify ---
+--- [322/394] Fabric Verify ---
 ID: ai.augmentev/fabric-verify
 Package: @augmentev/fabric-verify-mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/AugmentEVzero/fabric-verify-mcp
@@ -8502,11 +8052,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @augmentev/fabric-verify-mcp
 
---- [341/422] Feedback ---
+--- [323/394] Feedback ---
 ID: ai.b77/feedback
 Package: N/A
 Category: databases
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8527,11 +8077,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/feedback
 
---- [342/422] Fenlight ---
+--- [324/394] Fenlight ---
 ID: ae.waggle/fenlight
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8552,11 +8102,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.waggle/fenlight
 
---- [343/422] Fibalo ---
+--- [325/394] Fibalo ---
 ID: ai.b77/fibalo
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8577,11 +8127,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/fibalo
 
---- [344/422] File Storage ---
+--- [326/394] File Storage ---
 ID: ai.b77/file-storage
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8602,11 +8152,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/file-storage
 
---- [345/422] Framerfy ---
+--- [327/394] Framerfy ---
 ID: ae.framerfy/store-builder
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8627,11 +8177,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.framerfy/store-builder
 
---- [346/422] GENOSYS UAE ---
+--- [328/394] GENOSYS UAE ---
 ID: ae.genosys/genosys
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8652,11 +8202,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.genosys/genosys
 
---- [347/422] Getlead ---
+--- [329/394] Getlead ---
 ID: ad.getle/leads
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Adgrowofficial/getlead-mcp
@@ -8677,11 +8227,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.getle/leads
 
---- [348/422] goji ---
+--- [330/394] goji ---
 ID: agency.goji/goji
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/goji-agency/goji-mcp
@@ -8702,11 +8252,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.goji/goji
 
---- [349/422] Google Ads ---
+--- [331/394] Google Ads ---
 ID: ai.b77/google-ads
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8727,11 +8277,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/google-ads
 
---- [350/422] Google News ---
+--- [332/394] Google News ---
 ID: ai.b77/google-news
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8752,11 +8302,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/google-news
 
---- [351/422] Google Search Console ---
+--- [333/394] Google Search Console ---
 ID: ai.b77/google-search-console
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8777,11 +8327,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/google-search-console
 
---- [352/422] google-ads ---
+--- [334/394] google-ads ---
 ID: ai.adramp/google-ads
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8802,11 +8352,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.adramp/google-ads
 
---- [353/422] Graffeo Coffee Roasting ---
+--- [335/394] Graffeo Coffee Roasting ---
 ID: ai.agenticshelf/graffeo
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8827,11 +8377,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticshelf/graffeo
 
---- [354/422] Granek Signal ---
+--- [336/394] Granek Signal ---
 ID: agency.granek.signal/signal
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8852,11 +8402,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.granek.signal/signal
 
---- [355/422] GreenLight - Plug-in Solar Law Registry ---
+--- [337/394] GreenLight - Plug-in Solar Law Registry ---
 ID: ai.agentlookups/greenlight
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8877,11 +8427,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/greenlight
 
---- [356/422] groTAX by Grovisor ---
+--- [338/394] groTAX by Grovisor ---
 ID: ae.grovisor/grotax
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8902,11 +8452,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.grovisor/grotax
 
---- [357/422] GroundRules - US Law Text ---
+--- [339/394] GroundRules - US Law Text ---
 ID: ai.agentlookups/groundrules
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8927,11 +8477,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/groundrules
 
---- [358/422] GroundTruth - Environmental Records ---
+--- [340/394] GroundTruth - Environmental Records ---
 ID: ai.agentlookups/groundtruth
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8952,11 +8502,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/groundtruth
 
---- [359/422] gtm-engineer ---
+--- [341/394] gtm-engineer ---
 ID: ai.artemisgtm/gtm-engineer
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -8977,11 +8527,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.artemisgtm/gtm-engineer
 
---- [360/422] Harness ---
+--- [342/394] Harness ---
 ID: ai.autonomous.harness/harness
 Package: @autonomous-ai/harness-mcp
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/autonomous-ai/openharness
@@ -9002,11 +8552,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @autonomous-ai/harness-mcp
 
---- [361/422] hood. — .hood name service ---
+--- [343/394] hood. — .hood name service ---
 ID: ag.hood/name-service
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9027,11 +8577,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ag.hood/name-service
 
---- [362/422] ideation ---
+--- [344/394] ideation ---
 ID: ai.actwise/ideation
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9052,36 +8602,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.actwise/ideation
 
---- [363/422] inference.sh ---
-ID: ac.inference.sh/mcp
-Package: N/A
-Category: ai-agents
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ac-inference-sh-mcp.html
-Description: run any ai model. compose agents, stack knowledge, connect tools. one api, pay per run.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ac.inference.sh/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ac.inference.sh/mcp
-
---- [364/422] Inferventis MCP Server ---
+--- [345/394] Inferventis MCP Server ---
 ID: ai.bankee/inferventis-mcp
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Bankee-ai/inferventis
@@ -9102,11 +8627,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bankee/inferventis-mcp
 
---- [365/422] Inside Ads ---
+--- [346/394] Inside Ads ---
 ID: ad.inside/inside-ads
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9127,11 +8652,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ad.inside/inside-ads
 
---- [366/422] JustIdea Agency ---
+--- [347/394] JustIdea Agency ---
 ID: agency.justidea/justidea-agency
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9152,11 +8677,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.justidea/justidea-agency
 
---- [367/422] Kinnovis Self-Storage ---
+--- [348/394] Kinnovis Self-Storage ---
 ID: ai.b77/kinnovis-storage
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9177,11 +8702,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/kinnovis-storage
 
---- [368/422] Knowledge Base ---
+--- [349/394] Knowledge Base ---
 ID: ai.b77/knowledge-base
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9202,11 +8727,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/knowledge-base
 
---- [369/422] Licensed House Painters ---
+--- [350/394] Licensed House Painters ---
 ID: agency.ottobot/licensed-house-painters
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.1/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/modelcontextprotocol/registry
@@ -9227,11 +8752,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.ottobot/licensed-house-painters
 
---- [370/422] LifeClaw ---
+--- [351/394] LifeClaw ---
 ID: ai.agentese.lifeclaw/lifeclaw
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9252,36 +8777,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentese.lifeclaw/lifeclaw
 
---- [371/422] lomi. ---
-ID: africa.lomi/mcp
-Package: N/A
-Category: monetization
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/africa-lomi-mcp.html
-Description: lomi. payments. https://mcp.lomi.africa/mcp and guest https://mcp.lomi.africa/mcp/guest
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "africa.lomi/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y africa.lomi/mcp
-
---- [372/422] mcp ---
+--- [352/394] mcp ---
 ID: ai.aient/mcp
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 3.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/haf/glimt
@@ -9302,61 +8802,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aient/mcp
 
---- [373/422] mcp ---
-ID: ai.aivonic/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-aivonic-mcp.html
-Description: Do business with Aivonic: pricing, products, check availability, book a demo, request a quote.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.aivonic/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.aivonic/mcp
-
---- [374/422] mcp ---
-ID: ai.astrofabric/mcp
-Package: N/A
-Category: ai-agents
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-astrofabric-mcp.html
-Description: Agentic AI for business intelligence: discover, verify and enrich company and contact data.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.astrofabric/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.astrofabric/mcp
-
---- [375/422] Mizan ---
+--- [353/394] Mizan ---
 ID: ac.mizan/registry
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9377,11 +8827,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ac.mizan/registry
 
---- [376/422] Moha: hire in the UAE ---
+--- [354/394] Moha: hire in the UAE ---
 ID: ae.employerofrecord/moha
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9402,11 +8852,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.employerofrecord/moha
 
---- [377/422] Moha: your account ---
+--- [355/394] Moha: your account ---
 ID: ae.employerofrecord/moha-account
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9427,11 +8877,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.employerofrecord/moha-account
 
---- [378/422] MRK Dubai Property ---
+--- [356/394] MRK Dubai Property ---
 ID: ae.mrk/dubai-property
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9452,11 +8902,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.mrk/dubai-property
 
---- [379/422] Nightscout ---
+--- [357/394] Nightscout ---
 ID: ai.b77/nightscout
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9477,11 +8927,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/nightscout
 
---- [380/422] One-Page Readiness Check — 10 Signals, Arabic or English ---
+--- [358/394] One-Page Readiness Check — 10 Signals, Arabic or English ---
 ID: ai.advisorsai/store-readiness
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9502,11 +8952,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.advisorsai/store-readiness
 
---- [381/422] overassessed ---
+--- [359/394] overassessed ---
 ID: ai.agentlookups/overassessed
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9527,36 +8977,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/overassessed
 
---- [382/422] Pantheon ---
-ID: ad.pantheon/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ad-pantheon-mcp.html
-Description: Meta ads library, competitor ads, brand voice, avatars and offer briefs from your Pantheon account.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ad.pantheon/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ad.pantheon/mcp
-
---- [383/422] paseo ---
+--- [360/394] paseo ---
 ID: ai.augmentev/paseo
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9577,11 +9002,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augmentev/paseo
 
---- [384/422] Plant Guide: Dubai gardening research ---
+--- [361/394] Plant Guide: Dubai gardening research ---
 ID: ae.plantguide/dubai-gardening
 Package: N/A
 Category: web-automation
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9602,11 +9027,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.plantguide/dubai-gardening
 
---- [385/422] Plumbline - Contractor License Checks ---
+--- [362/394] Plumbline - Contractor License Checks ---
 ID: ai.agentlookups/plumbline
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9627,11 +9052,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/plumbline
 
---- [386/422] Pre-Trip compliance scanner ---
+--- [363/394] Pre-Trip compliance scanner ---
 ID: agency.kesey/pretrip
 Package: pretrip-mcp
 Category: developer-tools
-Trust Score: 8/10 (High)
+Trust Score: 3.2/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9652,11 +9077,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y pretrip-mcp
 
---- [387/422] Project Desk ---
+--- [364/394] Project Desk ---
 ID: ai.atlier/project-desk
 Package: N/A
 Category: ai-agents
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/Wildsdesign/Atlier
@@ -9677,36 +9102,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atlier/project-desk
 
---- [388/422] Projectory ---
-ID: ae.projectory/mcp
-Package: N/A
-Category: web-automation
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ae-projectory-mcp.html
-Description: Find UAE off-plan developments, registered residential sales and research reports.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ae.projectory/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ae.projectory/mcp
-
---- [389/422] Propick Integration MCP ---
+--- [365/394] Propick Integration MCP ---
 ID: ae.propick/propick
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9727,11 +9127,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.propick/propick
 
---- [390/422] PuroAir ---
+--- [366/394] PuroAir ---
 ID: ai.agenticshelf/puroair
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9752,11 +9152,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agenticshelf/puroair
 
---- [391/422] quant-research ---
+--- [367/394] quant-research ---
 ID: ai.avasis/quant-research
 Package: N/A
 Category: web-automation
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/abhayjnayakk/quant-integrity
@@ -9777,11 +9177,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avasis/quant-research
 
---- [392/422] Reasonbook ---
+--- [368/394] Reasonbook ---
 ID: ai.aquex/reasonbook
 Package: @aquex/reasonbook
 Category: ai-agents
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/kneelinghorse/reasonbook
@@ -9802,11 +9202,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aquex/reasonbook
 
---- [393/422] regulatory ---
+--- [369/394] regulatory ---
 ID: ai.bizmoon/regulatory
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/uofuonye/bizmoon-plugins
@@ -9827,11 +9227,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bizmoon/regulatory
 
---- [394/422] resolver ---
+--- [370/394] resolver ---
 ID: ai.anha/resolver
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9852,11 +9252,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anha/resolver
 
---- [395/422] seal ---
+--- [371/394] seal ---
 ID: ai.aqta/seal
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9877,11 +9277,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.aqta/seal
 
---- [396/422] SEO & GEO by Alvin's Club ---
+--- [372/394] SEO & GEO by Alvin's Club ---
 ID: ai.alvinsclub.studio/seo
 Package: N/A
 Category: security
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9902,11 +9302,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.alvinsclub.studio/seo
 
---- [397/422] SEO Content Factory ---
+--- [373/394] SEO Content Factory ---
 ID: ai.b77/seo-content-factory
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9927,11 +9327,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/seo-content-factory
 
---- [398/422] Service Engineer AI ---
+--- [374/394] Service Engineer AI ---
 ID: academy.serviceengineer/se-ai
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -9952,11 +9352,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y academy.serviceengineer/se-ai
 
---- [399/422] Singapore new launches ---
+--- [375/394] Singapore new launches ---
 ID: ai.bluebed.property/new-launches
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/danielkoh/property-bluebed-mcp
@@ -9977,11 +9377,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.bluebed.property/new-launches
 
---- [400/422] snag ---
+--- [376/394] snag ---
 ID: ac.snag/snag
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10002,11 +9402,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ac.snag/snag
 
---- [401/422] Spoon Scout - Food Contaminant Lookup ---
+--- [377/394] Spoon Scout - Food Contaminant Lookup ---
 ID: ai.agentlookups/spoon-scout
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10027,11 +9427,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.agentlookups/spoon-scout
 
---- [402/422] spotdb ---
+--- [378/394] spotdb ---
 ID: ai.aliengiraffe/spotdb
 Package: docker.io/aliengiraffe/spotdb:0.1.0
 Category: security
-Trust Score: 9.5/10 (Very High)
+Trust Score: 8.1/10 (High)
 Transport: stdio
 Author: Community
 Repository: https://github.com/aliengiraffe/spotdb
@@ -10052,11 +9452,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y docker.io/aliengiraffe/spotdb:0.1.0
 
---- [403/422] stage1 ---
+--- [379/394] stage1 ---
 ID: ai.aquex/stage1
 Package: @aquex/stage1
 Category: developer-tools
-Trust Score: 8/10 (High)
+Trust Score: 4/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10077,36 +9477,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y @aquex/stage1
 
---- [404/422] StartupList Africa ---
-ID: africa.startuplist/mcp
-Package: N/A
-Category: web-automation
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/africa-startuplist-mcp.html
-Description: Research African startups, investors and funding rounds, with source links on every record.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "africa.startuplist/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y africa.startuplist/mcp
-
---- [405/422] supershopping ---
+--- [380/394] supershopping ---
 ID: ai.atdev/supershopping
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/alex-hoyeol-choi/headless-commerce
@@ -10127,11 +9502,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.atdev/supershopping
 
---- [406/422] Switchboard ---
+--- [381/394] Switchboard ---
 ID: ai.anywhereintelligence/switchboard
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10152,11 +9527,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.anywhereintelligence/switchboard
 
---- [407/422] Teamwork ---
+--- [382/394] Teamwork ---
 ID: ai.b77/teamwork
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10177,36 +9552,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/teamwork
 
---- [408/422] test-mcp-server ---
-ID: ai.alpic.test/test-mcp-server
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ai-alpic-test-test-mcp-server.html
-Description: Alpic Test MCP Server - great server!
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "test-mcp-server": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ai.alpic.test/test-mcp-server"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ai.alpic.test/test-mcp-server
-
---- [409/422] Third Hemisphere AI Authority Index ---
+--- [383/394] Third Hemisphere AI Authority Index ---
 ID: agency.thirdhemisphere/ai-authority-index
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10227,36 +9577,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.thirdhemisphere/ai-authority-index
 
---- [410/422] tide ---
-ID: ad.tide/mcp
-Package: N/A
-Category: databases
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ad-tide-mcp.html
-Description: Sui blockchain data in plain English: transactions, wallets, coins, balances, fund flows and SQL.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ad.tide/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ad.tide/mcp
-
---- [411/422] Time ---
+--- [384/394] Time ---
 ID: ai.b77/time
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10277,11 +9602,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/time
 
---- [412/422] Tipline: unofficial GTA 6 guide ---
+--- [385/394] Tipline: unofficial GTA 6 guide ---
 ID: ae.brainy.tipline/gta6
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10302,11 +9627,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.brainy.tipline/gta6
 
---- [413/422] trading ---
+--- [386/394] trading ---
 ID: agency.lona/trading
 Package: N/A
 Category: developer-tools
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/mindsightventures/lona
@@ -10327,11 +9652,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y agency.lona/trading
 
---- [414/422] travel ---
+--- [387/394] travel ---
 ID: ai.autonomad/travel
 Package: autonomad-travel
 Category: developer-tools
-Trust Score: 9.5/10 (Very High)
+Trust Score: 7.3/10 (Moderate)
 Transport: stdio
 Author: Community
 Repository: https://github.com/autonomad-ai/autonomad
@@ -10352,11 +9677,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y autonomad-travel
 
---- [415/422] Travel World ---
+--- [388/394] Travel World ---
 ID: ai.augworlds/travel-world
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10377,36 +9702,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.augworlds/travel-world
 
---- [416/422] Tributs ---
-ID: ad.tributs/mcp
-Package: N/A
-Category: developer-tools
-Trust Score: 7/10 (Moderate)
-Transport: stdio
-Author: Community
-Repository: N/A
-URL: https://mcp.ritualdev.in/servers/ad-tributs-mcp.html
-Description: Read-only access to Andorran accounting and tax data in Tributs: invoices, bank, IGI filings.
-Claude Desktop Snippet:
-{
-  "mcpServers": {
-    "mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "ad.tributs/mcp"
-      ]
-    }
-  }
-}
-Direct Terminal Run:
-npx -y ad.tributs/mcp
-
---- [417/422] UGC, the Human Ad Network ---
+--- [389/394] UGC, the Human Ad Network ---
 ID: africa.ugc/ugc
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10427,11 +9727,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y africa.ugc/ugc
 
---- [418/422] Vera ---
+--- [390/394] Vera ---
 ID: ae.waggle/vera
 Package: N/A
 Category: monetization
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10452,11 +9752,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ae.waggle/vera
 
---- [419/422] Web Analytics ---
+--- [391/394] Web Analytics ---
 ID: ai.b77/web-analytics
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10477,11 +9777,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.b77/web-analytics
 
---- [420/422] Web Content & URL Tools ---
+--- [392/394] Web Content & URL Tools ---
 ID: ai.avaloncompany/web-content-url-tools
 Package: N/A
 Category: productivity
-Trust Score: 8.5/10 (High)
+Trust Score: 4.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: https://github.com/avaloncompany/web-content-mcp-server
@@ -10502,11 +9802,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.avaloncompany/web-content-url-tools
 
---- [421/422] Web Search API for all your agents and LLMs ---
+--- [393/394] Web Search API for all your agents and LLMs ---
 ID: ai.blopus/search
 Package: N/A
 Category: ai-agents
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A
@@ -10527,11 +9827,11 @@ Claude Desktop Snippet:
 Direct Terminal Run:
 npx -y ai.blopus/search
 
---- [422/422] zoll.agency ---
+--- [394/394] zoll.agency ---
 ID: agency.zoll/ausfuhr
 Package: N/A
 Category: developer-tools
-Trust Score: 7/10 (Moderate)
+Trust Score: 1.5/10 (Caution)
 Transport: stdio
 Author: Community
 Repository: N/A

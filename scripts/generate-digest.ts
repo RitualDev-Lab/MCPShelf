@@ -427,7 +427,7 @@ ${rssItemsXml}
     <!-- Key Metrics Ribbon -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
       <div class="bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 text-center">
-        <div class="text-2xl font-extrabold text-white">419+</div>
+        <div class="text-2xl font-extrabold text-white">${catalog.length}+</div>
         <div class="text-[11px] text-slate-400 font-medium">Synchronized Servers</div>
       </div>
       <div class="bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 text-center">
@@ -451,7 +451,7 @@ ${rssItemsXml}
           <h2 class="text-2xl font-bold text-white">🔥 Trending & Featured Servers This Week</h2>
           <p class="text-xs text-slate-400">Top-rated tools passing strict enterprise sandboxing and zero-leak audits.</p>
         </div>
-        <a href="/" class="text-xs font-semibold text-emerald-400 hover:underline">View all 419+ &rarr;</a>
+        <a href="/" class="text-xs font-semibold text-emerald-400 hover:underline">View all ${catalog.length}+ &rarr;</a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

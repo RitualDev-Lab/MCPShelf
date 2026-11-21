@@ -14,7 +14,7 @@ describe('Developer Submission API Gateway Suite', () => {
       target: 'mcpshelf',
       item: {
         name: 'io.github.example/sample-mcp',
-        description: 'Sample database MCP server',
+        description: 'Production-ready database MCP server with connection pooling and schema introspection',
         category: 'databases',
         repositoryUrl: 'https://github.com/example/sample-mcp',
         packageIdentifier: '@example/sample-mcp'

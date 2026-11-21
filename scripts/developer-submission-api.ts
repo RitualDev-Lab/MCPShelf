@@ -40,9 +40,13 @@ export function validateSubmission(payload: SubmissionPayload): { valid: boolean
 
   if (payload.target === 'mcpshelf') {
     if (!item.category) item.category = 'developer-tools';
-    let trustScore = 7.5;
-    if (item.repositoryUrl) trustScore += 1.5;
-    if (item.packageIdentifier) trustScore += 0.8;
+    let trustScore = 4.0;
+    if (item.repositoryUrl && item.repositoryUrl.startsWith('https://github.com/')) trustScore += 2.2;
+    if (item.packageIdentifier) {
+      trustScore += 1.8;
+      if (item.packageIdentifier.includes('/')) trustScore += 0.8;
+    }
+    if (item.description && item.description.length > 40) trustScore += 0.7;
     trustScore = Math.min(10.0, Math.round(trustScore * 10) / 10);
     return { valid: true, trustScore };
   }

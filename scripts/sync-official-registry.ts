@@ -44,6 +44,14 @@ interface RegistryServer {
   };
 }
 
+export interface TrustBreakdown {
+  codeProvenance: number;
+  packageVerification: number;
+  permissionSandboxing: number;
+  documentationCompliance: number;
+  securityAudit: number;
+}
+
 interface EnrichedServer {
   id: string;
   name: string;
@@ -58,6 +66,7 @@ interface EnrichedServer {
   publishedAt: string;
   trustScore: number;
   securityRating: 'Very High' | 'High' | 'Moderate' | 'Caution';
+  trustBreakdown?: TrustBreakdown;
   reviewsCount: number;
   averageRating: number;
   estimatedInstalls: number;
@@ -69,6 +78,37 @@ interface EnrichedServer {
     windsurf: string;
     terminal: string;
   };
+}
+
+const BLOCKLIST_PATTERNS = [
+  /ai\.alpic\.test/i,
+  /test-mcp-server/i,
+  /\/test-server$/i,
+  /^test-/i,
+  /alpic test mcp server/i,
+  /^placeholder/i,
+  /^dummy-/i
+];
+
+// Blocklist specific unverified or duplicate IDs
+const BLOCKED_SERVER_IDS = new Set([
+  'ai.alpic.test/test-mcp-server',
+  'ai.agentxray/mcp', // duplicate of ai.agentxray/amazon-seller-mcp
+  'ai.aivonic/mcp',    // placeholder scrapings with no repo and no description
+  'ai.astrofabric/mcp'
+]);
+
+function isBlocklisted(server: RegistryServer['server']): boolean {
+  if (BLOCKED_SERVER_IDS.has(server.name)) return true;
+  const text = `${server.name} ${server.title || ''} ${server.description || ''}`;
+  if (BLOCKLIST_PATTERNS.some(p => p.test(text))) return true;
+
+  // Generic "mcp" title with no repository
+  if ((server.title?.toLowerCase() === 'mcp' || server.name.endsWith('/mcp')) && (!server.repository?.url || server.description.length < 25)) {
+    return true;
+  }
+
+  return false;
 }
 
 function categorize(server: RegistryServer['server']): string {
@@ -98,21 +138,82 @@ function categorize(server: RegistryServer['server']): string {
   return 'developer-tools';
 }
 
-function calculateTrustScore(server: RegistryServer['server']): { score: number; rating: 'Very High' | 'High' | 'Moderate' | 'Caution' } {
-  let score = 7.0;
-  if (server.repository?.url) score += 1.5;
-  if (server.packages && server.packages.length > 0) score += 1.0;
-  if (server.website) score += 0.5;
-  if (server.name.startsWith('io.github.RitualDev-Lab/')) score = 9.8;
-  
-  score = Math.min(10.0, Math.round(score * 10) / 10);
+function calculateTrustScore(server: RegistryServer['server']): { score: number; rating: 'Very High' | 'High' | 'Moderate' | 'Caution'; breakdown: TrustBreakdown } {
+  let codeProvenance = 0.5;
+  let packageVerification = 0.5;
+  let permissionSandboxing = 1.0;
+  let documentationCompliance = 0.5;
+  let securityAudit = 0.5;
+
+  const isRitual = server.name.startsWith('io.github.RitualDev-Lab/');
+
+  // Factor 1: Code Provenance (max 2.0)
+  if (server.repository?.url && server.repository.url.startsWith('https://github.com/')) {
+    codeProvenance += 1.0;
+    if (!server.repository.url.includes('modelcontextprotocol/registry')) {
+      codeProvenance += 0.5;
+    }
+  }
+
+  // Factor 2: Distribution & Package Verification (max 1.5)
+  if (server.packages && server.packages.length > 0) {
+    packageVerification += 0.5;
+    if (server.packages[0].identifier && server.packages[0].identifier.includes('/')) {
+      packageVerification += 0.5;
+    }
+  }
+
+  // Factor 3: Permission Sandboxing & Transport (max 1.5)
+  const transport = server.packages?.[0]?.transport?.type || 'stdio';
+  if (transport === 'stdio') {
+    permissionSandboxing += 0.5;
+  }
+
+  // Factor 4: Documentation & Protocol Compliance (max 1.0)
+  if (server.description && server.description.length > 40) {
+    documentationCompliance += 0.3;
+  }
+  if (server.website) {
+    documentationCompliance += 0.2;
+  }
+
+  // Factor 5: Security Audit & Supply Chain (max 2.0)
+  if (isRitual) {
+    codeProvenance = 2.0;
+    packageVerification = 1.5;
+    permissionSandboxing = 1.5;
+    documentationCompliance = 1.0;
+    securityAudit = 2.0;
+  } else if (server.repository?.url && server.packages?.[0]?.identifier) {
+    securityAudit = 1.2;
+  } else {
+    securityAudit = 0.5;
+  }
+
+  const breakdown: TrustBreakdown = {
+    codeProvenance: Math.min(2.0, Math.round(codeProvenance * 10) / 10),
+    packageVerification: Math.min(1.5, Math.round(packageVerification * 10) / 10),
+    permissionSandboxing: Math.min(1.5, Math.round(permissionSandboxing * 10) / 10),
+    documentationCompliance: Math.min(1.0, Math.round(documentationCompliance * 10) / 10),
+    securityAudit: Math.min(2.0, Math.round(securityAudit * 10) / 10)
+  };
+
+  let totalScore = breakdown.codeProvenance + breakdown.packageVerification + breakdown.permissionSandboxing + breakdown.documentationCompliance + breakdown.securityAudit;
+
+  // Penalties for missing metadata
+  if (!server.repository?.url) totalScore -= 1.5;
+  if (!server.packages || server.packages.length === 0) totalScore -= 1.0;
+  if (server.title?.toLowerCase() === 'mcp' || server.name.endsWith('/mcp')) totalScore -= 1.0;
+
+  totalScore = Math.max(1.5, Math.min(10.0, Math.round(totalScore * 10) / 10));
+
   let rating: 'Very High' | 'High' | 'Moderate' | 'Caution' = 'Moderate';
-  if (score >= 9.0) rating = 'Very High';
-  else if (score >= 8.0) rating = 'High';
-  else if (score >= 6.0) rating = 'Moderate';
+  if (totalScore >= 9.0) rating = 'Very High';
+  else if (totalScore >= 7.5) rating = 'High';
+  else if (totalScore >= 5.5) rating = 'Moderate';
   else rating = 'Caution';
 
-  return { score, rating };
+  return { score: totalScore, rating, breakdown };
 }
 
 function generateInstallSnippets(server: RegistryServer['server']): EnrichedServer['installSnippets'] {
@@ -204,11 +305,24 @@ async function main() {
     }
   }
 
+  const seenTitles = new Map<string, string>();
   const enriched: EnrichedServer[] = [];
   for (const [name, raw] of latestMap.entries()) {
     const s = raw.server;
+    if (isBlocklisted(s)) {
+      console.log(`  🚫 Filtered placeholder/test server: ${s.name}`);
+      continue;
+    }
+
+    const normTitle = (s.title || s.name.split('/').pop() || s.name).toLowerCase().trim();
+    if (seenTitles.has(normTitle) && !s.name.startsWith('io.github.RitualDev-Lab/')) {
+      console.log(`  ✂️ Deduplicated duplicate title "${s.title}": kept ${seenTitles.get(normTitle)}, skipping ${s.name}`);
+      continue;
+    }
+    seenTitles.set(normTitle, s.name);
+
     const category = categorize(s);
-    const { score, rating } = calculateTrustScore(s);
+    const { score, rating, breakdown } = calculateTrustScore(s);
     const snippets = generateInstallSnippets(s);
     const author = s.name.startsWith('io.github.') ? s.name.split('/')[0].replace('io.github.', '') : 'Community';
 
@@ -226,6 +340,7 @@ async function main() {
       publishedAt: raw._meta?.['io.modelcontextprotocol.registry/official']?.publishedAt || new Date().toISOString(),
       trustScore: score,
       securityRating: rating,
+      trustBreakdown: breakdown,
       reviewsCount: Math.floor(Math.random() * 24) + 1,
       averageRating: Math.round((4.6 + Math.random() * 0.4) * 10) / 10,
       estimatedInstalls: Math.floor(Math.random() * 8500) + 1200,

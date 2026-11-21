@@ -1,27 +1,29 @@
 # MCPShelf ⚡
 > The Open Model Context Protocol (MCP) Registry, Marketplace & Security Directory
 
-[![Live Marketplace](https://img.shields.io/badge/Live%20Marketplace-mcp.ritualdev.in-22c55e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mcp.ritualdev.in)
-[![Latest Release](https://img.shields.io/github/v/release/RitualDev-Lab/MCPShelf?style=for-the-badge&color=blue&logo=github)](https://github.com/RitualDev-Lab/MCPShelf/releases)
-[![npm version](https://img.shields.io/npm/v/@ritualdev-lab/mcpshelf?style=for-the-badge&color=cb3837&logo=npm)](https://www.npmjs.com/package/@ritualdev-lab/mcpshelf)
-[![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-@ritualdev--lab/mcpshelf-purple?style=for-the-badge&logo=github)](https://github.com/orgs/RitualDev-Lab/packages?repo_name=MCPShelf)
-[![Official Registry Mirror](https://img.shields.io/badge/Official%20Registry-Active%20v1.1.0-blue?style=for-the-badge)](https://registry.modelcontextprotocol.io)
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-yellow.svg?style=for-the-badge)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/RitualDev-Lab/MCPShelf?style=for-the-badge&color=gold)](https://github.com/RitualDev-Lab/MCPShelf/stargazers)
+[![CI](https://github.com/RitualDev-Lab/MCPShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/MCPShelf/actions/workflows/ci.yml)
+[![Live Registry](https://img.shields.io/badge/Live_Registry-mcp.ritualdev.in-22c55e.svg?style=flat-square&logo=googlechrome&logoColor=white)](https://mcp.ritualdev.in)
+[![npm](https://img.shields.io/npm/v/@ritualdev-lab/mcpshelf.svg?style=flat-square&color=cb3837&logo=npm)](https://www.npmjs.com/package/@ritualdev-lab/mcpshelf)
+[![PyPI](https://img.shields.io/pypi/v/mcpshelf.svg?style=flat-square&color=3775A9&logo=pypi&logoColor=white)](https://pypi.org/project/mcpshelf/)
+[![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?style=flat-square)](tests/)
+[![Trust Rubric](https://img.shields.io/badge/Trust_Rubric-5--Factor_Audited-emerald.svg?style=flat-square)](TRUST_SCORE.md)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=flat-square)](LICENSE)
+[![MCP Protocol](https://img.shields.io/badge/MCP_Protocol-v1.1.0-6366f1.svg?style=flat-square)](https://modelcontextprotocol.io)
 
-**MCPShelf** is an open-source, decentralized registry and web marketplace for **Model Context Protocol (MCP)** servers. Hosted live at **[mcp.ritualdev.in](https://mcp.ritualdev.in)**, it mirrors the official Model Context Protocol registry while providing instant fuzzy search, 1-click install snippets, verified security audit scores, community ratings, and a self-serve creator boosting platform.
+**MCPShelf** is an open-source, decentralized registry and web marketplace for **Model Context Protocol (MCP)** servers. Hosted live at **[mcp.ritualdev.in](https://mcp.ritualdev.in)**, it mirrors the official Model Context Protocol registry while providing instant fuzzy search, 1-click install snippets, verified multi-factor security audit scores, community ratings, and a self-serve creator boosting platform.
 
 ---
 
 ## 🌟 Key Features
 
-- **⚡ 419+ Synchronized MCP Servers**: Fully synchronized with [`registry.modelcontextprotocol.io`](https://registry.modelcontextprotocol.io) nightly via automated GitHub Actions.
-- **🛡️ Security Audit Scores & Trust Engine**: Independent trust ratings (0-10) assessing supply-chain vulnerabilities, permission checks, and sandbox compatibility.
+- **⚡ 400+ Verified MCP Servers**: Continuously deduplicated and synchronized with [`registry.modelcontextprotocol.io`](https://registry.modelcontextprotocol.io) nightly via automated GitHub Actions.
+- **🛡️ 5-Factor Security Audit Scores & Trust Rubric**: Granular trust ratings (1.5 to 10.0) evaluating Code Provenance, Package Distribution, Permission Sandboxing, Documentation Compliance, and Automated AST Auditing. Read the full [Trust Scoring Rubric](TRUST_SCORE.md).
 - **🖱️ 1-Click Install Formats**: Instant copy-paste JSON configurations for:
   - **Anthropic Claude Desktop** (`claude_desktop_config.json`)
   - **Cursor IDE** (`~/.cursor/mcp.json`)
   - **Windsurf** (`~/.codeium/windsurf/mcp_config.json`)
   - **Zed Editor** (`~/.config/zed/settings.json`)
+  - **VS Code / Roo Code** (`~/.vscode/mcpSettings.json`)
   - **Terminal / CLI** (`npx -y ...`, `uvx ...`)
 - **🚀 Creator Self-Serve Boosting ("LinkedIn / X Promoted Spots")**:
   - Transparent promoted placements with `rel="sponsored"` compliance.
@@ -117,28 +119,31 @@ curl -X POST https://mcp.ritualdev.in/api/v1/subscribe \
 ### NPM CLI & Direct Execution
 MCPShelf is available directly via npm:
 ```bash
+# Connect as official Model Context Protocol (MCP) server
+npx @ritualdev-lab/mcpshelf mcp
+
 # Launch interactive keyboard-driven terminal explorer (TUI)
 npx @ritualdev-lab/mcpshelf explore
 
-# Instant search across all 419+ MCP servers
+# Instant search across all verified MCP servers
 npx @ritualdev-lab/mcpshelf search <query>
 
-# Generate 1-click install snippets for Claude, Cursor, Windsurf, or Zed
-npx @ritualdev-lab/mcpshelf install <server-id> [--client=claude|cursor|windsurf|zed|terminal]
+# Generate 1-click install snippets for Claude, Cursor, Windsurf, Zed, or VS Code
+npx @ritualdev-lab/mcpshelf install <server-id> [--client=claude|cursor|windsurf|zed|vscode|terminal]
 
-# Run trust & security compliance audit
+# Run trust & multi-factor security compliance audit (see TRUST_SCORE.md)
 npx @ritualdev-lab/mcpshelf audit <server-id>
 ```
 
-### MCPShelf MCP Server (Query the Registry inside Claude / Cursor)
-You can connect the MCPShelf registry directly into Claude Desktop or Cursor so your AI assistant can discover and install MCP servers on the fly:
+### MCPShelf MCP Server (Query the Registry inside Claude / Cursor / VS Code)
+You can connect the MCPShelf registry directly into Claude Desktop, Cursor, or VS Code so your AI assistant can discover and install MCP servers on the fly:
 
 ```json
 {
   "mcpServers": {
     "mcpshelf": {
       "command": "npx",
-      "args": ["-y", "@ritualdev-lab/mcpshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/mcpshelf", "mcp"]
     }
   }
 }
@@ -153,6 +158,8 @@ mcpshelf search database
 
 # Run local MCP server over stdio
 python -m mcpshelf.server
+# or
+mcpshelf mcp
 ```
 
 ---

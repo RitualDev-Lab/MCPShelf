@@ -22,7 +22,7 @@ describe('Unified REST API Suite (MCPShelf & DevShelf)', () => {
     assert.strictEqual(res.status, 200);
     const body = await res.json();
     assert.strictEqual(body.status, 'healthy');
-    assert.ok(body.stats.mcpServers > 400, 'Should have 400+ MCP servers');
+    assert.ok(body.stats.mcpServers >= 350, 'Should have 350+ MCP servers');
     assert.ok(body.stats.devTools > 500, 'Should have 500+ DevShelf tools');
   });
 

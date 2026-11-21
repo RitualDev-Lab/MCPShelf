@@ -9,16 +9,26 @@ describe('MCPShelf Catalog & Data Integrity Suite', () => {
   const sponsors = JSON.parse(fs.readFileSync(path.join(dataDir, 'sponsors.json'), 'utf-8'));
   const categories = JSON.parse(fs.readFileSync(path.join(dataDir, 'categories.json'), 'utf-8'));
 
-  it('catalog contains 400+ synchronized MCP servers', () => {
-    assert.ok(catalog.length >= 400, `Expected at least 400 servers, got ${catalog.length}`);
+  it('catalog contains 350+ verified and deduplicated MCP servers', () => {
+    assert.ok(catalog.length >= 350, `Expected at least 350 servers, got ${catalog.length}`);
   });
 
-  it('every server has required metadata (id, title, category, trustScore, installSnippets)', () => {
+  it('catalog contains zero placeholder or test fixtures', () => {
+    const blockedIds = ['ai.alpic.test/test-mcp-server', 'ai.agentxray/mcp', 'test-mcp-server'];
+    for (const server of catalog) {
+      assert.ok(!blockedIds.includes(server.id), `Found blocked or fixture server: ${server.id}`);
+      assert.ok(server.title.toLowerCase() !== 'test-mcp-server', 'No test fixtures allowed in catalog');
+    }
+  });
+
+  it('every server has required metadata (id, title, category, trustScore, trustBreakdown, installSnippets)', () => {
     for (const server of catalog) {
       assert.ok(server.id, 'Server must have an id');
       assert.ok(server.title, `Server ${server.id} must have a title`);
       assert.ok(server.category, `Server ${server.id} must have a category`);
       assert.ok(typeof server.trustScore === 'number', `Server ${server.id} must have numeric trustScore`);
+      assert.ok(server.trustBreakdown, `Server ${server.id} must have trustBreakdown`);
+      assert.ok(typeof server.trustBreakdown.codeProvenance === 'number', `Server ${server.id} trustBreakdown codeProvenance`);
       assert.ok(server.installSnippets.claudeDesktop, `Server ${server.id} must have claudeDesktop snippet`);
     }
   });

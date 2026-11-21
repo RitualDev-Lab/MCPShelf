@@ -467,21 +467,21 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mb-10">
       <div class="glass-card rounded-2xl p-3.5 text-center">
         <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center justify-center gap-1.5">
-          <span class="text-indigo-400">●</span> 419+
+          <span class="text-indigo-400">●</span> ${catalog.length}+
         </div>
         <div class="text-[11px] text-slate-400 font-medium">Verified MCP Servers</div>
       </div>
       <div class="glass-card rounded-2xl p-3.5 text-center">
         <div class="text-xl sm:text-2xl font-extrabold text-emerald-400 flex items-center justify-center gap-1.5">
-          <span>🛡️</span> 100%
+          <span>🛡️</span> 5-Factor
         </div>
-        <div class="text-[11px] text-slate-400 font-medium">Zero-Leak Audited</div>
+        <div class="text-[11px] text-slate-400 font-medium">Trust Score Audited</div>
       </div>
       <div class="glass-card rounded-2xl p-3.5 text-center">
         <div class="text-xl sm:text-2xl font-extrabold text-indigo-300 flex items-center justify-center gap-1.5">
-          <span>⚡</span> 5 Clients
+          <span>⚡</span> 6 Clients
         </div>
-        <div class="text-[11px] text-slate-400 font-medium">Claude, Cursor, Zed+</div>
+        <div class="text-[11px] text-slate-400 font-medium">Claude, Cursor, Zed, VS Code</div>
       </div>
       <div class="glass-card rounded-2xl p-3.5 text-center">
         <div class="text-xl sm:text-2xl font-extrabold text-cyan-400 flex items-center justify-center gap-1.5">
@@ -654,7 +654,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         <input
           type="text"
           id="searchInput"
-          placeholder="Search 419+ servers by keyword, title, tag, or author (e.g. postgres, secret, dodo, github, puppeteer)..."
+          placeholder="Search ${catalog.length}+ servers by keyword, title, tag, or author (e.g. postgres, secret, dodo, github, puppeteer)..."
           class="w-full pl-12 pr-28 py-4 bg-slate-900/90 border-2 border-slate-700/80 hover:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 rounded-2xl text-white placeholder-slate-400 text-sm sm:text-base shadow-2xl transition-all duration-200 outline-none"
         />
         <!-- Clear Button & Keyboard Badge -->
@@ -1018,7 +1018,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
             Built for Terminal-First Hackers, Python Agents & Stdio MCP Hosts
           </h2>
           <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Query, audit, and install across 420+ Model Context Protocol servers and 570+ DevShelf tools using our official package ecosystem.
+            Query, audit, and install across ${catalog.length}+ Model Context Protocol servers and 570+ DevShelf tools using our official package ecosystem.
           </p>
         </div>
 
@@ -1246,6 +1246,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         <button onclick="switchBundleTab('cursor')" id="btab-cursor" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Cursor IDE</button>
         <button onclick="switchBundleTab('windsurf')" id="btab-windsurf" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Windsurf</button>
         <button onclick="switchBundleTab('zed')" id="btab-zed" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Zed Editor</button>
+        <button onclick="switchBundleTab('vscode')" id="btab-vscode" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">VS Code</button>
         <button onclick="switchBundleTab('terminal')" id="btab-terminal" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Chained CLI</button>
       </div>
 
@@ -1284,6 +1285,7 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         <button onclick="switchTab('cursor')" id="tab-cursor" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Cursor</button>
         <button onclick="switchTab('windsurf')" id="tab-windsurf" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Windsurf</button>
         <button onclick="switchTab('zed')" id="tab-zed" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">Zed</button>
+        <button onclick="switchTab('vscode')" id="tab-vscode" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">VS Code</button>
         <button onclick="switchTab('terminal')" id="tab-terminal" class="tab-btn px-4 py-2 text-slate-400 hover:text-white">CLI</button>
       </div>
 
@@ -1767,6 +1769,17 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         });
         codeBox.textContent = JSON.stringify({ context_servers }, null, 2);
         pathBox.textContent = 'Paste into: ~/.config/zed/settings.json';
+      } else if (tab === 'vscode') {
+        const mcpServers = {};
+        tools.forEach(s => {
+          const key = (s.name || s.id.split('/').pop() || 'server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+          mcpServers[key] = {
+            command: "npx",
+            args: ["-y", s.packageIdentifier || s.id]
+          };
+        });
+        codeBox.textContent = JSON.stringify({ mcpServers }, null, 2);
+        pathBox.textContent = 'Paste into: ~/.vscode/mcpSettings.json';
       } else {
         const cmd = tools.map(s => \`npx -y \${s.packageIdentifier || s.id}\`).join(' & ');
         codeBox.textContent = cmd;
@@ -1864,6 +1877,18 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         };
         codeBox.textContent = JSON.stringify(zedObj, null, 2);
         pathBox.textContent = 'File: ~/.config/zed/settings.json';
+      } else if (tab === 'vscode') {
+        const sid = (currentServer.name || currentServer.id.split('/').pop() || 'mcp').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+        const vsObj = {
+          "mcpServers": {
+            [sid]: {
+              "command": "npx",
+              "args": ["-y", currentServer.packageIdentifier || currentServer.id]
+            }
+          }
+        };
+        codeBox.textContent = JSON.stringify(vsObj, null, 2);
+        pathBox.textContent = 'File: ~/.vscode/mcpSettings.json';
       } else {
         codeBox.textContent = currentServer.installSnippets.terminal || \`npx -y \${currentServer.packageIdentifier || currentServer.id}\`;
         pathBox.textContent = 'Run directly in your terminal prompt';
@@ -2398,6 +2423,16 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
     context_servers: [server.id]
   }, null, 2);
 
+  const shortName = (server.name || server.id.split('/').pop() || 'mcp-server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+  const vscodeSnippet = JSON.stringify({
+    mcpServers: {
+      [shortName]: {
+        command: "npx",
+        args: ["-y", server.packageIdentifier || server.id]
+      }
+    }
+  }, null, 2);
+
   const terminalSnippet = server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`;
 
   return `<!DOCTYPE html>
@@ -2620,6 +2655,61 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
         <div><span class="text-slate-500 block mb-1">Author:</span> <strong class="text-white text-sm truncate block">${escapeHtml(server.author)}</strong></div>
       </div>
 
+      <!-- Multi-Factor Security Audit Breakdown -->
+      <div class="mb-8 p-5 rounded-2xl bg-slate-950/70 border border-slate-800">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-base">🛡️</span>
+            <h3 class="text-sm font-bold text-white tracking-tight">Verified Trust Score Breakdown</h3>
+          </div>
+          <a href="https://github.com/RitualDev-Lab/MCPShelf/blob/main/TRUST_SCORE.md" target="_blank" class="text-[11px] font-semibold text-emerald-400 hover:text-emerald-300 transition">
+            Scoring Rubric &rarr;
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs mb-3">
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Code Provenance & Repo</span>
+              <strong class="text-white">${server.trustBreakdown?.codeProvenance ?? 2.0} / 2.5</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: ${((server.trustBreakdown?.codeProvenance ?? 2.0) / 2.5) * 100}%"></div>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Package Distribution</span>
+              <strong class="text-white">${server.trustBreakdown?.packageVerification ?? 1.5} / 2.0</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: ${((server.trustBreakdown?.packageVerification ?? 1.5) / 2.0) * 100}%"></div>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Permission Sandboxing</span>
+              <strong class="text-white">${server.trustBreakdown?.permissionSandboxing ?? 1.5} / 2.0</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: ${((server.trustBreakdown?.permissionSandboxing ?? 1.5) / 2.0) * 100}%"></div>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex justify-between text-slate-400 mb-1">
+              <span>Documentation & Schema</span>
+              <strong class="text-white">${server.trustBreakdown?.documentationCompliance ?? 1.0} / 1.5</strong>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-1.5 rounded-full" style="width: ${((server.trustBreakdown?.documentationCompliance ?? 1.0) / 1.5) * 100}%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-800/60">
+          <span>Automated AST & Supply-Chain Scan: <strong class="text-emerald-400">${server.trustBreakdown?.securityAudit ?? 2.0} / 2.0 pts</strong></span>
+          <span class="font-mono text-slate-500">Audit Status: ${server.securityRating || 'Audited'}</span>
+        </div>
+      </div>
+
       <!-- Multi-Client Installation Snippets -->
       <div class="mb-8">
         <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
@@ -2628,12 +2718,13 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
         </h2>
 
         <!-- Tabs -->
-        <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-1">
-          <button onclick="showConfigTab('claude')" id="btn-tab-claude" class="tab-btn px-4 py-2 border-b-2 border-emerald-400 text-emerald-400">Claude Desktop</button>
-          <button onclick="showConfigTab('cursor')" id="btn-tab-cursor" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Cursor</button>
-          <button onclick="showConfigTab('windsurf')" id="btn-tab-windsurf" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Windsurf</button>
-          <button onclick="showConfigTab('zed')" id="btn-tab-zed" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Zed</button>
-          <button onclick="showConfigTab('cli')" id="btn-tab-cli" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">Terminal CLI</button>
+        <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-1 overflow-x-auto">
+          <button onclick="showConfigTab('claude')" id="btn-tab-claude" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-emerald-400 text-emerald-400 whitespace-nowrap">Claude Desktop</button>
+          <button onclick="showConfigTab('cursor')" id="btn-tab-cursor" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Cursor</button>
+          <button onclick="showConfigTab('windsurf')" id="btn-tab-windsurf" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Windsurf</button>
+          <button onclick="showConfigTab('zed')" id="btn-tab-zed" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Zed</button>
+          <button onclick="showConfigTab('vscode')" id="btn-tab-vscode" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">VS Code</button>
+          <button onclick="showConfigTab('cli')" id="btn-tab-cli" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Terminal CLI</button>
         </div>
 
         <div class="relative">
@@ -2680,6 +2771,7 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
       cursor: ${JSON.stringify(cursorSnippet)},
       windsurf: ${JSON.stringify(windsurfSnippet)},
       zed: ${JSON.stringify(zedSnippet)},
+      vscode: ${JSON.stringify(vscodeSnippet)},
       cli: ${JSON.stringify(terminalSnippet)}
     };
 
@@ -2688,6 +2780,7 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
       cursor: 'Paste into ~/.cursor/mcp.json or Cursor Features > MCP Servers.',
       windsurf: 'Paste into ~/.codeium/windsurf/mcp_config.json.',
       zed: 'Paste into ~/.config/zed/settings.json under context_servers.',
+      vscode: 'Paste into ~/.vscode/mcpSettings.json under mcpServers.',
       cli: 'Execute directly in your terminal to start or install the server.'
     };
 
