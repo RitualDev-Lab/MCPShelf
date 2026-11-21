@@ -5,7 +5,7 @@
     <link>https://mcp.ritualdev.in/digest.html</link>
     <description>Weekly curated digest of newly published, trending, and security-verified Model Context Protocol (MCP) servers for Claude Desktop, Cursor, and Autonomous AI Agents.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 05:29:19 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 05:31:14 GMT</lastBuildDate>
     <atom:link href="https://mcp.ritualdev.in/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://mcp.ritualdev.in/favicon.png</url>
@@ -13,24 +13,10 @@
       <link>https://mcp.ritualdev.in</link>
     </image>
     <item>
-      <title>[Official Metaprotocol MCP] MCPShelf Metaprotocol Registry, Terminal TUI &amp; AI Agent Stack Builder - developer-tools</title>
-      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>developer-tools</category>
-      <description><![CDATA[<p><strong>MCPShelf Metaprotocol Registry, Terminal TUI &amp; AI Agent Stack Builder</strong> (developer-tools)</p>
-      <p>The open Model Context Protocol registry, terminal explorer (npx @ritualdev-lab/mcpshelf explore), Python SDK (pip install mcpshelf), and metaprotocol stdio server for autonomous tool discovery in Claude and Cursor.</p>
-      <p><em>🌟 Sponsor Spotlight: Official Registry MCP Server, Terminal TUI &amp; Python SDK for Autonomous AI Agents</em></p>
-      <p><strong>Security Trust Score:</strong> 10/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/mcpshelf</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcpshelf.png" length="54000" type="image/png" />
-    </item>
-    <item>
       <title>[Official Security Partner] AgentShield Enterprise Zero-Leak Secret Defense &amp; Kernel Sandbox - security</title>
       <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html</link>
       <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>security</category>
       <description><![CDATA[<p><strong>AgentShield Enterprise Zero-Leak Secret Defense &amp; Kernel Sandbox</strong> (security)</p>
       <p>Enterprise Zero-Leak Secret Defense &amp; Kernel Sandbox for Autonomous AI Agents</p>
@@ -44,7 +30,7 @@
       <title>[Promoted Guardrail] DBShield Database Guardrail &amp; Sandboxing MCP Server - security</title>
       <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-dbshield.html</link>
       <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-dbshield.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>security</category>
       <description><![CDATA[<p><strong>DBShield Database Guardrail &amp; Sandboxing MCP Server</strong> (security)</p>
       <p>Safety-first Database Guardrail &amp; Sandboxing MCP Server for AI Coding Agents</p>
@@ -58,7 +44,7 @@
       <title>[Promoted Middleware] MCP Monetize - Drop-in Billing &amp; Capability Token Engine - monetization</title>
       <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcp-monetize.html</link>
       <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcp-monetize.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>monetization</category>
       <description><![CDATA[<p><strong>MCP Monetize - Drop-in Billing &amp; Capability Token Engine</strong> (monetization)</p>
       <p>Drop-in billing, paywalls, and capability token middleware for MCP servers.</p>
@@ -69,52 +55,24 @@
       <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcp-monetize.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>SkillPrism MCP Context Optimizer &amp; Tool Search Proxy - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>ai-agents</category>
-      <description><![CDATA[<p><strong>SkillPrism MCP Context Optimizer &amp; Tool Search Proxy</strong> (ai-agents)</p>
-      <p>Progressive Skill Disclosure, Semantic Tool Search &amp; Context Optimizer for AI Agents</p>
-      
+      <title>[Official Metaprotocol MCP] MCPShelf Model Context Protocol Registry, Search &amp; Security Auditor - security</title>
+      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>security</category>
+      <description><![CDATA[<p><strong>MCPShelf Model Context Protocol Registry, Search &amp; Security Auditor</strong> (security)</p>
+      <p>Discover, audit trust scores, and 1-click install 400+ verified MCP servers for AI coding agents.</p>
+      <p><em>🌟 Sponsor Spotlight: Official Registry MCP Server, Terminal TUI &amp; Python SDK for Autonomous AI Agents</em></p>
       <p><strong>Security Trust Score:</strong> 9.8/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/skillprism</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-skillprism.png" length="54000" type="image/png" />
-    </item>
-    <item>
-      <title>DevShelf Developer Directory &amp; Tool Discovery MCP Server - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>ai-agents</category>
-      <description><![CDATA[<p><strong>DevShelf Developer Directory &amp; Tool Discovery MCP Server</strong> (ai-agents)</p>
-      <p>Discover 570+ developer tools, free APIs, AI agents, and open-source libraries.</p>
-      
-      <p><strong>Security Trust Score:</strong> 9.8/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/devshelf</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-devshelf.png" length="54000" type="image/png" />
-    </item>
-    <item>
-      <title>MockForge AI Relational Mock Database &amp; Fixture Generator - databases</title>
-      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>databases</category>
-      <description><![CDATA[<p><strong>MockForge AI Relational Mock Database &amp; Fixture Generator</strong> (databases)</p>
-      <p>Zero-cost relational mock DB and synthetic fixture generator with Kahn DAG integrity for AI agents</p>
-      
-      <p><strong>Security Trust Score:</strong> 9.8/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/mockforge</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mockforge.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/mcpshelf</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcpshelf.png" length="54000" type="image/png" />
     </item>
     <item>
       <title>FinePrint AI Legal Risk &amp; Contract Audit MCP Server - security</title>
       <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-fineprint.html</link>
       <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-fineprint.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>security</category>
       <description><![CDATA[<p><strong>FinePrint AI Legal Risk &amp; Contract Audit MCP Server</strong> (security)</p>
       <p>Zero-cost in-memory legal terms, API policy &amp; NDA scanner for autonomous coding agents</p>
@@ -125,10 +83,24 @@
       <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-fineprint.png" length="54000" type="image/png" />
     </item>
     <item>
+      <title>DevShelf Developer Directory &amp; Tool Discovery MCP Server - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>ai-agents</category>
+      <description><![CDATA[<p><strong>DevShelf Developer Directory &amp; Tool Discovery MCP Server</strong> (ai-agents)</p>
+      <p>Discover 570+ developer tools, free APIs, AI agents, and open-source libraries.</p>
+      
+      <p><strong>Security Trust Score:</strong> 9.8/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/devshelf</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-devshelf.png" length="54000" type="image/png" />
+    </item>
+    <item>
       <title>WebSecAuditor AI Cybersecurity &amp; Vulnerability Auditor - security</title>
       <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-web-sec-auditor.html</link>
       <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-web-sec-auditor.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>security</category>
       <description><![CDATA[<p><strong>WebSecAuditor AI Cybersecurity &amp; Vulnerability Auditor</strong> (security)</p>
       <p>Enterprise-grade AI vulnerability auditor for web applications, APIs, and codebases.</p>
@@ -139,38 +111,52 @@
       <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-web-sec-auditor.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>Affiliate Networks MCP - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/ai-agenticaffiliate-affiliate-networks-mcp.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agenticaffiliate-affiliate-networks-mcp.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>ai-agents</category>
-      <description><![CDATA[<p><strong>Affiliate Networks MCP</strong> (ai-agents)</p>
-      <p>Affiliate network reporting in your AI client. Bring your own keys. Most adapters experimental.</p>
+      <title>MockForge AI Relational Mock Database &amp; Fixture Generator - databases</title>
+      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>databases</category>
+      <description><![CDATA[<p><strong>MockForge AI Relational Mock Database &amp; Fixture Generator</strong> (databases)</p>
+      <p>Zero-cost relational mock DB and synthetic fixture generator with Kahn DAG integrity for AI agents</p>
       
-      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agenticaffiliate/affiliate-networks-mcp</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-agenticaffiliate-affiliate-networks-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-agenticaffiliate-affiliate-networks-mcp.png" length="54000" type="image/png" />
+      <p><strong>Security Trust Score:</strong> 9.8/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/mockforge</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mockforge.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>AgentUtility Edge Finance - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <title>SkillPrism MCP Context Optimizer &amp; Tool Search Proxy - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
-      <description><![CDATA[<p><strong>AgentUtility Edge Finance</strong> (ai-agents)</p>
-      <p>MCP server for the @agentutility edge-finance cluster — pay-per-call x402 tools, no API keys, USDC…</p>
+      <description><![CDATA[<p><strong>SkillPrism MCP Context Optimizer &amp; Tool Search Proxy</strong> (ai-agents)</p>
+      <p>Progressive Skill Disclosure, Semantic Tool Search &amp; Context Optimizer for AI Agents</p>
+      
+      <p><strong>Security Trust Score:</strong> 9.8/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install io.github.RitualDev-Lab/skillprism</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/io-github-ritualdev-lab-skillprism.png" length="54000" type="image/png" />
+    </item>
+    <item>
+      <title>Achromat Machine Operational Memory - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-achromat-mcp-server.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-achromat-mcp-server.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>ai-agents</category>
+      <description><![CDATA[<p><strong>Achromat Machine Operational Memory</strong> (ai-agents)</p>
+      <p>Recall and calibrate policy-compliant tool-call arguments before execution. Does not run the tool.</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-edge-finance</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-edge-finance.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.achromat/mcp-server</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-achromat-mcp-server.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-achromat-mcp-server.png" length="54000" type="image/png" />
     </item>
     <item>
       <title>Reasonbook - ai-agents</title>
       <link>https://mcp.ritualdev.in/servers/ai-aquex-reasonbook.html</link>
       <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-aquex-reasonbook.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
       <description><![CDATA[<p><strong>Reasonbook</strong> (ai-agents)</p>
       <p>Reasonbook: decisions that survive the session, in a local record AI agents keep.</p>
@@ -181,66 +167,66 @@
       <enclosure url="https://mcp.ritualdev.in/og/ai-aquex-reasonbook.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>AIMentionTracker - developer-tools</title>
-      <link>https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>developer-tools</category>
-      <description><![CDATA[<p><strong>AIMentionTracker</strong> (developer-tools)</p>
-      <p>How often ChatGPT, Claude, Gemini and Perplexity name and cite your brand, with the evidence.</p>
-      
-      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.aimentiontracker/mcp</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-aimentiontracker-mcp.png" length="54000" type="image/png" />
-    </item>
-    <item>
-      <title>AgentUtility Edge Market - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <title>AgentUtility Prooflayer - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-prooflayer.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-prooflayer.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
-      <description><![CDATA[<p><strong>AgentUtility Edge Market</strong> (ai-agents)</p>
-      <p>MCP server for the @agentutility edge-market cluster — pay-per-call x402 tools, no API keys, USDC…</p>
+      <description><![CDATA[<p><strong>AgentUtility Prooflayer</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility prooflayer cluster — pay-per-call x402 tools, no API keys, USDC…</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-edge-market</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-edge-market.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-prooflayer</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-prooflayer.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-prooflayer.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>AgentUtility Model Router - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-model-router.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-model-router.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <title>AgentUtility Bestiary - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-bestiary.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-bestiary.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
-      <description><![CDATA[<p><strong>AgentUtility Model Router</strong> (ai-agents)</p>
-      <p>MCP server for the @agentutility model-router cluster — pay-per-call x402 tools, no API keys, USDC…</p>
+      <description><![CDATA[<p><strong>AgentUtility Bestiary</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility bestiary cluster — pay-per-call x402 tools, no API keys, USDC on…</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-model-router</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-model-router.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-model-router.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-bestiary</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-bestiary.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-bestiary.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>AnomalyArmor - developer-tools</title>
-      <link>https://mcp.ritualdev.in/servers/ai-anomalyarmor-armor-mcp.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-anomalyarmor-armor-mcp.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>developer-tools</category>
-      <description><![CDATA[<p><strong>AnomalyArmor</strong> (developer-tools)</p>
-      <p>Data observability tools for engineering teams: alerts, freshness, schema drift, lineage, quality.</p>
+      <title>AgentUtility Compose - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-compose.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-compose.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>ai-agents</category>
+      <description><![CDATA[<p><strong>AgentUtility Compose</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility compose cluster — pay-per-call x402 tools, no API keys, USDC on…</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.anomalyarmor/armor-mcp</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-anomalyarmor-armor-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-anomalyarmor-armor-mcp.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-compose</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-compose.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-compose.png" length="54000" type="image/png" />
+    </item>
+    <item>
+      <title>agent-bev - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agent-bev-bev-door.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agent-bev-bev-door.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>ai-agents</category>
+      <description><![CDATA[<p><strong>agent-bev</strong> (ai-agents)</p>
+      <p>The world&apos;s largest agentic B2B hub for beer, wine and spirits. Powered by CUVEE. Trade only.</p>
+      
+      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agent-bev/bev-door</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agent-bev-bev-door.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agent-bev-bev-door.png" length="54000" type="image/png" />
     </item>
     <item>
       <title>AgentUtility Browser Workflow - ai-agents</title>
       <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-browser-workflow.html</link>
       <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-browser-workflow.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
       <description><![CDATA[<p><strong>AgentUtility Browser Workflow</strong> (ai-agents)</p>
       <p>MCP server for the @agentutility browser-workflow cluster — pay-per-call x402 tools, no API keys…</p>
@@ -251,102 +237,116 @@
       <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-browser-workflow.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>Auten - developer-tools</title>
-      <link>https://mcp.ritualdev.in/servers/ai-auten-mcp.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-auten-mcp.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>developer-tools</category>
-      <description><![CDATA[<p><strong>Auten</strong> (developer-tools)</p>
-      <p>Computer use for Claude Code, Codex, Cursor or any MCP client: your computer + Android phone (beta)</p>
-      
-      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.auten/mcp</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-auten-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-auten-mcp.png" length="54000" type="image/png" />
-    </item>
-    <item>
-      <title>AgentUtility Locale - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-locale.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-locale.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <title>AgentUtility Mediakit - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-mediakit.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-mediakit.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
-      <description><![CDATA[<p><strong>AgentUtility Locale</strong> (ai-agents)</p>
-      <p>MCP server for the @agentutility locale cluster — pay-per-call x402 tools, no API keys, USDC on…</p>
+      <description><![CDATA[<p><strong>AgentUtility Mediakit</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility mediakit cluster — pay-per-call x402 tools, no API keys, USDC on…</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-locale</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-locale.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-locale.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-mediakit</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-mediakit.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-mediakit.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>bolthub Marketplace - monetization</title>
-      <link>https://mcp.ritualdev.in/servers/ai-bolthub-registry.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-bolthub-registry.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>monetization</category>
-      <description><![CDATA[<p><strong>bolthub Marketplace</strong> (monetization)</p>
-      <p>Discover and call every paid API on the bolthub marketplace with automatic L402 Lightning payments.</p>
-      
-      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.bolthub/registry</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-bolthub-registry.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-bolthub-registry.png" length="54000" type="image/png" />
-    </item>
-    <item>
-      <title>AgentUtility Synthforge - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-synthforge.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-synthforge.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <title>ctxl-mcp - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
-      <description><![CDATA[<p><strong>AgentUtility Synthforge</strong> (ai-agents)</p>
-      <p>MCP server for the @agentutility synthforge cluster — pay-per-call x402 tools, no API keys, USDC…</p>
+      <description><![CDATA[<p><strong>ctxl-mcp</strong> (ai-agents)</p>
+      <p>Personal context management for AI assistants</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-synthforge</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-synthforge.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-synthforge.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.autoblocks/ctxl-mcp</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-autoblocks-ctxl-mcp.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>bolthub - developer-tools</title>
-      <link>https://mcp.ritualdev.in/servers/ai-bolthub-mcp.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-bolthub-mcp.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>developer-tools</category>
-      <description><![CDATA[<p><strong>bolthub</strong> (developer-tools)</p>
-      <p>The bolthub API marketplace, L402 gateways, and your other MCP servers, on one Lightning budget.</p>
-      
-      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.bolthub/mcp</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-bolthub-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-bolthub-mcp.png" length="54000" type="image/png" />
-    </item>
-    <item>
-      <title>BorealHost - ai-agents</title>
-      <link>https://mcp.ritualdev.in/servers/ai-borealhost-mcp.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-borealhost-mcp.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
+      <title>AgentUtility Matchpoint - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-matchpoint.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-matchpoint.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
       <category>ai-agents</category>
-      <description><![CDATA[<p><strong>BorealHost</strong> (ai-agents)</p>
-      <p>Agent-native web hosting — deploy sites, manage DNS, register domains, scale infrastructure</p>
+      <description><![CDATA[<p><strong>AgentUtility Matchpoint</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility matchpoint cluster — pay-per-call x402 tools, no API keys, USDC…</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.borealhost/mcp</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-borealhost-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-borealhost-mcp.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-matchpoint</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-matchpoint.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-matchpoint.png" length="54000" type="image/png" />
     </item>
     <item>
-      <title>adeu - developer-tools</title>
-      <link>https://mcp.ritualdev.in/servers/ai-adeu-adeu.html</link>
-      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-adeu-adeu.html</guid>
-      <pubDate>Sat, 21 Nov 2026 05:29:19 GMT</pubDate>
-      <category>developer-tools</category>
-      <description><![CDATA[<p><strong>adeu</strong> (developer-tools)</p>
-      <p>Automated DOCX Redlining Engine</p>
+      <title>AgentUtility Edge Market - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>ai-agents</category>
+      <description><![CDATA[<p><strong>AgentUtility Edge Market</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility edge-market cluster — pay-per-call x402 tools, no API keys, USDC…</p>
       
       <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
-      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.adeu/adeu</code></p>
-      <p><a href="https://mcp.ritualdev.in/servers/ai-adeu-adeu.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
-      <enclosure url="https://mcp.ritualdev.in/og/ai-adeu-adeu.png" length="54000" type="image/png" />
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-edge-market</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-edge-market.png" length="54000" type="image/png" />
+    </item>
+    <item>
+      <title>travel - developer-tools</title>
+      <link>https://mcp.ritualdev.in/servers/ai-autonomad-travel.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-autonomad-travel.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>developer-tools</category>
+      <description><![CDATA[<p><strong>travel</strong> (developer-tools)</p>
+      <p>Flights and hotels booked in one checkout; tours, events and dining to plan; group trips.</p>
+      
+      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.autonomad/travel</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-autonomad-travel.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-autonomad-travel.png" length="54000" type="image/png" />
+    </item>
+    <item>
+      <title>AIMentionTracker - developer-tools</title>
+      <link>https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>developer-tools</category>
+      <description><![CDATA[<p><strong>AIMentionTracker</strong> (developer-tools)</p>
+      <p>How often ChatGPT, Claude, Gemini and Perplexity name and cite your brand, with the evidence.</p>
+      
+      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.aimentiontracker/mcp</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-aimentiontracker-mcp.png" length="54000" type="image/png" />
+    </item>
+    <item>
+      <title>AgentUtility Agentops - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-agentops.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-agentops.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>ai-agents</category>
+      <description><![CDATA[<p><strong>AgentUtility Agentops</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility agentops cluster — pay-per-call x402 tools, no API keys, USDC on…</p>
+      
+      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-agentops</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-agentops.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-agentops.png" length="54000" type="image/png" />
+    </item>
+    <item>
+      <title>AgentUtility Edge Finance - ai-agents</title>
+      <link>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html</link>
+      <guid isPermaLink="true">https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:31:14 GMT</pubDate>
+      <category>ai-agents</category>
+      <description><![CDATA[<p><strong>AgentUtility Edge Finance</strong> (ai-agents)</p>
+      <p>MCP server for the @agentutility edge-finance cluster — pay-per-call x402 tools, no API keys, USDC…</p>
+      
+      <p><strong>Security Trust Score:</strong> 9.5/10.0</p>
+      <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ai.agentutility/mcp-edge-finance</code></p>
+      <p><a href="https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html">View full 1-click install snippets and security verification on MCPShelf →</a></p>]]></description>
+      <enclosure url="https://mcp.ritualdev.in/og/ai-agentutility-mcp-edge-finance.png" length="54000" type="image/png" />
     </item>
   </channel>
 </rss>
