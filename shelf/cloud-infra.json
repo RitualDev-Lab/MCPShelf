@@ -13,9 +13,9 @@
     "publishedAt": "2026-09-22T17:02:07.800881Z",
     "trustScore": 7,
     "securityRating": "Moderate",
-    "reviewsCount": 12,
-    "averageRating": 4.6,
-    "estimatedInstalls": 4748,
+    "reviewsCount": 16,
+    "averageRating": 4.8,
+    "estimatedInstalls": 9190,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"gsc\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askwatch/gsc\"\n      ]\n    }\n  }\n}",
