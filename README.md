@@ -18,13 +18,18 @@
 
 - **⚡ 400+ Verified MCP Servers**: Continuously deduplicated and synchronized with [`registry.modelcontextprotocol.io`](https://registry.modelcontextprotocol.io) nightly via automated GitHub Actions.
 - **🛡️ 5-Factor Security Audit Scores & Trust Rubric**: Granular trust ratings (1.5 to 10.0) evaluating Code Provenance, Package Distribution, Permission Sandboxing, Documentation Compliance, and Automated AST Auditing. Read the full [Trust Scoring Rubric](TRUST_SCORE.md).
-- **🖱️ 1-Click Install Formats**: Instant copy-paste JSON configurations for:
+- **🖱️ 1-Click Install Formats & Deep Links**: Instant copy-paste JSON configurations and native URI scheme 1-click links (`cursor://...`, `vscode:...`) for:
+  - **Cursor IDE** (`~/.cursor/mcp.json` & 1-Click Deeplink)
   - **Anthropic Claude Desktop** (`claude_desktop_config.json`)
-  - **Cursor IDE** (`~/.cursor/mcp.json`)
   - **Windsurf** (`~/.codeium/windsurf/mcp_config.json`)
+  - **Cline** (Cline MCP settings)
   - **Zed Editor** (`~/.config/zed/settings.json`)
-  - **VS Code / Roo Code** (`~/.vscode/mcpSettings.json`)
+  - **VS Code / Roo Code** (`~/.vscode/mcpSettings.json` & 1-Click Deeplink)
   - **Terminal / CLI** (`npx -y ...`, `uvx ...`)
+- **🛠️ Automated MCP Schema & Capability Introspector**: Live tool schema inspection (`#schemaDrawer` on web, automated stdio/SSE probe via `@modelcontextprotocol/sdk` in CI), parameter schemas, and context token overhead meter.
+- **🛡️ Sandbox Risk Scanner & Standardized Badges**: Automated detection of privilege flags (`shell_execution`, `fs_write`, `network_outbound`, `credential_access`), risk tiers (`Low`, `Moderate`, `Elevated`, `High`), transport badges (`stdio`, `sse`), and runtime badges (`npx`, `uvx`, `docker`, `python`).
+- **📦 Multi-Server Config Bundler**: Interactive Cart/Stack Configurator allowing developers to bundle multiple servers, customize required environment variables in real time, and export unified client configs.
+- **🌐 Versioned Static Registry & DevShelf Cross-Sync**: Permanent semantic endpoints at `https://mcp.ritualdev.in/v1/servers.json` and scheduled cross-sync pipeline sharing verified tools with [DevShelf](https://github.com/RitualDev-Lab/DevShelf).
 - **🚀 Creator Self-Serve Boosting ("LinkedIn / X Promoted Spots")**:
   - Transparent promoted placements with `rel="sponsored"` compliance.
   - Self-serve checkout powered by Dodo Payments & Stripe (via [`@ritualdev-lab/mcp-monetize`](https://www.npmjs.com/package/@ritualdev-lab/mcp-monetize)).

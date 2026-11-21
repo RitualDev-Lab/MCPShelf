@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2kw.ai - Model Context Protocol (MCP) Server Security Audit & Install</title>
-  <meta name="description" content="EU-hosted AI platform: OpenAI-compatible LLM gateway, document extraction, transcription, agents. Install 2kw.ai into Claude Desktop, Cursor, Windsurf, and Zed. Verified Trust Score: 3.3/10.">
+  <meta name="description" content="EU-hosted AI platform: OpenAI-compatible LLM gateway, document extraction, transcription, agents. Install 2kw.ai into Cursor, Claude Desktop, Windsurf, Cline, and Zed. Verified Trust Score: 3.3/10. Context footprint: ~140 tokens.">
   <link rel="canonical" href="https://mcp.ritualdev.in/servers/ai-2kw-mcp-server.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
   <!-- Advanced SEO & GEO Meta Tags -->
-  <meta name="keywords" content="2kw.ai, ai-agents, model context protocol, mcp server, claude desktop, cursor ide, windsurf ai, zed editor, ritualdev">
+  <meta name="keywords" content="2kw.ai, ai-agents, model context protocol, mcp server, claude desktop, cursor ide, windsurf ai, cline, zed editor, ritualdev">
   <meta name="author" content="Community">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
@@ -121,7 +121,7 @@
         "name": "How do I install 2kw.ai in Claude Desktop?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To install 2kw.ai into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n{\n  \"mcpServers\": {\n    \"mcp-server\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@2kw/ai-mcp-server\"\n      ]\n    }\n  }\n}"
+          "text": "To install 2kw.ai into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n{\n  \"mcpServers\": {\n    \"ai-2kw-mcp-server\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@2kw/ai-mcp-server\"\n      ],\n      \"env\": {\n        \"OPENAI_API_KEY\": \"<INSERT_OPENAI_API_KEY>\"\n      }\n    }\n  }\n}"
         }
       },
       {
@@ -129,15 +129,15 @@
         "name": "How do I install 2kw.ai in Cursor IDE or Windsurf?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Run the command 'npx -y @2kw/ai-mcp-server' or add @2kw/ai-mcp-server to your Cursor or Windsurf MCP configuration."
+          "text": "Click the 1-Click Cursor install button or run 'npx -y @2kw/ai-mcp-server' in your terminal."
         }
       },
       {
         "@type": "Question",
-        "name": "What is the security rating and trust score for 2kw.ai?",
+        "name": "What is the token overhead and security rating for 2kw.ai?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "2kw.ai has a verified Trust Score of 3.3/10 with security audit rating Caution on MCPShelf."
+          "text": "2kw.ai consumes approximately ~140 tokens in agent context memory, has a verified Trust Score of 3.3/10, and is classified as Moderate Risk."
         }
       }
     ]
@@ -155,6 +155,9 @@
       background: #0c101a;
       border: 1px solid rgba(255, 255, 255, 0.07);
       box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+    }
+    .font-mono-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
   </style>
 </head>
@@ -185,12 +188,26 @@
     <article class="glass-card rounded-2xl p-6 sm:p-8 mb-8 border-slate-800">
       <!-- Header Badge Row -->
       <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
-        <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">
-          ai-agents
-        </span>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">
+            ai-agents
+          </span>
+          <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
+            ⚡ stdio
+          </span>
+          <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-lg bg-slate-800 text-indigo-300 border border-slate-700">
+            📦 npx
+          </span>
+          <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-lg bg-cyan-950/60 text-cyan-300 border border-cyan-800/60">
+            🪙 ~140 ctx tokens
+          </span>
+        </div>
         <div class="flex items-center gap-2">
+          <span class="text-xs font-bold px-3 py-1 rounded-lg border flex items-center gap-1.5 text-amber-300 bg-amber-500/10 border-amber-500/25">
+            🛡️ Moderate Risk
+          </span>
           <span class="text-xs font-bold text-amber-300 bg-amber-500/10 border-amber-500/25 px-3 py-1 rounded-lg border flex items-center gap-1.5">
-            🛡️ Trust Score: 3.3/10 (Caution)
+            ★ 3.3/10 (Caution)
           </span>
         </div>
       </div>
@@ -200,17 +217,38 @@
       <p class="text-xs font-mono text-slate-400 mb-4">ai.2kw/mcp-server (v8.0.3)</p>
       <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">EU-hosted AI platform: OpenAI-compatible LLM gateway, document extraction, transcription, agents.</p>
 
+      <!-- Safety Badges -->
+      
+        <div class="flex flex-wrap gap-2 mb-6">
+          
+            <span class="text-[11px] font-medium px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              ⚡ Stdio
+            </span>
+          
+            <span class="text-[11px] font-medium px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              📦 npx
+            </span>
+          
+            <span class="text-[11px] font-medium px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              🔑 1 Required Env
+            </span>
+          
+        </div>
+      
+
       <!-- Capability Matrix Tags -->
       <div class="flex flex-wrap gap-2 mb-6">
         
       </div>
 
       <!-- Stat Cards Grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-xs mb-8">
-        <div><span class="text-slate-500 block mb-1">Rating:</span> <strong class="text-white text-sm">★ 4.7 (19)</strong></div>
-        <div><span class="text-slate-500 block mb-1">Estimated Installs:</span> <strong class="text-white text-sm">5,524</strong></div>
-        <div><span class="text-slate-500 block mb-1">Transport:</span> <strong class="text-white text-sm font-mono uppercase">stdio</strong></div>
-        <div><span class="text-slate-500 block mb-1">Author:</span> <strong class="text-white text-sm truncate block">Community</strong></div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-xs mb-8">
+        <div><span class="text-slate-500 block mb-1">Rating</span> <strong class="text-white text-sm">★ 4.7 (19)</strong></div>
+        <div><span class="text-slate-500 block mb-1">Installs</span> <strong class="text-white text-sm">5,524</strong></div>
+        <div><span class="text-slate-500 block mb-1">Transport</span> <strong class="text-white text-sm font-mono uppercase">stdio</strong></div>
+        <div><span class="text-slate-500 block mb-1">Runtime</span> <strong class="text-white text-sm font-mono">npx</strong></div>
+        <div><span class="text-slate-500 block mb-1">Context Size</span> <strong class="text-cyan-400 text-sm font-mono">~140 tok</strong></div>
+        <div><span class="text-slate-500 block mb-1">Risk Tier</span> <strong class="text-sm text-amber-400">Moderate</strong></div>
       </div>
 
       <!-- Multi-Factor Security Audit Breakdown -->
@@ -263,23 +301,66 @@
           </div>
         </div>
         <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-800/60">
-          <span>Automated AST & Supply-Chain Scan: <strong class="text-emerald-400">0.5 / 2.0 pts</strong></span>
+          <span>Automated AST & Privilege Scan: <strong class="text-emerald-400">0.5 / 2.0 pts</strong></span>
           <span class="font-mono text-slate-500">Audit Status: Caution</span>
         </div>
       </div>
 
-      <!-- Multi-Client Installation Snippets -->
+      <!-- Environment Variables Setup (If required) -->
+      
+        <div class="mb-8 p-5 rounded-2xl bg-indigo-950/20 border border-indigo-500/20">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-bold text-white flex items-center gap-2">
+              <span>🔑</span>
+              <span>Required Environment Variables</span>
+            </h3>
+            <span class="text-[11px] text-indigo-400 font-mono">1 keys required</span>
+          </div>
+          <p class="text-xs text-slate-400 mb-4">Enter your keys below to dynamically inject them into the 1-Click configurations:</p>
+          <div class="space-y-3">
+            
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-900/80 border border-slate-800">
+                <div class="min-w-0">
+                  <span class="font-mono text-xs font-bold text-indigo-300 block truncate">OPENAI_API_KEY</span>
+                  <span class="text-[10px] text-slate-400">OpenAI Platform API Key</span>
+                </div>
+                <input
+                  type="text"
+                  id="env-input-OPENAI_API_KEY"
+                  data-env-key="OPENAI_API_KEY"
+                  placeholder="Paste OPENAI_API_KEY value"
+                  oninput="updateDetailConfigs()"
+                  class="bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-1.5 text-xs font-mono focus:border-indigo-500 focus:outline-none w-full sm:w-64"
+                />
+              </div>
+            
+          </div>
+        </div>
+      
+
+      <!-- Multi-Client Installation Snippets & 1-Click Deep Links -->
       <div class="mb-8">
-        <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-          <span>⚡</span>
-          <span>1-Click Configuration for AI Clients</span>
-        </h2>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <h2 class="text-base font-bold text-white flex items-center gap-2">
+            <span>⚡</span>
+            <span>1-Click Configuration for AI Clients</span>
+          </h2>
+          <div class="flex items-center gap-2">
+            <a id="cursorDeepLinkBtn" href="cursor://anysphere.cursor-deeplink/mcp/install?name=ai-2kw-mcp-server&config=%7B%0A%20%20%22command%22%3A%20%22npx%22%2C%0A%20%20%22args%22%3A%20%5B%0A%20%20%20%20%22-y%22%2C%0A%20%20%20%20%22%402kw%2Fai-mcp-server%22%0A%20%20%5D%2C%0A%20%20%22env%22%3A%20%7B%0A%20%20%20%20%22OPENAI_API_KEY%22%3A%20%22%3CINSERT_OPENAI_API_KEY%3E%22%0A%20%20%7D%0A%7D" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition shadow-sm">
+              <span>⚡ Install in Cursor</span>
+            </a>
+            <a id="vscodeDeepLinkBtn" href="vscode:mcp/install?name=ai-2kw-mcp-server&config=%7B%0A%20%20%22mcpServers%22%3A%20%7B%0A%20%20%20%20%22ai-2kw-mcp-server%22%3A%20%7B%0A%20%20%20%20%20%20%22command%22%3A%20%22npx%22%2C%0A%20%20%20%20%20%20%22args%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22-y%22%2C%0A%20%20%20%20%20%20%20%20%22%402kw%2Fai-mcp-server%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22env%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22OPENAI_API_KEY%22%3A%20%22%3CINSERT_OPENAI_API_KEY%3E%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 hover:bg-indigo-500/30 transition shadow-sm">
+              <span>⚡ Install in VS Code</span>
+            </a>
+          </div>
+        </div>
 
         <!-- Tabs -->
         <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-1 overflow-x-auto">
           <button onclick="showConfigTab('claude')" id="btn-tab-claude" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-emerald-400 text-emerald-400 whitespace-nowrap">Claude Desktop</button>
           <button onclick="showConfigTab('cursor')" id="btn-tab-cursor" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Cursor</button>
           <button onclick="showConfigTab('windsurf')" id="btn-tab-windsurf" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Windsurf</button>
+          <button onclick="showConfigTab('cline')" id="btn-tab-cline" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Cline</button>
           <button onclick="showConfigTab('zed')" id="btn-tab-zed" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Zed</button>
           <button onclick="showConfigTab('vscode')" id="btn-tab-vscode" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">VS Code</button>
           <button onclick="showConfigTab('cli')" id="btn-tab-cli" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Terminal CLI</button>
@@ -288,12 +369,15 @@
         <div class="relative">
           <pre id="configBox" class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs font-mono text-emerald-300 overflow-x-auto">{
   "mcpServers": {
-    "mcp-server": {
+    "ai-2kw-mcp-server": {
       "command": "npx",
       "args": [
         "-y",
         "@2kw/ai-mcp-server"
-      ]
+      ],
+      "env": {
+        "OPENAI_API_KEY": "<INSERT_OPENAI_API_KEY>"
+      }
     }
   }
 }</pre>
@@ -302,6 +386,102 @@
           </button>
         </div>
         <p id="configHelp" class="text-[11px] text-slate-400 mt-2">Paste into <code class="text-emerald-400 font-mono">claude_desktop_config.json</code> under <code class="text-emerald-400 font-mono">mcpServers</code>.</p>
+      </div>
+
+      <!-- Introspected Exposed MCP Tools & Schema Table -->
+      <div class="mb-8 p-5 rounded-2xl bg-slate-950/70 border border-slate-800">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-base">🛠️</span>
+            <h3 class="text-sm font-bold text-white tracking-tight">Introspected MCP Capabilities</h3>
+          </div>
+          <span class="text-xs font-mono text-cyan-400 bg-cyan-950/60 border border-cyan-800/60 px-2.5 py-0.5 rounded">
+            2 Tools | 0 Prompts | 0 Resources
+          </span>
+        </div>
+
+        
+          <div class="space-y-3 mb-4">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Exposed Tools</h4>
+            
+                <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/90 text-xs">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono font-bold text-emerald-400">mcp_server_execute</span>
+                    <span class="text-[10px] text-slate-500 font-mono">tool</span>
+                  </div>
+                  <p class="text-slate-300 text-xs mb-2 leading-relaxed">Execute 2kw.ai operations and retrieve structured tool results.</p>
+                  
+                    <div class="bg-slate-950/90 rounded-lg p-2 border border-slate-800/80 text-[11px]">
+                      <span class="text-slate-500 font-mono block mb-1">Parameters:</span>
+                      <div class="flex flex-wrap gap-1.5">
+                        <span class="font-mono px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300">
+                            action<span class="text-rose-400">*</span>: <span class="text-indigo-300">string</span>
+                          </span><span class="font-mono px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300">
+                            parameters: <span class="text-indigo-300">object</span>
+                          </span>
+                      </div>
+                    </div>
+                  
+                </div>
+              
+                <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/90 text-xs">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono font-bold text-emerald-400">mcp_server_status</span>
+                    <span class="text-[10px] text-slate-500 font-mono">tool</span>
+                  </div>
+                  <p class="text-slate-300 text-xs mb-2 leading-relaxed">Check operational status, connectivity, and cache state for 2kw.ai.</p>
+                  <span class="text-[11px] text-slate-500 font-mono">No input parameters required</span>
+                </div>
+              
+          </div>
+        
+
+        <!-- Accordion for Raw JSON Schema -->
+        <details class="mt-4 pt-3 border-t border-slate-800/70 group">
+          <summary class="text-xs font-mono text-slate-400 hover:text-white cursor-pointer select-none flex items-center justify-between">
+            <span>View Full Raw MCP Schema (JSON)</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <pre class="mt-3 p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] font-mono text-slate-300 overflow-x-auto max-h-64">{
+  &quot;tools&quot;: [
+    {
+      &quot;name&quot;: &quot;mcp_server_execute&quot;,
+      &quot;description&quot;: &quot;Execute 2kw.ai operations and retrieve structured tool results.&quot;,
+      &quot;inputSchema&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;action&quot;: {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;description&quot;: &quot;Operation identifier&quot;
+          },
+          &quot;parameters&quot;: {
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;description&quot;: &quot;Input options and runtime configuration&quot;
+          }
+        },
+        &quot;required&quot;: [
+          &quot;action&quot;
+        ]
+      },
+      &quot;tokenCost&quot;: 93
+    },
+    {
+      &quot;name&quot;: &quot;mcp_server_status&quot;,
+      &quot;description&quot;: &quot;Check operational status, connectivity, and cache state for 2kw.ai.&quot;,
+      &quot;inputSchema&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {}
+      },
+      &quot;tokenCost&quot;: 44
+    }
+  ],
+  &quot;prompts&quot;: [],
+  &quot;resources&quot;: [],
+  &quot;tokenFootprint&quot;: 137,
+  &quot;introspectedAt&quot;: &quot;2026-11-21T18:43:43.348Z&quot;,
+  &quot;introspectionMethod&quot;: &quot;synthetic_archetype&quot;
+}</pre>
+        </details>
       </div>
 
       <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-800">
@@ -356,29 +536,89 @@
   </main>
 
   <script>
-    const configs = {
-      claude: "{\n  \"mcpServers\": {\n    \"mcp-server\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@2kw/ai-mcp-server\"\n      ]\n    }\n  }\n}",
-      cursor: "{\n  \"command\": \"npx\",\n  \"args\": [\n    \"-y\",\n    \"@2kw/ai-mcp-server\"\n  ]\n}",
-      windsurf: "{\n  \"mcpServers\": {\n    \"ai.2kw/mcp-server\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@2kw/ai-mcp-server\"\n      ]\n    }\n  }\n}",
-      zed: "{\n  \"context_servers\": [\n    \"ai.2kw/mcp-server\"\n  ]\n}",
-      vscode: "{\n  \"mcpServers\": {\n    \"ai-2kw-mcp-server\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@2kw/ai-mcp-server\"\n      ]\n    }\n  }\n}",
-      cli: "npx -y @2kw/ai-mcp-server"
+    const serverMeta = {
+      shortName: "ai-2kw-mcp-server",
+      runtimeCmd: "npx",
+      runtimeArgs: ["-y","@2kw/ai-mcp-server"],
+      pkgId: "@2kw/ai-mcp-server",
+      initialEnv: {"OPENAI_API_KEY":"<INSERT_OPENAI_API_KEY>"}
     };
+
+    let currentEnv = Object.assign({}, serverMeta.initialEnv);
+
+    function generateCurrentConfigs() {
+      const hasEnv = Object.keys(currentEnv).length > 0;
+      const envSection = hasEnv ? { env: currentEnv } : {};
+
+      const claude = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const cursor = JSON.stringify(Object.assign({
+        command: serverMeta.runtimeCmd,
+        args: serverMeta.runtimeArgs
+      }, envSection), null, 2);
+
+      const windsurf = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const cline = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const zed = JSON.stringify({
+        context_servers: [serverMeta.shortName]
+      }, null, 2);
+
+      const vscode = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const cli = serverMeta.runtimeCmd === 'npx'
+        ? ('npx -y ' + serverMeta.pkgId)
+        : (serverMeta.runtimeCmd === 'uvx' ? ('uvx ' + serverMeta.pkgId) : (serverMeta.runtimeCmd + ' ' + serverMeta.pkgId));
+
+      return { claude: claude, cursor: cursor, windsurf: windsurf, cline: cline, zed: zed, vscode: vscode, cli: cli };
+    }
+
+    let configs = generateCurrentConfigs();
 
     const helps = {
       claude: 'Paste into claude_desktop_config.json under mcpServers.',
-      cursor: 'Paste into ~/.cursor/mcp.json or Cursor Features > MCP Servers.',
-      windsurf: 'Paste into ~/.codeium/windsurf/mcp_config.json.',
+      cursor: 'Paste into ~/.cursor/mcp.json or Cursor Settings > Features > MCP.',
+      windsurf: 'Paste into ~/.codeium/windsurf/mcp_config.json under mcpServers.',
+      cline: 'Paste into Cline MCP settings under mcpServers.',
       zed: 'Paste into ~/.config/zed/settings.json under context_servers.',
       vscode: 'Paste into ~/.vscode/mcpSettings.json under mcpServers.',
-      cli: 'Execute directly in your terminal to start or install the server.'
+      cli: 'Execute directly in your terminal to start or run the server.'
     };
 
     let activeTab = 'claude';
 
     function showConfigTab(tab) {
       activeTab = tab;
-      document.querySelectorAll('.tab-btn').forEach(b => {
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
         b.classList.remove('border-emerald-400', 'text-emerald-400');
         b.classList.add('border-transparent', 'text-slate-400');
       });
@@ -387,18 +627,40 @@
         activeBtn.classList.add('border-emerald-400', 'text-emerald-400');
         activeBtn.classList.remove('border-transparent', 'text-slate-400');
       }
+
       document.getElementById('configBox').textContent = configs[tab] || '';
       document.getElementById('configHelp').textContent = helps[tab] || '';
     }
 
+    function updateDetailConfigs() {
+      const inputs = document.querySelectorAll('[data-env-key]');
+      inputs.forEach(function(input) {
+        const key = input.getAttribute('data-env-key');
+        const val = input.value.trim();
+        currentEnv[key] = val || ('<INSERT_' + key + '>');
+      });
+
+      configs = generateCurrentConfigs();
+      document.getElementById('configBox').textContent = configs[activeTab] || '';
+
+      // Update deep links
+      const cursorDeepLink = 'cursor://anysphere.cursor-deeplink/mcp/install?name=' + encodeURIComponent(serverMeta.shortName) + '&config=' + encodeURIComponent(configs.cursor);
+      const vscodeDeepLink = 'vscode:mcp/install?name=' + encodeURIComponent(serverMeta.shortName) + '&config=' + encodeURIComponent(configs.vscode);
+
+      const cBtn = document.getElementById('cursorDeepLinkBtn');
+      if (cBtn) cBtn.href = cursorDeepLink;
+      const vBtn = document.getElementById('vscodeDeepLinkBtn');
+      if (vBtn) vBtn.href = vscodeDeepLink;
+    }
+
     function copyCurrentConfig() {
       const code = configs[activeTab] || '';
-      navigator.clipboard.writeText(code).then(() => {
+      navigator.clipboard.writeText(code).then(function() {
         const btn = document.getElementById('detailCopyBtn');
         const orig = btn.textContent;
         btn.textContent = 'Copied! ✓';
         btn.classList.add('bg-white', 'text-black');
-        setTimeout(() => {
+        setTimeout(function() {
           btn.textContent = orig;
           btn.classList.remove('bg-white', 'text-black');
         }, 1500);

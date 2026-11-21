@@ -36,6 +36,9 @@ jobs:
       - name: Run Integrity & Security Audit Tests
         run: npm test
 
+      - name: Run Automated Schema & Capability Introspector
+        run: npx tsx scripts/validate-and-introspect-pr.ts
+
       - name: Audit Submission & Comment
         uses: actions/github-script@v7
         if: github.event_name == 'pull_request'
@@ -46,9 +49,12 @@ jobs:
             const count = catalog.length;
             const topScore = Math.max(...catalog.map(s => s.trustScore));
             
-            const commentBody = `### 🛡️ MCPShelf Automated Submission & Security Audit Bot
+            const commentBody = `### 🛡️ MCPShelf Automated Submission, Introspection & Security Audit Bot
             
             ✅ **Manifest Schema**: Validated against \`2025-12-11/server.schema.json\`
+            ✅ **MCP Capability Introspector**: Tools, Prompts & Resources auto-extracted via \`@modelcontextprotocol/sdk\`
+            ✅ **Security Risk Flags**: Automated privilege scan complete (Shell, Filesystem, Network & Credentials)
+            ✅ **Token Footprint**: Measured context window impact per turn
             ✅ **Registry Status**: ${count} active verified servers in catalog
             ✅ **Highest Trust Rating**: ${topScore}/10
             
