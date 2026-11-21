@@ -51,16 +51,14 @@ export function slugify(id: string): string {
 }
 
 function escapeXml(unsafe: string): string {
-  return unsafe.replace(/[<>&'"]/g, (c) => {
-    switch (c) {
-      case '<': return '&lt;';
-      case '>': return '&gt;';
-      case '&': return '&amp;';
-      case '\'': return '&apos;';
-      case '"': return '&quot;';
-      default: return c;
-    }
-  });
+  if (!unsafe) return '';
+  return String(unsafe)
+    .replace(/&amp;/g, '&')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/'/g, '&apos;')
+    .replace(/"/g, '&quot;');
 }
 
 export function generateDigestFiles() {
@@ -115,7 +113,7 @@ export function generateDigestFiles() {
       ${boost ? `<p><em>🌟 Sponsor Spotlight: ${escapeXml(boost.customCallout || boost.badge)}</em></p>` : ''}
       <p><strong>Security Trust Score:</strong> ${server.trustScore}/10.0</p>
       <p><strong>Installation:</strong> <code>npx @ritualdev-lab/mcpshelf install ${escapeXml(server.id)}</code></p>
-      <p><a href="${link}">View full 1-click install snippets and security verification on MCPShelf &rarr;</a></p>
+      <p><a href="${link}">View full 1-click install snippets and security verification on MCPShelf →</a></p>
     `.trim();
 
     return `    <item>
@@ -249,25 +247,90 @@ ${rssItemsXml}
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- Feeds -->
+  <!-- Feeds & Machine Discovery -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/digest.html">
   <meta property="og:title" content="Weekly AI Agent Digest - MCPShelf Marketplace">
   <meta property="og:description" content="Discover this week's highest-signal MCP servers, security verifications, and agent tooling.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/digest.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MCPShelf Weekly AI Agent Digest">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="Weekly AI Agent Digest - MCPShelf Marketplace">
   <meta name="twitter:description" content="Newly published & trending MCP servers for Claude Desktop and Cursor.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/digest.png">
+  <meta name="twitter:image:alt" content="MCPShelf Weekly AI Agent Digest">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark">
+
+  <!-- JSON-LD: NewsArticle / Periodical -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "MCPShelf Weekly AI Agent Digest",
+    "description": "Weekly curated digest of newly published, trending, and security-verified Model Context Protocol (MCP) servers.",
+    "url": "https://mcp.ritualdev.in/digest.html",
+    "image": "https://mcp.ritualdev.in/og/digest.png",
+    "datePublished": ${JSON.stringify(dateIso)},
+    "dateModified": ${JSON.stringify(dateIso)},
+    "author": {
+      "@type": "Organization",
+      "name": "RitualDev Lab",
+      "url": "https://ritualdev.in"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MCPShelf",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mcp.ritualdev.in/favicon.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "MCPShelf",
+        "item": "https://mcp.ritualdev.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Weekly Digest",
+        "item": "https://mcp.ritualdev.in/digest.html"
+      }
+    ]
+  }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html, body {

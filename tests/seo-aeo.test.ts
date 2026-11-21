@@ -19,6 +19,16 @@ describe('MCPShelf SEO, AEO & Deployment Suite', () => {
     assert.ok(sitemap.includes('<image:image>'), 'Expected image annotations in sitemap');
     assert.ok(sitemap.includes('<lastmod>'), 'Expected lastmod timestamps in sitemap');
     assert.ok(sitemap.includes('<priority>1.0</priority>'), 'Expected home priority in sitemap');
+    // Strict XML entity verification to prevent Google Search Console parsing errors
+    const unescapedAmpersands = sitemap.match(/&(?!(amp|lt|gt|quot|apos);)/g);
+    assert.strictEqual(unescapedAmpersands, null, 'sitemap.xml must contain 0 unescaped ampersands');
+  });
+
+  it('site/feed.xml contains valid XML entities and 0 unescaped ampersands', () => {
+    const feed = fs.readFileSync(path.join(siteDir, 'feed.xml'), 'utf-8');
+    const unescapedAmpersands = feed.match(/&(?!(amp|lt|gt|quot|apos);)/g);
+    assert.strictEqual(unescapedAmpersands, null, 'feed.xml must contain 0 unescaped ampersands');
+    assert.strictEqual(feed.includes('&rarr;'), false, 'feed.xml must not contain non-XML entity &rarr;');
   });
 
   it('site/robots.txt allows web engines and generative AI agents (GEO/AEO)', () => {
@@ -65,14 +75,46 @@ describe('MCPShelf SEO, AEO & Deployment Suite', () => {
     assert.ok(indexHtml.includes('id="faq"'), 'Missing FAQ accordion section');
   });
 
-  it('server detail pages include SoftwareApplication and BreadcrumbList JSON-LD', () => {
+  it('server detail pages include SoftwareApplication, BreadcrumbList, and FAQPage JSON-LD', () => {
     const serverFiles = fs.readdirSync(path.join(siteDir, 'servers')).filter(f => f.endsWith('.html'));
     assert.ok(serverFiles.length > 0, 'No server detail pages found');
 
     const samplePage = fs.readFileSync(path.join(siteDir, 'servers', serverFiles[0]), 'utf-8');
     assert.ok(samplePage.includes('"@type": "SoftwareApplication"'), 'Missing SoftwareApplication schema');
     assert.ok(samplePage.includes('"@type": "BreadcrumbList"'), 'Missing BreadcrumbList schema');
+    assert.ok(samplePage.includes('"@type": "FAQPage"'), 'Missing FAQPage schema for AEO');
     assert.ok(samplePage.includes('aria-label="Breadcrumb"'), 'Missing semantic breadcrumb nav');
     assert.ok(samplePage.includes('id="btn-tab-claude"'), 'Missing multi-client tab buttons');
+    assert.ok(samplePage.includes('name="geo.region"'), 'Missing GEO meta tag');
+    assert.ok(samplePage.includes('property="og:site_name"'), 'Missing og:site_name meta tag');
+  });
+
+  it('all JSON-LD script blocks across main pages and server samples parse as valid JSON', () => {
+    const pagesToTest = [
+      path.join(siteDir, 'index.html'),
+      path.join(siteDir, 'boost.html'),
+      path.join(siteDir, 'submit.html'),
+      path.join(siteDir, 'digest.html')
+    ];
+
+    const serverFiles = fs.readdirSync(path.join(siteDir, 'servers')).filter(f => f.endsWith('.html')).slice(0, 5);
+    for (const sf of serverFiles) {
+      pagesToTest.push(path.join(siteDir, 'servers', sf));
+    }
+
+    for (const pagePath of pagesToTest) {
+      const html = fs.readFileSync(pagePath, 'utf-8');
+      const ldRegex = /<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi;
+      let match: RegExpExecArray | null;
+      let blockCount = 0;
+      while ((match = ldRegex.exec(html)) !== null) {
+        blockCount++;
+        const jsonContent = match[1].trim();
+        assert.doesNotThrow(() => {
+          JSON.parse(jsonContent);
+        }, `Invalid JSON in ${pagePath} JSON-LD block #${blockCount}`);
+      }
+      assert.ok(blockCount > 0, `Expected at least 1 JSON-LD block in ${pagePath}`);
+    }
   });
 });

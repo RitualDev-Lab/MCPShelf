@@ -15,25 +15,41 @@
   <meta name="author" content="Community">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <!-- Feeds -->
+  <!-- Feeds & Machine Discovery -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/servers/africa-lomi-mcp.html">
   <meta property="og:title" content="lomi. - MCP Server">
   <meta property="og:description" content="lomi. payments. https://mcp.lomi.africa/mcp and guest https://mcp.lomi.africa/mcp/guest">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/africa-lomi-mcp.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preview of lomi. on MCPShelf">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="lomi. - MCP Server">
   <meta name="twitter:description" content="lomi. payments. https://mcp.lomi.africa/mcp and guest https://mcp.lomi.africa/mcp/guest">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/africa-lomi-mcp.png">
+  <meta name="twitter:image:alt" content="Preview of lomi. on MCPShelf">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -43,8 +59,10 @@
     "name": "lomi.",
     "operatingSystem": "Cross-platform (macOS, Linux, Windows)",
     "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "AI Agent Extension",
     "description": "lomi. payments. https://mcp.lomi.africa/mcp and guest https://mcp.lomi.africa/mcp/guest",
     "softwareVersion": "1.0.0",
+    "url": "https://mcp.ritualdev.in/servers/africa-lomi-mcp.html",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": 4.9,
@@ -80,13 +98,47 @@
         "@type": "ListItem",
         "position": 2,
         "name": "monetization",
-        "item": "https://mcp.ritualdev.in/?cat=" + encodeURIComponent("monetization")
+        "item": "https://mcp.ritualdev.in/?cat=monetization"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "lomi.",
         "item": "https://mcp.ritualdev.in/servers/africa-lomi-mcp.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for AEO (Direct Answers for Perplexity & Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I install lomi. in Claude Desktop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To install lomi. into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"africa.lomi/mcp\"\n      ]\n    }\n  }\n}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install lomi. in Cursor IDE or Windsurf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Run the command 'npx -y africa.lomi/mcp' or add africa.lomi/mcp to your Cursor or Windsurf MCP configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the security rating and trust score for lomi.?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "lomi. has a verified Trust Score of 7/10 with security audit rating Moderate on MCPShelf."
+        }
       }
     ]
   }

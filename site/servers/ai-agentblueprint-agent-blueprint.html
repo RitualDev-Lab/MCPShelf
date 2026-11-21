@@ -15,25 +15,41 @@
   <meta name="author" content="Community">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <!-- Feeds -->
+  <!-- Feeds & Machine Discovery -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/servers/ai-agentblueprint-agent-blueprint.html">
   <meta property="og:title" content="Agent Blueprint - MCP Server">
   <meta property="og:description" content="Measured agent costs, a one-page agent summary check, and an offline access map. No sign-in.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/ai-agentblueprint-agent-blueprint.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preview of Agent Blueprint on MCPShelf">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="Agent Blueprint - MCP Server">
   <meta name="twitter:description" content="Measured agent costs, a one-page agent summary check, and an offline access map. No sign-in.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/ai-agentblueprint-agent-blueprint.png">
+  <meta name="twitter:image:alt" content="Preview of Agent Blueprint on MCPShelf">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -43,8 +59,10 @@
     "name": "Agent Blueprint",
     "operatingSystem": "Cross-platform (macOS, Linux, Windows)",
     "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "AI Agent Extension",
     "description": "Measured agent costs, a one-page agent summary check, and an offline access map. No sign-in.",
     "softwareVersion": "0.2.0",
+    "url": "https://mcp.ritualdev.in/servers/ai-agentblueprint-agent-blueprint.html",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": 4.9,
@@ -80,13 +98,47 @@
         "@type": "ListItem",
         "position": 2,
         "name": "ai-agents",
-        "item": "https://mcp.ritualdev.in/?cat=" + encodeURIComponent("ai-agents")
+        "item": "https://mcp.ritualdev.in/?cat=ai-agents"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Agent Blueprint",
         "item": "https://mcp.ritualdev.in/servers/ai-agentblueprint-agent-blueprint.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for AEO (Direct Answers for Perplexity & Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I install Agent Blueprint in Claude Desktop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To install Agent Blueprint into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n{\n  \"mcpServers\": {\n    \"agent-blueprint\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentblueprint/agent-blueprint\"\n      ]\n    }\n  }\n}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install Agent Blueprint in Cursor IDE or Windsurf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Run the command 'npx -y ai.agentblueprint/agent-blueprint' or add ai.agentblueprint/agent-blueprint to your Cursor or Windsurf MCP configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the security rating and trust score for Agent Blueprint?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Agent Blueprint has a verified Trust Score of 8.5/10 with security audit rating High on MCPShelf."
+        }
       }
     ]
   }

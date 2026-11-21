@@ -15,25 +15,41 @@
   <meta name="author" content="Community">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <!-- Feeds -->
+  <!-- Feeds & Machine Discovery -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/servers/ae-grovisor-grotax.html">
   <meta property="og:title" content="groTAX by Grovisor - MCP Server">
   <meta property="og:description" content="UAE Corporate Tax: CT computation, SBR, penalties, free zone test, TP and health-check.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/ae-grovisor-grotax.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preview of groTAX by Grovisor on MCPShelf">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="groTAX by Grovisor - MCP Server">
   <meta name="twitter:description" content="UAE Corporate Tax: CT computation, SBR, penalties, free zone test, TP and health-check.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/ae-grovisor-grotax.png">
+  <meta name="twitter:image:alt" content="Preview of groTAX by Grovisor on MCPShelf">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -43,8 +59,10 @@
     "name": "groTAX by Grovisor",
     "operatingSystem": "Cross-platform (macOS, Linux, Windows)",
     "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "AI Agent Extension",
     "description": "UAE Corporate Tax: CT computation, SBR, penalties, free zone test, TP and health-check.",
     "softwareVersion": "1.3.0",
+    "url": "https://mcp.ritualdev.in/servers/ae-grovisor-grotax.html",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": 4.7,
@@ -80,13 +98,47 @@
         "@type": "ListItem",
         "position": 2,
         "name": "developer-tools",
-        "item": "https://mcp.ritualdev.in/?cat=" + encodeURIComponent("developer-tools")
+        "item": "https://mcp.ritualdev.in/?cat=developer-tools"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "groTAX by Grovisor",
         "item": "https://mcp.ritualdev.in/servers/ae-grovisor-grotax.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for AEO (Direct Answers for Perplexity & Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I install groTAX by Grovisor in Claude Desktop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To install groTAX by Grovisor into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n{\n  \"mcpServers\": {\n    \"grotax\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ae.grovisor/grotax\"\n      ]\n    }\n  }\n}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install groTAX by Grovisor in Cursor IDE or Windsurf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Run the command 'npx -y ae.grovisor/grotax' or add ae.grovisor/grotax to your Cursor or Windsurf MCP configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the security rating and trust score for groTAX by Grovisor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "groTAX by Grovisor has a verified Trust Score of 7/10 with security audit rating Moderate on MCPShelf."
+        }
       }
     ]
   }

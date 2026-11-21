@@ -174,24 +174,47 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/">
   <meta property="og:title" content="MCPShelf - Next-Gen Model Context Protocol (MCP) Registry & Stack Builder">
   <meta property="og:description" content="Instant multi-field search, cryptographic security ratings, and 1-click bundle export for Claude Desktop, Cursor, Windsurf, and Zed.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/default.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MCPShelf Model Context Protocol Registry and Stack Builder">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="MCPShelf - Next-Gen Model Context Protocol (MCP) Registry & Stack Builder">
   <meta name="twitter:description" content="Instant search, security ratings, and multi-server config export for Claude, Cursor, and Zed.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/default.png">
+  <meta name="twitter:image:alt" content="MCPShelf Model Context Protocol Registry and Stack Builder">
 
   <!-- Advanced SEO, GEO & AEO Meta Tags -->
   <meta name="keywords" content="model context protocol, mcp, mcp servers, mcp registry, mcp directory, claude desktop tools, cursor ide mcp, windsurf ai, zed mcp, ai agent stack builder, ritualdev lab">
   <meta name="author" content="RitualDev Lab">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="target" content="all">
+  <meta name="audience" content="all">
+  <meta name="coverage" content="Worldwide">
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="Safe For Kids">
+  <meta name="theme-color" content="#07090e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Machine Discovery Standards -->
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="alternate" type="text/plain" title="LLMs Full Catalog Context" href="https://mcp.ritualdev.in/llms-full.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- JSON-LD: WebSite with Google Sitelinks SearchBox -->
   <script type="application/ld+json">
@@ -2021,19 +2044,84 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/boost.html">
   <meta property="og:title" content="Boost Your MCP Server - MCPShelf Marketplace">
   <meta property="og:description" content="Promote your Model Context Protocol (MCP) server to 10,000+ AI developers using Claude Desktop, Cursor, and Windsurf.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/boost.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Boost Your MCP Server - MCPShelf Marketplace">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="Boost Your MCP Server - MCPShelf Marketplace">
   <meta name="twitter:description" content="Promote your Model Context Protocol (MCP) server with self-serve boosting.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/boost.png">
+  <meta name="twitter:image:alt" content="Boost Your MCP Server - MCPShelf Marketplace">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
+
+  <!-- JSON-LD: WebPage & BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Boost Your MCP Server - MCPShelf Marketplace",
+    "description": "Self-serve developer boosting and sponsorship tiers for Model Context Protocol (MCP) server creators.",
+    "url": "https://mcp.ritualdev.in/boost.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MCPShelf"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "MCPShelf",
+          "item": "https://mcp.ritualdev.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Boost Server",
+          "item": "https://mcp.ritualdev.in/boost.html"
+        }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "MCPShelf Server Boosting & Sponsored Placements",
+    "description": "Self-serve promotion tiers for Model Context Protocol creators to reach 10,000+ AI developers.",
+    "brand": {
+      "@type": "Brand",
+      "name": "MCPShelf"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "19",
+      "highPrice": "99",
+      "offerCount": "3"
+    }
+  }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html, body {
@@ -2146,6 +2234,7 @@ function generateSubmitHtml(categories: Category[]): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Submit MCP Server - MCPShelf Registry</title>
+  <link rel="canonical" href="https://mcp.ritualdev.in/submit.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -2156,19 +2245,65 @@ function generateSubmitHtml(categories: Category[]): string {
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/submit.html">
   <meta property="og:title" content="Submit MCP Server - MCPShelf Registry">
   <meta property="og:description" content="Register your Model Context Protocol server. Automated security audit & official registry synchronization.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/submit.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Submit MCP Server - MCPShelf Registry">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="Submit MCP Server - MCPShelf Registry">
   <meta name="twitter:description" content="Register your Model Context Protocol server on MCPShelf.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/submit.png">
+  <meta name="twitter:image:alt" content="Submit MCP Server - MCPShelf Registry">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
+
+  <!-- JSON-LD: WebPage & BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Submit an MCP Server - MCPShelf Registry",
+    "description": "Register your open-source Model Context Protocol server. Automated security scoring & global directory synchronization.",
+    "url": "https://mcp.ritualdev.in/submit.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MCPShelf"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "MCPShelf",
+          "item": "https://mcp.ritualdev.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Submit Server",
+          "item": "https://mcp.ritualdev.in/submit.html"
+        }
+      ]
+    }
+  }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html, body {
@@ -2282,25 +2417,41 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
   <meta name="author" content="${escapeHtml(server.author)}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <!-- Feeds -->
+  <!-- Feeds & Machine Discovery -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/servers/${slug}.html">
   <meta property="og:title" content="${escapeHtml(server.title)} - MCP Server">
   <meta property="og:description" content="${escapeHtml(server.description)}">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/${slug}.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preview of ${escapeHtml(server.title)} on MCPShelf">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="${escapeHtml(server.title)} - MCP Server">
   <meta name="twitter:description" content="${escapeHtml(server.description)}">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/${slug}.png">
+  <meta name="twitter:image:alt" content="Preview of ${escapeHtml(server.title)} on MCPShelf">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -2310,8 +2461,10 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
     "name": ${JSON.stringify(server.title)},
     "operatingSystem": "Cross-platform (macOS, Linux, Windows)",
     "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "AI Agent Extension",
     "description": ${JSON.stringify(server.description)},
     "softwareVersion": ${JSON.stringify(server.version || "1.0.0")},
+    "url": "https://mcp.ritualdev.in/servers/${slug}.html",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": ${server.averageRating || 4.8},
@@ -2347,13 +2500,47 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
         "@type": "ListItem",
         "position": 2,
         "name": ${JSON.stringify(server.category)},
-        "item": "https://mcp.ritualdev.in/?cat=" + encodeURIComponent(${JSON.stringify(server.category.toLowerCase())})
+        "item": ${JSON.stringify("https://mcp.ritualdev.in/?cat=" + encodeURIComponent(server.category.toLowerCase()))}
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": ${JSON.stringify(server.title)},
         "item": "https://mcp.ritualdev.in/servers/${slug}.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for AEO (Direct Answers for Perplexity & Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": ${JSON.stringify(`How do I install ${server.title} in Claude Desktop?`)},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": ${JSON.stringify(`To install ${server.title} into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n${claudeSnippet}`)}
+        }
+      },
+      {
+        "@type": "Question",
+        "name": ${JSON.stringify(`How do I install ${server.title} in Cursor IDE or Windsurf?`)},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": ${JSON.stringify(`Run the command '${terminalSnippet}' or add ${server.packageIdentifier || server.id} to your Cursor or Windsurf MCP configuration.`)}
+        }
+      },
+      {
+        "@type": "Question",
+        "name": ${JSON.stringify(`What is the security rating and trust score for ${server.title}?`)},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": ${JSON.stringify(`${server.title} has a verified Trust Score of ${server.trustScore}/10 with security audit rating ${server.securityRating || 'VERIFIED'} on MCPShelf.`)}
+        }
       }
     ]
   }

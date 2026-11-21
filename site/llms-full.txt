@@ -1,7 +1,7 @@
 # MCPShelf Complete Catalog & Architectural Manifest
 Canonical Registry: https://mcp.ritualdev.in
 Total Verified Servers: 420
-Generated At: 2026-11-20T06:23:58.392Z
+Generated At: 2026-11-21T05:27:44.421Z
 
 ================================================================================
 INDEX OF ALL PRODUCTION MCP SERVERS

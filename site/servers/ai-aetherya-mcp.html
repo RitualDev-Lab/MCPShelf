@@ -15,25 +15,41 @@
   <meta name="author" content="Community">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <!-- Feeds -->
+  <!-- Feeds & Machine Discovery -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/servers/ai-aetherya-mcp.html">
   <meta property="og:title" content="Aetherya - MCP Server">
   <meta property="og:description" content="Test decisions on a synthetic audience: studies, site audits, copy tests and post simulations.">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/ai-aetherya-mcp.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preview of Aetherya on MCPShelf">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="Aetherya - MCP Server">
   <meta name="twitter:description" content="Test decisions on a synthetic audience: studies, site audits, copy tests and post simulations.">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/ai-aetherya-mcp.png">
+  <meta name="twitter:image:alt" content="Preview of Aetherya on MCPShelf">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -43,8 +59,10 @@
     "name": "Aetherya",
     "operatingSystem": "Cross-platform (macOS, Linux, Windows)",
     "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "AI Agent Extension",
     "description": "Test decisions on a synthetic audience: studies, site audits, copy tests and post simulations.",
     "softwareVersion": "1.0.5",
+    "url": "https://mcp.ritualdev.in/servers/ai-aetherya-mcp.html",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": 4.7,
@@ -80,13 +98,47 @@
         "@type": "ListItem",
         "position": 2,
         "name": "security",
-        "item": "https://mcp.ritualdev.in/?cat=" + encodeURIComponent("security")
+        "item": "https://mcp.ritualdev.in/?cat=security"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Aetherya",
         "item": "https://mcp.ritualdev.in/servers/ai-aetherya-mcp.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for AEO (Direct Answers for Perplexity & Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I install Aetherya in Claude Desktop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To install Aetherya into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@aetherya/mcp\"\n      ]\n    }\n  }\n}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install Aetherya in Cursor IDE or Windsurf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Run the command 'npx -y @aetherya/mcp' or add @aetherya/mcp to your Cursor or Windsurf MCP configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the security rating and trust score for Aetherya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aetherya has a verified Trust Score of 8/10 with security audit rating High on MCPShelf."
+        }
       }
     ]
   }

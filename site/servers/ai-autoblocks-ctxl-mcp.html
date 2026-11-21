@@ -15,25 +15,41 @@
   <meta name="author" content="Community">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <!-- Feeds -->
+  <!-- Feeds & Machine Discovery -->
   <link rel="alternate" type="application/rss+xml" title="MCPShelf - Weekly AI Agent Digest (RSS)" href="https://mcp.ritualdev.in/feed.xml">
   <link rel="alternate" type="application/json" title="MCPShelf - Weekly AI Agent Digest (JSON Feed)" href="https://mcp.ritualdev.in/feed.json">
+  <link rel="alternate" type="text/markdown" title="LLMs.txt Standard Manifest" href="https://mcp.ritualdev.in/llms.txt">
+  <link rel="ai-plugin" type="application/json" href="https://mcp.ritualdev.in/.well-known/ai-plugin.json">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MCPShelf">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html">
   <meta property="og:title" content="ctxl-mcp - MCP Server">
   <meta property="og:description" content="Personal context management for AI assistants">
   <meta property="og:image" content="https://mcp.ritualdev.in/og/ai-autoblocks-ctxl-mcp.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preview of ctxl-mcp on MCPShelf">
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ritualdev">
+  <meta name="twitter:creator" content="@ritualdev">
   <meta name="twitter:title" content="ctxl-mcp - MCP Server">
   <meta name="twitter:description" content="Personal context management for AI assistants">
   <meta name="twitter:image" content="https://mcp.ritualdev.in/og/ai-autoblocks-ctxl-mcp.png">
+  <meta name="twitter:image:alt" content="Preview of ctxl-mcp on MCPShelf">
+
+  <!-- SEO, GEO & AEO Meta Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="GLOBAL">
+  <meta name="geo.placename" content="Global">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark">
 
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
@@ -43,8 +59,10 @@
     "name": "ctxl-mcp",
     "operatingSystem": "Cross-platform (macOS, Linux, Windows)",
     "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "AI Agent Extension",
     "description": "Personal context management for AI assistants",
     "softwareVersion": "0.0.2",
+    "url": "https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": 5,
@@ -80,13 +98,47 @@
         "@type": "ListItem",
         "position": 2,
         "name": "ai-agents",
-        "item": "https://mcp.ritualdev.in/?cat=" + encodeURIComponent("ai-agents")
+        "item": "https://mcp.ritualdev.in/?cat=ai-agents"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "ctxl-mcp",
         "item": "https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for AEO (Direct Answers for Perplexity & Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I install ctxl-mcp in Claude Desktop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To install ctxl-mcp into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n{\n  \"mcpServers\": {\n    \"ctxl-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ctxl-mcp\"\n      ]\n    }\n  }\n}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install ctxl-mcp in Cursor IDE or Windsurf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Run the command 'npx -y ctxl-mcp' or add ctxl-mcp to your Cursor or Windsurf MCP configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the security rating and trust score for ctxl-mcp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ctxl-mcp has a verified Trust Score of 9.5/10 with security audit rating Very High on MCPShelf."
+        }
       }
     ]
   }

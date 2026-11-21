@@ -6,7 +6,9 @@ function slugify(id: string): string {
 }
 
 function escapeXml(unsafe: string): string {
-  return (unsafe || '')
+  if (!unsafe) return '';
+  return String(unsafe)
+    .replace(/&amp;/g, '&')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -291,7 +293,7 @@ ${s.installSnippets?.terminal || `npx -y ${s.packageIdentifier || s.id}`}
     });
   }
 
-  // All 419+ Individual Server Detail Pages
+  // All 420+ Individual Server Detail Pages
   for (const s of catalog) {
     const slug = slugify(s.id);
     sitemapItems.push({
@@ -300,8 +302,8 @@ ${s.installSnippets?.terminal || `npx -y ${s.packageIdentifier || s.id}`}
       changefreq: 'weekly',
       priority: s.trustScore >= 9.5 ? '0.85' : '0.80',
       imageLoc: `https://mcp.ritualdev.in/og/${slug}.png`,
-      imageTitle: `${escapeXml(s.title)} MCP Server`,
-      imageCaption: escapeXml(s.description?.slice(0, 160) || '')
+      imageTitle: `${s.title} MCP Server`,
+      imageCaption: s.description?.slice(0, 160) || ''
     });
   }
 
@@ -309,14 +311,14 @@ ${s.installSnippets?.terminal || `npx -y ${s.packageIdentifier || s.id}`}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${sitemapItems.map(item => `  <url>
-    <loc>${item.loc}</loc>
-    <lastmod>${item.lastmod}</lastmod>
-    <changefreq>${item.changefreq}</changefreq>
-    <priority>${item.priority}</priority>${item.imageLoc ? `
+    <loc>${escapeXml(item.loc)}</loc>
+    <lastmod>${escapeXml(item.lastmod)}</lastmod>
+    <changefreq>${escapeXml(item.changefreq)}</changefreq>
+    <priority>${escapeXml(item.priority)}</priority>${item.imageLoc ? `
     <image:image>
-      <image:loc>${item.imageLoc}</image:loc>
-      <image:title>${item.imageTitle || ''}</image:title>
-      <image:caption>${item.imageCaption || ''}</image:caption>
+      <image:loc>${escapeXml(item.imageLoc)}</image:loc>
+      <image:title>${escapeXml(item.imageTitle || '')}</image:title>
+      <image:caption>${escapeXml(item.imageCaption || '')}</image:caption>
     </image:image>` : ''}
   </url>`).join('\n')}
 </urlset>
