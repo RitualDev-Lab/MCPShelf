@@ -1980,6 +1980,16 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     // -------------------------------------------------------------
     // Schema Explorer Drawer
     // -------------------------------------------------------------
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
     let currentDrawerServer = null;
 
     function openSchemaDrawer(id) {
