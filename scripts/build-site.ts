@@ -1,3 +1,6 @@
+import { scanSecurityRisks } from './security-scanner.js';
+import { synthesizeCapabilitiesForServer } from './introspect-server.js';
+import { publishRegistryAndSync } from './sync-to-devshelf.js';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { generateDigestFiles } from './generate-digest.js';
@@ -21,6 +24,12 @@ interface EnrichedServer {
   estimatedInstalls: number;
   transportType: string;
   packageIdentifier?: string;
+  runtime?: 'npx' | 'uvx' | 'docker' | 'python' | 'binary';
+  envVars?: Array<{ name: string; required: boolean; description?: string }>;
+  safetyFlags?: any;
+  safetyBadges?: string[];
+  riskTier?: 'Low' | 'Moderate' | 'Elevated' | 'High';
+  capabilities?: any;
   installSnippets: {
     claudeDesktop: string;
     cursorMcp: string;
@@ -108,10 +117,24 @@ async function main() {
     boostMap.set(b.serverId, b);
   }
 
-  const enrichedCatalog = catalog.map(s => ({
-    ...s,
-    boost: boostMap.get(s.id) || null
-  }));
+  const enrichedCatalog = catalog.map(s => {
+    const sec = scanSecurityRisks(s);
+    const caps = (s as any).capabilities && (s as any).capabilities.tools?.length > 0
+      ? (s as any).capabilities
+      : synthesizeCapabilitiesForServer(s);
+
+    return {
+      ...s,
+      runtime: sec.runtime,
+      transportType: sec.transportType,
+      envVars: sec.envVars,
+      safetyFlags: sec.safetyFlags,
+      safetyBadges: sec.safetyBadges,
+      riskTier: sec.riskTier,
+      capabilities: caps,
+      boost: boostMap.get(s.id) || null
+    };
+  });
 
   fs.writeFileSync(path.join(siteDir, 'data.json'), JSON.stringify(enrichedCatalog, null, 2));
   console.log(`  💾 Wrote site/data.json (${enrichedCatalog.length} servers)`);
@@ -143,6 +166,9 @@ async function main() {
 
   // Build Weekly AI Agent Digest & RSS/JSON Feeds
   generateDigestFiles();
+
+  // Publish static versioned registry v1 endpoints and cross-sync DevShelf
+  await publishRegistryAndSync();
 
   console.log('✅ [MCPShelf SSG] Build complete!');
 }
@@ -791,6 +817,25 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
                 ${escapeHtml(server.description)}
               </p>
 
+              <!-- Standardized Transport, Runtime, Security & Context Footprint Badges -->
+              <div class="flex flex-wrap items-center gap-1.5 mb-3">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 border border-indigo-500/25 text-indigo-300 flex items-center gap-1" title="Transport Type">
+                  ⚡ ${server.transportType || 'stdio'}
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/25 text-purple-300 flex items-center gap-1" title="Runtime Requirement">
+                  📦 ${server.runtime || 'npx'}
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded ${server.riskTier === 'High' ? 'bg-red-500/10 border-red-500/30 text-red-400' : server.riskTier === 'Elevated' ? 'bg-amber-500/10 border-amber-500/30 text-amber-300' : 'bg-emerald-500/10 border-emerald-500/25 text-emerald-300'} flex items-center gap-1" title="Security & Sandbox Privilege Risk Tier">
+                  🛡️ ${server.riskTier || 'Low'}
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 flex items-center gap-1" title="Estimated Context Token Footprint per turn">
+                  🪙 ~${server.capabilities?.tokenFootprint || 120} ctx tokens
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400" title="Required Environment Variables">
+                  ${server.envVars && server.envVars.length > 0 ? `🔑 ${server.envVars.length} Key${server.envVars.length > 1 ? 's' : ''}` : '🛡️ 0 Keys'}
+                </span>
+              </div>
+
               <!-- Capability Matrix Tags -->
               <div class="flex flex-wrap gap-1.5 mb-4">
                 ${caps.map(c => `
@@ -807,22 +852,26 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
               <div class="text-[11px] text-slate-400 flex items-center justify-between mb-3">
                 <span class="flex items-center gap-1">★ ${server.averageRating} <span class="text-slate-500">(${server.reviewsCount})</span></span>
                 <span class="text-slate-400 font-medium">${server.estimatedInstalls.toLocaleString()} installs</span>
-                <span class="font-mono text-[10px] text-slate-500 uppercase">${server.transportType}</span>
+                <span class="font-mono text-[10px] text-slate-400">${server.capabilities?.tools?.length || 2} tools</span>
               </div>
 
-              <div class="flex items-center gap-2">
-                <button onclick="openInstallModal('${escapeHtml(server.id)}')" class="flex-1 py-1.5 px-2.5 text-xs font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white transition shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5">
+              <div class="flex items-center gap-1.5">
+                <button onclick="openInstallModal('${escapeHtml(server.id)}')" class="flex-1 py-1.5 px-2 text-xs font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white transition shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1" title="1-Click Client Configuration">
                   <span>⚡</span>
                   <span>Install</span>
                 </button>
-                <button onclick="toggleStack('${escapeHtml(server.id)}')" id="stack-btn-${escapeHtml(server.id)}" class="stack-btn py-1.5 px-2.5 text-xs font-semibold rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 border border-white/[0.08] hover:text-white transition flex items-center gap-1" title="Add to Multi-Server Stack">
+                <button onclick="openSchemaDrawer('${escapeHtml(server.id)}')" class="py-1.5 px-2 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-slate-700 transition flex items-center gap-1" title="Inspect Exposed Tools, Prompts & Parameters">
+                  <span>🛠️</span>
+                  <span>Schema</span>
+                </button>
+                <button onclick="toggleStack('${escapeHtml(server.id)}')" id="stack-btn-${escapeHtml(server.id)}" class="stack-btn py-1.5 px-2 text-xs font-semibold rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 border border-white/[0.08] hover:text-white transition flex items-center gap-1" title="Add to Multi-Server Stack">
                   <span>+</span>
                   <span>Stack</span>
                 </button>
                 <button onclick="quickCopyTerminal('${escapeHtml(server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`)}', event)" class="p-1.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-400 hover:text-white border border-white/[0.08] transition" title="Copy Direct Terminal Run Command">
                   📋
                 </button>
-                <a href="/servers/${slug}.html" class="p-1.5 text-xs text-slate-400 hover:text-indigo-400 rounded-lg hover:bg-white/[0.04] transition" title="View Documentation">
+                <a href="/servers/${slug}.html" class="p-1.5 text-xs text-slate-400 hover:text-indigo-400 rounded-lg hover:bg-white/[0.04] transition" title="View Full Documentation">
                   &rarr;
                 </a>
               </div>
@@ -1230,24 +1279,54 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
 
   <!-- Multi-Server Bundle Export Modal -->
   <div id="bundleModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="glass-card max-w-2xl w-full rounded-3xl p-6 sm:p-8 border-slate-700 shadow-2xl relative">
-      <button onclick="closeBundleModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl">&times;</button>
+    <div class="glass-card max-w-3xl w-full rounded-3xl p-6 sm:p-8 border-slate-700 shadow-2xl relative max-h-[92vh] overflow-y-auto">
+      <button onclick="closeBundleModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl font-bold">&times;</button>
       <div class="flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">
         <span>🎒</span> Multi-Server Stack Exporter
       </div>
-      <h3 class="text-2xl font-bold text-white mb-2">Unified AI Agent Configuration</h3>
-      <p class="text-xs text-slate-400 mb-6">
+      <h3 class="text-2xl font-bold text-white mb-2">Unified AI Agent Stack Configuration</h3>
+      <p class="text-xs text-slate-400 mb-4">
         Export a single merged configuration containing all <span id="bundleToolCount" class="text-emerald-400 font-bold">0</span> selected MCP servers for your target AI editor.
       </p>
 
+      <!-- Context Token Footprint Estimator Meter -->
+      <div class="mb-4 p-3 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
+        <div class="flex items-center gap-2.5">
+          <span class="text-xl">🪙</span>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-slate-300 font-semibold">Context Footprint:</span>
+              <strong id="bundleTokenCount" class="text-emerald-400 font-mono text-sm">0 tokens</strong>
+              <span id="bundleTokenPercent" class="text-[11px] text-slate-400 font-mono">(~0.0% of 200k)</span>
+            </div>
+            <p class="text-[11px] text-slate-500">Live token overhead loaded into your LLM context window each conversation turn</p>
+          </div>
+        </div>
+        <span id="bundleTokenBadge" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+          Safe Context (&lt; 2k)
+        </span>
+      </div>
+
+      <!-- Environment Variables Auto-Prompt Form -->
+      <div id="bundleEnvVarsContainer" class="mb-4 p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hidden">
+        <div class="flex items-center justify-between mb-2 pb-2 border-b border-slate-800">
+          <span class="text-xs font-bold text-amber-300 flex items-center gap-1.5">
+            <span>🔑</span> Required Environment Variables
+          </span>
+          <span class="text-[11px] text-slate-400">Values replace placeholders in real-time</span>
+        </div>
+        <div id="bundleEnvFields" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs mt-2"></div>
+      </div>
+
       <!-- Client Tabs -->
-      <div class="flex border-b border-slate-700 mb-4 text-xs font-semibold overflow-x-auto gap-2">
-        <button onclick="switchBundleTab('claude')" id="btab-claude" class="btab-btn active px-4 py-2 border-b-2 border-brand-500 text-brand-400">Claude Desktop</button>
-        <button onclick="switchBundleTab('cursor')" id="btab-cursor" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Cursor IDE</button>
-        <button onclick="switchBundleTab('windsurf')" id="btab-windsurf" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Windsurf</button>
-        <button onclick="switchBundleTab('zed')" id="btab-zed" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Zed Editor</button>
-        <button onclick="switchBundleTab('vscode')" id="btab-vscode" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">VS Code</button>
-        <button onclick="switchBundleTab('terminal')" id="btab-terminal" class="btab-btn px-4 py-2 text-slate-400 hover:text-white">Chained CLI</button>
+      <div class="flex border-b border-slate-700 mb-4 text-xs font-semibold overflow-x-auto gap-2 pb-1">
+        <button onclick="switchBundleTab('cursor')" id="btab-cursor" class="btab-btn active px-3.5 py-2 border-b-2 border-brand-500 text-brand-400 whitespace-nowrap">Cursor (.cursor/mcp.json)</button>
+        <button onclick="switchBundleTab('claude')" id="btab-claude" class="btab-btn px-3.5 py-2 text-slate-400 hover:text-white whitespace-nowrap">Claude Desktop</button>
+        <button onclick="switchBundleTab('windsurf')" id="btab-windsurf" class="btab-btn px-3.5 py-2 text-slate-400 hover:text-white whitespace-nowrap">Windsurf</button>
+        <button onclick="switchBundleTab('cline')" id="btab-cline" class="btab-btn px-3.5 py-2 text-slate-400 hover:text-white whitespace-nowrap">Cline (VS Code)</button>
+        <button onclick="switchBundleTab('zed')" id="btab-zed" class="btab-btn px-3.5 py-2 text-slate-400 hover:text-white whitespace-nowrap">Zed Editor</button>
+        <button onclick="switchBundleTab('vscode')" id="btab-vscode" class="btab-btn px-3.5 py-2 text-slate-400 hover:text-white whitespace-nowrap">Generic VS Code</button>
+        <button onclick="switchBundleTab('terminal')" id="btab-terminal" class="btab-btn px-3.5 py-2 text-slate-400 hover:text-white whitespace-nowrap">Chained CLI</button>
       </div>
 
       <!-- Config Code Box -->
@@ -1258,15 +1337,75 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
         </button>
       </div>
 
-      <div class="flex flex-wrap items-center justify-between gap-3 text-xs">
-        <span id="bundleTabPath" class="text-slate-400 text-[11px]">Paste into: claude_desktop_config.json</span>
-        <div class="flex items-center gap-2">
+      <div class="flex flex-wrap items-center justify-between gap-3 text-xs pt-2 border-t border-slate-800">
+        <span id="bundleTabPath" class="text-slate-400 text-[11px] font-mono">File: .cursor/mcp.json</span>
+        <div class="flex flex-wrap items-center gap-2">
+          <a id="bundleDeepLinkBtn" href="#" class="px-3 py-1.5 rounded-lg bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 border border-cyan-500/30 font-semibold transition flex items-center gap-1.5">
+            <span>⚡</span>
+            <span>1-Click Install Deep Link</span>
+          </a>
           <button onclick="downloadBundleJson()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 font-semibold transition">
             💾 Download .json
           </button>
           <button onclick="copyShareStackUrl()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-400 border border-emerald-500/30 font-semibold transition">
-            🔗 Share Stack URL
+            🔗 Share Stack
           </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tool & Prompt Schema Explorer Drawer -->
+  <div id="schemaDrawer" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm flex justify-end">
+    <div class="w-full sm:w-[580px] md:w-[680px] bg-[#0c101a] border-l border-slate-800 h-full flex flex-col shadow-2xl p-6 overflow-y-auto">
+      <!-- Drawer Header -->
+      <div class="flex items-start justify-between pb-4 border-b border-slate-800 mb-4">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span id="drawerCategory" class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">Category</span>
+            <span id="drawerTrust" class="text-[11px] font-bold px-2 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300">🛡️ 9/10</span>
+            <span id="drawerRisk" class="text-[11px] font-bold px-2 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300">Low Risk</span>
+            <span id="drawerTokens" class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/25 text-cyan-300">🪙 ~140 tokens</span>
+          </div>
+          <h3 id="drawerTitle" class="text-xl font-bold text-white mb-1">Server Name</h3>
+          <p id="drawerDesc" class="text-xs text-slate-400 leading-relaxed">Server description</p>
+        </div>
+        <button onclick="closeSchemaDrawer()" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition text-xl font-bold">&times;</button>
+      </div>
+
+      <!-- Drawer Tabs -->
+      <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-2 pb-1">
+        <button onclick="switchDrawerTab('tools')" id="dtab-tools" class="dtab-btn px-3 py-2 border-b-2 border-emerald-400 text-emerald-400">🛠️ Tools (<span id="drawerToolsCount">0</span>)</button>
+        <button onclick="switchDrawerTab('prompts')" id="dtab-prompts" class="dtab-btn px-3 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">💬 Prompts (<span id="drawerPromptsCount">0</span>)</button>
+        <button onclick="switchDrawerTab('resources')" id="dtab-resources" class="dtab-btn px-3 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">📁 Resources (<span id="drawerResourcesCount">0</span>)</button>
+        <button onclick="switchDrawerTab('raw')" id="dtab-raw" class="dtab-btn px-3 py-2 border-b-2 border-transparent text-slate-400 hover:text-white">📄 Raw Schema</button>
+      </div>
+
+      <!-- Drawer Content Panes -->
+      <div id="drawerToolsPane" class="flex-1 space-y-4 overflow-y-auto"></div>
+      <div id="drawerPromptsPane" class="flex-1 space-y-3 overflow-y-auto hidden"></div>
+      <div id="drawerResourcesPane" class="flex-1 space-y-3 overflow-y-auto hidden"></div>
+      <div id="drawerRawPane" class="flex-1 overflow-y-auto hidden">
+        <pre id="drawerRawCode" class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs text-emerald-300 font-mono overflow-x-auto"></pre>
+      </div>
+
+      <!-- Drawer Footer Actions -->
+      <div class="pt-4 mt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
+        <div class="flex items-center gap-2">
+          <button id="drawerStackBtn" class="px-3 py-2 text-xs font-bold rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 border border-white/[0.08] transition flex items-center gap-1.5">
+            <span>+</span> <span>Add to Stack</span>
+          </button>
+          <button id="drawerInstallBtn" class="px-3 py-2 text-xs font-bold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white transition flex items-center gap-1.5">
+            <span>⚡</span> <span>Install Snippet</span>
+          </button>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <a id="drawerCursorDeepLink" href="#" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 transition" title="1-Click Open in Cursor">
+            ⚡ Cursor
+          </a>
+          <a id="drawerVsCodeDeepLink" href="#" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-purple-300 border border-slate-700 transition" title="1-Click Open in VS Code / Cline">
+            ⚡ VS Code
+          </a>
         </div>
       </div>
     </div>
@@ -1276,8 +1415,20 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
   <div id="installModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
     <div class="glass-card max-w-xl w-full rounded-3xl p-6 border-slate-700 shadow-2xl relative">
       <button onclick="closeInstallModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">&times;</button>
-      <h3 id="modalTitle" class="text-xl font-bold text-white mb-1">Install MCP Server</h3>
-      <p id="modalSubtitle" class="text-xs text-slate-400 mb-4">Choose your AI client to copy configuration</p>
+      <div class="flex items-start justify-between mb-3">
+        <div>
+          <h3 id="modalTitle" class="text-xl font-bold text-white mb-0.5">Install MCP Server</h3>
+          <p id="modalSubtitle" class="text-xs text-slate-400">Choose your AI client to copy configuration or deep link directly</p>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <a id="installCursorDeepLink" href="#" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-cyan-600/20 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-600/30 transition flex items-center gap-1">
+            ⚡ Cursor
+          </a>
+          <a id="installVsCodeDeepLink" href="#" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-purple-600/20 text-purple-300 border border-purple-500/30 hover:bg-purple-600/30 transition flex items-center gap-1">
+            ⚡ VS Code
+          </a>
+        </div>
+      </div>
 
       <!-- Client Tabs -->
       <div class="flex border-b border-slate-700 mb-4 text-xs font-semibold overflow-x-auto">
@@ -2395,45 +2546,87 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
   const caps = getCapabilities(server);
   const related = catalog.filter((s: any) => s.category === server.category && s.id !== server.id).slice(0, 3);
 
-  // Client configurations
-  const claudeSnippet = server.installSnippets?.claudeDesktop || JSON.stringify({
+  const shortName = (server.name || server.id.split('/').pop() || 'mcp-server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+  const pkgId = server.packageIdentifier || server.id;
+  const runtimeCmd = server.runtime === 'uvx' ? 'uvx' : (server.runtime === 'docker' ? 'docker' : (server.runtime === 'python' ? 'python' : 'npx'));
+  const runtimeArgs = runtimeCmd === 'npx' ? ['-y', pkgId] : (runtimeCmd === 'uvx' ? [pkgId] : [pkgId]);
+
+  const defaultEnvObj: Record<string, string> = {};
+  if (server.envVars && Array.isArray(server.envVars)) {
+    for (const ev of server.envVars) {
+      defaultEnvObj[ev.name] = '<INSERT_' + ev.name + '>';
+    }
+  }
+
+  // Base client configurations
+  const claudeSnippet = JSON.stringify({
     mcpServers: {
-      [server.id]: {
-        command: "npx",
-        args: ["-y", server.packageIdentifier || server.id]
+      [shortName]: {
+        command: runtimeCmd,
+        args: runtimeArgs,
+        ...(Object.keys(defaultEnvObj).length > 0 ? { env: defaultEnvObj } : {})
       }
     }
   }, null, 2);
 
   const cursorSnippet = JSON.stringify({
-    command: "npx",
-    args: ["-y", server.packageIdentifier || server.id]
+    command: runtimeCmd,
+    args: runtimeArgs,
+    ...(Object.keys(defaultEnvObj).length > 0 ? { env: defaultEnvObj } : {})
   }, null, 2);
 
   const windsurfSnippet = JSON.stringify({
     mcpServers: {
-      [server.id]: {
-        command: "npx",
-        args: ["-y", server.packageIdentifier || server.id]
+      [shortName]: {
+        command: runtimeCmd,
+        args: runtimeArgs,
+        ...(Object.keys(defaultEnvObj).length > 0 ? { env: defaultEnvObj } : {})
+      }
+    }
+  }, null, 2);
+
+  const clineSnippet = JSON.stringify({
+    mcpServers: {
+      [shortName]: {
+        command: runtimeCmd,
+        args: runtimeArgs,
+        ...(Object.keys(defaultEnvObj).length > 0 ? { env: defaultEnvObj } : {})
       }
     }
   }, null, 2);
 
   const zedSnippet = JSON.stringify({
-    context_servers: [server.id]
+    context_servers: [shortName]
   }, null, 2);
 
-  const shortName = (server.name || server.id.split('/').pop() || 'mcp-server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
   const vscodeSnippet = JSON.stringify({
     mcpServers: {
       [shortName]: {
-        command: "npx",
-        args: ["-y", server.packageIdentifier || server.id]
+        command: runtimeCmd,
+        args: runtimeArgs,
+        ...(Object.keys(defaultEnvObj).length > 0 ? { env: defaultEnvObj } : {})
       }
     }
   }, null, 2);
 
-  const terminalSnippet = server.installSnippets?.terminal || `npx -y ${server.packageIdentifier || server.id}`;
+  const terminalSnippet = runtimeCmd === 'npx' ? ('npx -y ' + pkgId) : (runtimeCmd === 'uvx' ? ('uvx ' + pkgId) : (runtimeCmd + ' ' + pkgId));
+
+  // 1-Click Deep Links
+  const cursorDeepLink = 'cursor://anysphere.cursor-deeplink/mcp/install?name=' + encodeURIComponent(shortName) + '&config=' + encodeURIComponent(cursorSnippet);
+  const vscodeDeepLink = 'vscode:mcp/install?name=' + encodeURIComponent(shortName) + '&config=' + encodeURIComponent(vscodeSnippet);
+
+  // Risk & Badges
+  const riskTier = server.riskTier || 'Low';
+  const riskBadgeClass = riskTier === 'Low'
+    ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
+    : (riskTier === 'Moderate'
+      ? 'text-amber-300 bg-amber-500/10 border-amber-500/25'
+      : 'text-rose-400 bg-rose-500/10 border-rose-500/25');
+
+  const tools = server.capabilities?.tools || [];
+  const prompts = server.capabilities?.prompts || [];
+  const resources = server.capabilities?.resources || [];
+  const totalTokens = server.tokenFootprint?.totalTokensEstimated || 140;
 
   return `<!DOCTYPE html>
 <html lang="en" class="dark bg-[#07090e] text-slate-100" style="background-color: #07090e !important; color: #f1f5f9 !important;">
@@ -2441,14 +2634,14 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(server.title)} - Model Context Protocol (MCP) Server Security Audit & Install</title>
-  <meta name="description" content="${escapeHtml(server.description)} Install ${escapeHtml(server.title)} into Claude Desktop, Cursor, Windsurf, and Zed. Verified Trust Score: ${server.trustScore}/10.">
+  <meta name="description" content="${escapeHtml(server.description)} Install ${escapeHtml(server.title)} into Cursor, Claude Desktop, Windsurf, Cline, and Zed. Verified Trust Score: ${server.trustScore}/10. Context footprint: ~${totalTokens} tokens.">
   <link rel="canonical" href="https://mcp.ritualdev.in/servers/${slug}.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
   <!-- Advanced SEO & GEO Meta Tags -->
-  <meta name="keywords" content="${escapeHtml(server.title)}, ${escapeHtml(server.category)}, model context protocol, mcp server, claude desktop, cursor ide, windsurf ai, zed editor, ritualdev">
+  <meta name="keywords" content="${escapeHtml(server.title)}, ${escapeHtml(server.category)}, model context protocol, mcp server, claude desktop, cursor ide, windsurf ai, cline, zed editor, ritualdev">
   <meta name="author" content="${escapeHtml(server.author)}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
@@ -2555,26 +2748,26 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
     "mainEntity": [
       {
         "@type": "Question",
-        "name": ${JSON.stringify(`How do I install ${server.title} in Claude Desktop?`)},
+        "name": ${JSON.stringify('How do I install ' + server.title + ' in Claude Desktop?')},
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": ${JSON.stringify(`To install ${server.title} into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n${claudeSnippet}`)}
+          "text": ${JSON.stringify('To install ' + server.title + ' into Claude Desktop, open your claude_desktop_config.json under the mcpServers key and add:\n' + claudeSnippet)}
         }
       },
       {
         "@type": "Question",
-        "name": ${JSON.stringify(`How do I install ${server.title} in Cursor IDE or Windsurf?`)},
+        "name": ${JSON.stringify('How do I install ' + server.title + ' in Cursor IDE or Windsurf?')},
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": ${JSON.stringify(`Run the command '${terminalSnippet}' or add ${server.packageIdentifier || server.id} to your Cursor or Windsurf MCP configuration.`)}
+          "text": ${JSON.stringify('Click the 1-Click Cursor install button or run \'' + terminalSnippet + '\' in your terminal.')}
         }
       },
       {
         "@type": "Question",
-        "name": ${JSON.stringify(`What is the security rating and trust score for ${server.title}?`)},
+        "name": ${JSON.stringify('What is the token overhead and security rating for ' + server.title + '?')},
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": ${JSON.stringify(`${server.title} has a verified Trust Score of ${server.trustScore}/10 with security audit rating ${server.securityRating || 'VERIFIED'} on MCPShelf.`)}
+          "text": ${JSON.stringify(server.title + ' consumes approximately ~' + totalTokens + ' tokens in agent context memory, has a verified Trust Score of ' + server.trustScore + '/10, and is classified as ' + riskTier + ' Risk.')}
         }
       }
     ]
@@ -2592,6 +2785,9 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
       background: #0c101a;
       border: 1px solid rgba(255, 255, 255, 0.07);
       box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+    }
+    .font-mono-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
   </style>
 </head>
@@ -2622,12 +2818,26 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
     <article class="glass-card rounded-2xl p-6 sm:p-8 mb-8 border-slate-800">
       <!-- Header Badge Row -->
       <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
-        <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">
-          ${escapeHtml(server.category)}
-        </span>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-400">
+            ${escapeHtml(server.category)}
+          </span>
+          <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
+            ${server.transportType === 'sse' ? '🌐 SSE' : '⚡ stdio'}
+          </span>
+          <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-lg bg-slate-800 text-indigo-300 border border-slate-700">
+            📦 ${server.runtime || 'npx'}
+          </span>
+          <span class="text-xs font-mono font-medium px-2.5 py-1 rounded-lg bg-cyan-950/60 text-cyan-300 border border-cyan-800/60">
+            🪙 ~${totalTokens} ctx tokens
+          </span>
+        </div>
         <div class="flex items-center gap-2">
+          <span class="text-xs font-bold px-3 py-1 rounded-lg border flex items-center gap-1.5 ${riskBadgeClass}">
+            🛡️ ${riskTier} Risk
+          </span>
           <span class="text-xs font-bold ${server.trustScore >= 9.0 ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/25' : 'text-amber-300 bg-amber-500/10 border-amber-500/25'} px-3 py-1 rounded-lg border flex items-center gap-1.5">
-            🛡️ Trust Score: ${server.trustScore}/10 (${server.securityRating})
+            ★ ${server.trustScore}/10 (${server.securityRating})
           </span>
         </div>
       </div>
@@ -2636,6 +2846,17 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
       <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">${escapeHtml(server.title)}</h1>
       <p class="text-xs font-mono text-slate-400 mb-4">${server.id} (v${server.version})</p>
       <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">${escapeHtml(server.description)}</p>
+
+      <!-- Safety Badges -->
+      ${server.safetyBadges && server.safetyBadges.length > 0 ? `
+        <div class="flex flex-wrap gap-2 mb-6">
+          ${server.safetyBadges.map((badge: string) => `
+            <span class="text-[11px] font-medium px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              ${escapeHtml(badge)}
+            </span>
+          `).join('')}
+        </div>
+      ` : ''}
 
       <!-- Capability Matrix Tags -->
       <div class="flex flex-wrap gap-2 mb-6">
@@ -2648,11 +2869,13 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
       </div>
 
       <!-- Stat Cards Grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-xs mb-8">
-        <div><span class="text-slate-500 block mb-1">Rating:</span> <strong class="text-white text-sm">★ ${server.averageRating} (${server.reviewsCount})</strong></div>
-        <div><span class="text-slate-500 block mb-1">Estimated Installs:</span> <strong class="text-white text-sm">${server.estimatedInstalls.toLocaleString()}</strong></div>
-        <div><span class="text-slate-500 block mb-1">Transport:</span> <strong class="text-white text-sm font-mono uppercase">${server.transportType}</strong></div>
-        <div><span class="text-slate-500 block mb-1">Author:</span> <strong class="text-white text-sm truncate block">${escapeHtml(server.author)}</strong></div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-xs mb-8">
+        <div><span class="text-slate-500 block mb-1">Rating</span> <strong class="text-white text-sm">★ ${server.averageRating} (${server.reviewsCount})</strong></div>
+        <div><span class="text-slate-500 block mb-1">Installs</span> <strong class="text-white text-sm">${server.estimatedInstalls.toLocaleString()}</strong></div>
+        <div><span class="text-slate-500 block mb-1">Transport</span> <strong class="text-white text-sm font-mono uppercase">${server.transportType || 'stdio'}</strong></div>
+        <div><span class="text-slate-500 block mb-1">Runtime</span> <strong class="text-white text-sm font-mono">${server.runtime || 'npx'}</strong></div>
+        <div><span class="text-slate-500 block mb-1">Context Size</span> <strong class="text-cyan-400 text-sm font-mono">~${totalTokens} tok</strong></div>
+        <div><span class="text-slate-500 block mb-1">Risk Tier</span> <strong class="text-sm ${riskTier === 'Low' ? 'text-emerald-400' : 'text-amber-400'}">${riskTier}</strong></div>
       </div>
 
       <!-- Multi-Factor Security Audit Breakdown -->
@@ -2705,23 +2928,66 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
           </div>
         </div>
         <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-800/60">
-          <span>Automated AST & Supply-Chain Scan: <strong class="text-emerald-400">${server.trustBreakdown?.securityAudit ?? 2.0} / 2.0 pts</strong></span>
+          <span>Automated AST & Privilege Scan: <strong class="text-emerald-400">${server.trustBreakdown?.securityAudit ?? 2.0} / 2.0 pts</strong></span>
           <span class="font-mono text-slate-500">Audit Status: ${server.securityRating || 'Audited'}</span>
         </div>
       </div>
 
-      <!-- Multi-Client Installation Snippets -->
+      <!-- Environment Variables Setup (If required) -->
+      ${server.envVars && server.envVars.length > 0 ? `
+        <div class="mb-8 p-5 rounded-2xl bg-indigo-950/20 border border-indigo-500/20">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-bold text-white flex items-center gap-2">
+              <span>🔑</span>
+              <span>Required Environment Variables</span>
+            </h3>
+            <span class="text-[11px] text-indigo-400 font-mono">${server.envVars.length} keys required</span>
+          </div>
+          <p class="text-xs text-slate-400 mb-4">Enter your keys below to dynamically inject them into the 1-Click configurations:</p>
+          <div class="space-y-3">
+            ${server.envVars.map((ev: any) => `
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-900/80 border border-slate-800">
+                <div class="min-w-0">
+                  <span class="font-mono text-xs font-bold text-indigo-300 block truncate">${escapeHtml(ev.name)}</span>
+                  <span class="text-[10px] text-slate-400">${escapeHtml(ev.description || (ev.required ? 'Required for server execution' : 'Optional configuration'))}</span>
+                </div>
+                <input
+                  type="text"
+                  id="env-input-${ev.name}"
+                  data-env-key="${ev.name}"
+                  placeholder="Paste ${ev.name} value"
+                  oninput="updateDetailConfigs()"
+                  class="bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-1.5 text-xs font-mono focus:border-indigo-500 focus:outline-none w-full sm:w-64"
+                />
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      <!-- Multi-Client Installation Snippets & 1-Click Deep Links -->
       <div class="mb-8">
-        <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-          <span>⚡</span>
-          <span>1-Click Configuration for AI Clients</span>
-        </h2>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <h2 class="text-base font-bold text-white flex items-center gap-2">
+            <span>⚡</span>
+            <span>1-Click Configuration for AI Clients</span>
+          </h2>
+          <div class="flex items-center gap-2">
+            <a id="cursorDeepLinkBtn" href="${cursorDeepLink}" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition shadow-sm">
+              <span>⚡ Install in Cursor</span>
+            </a>
+            <a id="vscodeDeepLinkBtn" href="${vscodeDeepLink}" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 hover:bg-indigo-500/30 transition shadow-sm">
+              <span>⚡ Install in VS Code</span>
+            </a>
+          </div>
+        </div>
 
         <!-- Tabs -->
         <div class="flex border-b border-slate-800 text-xs font-semibold mb-4 space-x-1 overflow-x-auto">
           <button onclick="showConfigTab('claude')" id="btn-tab-claude" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-emerald-400 text-emerald-400 whitespace-nowrap">Claude Desktop</button>
           <button onclick="showConfigTab('cursor')" id="btn-tab-cursor" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Cursor</button>
           <button onclick="showConfigTab('windsurf')" id="btn-tab-windsurf" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Windsurf</button>
+          <button onclick="showConfigTab('cline')" id="btn-tab-cline" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Cline</button>
           <button onclick="showConfigTab('zed')" id="btn-tab-zed" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Zed</button>
           <button onclick="showConfigTab('vscode')" id="btn-tab-vscode" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">VS Code</button>
           <button onclick="showConfigTab('cli')" id="btn-tab-cli" class="tab-btn px-3 sm:px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-white whitespace-nowrap">Terminal CLI</button>
@@ -2734,6 +3000,64 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
           </button>
         </div>
         <p id="configHelp" class="text-[11px] text-slate-400 mt-2">Paste into <code class="text-emerald-400 font-mono">claude_desktop_config.json</code> under <code class="text-emerald-400 font-mono">mcpServers</code>.</p>
+      </div>
+
+      <!-- Introspected Exposed MCP Tools & Schema Table -->
+      <div class="mb-8 p-5 rounded-2xl bg-slate-950/70 border border-slate-800">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-base">🛠️</span>
+            <h3 class="text-sm font-bold text-white tracking-tight">Introspected MCP Capabilities</h3>
+          </div>
+          <span class="text-xs font-mono text-cyan-400 bg-cyan-950/60 border border-cyan-800/60 px-2.5 py-0.5 rounded">
+            ${tools.length} Tools | ${prompts.length} Prompts | ${resources.length} Resources
+          </span>
+        </div>
+
+        ${tools.length > 0 ? `
+          <div class="space-y-3 mb-4">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Exposed Tools</h4>
+            ${tools.map((tool: any) => {
+              const paramKeys = tool.inputSchema?.properties ? Object.keys(tool.inputSchema.properties) : [];
+              return `
+                <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/90 text-xs">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono font-bold text-emerald-400">${escapeHtml(tool.name)}</span>
+                    <span class="text-[10px] text-slate-500 font-mono">tool</span>
+                  </div>
+                  <p class="text-slate-300 text-xs mb-2 leading-relaxed">${escapeHtml(tool.description || 'No description provided.')}</p>
+                  ${paramKeys.length > 0 ? `
+                    <div class="bg-slate-950/90 rounded-lg p-2 border border-slate-800/80 text-[11px]">
+                      <span class="text-slate-500 font-mono block mb-1">Parameters:</span>
+                      <div class="flex flex-wrap gap-1.5">
+                        ${paramKeys.map((pk: string) => {
+                          const isReq = tool.inputSchema?.required?.includes(pk);
+                          const pType = tool.inputSchema?.properties[pk]?.type || 'string';
+                          return `<span class="font-mono px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300">
+                            ${escapeHtml(pk)}${isReq ? '<span class="text-rose-400">*</span>' : ''}: <span class="text-indigo-300">${escapeHtml(pType)}</span>
+                          </span>`;
+                        }).join('')}
+                      </div>
+                    </div>
+                  ` : '<span class="text-[11px] text-slate-500 font-mono">No input parameters required</span>'}
+                </div>
+              `;
+            }).join('')}
+          </div>
+        ` : `
+          <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 text-xs text-slate-400">
+            Capability schema introspected statically or via stdio probe. Tool catalog will expand automatically upon server run.
+          </div>
+        `}
+
+        <!-- Accordion for Raw JSON Schema -->
+        <details class="mt-4 pt-3 border-t border-slate-800/70 group">
+          <summary class="text-xs font-mono text-slate-400 hover:text-white cursor-pointer select-none flex items-center justify-between">
+            <span>View Full Raw MCP Schema (JSON)</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <pre class="mt-3 p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] font-mono text-slate-300 overflow-x-auto max-h-64">${escapeHtml(JSON.stringify(server.capabilities || { tools, prompts, resources }, null, 2))}</pre>
+        </details>
       </div>
 
       <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-800">
@@ -2766,29 +3090,89 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
   </main>
 
   <script>
-    const configs = {
-      claude: ${JSON.stringify(claudeSnippet)},
-      cursor: ${JSON.stringify(cursorSnippet)},
-      windsurf: ${JSON.stringify(windsurfSnippet)},
-      zed: ${JSON.stringify(zedSnippet)},
-      vscode: ${JSON.stringify(vscodeSnippet)},
-      cli: ${JSON.stringify(terminalSnippet)}
+    const serverMeta = {
+      shortName: ${JSON.stringify(shortName)},
+      runtimeCmd: ${JSON.stringify(runtimeCmd)},
+      runtimeArgs: ${JSON.stringify(runtimeArgs)},
+      pkgId: ${JSON.stringify(pkgId)},
+      initialEnv: ${JSON.stringify(defaultEnvObj)}
     };
+
+    let currentEnv = Object.assign({}, serverMeta.initialEnv);
+
+    function generateCurrentConfigs() {
+      const hasEnv = Object.keys(currentEnv).length > 0;
+      const envSection = hasEnv ? { env: currentEnv } : {};
+
+      const claude = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const cursor = JSON.stringify(Object.assign({
+        command: serverMeta.runtimeCmd,
+        args: serverMeta.runtimeArgs
+      }, envSection), null, 2);
+
+      const windsurf = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const cline = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const zed = JSON.stringify({
+        context_servers: [serverMeta.shortName]
+      }, null, 2);
+
+      const vscode = JSON.stringify({
+        mcpServers: {
+          [serverMeta.shortName]: Object.assign({
+            command: serverMeta.runtimeCmd,
+            args: serverMeta.runtimeArgs
+          }, envSection)
+        }
+      }, null, 2);
+
+      const cli = serverMeta.runtimeCmd === 'npx'
+        ? ('npx -y ' + serverMeta.pkgId)
+        : (serverMeta.runtimeCmd === 'uvx' ? ('uvx ' + serverMeta.pkgId) : (serverMeta.runtimeCmd + ' ' + serverMeta.pkgId));
+
+      return { claude: claude, cursor: cursor, windsurf: windsurf, cline: cline, zed: zed, vscode: vscode, cli: cli };
+    }
+
+    let configs = generateCurrentConfigs();
 
     const helps = {
       claude: 'Paste into claude_desktop_config.json under mcpServers.',
-      cursor: 'Paste into ~/.cursor/mcp.json or Cursor Features > MCP Servers.',
-      windsurf: 'Paste into ~/.codeium/windsurf/mcp_config.json.',
+      cursor: 'Paste into ~/.cursor/mcp.json or Cursor Settings > Features > MCP.',
+      windsurf: 'Paste into ~/.codeium/windsurf/mcp_config.json under mcpServers.',
+      cline: 'Paste into Cline MCP settings under mcpServers.',
       zed: 'Paste into ~/.config/zed/settings.json under context_servers.',
       vscode: 'Paste into ~/.vscode/mcpSettings.json under mcpServers.',
-      cli: 'Execute directly in your terminal to start or install the server.'
+      cli: 'Execute directly in your terminal to start or run the server.'
     };
 
     let activeTab = 'claude';
 
     function showConfigTab(tab) {
       activeTab = tab;
-      document.querySelectorAll('.tab-btn').forEach(b => {
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
         b.classList.remove('border-emerald-400', 'text-emerald-400');
         b.classList.add('border-transparent', 'text-slate-400');
       });
@@ -2797,18 +3181,40 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
         activeBtn.classList.add('border-emerald-400', 'text-emerald-400');
         activeBtn.classList.remove('border-transparent', 'text-slate-400');
       }
+
       document.getElementById('configBox').textContent = configs[tab] || '';
       document.getElementById('configHelp').textContent = helps[tab] || '';
     }
 
+    function updateDetailConfigs() {
+      const inputs = document.querySelectorAll('[data-env-key]');
+      inputs.forEach(function(input) {
+        const key = input.getAttribute('data-env-key');
+        const val = input.value.trim();
+        currentEnv[key] = val || ('<INSERT_' + key + '>');
+      });
+
+      configs = generateCurrentConfigs();
+      document.getElementById('configBox').textContent = configs[activeTab] || '';
+
+      // Update deep links
+      const cursorDeepLink = 'cursor://anysphere.cursor-deeplink/mcp/install?name=' + encodeURIComponent(serverMeta.shortName) + '&config=' + encodeURIComponent(configs.cursor);
+      const vscodeDeepLink = 'vscode:mcp/install?name=' + encodeURIComponent(serverMeta.shortName) + '&config=' + encodeURIComponent(configs.vscode);
+
+      const cBtn = document.getElementById('cursorDeepLinkBtn');
+      if (cBtn) cBtn.href = cursorDeepLink;
+      const vBtn = document.getElementById('vscodeDeepLinkBtn');
+      if (vBtn) vBtn.href = vscodeDeepLink;
+    }
+
     function copyCurrentConfig() {
       const code = configs[activeTab] || '';
-      navigator.clipboard.writeText(code).then(() => {
+      navigator.clipboard.writeText(code).then(function() {
         const btn = document.getElementById('detailCopyBtn');
         const orig = btn.textContent;
         btn.textContent = 'Copied! ✓';
         btn.classList.add('bg-white', 'text-black');
-        setTimeout(() => {
+        setTimeout(function() {
           btn.textContent = orig;
           btn.classList.remove('bg-white', 'text-black');
         }, 1500);
@@ -2818,7 +3224,6 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
 </body>
 </html>`;
 }
-
 main().catch(err => {
   console.error(err);
   process.exit(1);

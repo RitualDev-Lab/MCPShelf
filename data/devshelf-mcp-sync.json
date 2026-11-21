@@ -1,0 +1,762 @@
+[
+  {
+    "name": "AgentShield Enterprise Zero-Leak Secret Defense & Kernel Sandbox",
+    "repo": "https://github.com/RitualDev-Lab/AgentShield",
+    "category": "AI Coding & MCP",
+    "description": "Enterprise Zero-Leak Secret Defense & Kernel Sandbox for Autonomous AI Agents",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/agentshield",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/AgentShield/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-agentshield",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "DBShield Database Guardrail & Sandboxing MCP Server",
+    "repo": "https://github.com/RitualDev-Lab/DBShield",
+    "category": "AI Coding & MCP",
+    "description": "Safety-first Database Guardrail & Sandboxing MCP Server for AI Coding Agents",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/dbshield",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/DBShield/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-dbshield",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "DevShelf Developer Directory & Tool Discovery MCP Server",
+    "repo": "https://github.com/RitualDev-Lab/DevShelf",
+    "category": "AI Coding & MCP",
+    "description": "Discover 570+ developer tools, free APIs, AI agents, and open-source libraries.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/devshelf",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/DevShelf/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-devshelf",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "FinePrint AI Legal Risk & Contract Audit MCP Server",
+    "repo": "https://github.com/RitualDev-Lab/FinePrintAI",
+    "category": "AI Coding & MCP",
+    "description": "Zero-cost in-memory legal terms, API policy & NDA scanner for autonomous coding agents",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/fineprint",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-fineprint",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "MCP Monetize - Drop-in Billing & Capability Token Engine",
+    "repo": "https://github.com/RitualDev-Lab/mcp-monetize",
+    "category": "AI Coding & MCP",
+    "description": "Drop-in billing, paywalls, and capability token middleware for MCP servers.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/mcp-monetize",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/mcp-monetize/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-mcp-monetize",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "MCPShelf Model Context Protocol Registry, Search & Security Auditor",
+    "repo": "https://github.com/RitualDev-Lab/MCPShelf",
+    "category": "AI Coding & MCP",
+    "description": "Discover, audit trust scores, and 1-click install 400+ verified MCP servers for AI coding agents.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/mcpshelf",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/MCPShelf/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-mcpshelf",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "MockForge AI Relational Mock Database & Fixture Generator",
+    "repo": "https://github.com/RitualDev-Lab/MockForge",
+    "category": "AI Coding & MCP",
+    "description": "Zero-cost relational mock DB and synthetic fixture generator with Kahn DAG integrity for AI agents",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/mockforge",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-mockforge",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "SkillPrism MCP Context Optimizer & Tool Search Proxy",
+    "repo": "https://github.com/RitualDev-Lab/SkillPrism",
+    "category": "AI Coding & MCP",
+    "description": "Progressive Skill Disclosure, Semantic Tool Search & Context Optimizer for AI Agents",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/skillprism",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/SkillPrism/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-skillprism",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "WebSecAuditor AI Cybersecurity & Vulnerability Auditor",
+    "repo": "https://github.com/RitualDev-Lab/web-sec-auditor",
+    "category": "AI Coding & MCP",
+    "description": "Enterprise-grade AI vulnerability auditor for web applications, APIs, and codebases.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ritualdev-lab/web-sec-auditor",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/web-sec-auditor/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "io-github-ritualdev-lab-web-sec-auditor",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "Achromat Machine Operational Memory",
+    "repo": "https://github.com/achromat-ai/achromat-mcp-server",
+    "category": "AI Coding & MCP",
+    "description": "Recall and calibrate policy-compliant tool-call arguments before execution. Does not run the tool.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @achromat-ai/mcp-server",
+    "goodFirstIssues": "https://github.com/achromat-ai/achromat-mcp-server/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-achromat-mcp-server",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "agent-bev",
+    "repo": "https://github.com/agent-bev/bev-door",
+    "category": "AI Coding & MCP",
+    "description": "The world's largest agentic B2B hub for beer, wine and spirits. Powered by CUVEE. Trade only.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agent-bev/mcp-server",
+    "goodFirstIssues": "https://github.com/agent-bev/bev-door/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agent-bev-bev-door",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentTrust — Identity & Trust for A2A Agents",
+    "repo": "https://github.com/agenttrust/mcp-server",
+    "category": "AI Coding & MCP",
+    "description": "Identity, trust, and A2A orchestration for autonomous AI agents. Official A2A partner.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agenttrust/mcp-server",
+    "goodFirstIssues": "https://github.com/agenttrust/mcp-server/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agenttrust-mcp-server",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Agentops",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility agentops cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-agentops",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-agentops",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Bestiary",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility bestiary cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-bestiary",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-bestiary",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Browser Workflow",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility browser-workflow cluster — pay-per-call x402 tools, no API keys…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-browser-workflow",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-browser-workflow",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Compose",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility compose cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-compose",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-compose",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Edge Finance",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility edge-finance cluster — pay-per-call x402 tools, no API keys, USDC…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-edge-finance",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-edge-finance",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Edge Market",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility edge-market cluster — pay-per-call x402 tools, no API keys, USDC…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-edge-market",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-edge-market",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Locale",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility locale cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-locale",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-locale",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Matchpoint",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility matchpoint cluster — pay-per-call x402 tools, no API keys, USDC…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-matchpoint",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-matchpoint",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Mediakit",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility mediakit cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-mediakit",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-mediakit",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Model Router",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility model-router cluster — pay-per-call x402 tools, no API keys, USDC…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-model-router",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-model-router",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Prooflayer",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility prooflayer cluster — pay-per-call x402 tools, no API keys, USDC…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-prooflayer",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-prooflayer",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Retail",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility retail cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-retail",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-retail",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Rollforge",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility rollforge cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-rollforge",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-rollforge",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Statline",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility statline cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-statline",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-statline",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Synthforge",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility synthforge cluster — pay-per-call x402 tools, no API keys, USDC…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-synthforge",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-synthforge",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Web Probe",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility web-probe cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-web-probe",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-web-probe",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "AgentUtility Wordmint",
+    "repo": "https://github.com/rooz21/x402",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for the @agentutility wordmint cluster — pay-per-call x402 tools, no API keys, USDC on…",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @agentutility/mcp-wordmint",
+    "goodFirstIssues": "https://github.com/rooz21/x402/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-agentutility-mcp-wordmint",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "Anki MCP Server",
+    "repo": "https://github.com/ankimcp/anki-mcp-server",
+    "category": "AI Coding & MCP",
+    "description": "MCP server for Anki flashcards: adaptive review, notes, media, and deck management via AnkiConnect.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @ankimcp/anki-mcp-server",
+    "goodFirstIssues": "https://github.com/ankimcp/anki-mcp-server/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-ankimcp-anki-mcp-server",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "bolthub Marketplace",
+    "repo": "https://github.com/signaltech-org/bolthub-sdk",
+    "category": "AI Coding & MCP",
+    "description": "Discover and call every paid API on the bolthub marketplace with automatic L402 Lightning payments.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @bolthub/mcp-registry",
+    "goodFirstIssues": "https://github.com/signaltech-org/bolthub-sdk/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-bolthub-registry",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "computeback",
+    "repo": "https://github.com/Autonomad1/computeback-mcp",
+    "category": "AI Coding & MCP",
+    "description": "Agent Rewards Marketplace: earn $NOMD on B2B work, spend on agent capabilities.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @autonomad1/computeback-mcp",
+    "goodFirstIssues": "https://github.com/Autonomad1/computeback-mcp/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-autonomad-computeback",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "contextlayer-mcp",
+    "repo": "https://github.com/autoblocksai/ctxl",
+    "category": "AI Coding & MCP",
+    "description": "Personal context management for AI assistants",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @contextlayer/mcp",
+    "goodFirstIssues": "https://github.com/autoblocksai/ctxl/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-autoblocks-contextlayer-mcp",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "EXTREMELY agency",
+    "repo": "https://github.com/maxkxd/extremely-autonomous-agents",
+    "category": "AI Coding & MCP",
+    "description": "Your agency of AI agents in your AI app: what agents did, approvals, requests, jobs and reports.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @extremely-agency/mcp",
+    "goodFirstIssues": "https://github.com/maxkxd/extremely-autonomous-agents/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "agency-extremely-agency",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "Fabric Verify",
+    "repo": "https://github.com/AugmentEVzero/fabric-verify-mcp",
+    "category": "AI Coding & MCP",
+    "description": "Signed, publicly logged records of what your AI agent did, with proofs anyone can check offline.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @augmentev/fabric-verify-mcp",
+    "goodFirstIssues": "https://github.com/AugmentEVzero/fabric-verify-mcp/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-augmentev-fabric-verify",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "Harness",
+    "repo": "https://github.com/autonomous-ai/openharness",
+    "category": "AI Coding & MCP",
+    "description": "Start Claude Code and Codex agents the person can watch, wait for them and read their answers.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @autonomous-ai/harness-mcp",
+    "goodFirstIssues": "https://github.com/autonomous-ai/openharness/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-autonomous-harness-harness",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "Reasonbook",
+    "repo": "https://github.com/kneelinghorse/reasonbook",
+    "category": "AI Coding & MCP",
+    "description": "Reasonbook: decisions that survive the session, in a local record AI agents keep.",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y @aquex/reasonbook",
+    "goodFirstIssues": "https://github.com/kneelinghorse/reasonbook/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: npx",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-aquex-reasonbook",
+    "sourceOrigin": "MCPShelf Registry"
+  },
+  {
+    "name": "spotdb",
+    "repo": "https://github.com/aliengiraffe/spotdb",
+    "category": "AI Coding & MCP",
+    "description": "Ephemeral data sandbox for AI workflows with guardrails and security",
+    "language": "TypeScript / Node.js",
+    "license": "Open Source / FOSS",
+    "featured": false,
+    "mcpCommand": "npx -y docker.io/aliengiraffe/spotdb:0.1.0",
+    "goodFirstIssues": "https://github.com/aliengiraffe/spotdb/issues",
+    "statusTags": [
+      "Model Context Protocol",
+      "Transport: stdio",
+      "Runtime: docker",
+      "Zero Paywall"
+    ],
+    "shelfCategory": "ai-tools",
+    "id": "ai-aliengiraffe-spotdb",
+    "sourceOrigin": "MCPShelf Registry"
+  }
+]
