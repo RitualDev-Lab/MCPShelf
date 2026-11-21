@@ -123,7 +123,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.346Z",
+      "introspectedAt": "2026-11-21T18:59:34.074Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": {
@@ -255,7 +255,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.075Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": {
@@ -372,7 +372,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.075Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -497,7 +497,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -606,7 +606,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": {
@@ -738,7 +738,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": {
@@ -854,7 +854,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -963,7 +963,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1087,7 +1087,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.347Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1175,7 +1175,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.348Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1284,7 +1284,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.348Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1372,7 +1372,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.348Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1460,7 +1460,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 158,
-      "introspectedAt": "2026-11-21T18:43:43.348Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1554,7 +1554,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.348Z",
+      "introspectedAt": "2026-11-21T18:59:34.076Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1663,7 +1663,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1751,7 +1751,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1839,7 +1839,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -1927,7 +1927,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 141,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2036,7 +2036,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2124,7 +2124,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2212,7 +2212,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2301,7 +2301,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 151,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2389,7 +2389,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2477,7 +2477,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2565,7 +2565,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2653,7 +2653,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2742,7 +2742,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2830,7 +2830,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -2918,7 +2918,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3006,7 +3006,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3094,7 +3094,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3203,7 +3203,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3291,7 +3291,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3379,7 +3379,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3467,7 +3467,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3556,7 +3556,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3644,7 +3644,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 161,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3732,7 +3732,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3820,7 +3820,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 150,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -3922,7 +3922,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4011,7 +4011,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4099,7 +4099,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4217,7 +4217,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4305,7 +4305,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4393,7 +4393,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4481,7 +4481,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4569,7 +4569,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4657,7 +4657,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4746,7 +4746,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4834,7 +4834,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 141,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -4922,7 +4922,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.077Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5010,7 +5010,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 193,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5098,7 +5098,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 192,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5186,7 +5186,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 184,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5274,7 +5274,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 191,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5362,7 +5362,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 190,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5449,7 +5449,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 190,
-      "introspectedAt": "2026-11-21T18:43:43.349Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5537,7 +5537,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 191,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5625,7 +5625,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 192,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5713,7 +5713,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 190,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5801,7 +5801,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 185,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5889,7 +5889,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -5977,7 +5977,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6065,7 +6065,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6153,7 +6153,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 155,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6241,7 +6241,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 141,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6329,7 +6329,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6417,7 +6417,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6505,7 +6505,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 154,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6593,7 +6593,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6681,7 +6681,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6769,7 +6769,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6857,7 +6857,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -6945,7 +6945,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7033,7 +7033,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 160,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7121,7 +7121,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7209,7 +7209,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7326,7 +7326,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7414,7 +7414,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7502,7 +7502,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7590,7 +7590,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7679,7 +7679,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 157,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7767,7 +7767,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7856,7 +7856,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -7945,7 +7945,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8055,7 +8055,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8144,7 +8144,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8233,7 +8233,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 150,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8322,7 +8322,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 150,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8411,7 +8411,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8500,7 +8500,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8589,7 +8589,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8678,7 +8678,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 150,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8767,7 +8767,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8856,7 +8856,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -8945,7 +8945,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9034,7 +9034,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9123,7 +9123,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9212,7 +9212,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9301,7 +9301,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.350Z",
+      "introspectedAt": "2026-11-21T18:59:34.078Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9389,7 +9389,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9477,7 +9477,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9565,7 +9565,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9653,7 +9653,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 157,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9741,7 +9741,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9829,7 +9829,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 149,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -9917,7 +9917,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10005,7 +10005,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10093,7 +10093,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 150,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10181,7 +10181,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10269,7 +10269,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10358,7 +10358,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10467,7 +10467,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10555,7 +10555,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10673,7 +10673,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10761,7 +10761,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 141,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10849,7 +10849,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 166,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -10937,7 +10937,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 163,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11025,7 +11025,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 161,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11113,7 +11113,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11201,7 +11201,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11289,7 +11289,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11377,7 +11377,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11465,7 +11465,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11553,7 +11553,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 150,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11641,7 +11641,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11729,7 +11729,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11817,7 +11817,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11905,7 +11905,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -11993,7 +11993,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12081,7 +12081,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 154,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12169,7 +12169,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12257,7 +12257,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12345,7 +12345,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 149,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12433,7 +12433,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12521,7 +12521,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.079Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12609,7 +12609,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12697,7 +12697,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12785,7 +12785,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12888,7 +12888,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.351Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -12976,7 +12976,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 157,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13064,7 +13064,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13152,7 +13152,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13240,7 +13240,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13328,7 +13328,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 160,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13416,7 +13416,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13504,7 +13504,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13593,7 +13593,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13681,7 +13681,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13769,7 +13769,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13887,7 +13887,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -13990,7 +13990,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14093,7 +14093,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14182,7 +14182,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14271,7 +14271,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14359,7 +14359,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14447,7 +14447,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14535,7 +14535,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14623,7 +14623,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14711,7 +14711,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14799,7 +14799,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14887,7 +14887,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -14975,7 +14975,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 133,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15063,7 +15063,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15158,7 +15158,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15246,7 +15246,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 149,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15334,7 +15334,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 158,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15422,7 +15422,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15531,7 +15531,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15619,7 +15619,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 168,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15707,7 +15707,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.352Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15795,7 +15795,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 155,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15883,7 +15883,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -15972,7 +15972,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16081,7 +16081,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16169,7 +16169,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16257,7 +16257,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16345,7 +16345,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16433,7 +16433,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16542,7 +16542,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16660,7 +16660,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16748,7 +16748,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16836,7 +16836,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.080Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -16945,7 +16945,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17033,7 +17033,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 154,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17121,7 +17121,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17230,7 +17230,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17318,7 +17318,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17406,7 +17406,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17494,7 +17494,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17597,7 +17597,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17685,7 +17685,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17773,7 +17773,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17861,7 +17861,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -17949,7 +17949,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18058,7 +18058,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18167,7 +18167,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18255,7 +18255,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18343,7 +18343,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 133,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18431,7 +18431,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18519,7 +18519,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18628,7 +18628,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18716,7 +18716,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18804,7 +18804,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18891,7 +18891,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -18980,7 +18980,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19068,7 +19068,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19156,7 +19156,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19245,7 +19245,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19354,7 +19354,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19442,7 +19442,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.353Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19530,7 +19530,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19648,7 +19648,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19736,7 +19736,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19829,7 +19829,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -19917,7 +19917,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20005,7 +20005,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20114,7 +20114,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20203,7 +20203,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 133,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20290,7 +20290,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 156,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20378,7 +20378,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20487,7 +20487,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20575,7 +20575,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 141,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20663,7 +20663,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20772,7 +20772,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20860,7 +20860,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -20963,7 +20963,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21051,7 +21051,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21139,7 +21139,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21226,7 +21226,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21314,7 +21314,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21402,7 +21402,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21490,7 +21490,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 151,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21578,7 +21578,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21666,7 +21666,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21754,7 +21754,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.081Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21856,7 +21856,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -21944,7 +21944,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22032,7 +22032,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22125,7 +22125,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22213,7 +22213,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22301,7 +22301,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22389,7 +22389,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22477,7 +22477,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22565,7 +22565,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 154,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22653,7 +22653,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22741,7 +22741,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22829,7 +22829,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -22917,7 +22917,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23005,7 +23005,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23093,7 +23093,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23181,7 +23181,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23269,7 +23269,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 141,
-      "introspectedAt": "2026-11-21T18:43:43.354Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23357,7 +23357,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23445,7 +23445,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23533,7 +23533,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23621,7 +23621,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 133,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23709,7 +23709,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23818,7 +23818,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23906,7 +23906,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -23994,7 +23994,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24112,7 +24112,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24200,7 +24200,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24288,7 +24288,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24376,7 +24376,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24464,7 +24464,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 161,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24566,7 +24566,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24675,7 +24675,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24763,7 +24763,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24851,7 +24851,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -24939,7 +24939,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25027,7 +25027,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25136,7 +25136,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25224,7 +25224,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25312,7 +25312,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 147,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25400,7 +25400,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25489,7 +25489,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25577,7 +25577,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25680,7 +25680,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25768,7 +25768,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25856,7 +25856,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -25959,7 +25959,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26068,7 +26068,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26156,7 +26156,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 133,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26244,7 +26244,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26332,7 +26332,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 154,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26441,7 +26441,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26529,7 +26529,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26632,7 +26632,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26720,7 +26720,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26808,7 +26808,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -26917,7 +26917,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27006,7 +27006,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 133,
-      "introspectedAt": "2026-11-21T18:43:43.355Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27095,7 +27095,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27183,7 +27183,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27271,7 +27271,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27359,7 +27359,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27468,7 +27468,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27570,7 +27570,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27658,7 +27658,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.082Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27746,7 +27746,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27834,7 +27834,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -27922,7 +27922,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28010,7 +28010,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28099,7 +28099,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28187,7 +28187,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28275,7 +28275,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28363,7 +28363,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 157,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28451,7 +28451,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28540,7 +28540,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28628,7 +28628,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28716,7 +28716,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 153,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28804,7 +28804,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28892,7 +28892,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -28980,7 +28980,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29068,7 +29068,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29157,7 +29157,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29246,7 +29246,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29335,7 +29335,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29423,7 +29423,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 156,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29511,7 +29511,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 154,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29600,7 +29600,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29689,7 +29689,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29777,7 +29777,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 178,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29865,7 +29865,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -29953,7 +29953,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30041,7 +30041,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30150,7 +30150,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30238,7 +30238,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 159,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30326,7 +30326,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30429,7 +30429,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30531,7 +30531,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30619,7 +30619,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30707,7 +30707,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30795,7 +30795,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30884,7 +30884,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -30973,7 +30973,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31082,7 +31082,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31184,7 +31184,7 @@
         }
       ],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31293,7 +31293,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31381,7 +31381,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31469,7 +31469,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31557,7 +31557,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31645,7 +31645,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31748,7 +31748,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31857,7 +31857,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -31945,7 +31945,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32033,7 +32033,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32142,7 +32142,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32251,7 +32251,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.356Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32339,7 +32339,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32427,7 +32427,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 173,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32515,7 +32515,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32603,7 +32603,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32691,7 +32691,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 153,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32779,7 +32779,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32867,7 +32867,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -32955,7 +32955,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33043,7 +33043,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33132,7 +33132,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33220,7 +33220,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33308,7 +33308,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33396,7 +33396,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33484,7 +33484,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33572,7 +33572,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.083Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33660,7 +33660,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33769,7 +33769,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33857,7 +33857,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -33945,7 +33945,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34053,7 +34053,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34141,7 +34141,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 136,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34229,7 +34229,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34317,7 +34317,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 144,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34405,7 +34405,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34493,7 +34493,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34581,7 +34581,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 166,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34669,7 +34669,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34757,7 +34757,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34866,7 +34866,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -34954,7 +34954,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35042,7 +35042,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 176,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35131,7 +35131,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 145,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35219,7 +35219,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35307,7 +35307,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35395,7 +35395,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35504,7 +35504,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35593,7 +35593,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35681,7 +35681,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 139,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35769,7 +35769,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35857,7 +35857,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -35975,7 +35975,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36063,7 +36063,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 148,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36151,7 +36151,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36239,7 +36239,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36327,7 +36327,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36415,7 +36415,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 154,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36534,7 +36534,7 @@
         }
       ],
       "tokenFootprint": 284,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36623,7 +36623,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36711,7 +36711,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 177,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36799,7 +36799,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36887,7 +36887,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 140,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -36975,7 +36975,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 138,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37084,7 +37084,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37172,7 +37172,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 156,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37281,7 +37281,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37369,7 +37369,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37457,7 +37457,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 146,
-      "introspectedAt": "2026-11-21T18:43:43.357Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37545,7 +37545,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 135,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37634,7 +37634,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 134,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37722,7 +37722,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37810,7 +37810,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 143,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -37919,7 +37919,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 209,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -38007,7 +38007,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 142,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -38109,7 +38109,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 183,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -38197,7 +38197,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 152,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null
@@ -38285,7 +38285,7 @@
       "prompts": [],
       "resources": [],
       "tokenFootprint": 137,
-      "introspectedAt": "2026-11-21T18:43:43.358Z",
+      "introspectedAt": "2026-11-21T18:59:34.084Z",
       "introspectionMethod": "synthetic_archetype"
     },
     "boost": null

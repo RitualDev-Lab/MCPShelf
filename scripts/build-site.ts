@@ -1977,6 +1977,164 @@ function generateIndexHtml(catalog: any[], categories: Category[], activeBoosts:
     // -------------------------------------------------------------
     // Single Modal Install & Quick Copy
     // -------------------------------------------------------------
+    // -------------------------------------------------------------
+    // Schema Explorer Drawer
+    // -------------------------------------------------------------
+    let currentDrawerServer = null;
+
+    function openSchemaDrawer(id) {
+      const s = CATALOG.find(x => x.id === id);
+      if (!s) return;
+      currentDrawerServer = s;
+
+      document.getElementById('drawerTitle').textContent = s.title;
+      document.getElementById('drawerDesc').textContent = s.description;
+      document.getElementById('drawerCategory').textContent = s.category;
+      document.getElementById('drawerTrust').textContent = '🛡️ ' + s.trustScore + '/10';
+
+      const riskEl = document.getElementById('drawerRisk');
+      if (riskEl) {
+        riskEl.textContent = (s.riskTier || 'Low') + ' Risk';
+        riskEl.className = 'text-[11px] font-bold px-2 py-0.5 rounded border ' + (
+          s.riskTier === 'High' || s.riskTier === 'Elevated'
+            ? 'text-rose-400 bg-rose-500/10 border-rose-500/25'
+            : (s.riskTier === 'Moderate'
+              ? 'text-amber-300 bg-amber-500/10 border-amber-500/25'
+              : 'text-emerald-400 bg-emerald-500/10 border-emerald-500/25')
+        );
+      }
+
+      const totalTokens = (s.tokenFootprint && s.tokenFootprint.totalTokensEstimated) || 140;
+      const tokEl = document.getElementById('drawerTokens');
+      if (tokEl) tokEl.textContent = '🪙 ~' + totalTokens + ' tokens';
+
+      const tools = (s.capabilities && s.capabilities.tools) || [];
+      const prompts = (s.capabilities && s.capabilities.prompts) || [];
+      const resources = (s.capabilities && s.capabilities.resources) || [];
+
+      document.getElementById('drawerToolsCount').textContent = tools.length;
+      document.getElementById('drawerPromptsCount').textContent = prompts.length;
+      document.getElementById('drawerResourcesCount').textContent = resources.length;
+
+      // Render Tools Pane
+      const toolsPane = document.getElementById('drawerToolsPane');
+      if (tools.length > 0) {
+        toolsPane.innerHTML = tools.map(t => {
+          const params = (t.inputSchema && t.inputSchema.properties) ? Object.keys(t.inputSchema.properties) : [];
+          return '<div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">' +
+            '<div class="flex items-center justify-between mb-1">' +
+              '<span class="font-mono font-bold text-emerald-400">' + escapeHtml(t.name) + '</span>' +
+              '<span class="text-[10px] text-slate-500 font-mono">tool</span>' +
+            '</div>' +
+            '<p class="text-slate-300 text-xs mb-3 leading-relaxed">' + escapeHtml(t.description || 'No description provided') + '</p>' +
+            (params.length > 0 ? (
+              '<div class="bg-slate-950 rounded-lg p-2.5 border border-slate-800/80 text-[11px]">' +
+                '<span class="text-slate-500 font-mono block mb-1">Parameters:</span>' +
+                '<div class="flex flex-wrap gap-1.5">' +
+                  params.map(p => {
+                    const isReq = t.inputSchema.required && t.inputSchema.required.includes(p);
+                    const pType = (t.inputSchema.properties[p] && t.inputSchema.properties[p].type) || 'string';
+                    return '<span class="font-mono px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">' +
+                      escapeHtml(p) + (isReq ? '<span class="text-rose-400">*</span>' : '') + ': <span class="text-indigo-300">' + escapeHtml(pType) + '</span>' +
+                    '</span>';
+                  }).join('') +
+                '</div>' +
+              '</div>'
+            ) : '<span class="text-[11px] text-slate-500 font-mono">No input parameters required</span>') +
+          '</div>';
+        }).join('');
+      } else {
+        toolsPane.innerHTML = '<div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 text-xs text-slate-400">No static tools discovered. Capabilities expand dynamically upon server initialization.</div>';
+      }
+
+      // Render Prompts Pane
+      const promptsPane = document.getElementById('drawerPromptsPane');
+      if (prompts.length > 0) {
+        promptsPane.innerHTML = prompts.map(pr => {
+          return '<div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">' +
+            '<span class="font-mono font-bold text-indigo-400 block mb-1">' + escapeHtml(pr.name) + '</span>' +
+            '<p class="text-slate-300 text-xs leading-relaxed">' + escapeHtml(pr.description || 'MCP Prompt template') + '</p>' +
+          '</div>';
+        }).join('');
+      } else {
+        promptsPane.innerHTML = '<div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 text-xs text-slate-400">No prompt templates registered for this server.</div>';
+      }
+
+      // Render Resources Pane
+      const resourcesPane = document.getElementById('drawerResourcesPane');
+      if (resources.length > 0) {
+        resourcesPane.innerHTML = resources.map(res => {
+          return '<div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">' +
+            '<span class="font-mono font-bold text-cyan-400 block mb-1">' + escapeHtml(res.name || res.uri) + '</span>' +
+            '<span class="text-[10px] font-mono text-slate-500 block mb-1">' + escapeHtml(res.uri) + '</span>' +
+            '<p class="text-slate-300 text-xs">' + escapeHtml(res.description || '') + '</p>' +
+          '</div>';
+        }).join('');
+      } else {
+        resourcesPane.innerHTML = '<div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 text-xs text-slate-400">No direct static MCP resources registered.</div>';
+      }
+
+      // Render Raw JSON Code
+      document.getElementById('drawerRawCode').textContent = JSON.stringify(s.capabilities || { tools, prompts, resources }, null, 2);
+
+      // Setup Stack button in Drawer
+      const inStack = selectedStack.has(s.id);
+      const stackBtn = document.getElementById('drawerStackBtn');
+      if (stackBtn) {
+        stackBtn.innerHTML = inStack ? '<span>✓</span> <span>In Stack</span>' : '<span>+</span> <span>Add to Stack</span>';
+        stackBtn.className = 'px-3 py-2 text-xs font-bold rounded-xl transition flex items-center gap-1.5 ' + (inStack ? 'bg-emerald-500 text-black border border-emerald-400' : 'bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 border border-white/[0.08]');
+        stackBtn.onclick = () => {
+          toggleStack(s.id);
+          const nowInStack = selectedStack.has(s.id);
+          stackBtn.innerHTML = nowInStack ? '<span>✓</span> <span>In Stack</span>' : '<span>+</span> <span>Add to Stack</span>';
+          stackBtn.className = 'px-3 py-2 text-xs font-bold rounded-xl transition flex items-center gap-1.5 ' + (nowInStack ? 'bg-emerald-500 text-black border border-emerald-400' : 'bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 border border-white/[0.08]');
+        };
+      }
+
+      // Setup Install Modal button in Drawer
+      const installBtn = document.getElementById('drawerInstallBtn');
+      if (installBtn) {
+        installBtn.onclick = () => {
+          closeSchemaDrawer();
+          openInstallModal(s.id);
+        };
+      }
+
+      // Deep Links
+      const shortName = (s.name || s.id.split('/').pop() || 'mcp-server').toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+      const cursorConfig = JSON.stringify({ command: s.runtime || 'npx', args: (s.runtime || 'npx') === 'npx' ? ['-y', s.packageIdentifier || s.id] : [s.packageIdentifier || s.id] });
+      const vscodeConfig = JSON.stringify({ mcpServers: { [shortName]: { command: s.runtime || 'npx', args: (s.runtime || 'npx') === 'npx' ? ['-y', s.packageIdentifier || s.id] : [s.packageIdentifier || s.id] } } });
+
+      const cLink = document.getElementById('drawerCursorDeepLink');
+      if (cLink) cLink.href = 'cursor://anysphere.cursor-deeplink/mcp/install?name=' + encodeURIComponent(shortName) + '&config=' + encodeURIComponent(cursorConfig);
+      const vLink = document.getElementById('drawerVsCodeDeepLink');
+      if (vLink) vLink.href = 'vscode:mcp/install?name=' + encodeURIComponent(shortName) + '&config=' + encodeURIComponent(vscodeConfig);
+
+      switchDrawerTab('tools');
+      document.getElementById('schemaDrawer').classList.remove('hidden');
+    }
+
+    function closeSchemaDrawer() {
+      document.getElementById('schemaDrawer').classList.add('hidden');
+    }
+
+    function switchDrawerTab(tab) {
+      document.querySelectorAll('.dtab-btn').forEach(b => {
+        b.classList.remove('border-emerald-400', 'text-emerald-400');
+        b.classList.add('border-transparent', 'text-slate-400');
+      });
+      const activeBtn = document.getElementById('dtab-' + tab);
+      if (activeBtn) {
+        activeBtn.classList.add('border-emerald-400', 'text-emerald-400');
+        activeBtn.classList.remove('border-transparent', 'text-slate-400');
+      }
+
+      document.getElementById('drawerToolsPane').classList.toggle('hidden', tab !== 'tools');
+      document.getElementById('drawerPromptsPane').classList.toggle('hidden', tab !== 'prompts');
+      document.getElementById('drawerResourcesPane').classList.toggle('hidden', tab !== 'resources');
+      document.getElementById('drawerRawPane').classList.toggle('hidden', tab !== 'raw');
+    }
+
     function openInstallModal(id) {
       const s = CATALOG.find(x => x.id === id);
       if (!s) return;
