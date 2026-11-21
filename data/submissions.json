@@ -79,5 +79,32 @@
       "repositoryUrl": "https://github.com/example/super-dev-tool",
       "category": "cli-tools"
     }
+  },
+  {
+    "id": "sub_1795243908933_azbly",
+    "target": "mcpshelf",
+    "submittedAt": "2026-11-21T06:51:48.933Z",
+    "status": "queued",
+    "trustScore": 8.8,
+    "item": {
+      "name": "test-mcp-server",
+      "description": "A test MCP server for verification",
+      "category": "developer-tools",
+      "repositoryUrl": "https://github.com/example/test-mcp",
+      "packageIdentifier": "@example/test-mcp"
+    }
+  },
+  {
+    "id": "sub_1795243908939_pw7em",
+    "target": "devshelf",
+    "submittedAt": "2026-11-21T06:51:48.939Z",
+    "status": "queued",
+    "trustScore": 9,
+    "item": {
+      "name": "SuperDevTool",
+      "description": "Free open source development tool",
+      "repositoryUrl": "https://github.com/example/super-dev-tool",
+      "category": "cli-tools"
+    }
   }
 ]

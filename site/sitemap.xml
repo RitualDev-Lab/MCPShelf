@@ -149,7 +149,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-agentshield.png</image:loc>
       <image:title>AgentShield Enterprise Zero-Leak Secret Defense &amp; Kernel Sandbox MCP Server</image:title>
@@ -160,7 +160,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-dbshield.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-dbshield.png</image:loc>
       <image:title>DBShield Database Guardrail &amp; Sandboxing MCP Server MCP Server</image:title>
@@ -171,7 +171,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-devshelf.png</image:loc>
       <image:title>DevShelf Developer Directory &amp; Tool Discovery MCP Server MCP Server</image:title>
@@ -182,7 +182,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-fineprint.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-fineprint.png</image:loc>
       <image:title>FinePrint AI Legal Risk &amp; Contract Audit MCP Server MCP Server</image:title>
@@ -193,7 +193,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcp-monetize.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcp-monetize.png</image:loc>
       <image:title>MCP Monetize - Drop-in Billing &amp; Capability Token Engine MCP Server</image:title>
@@ -204,7 +204,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mcpshelf.png</image:loc>
       <image:title>MCPShelf Model Context Protocol Registry, Search &amp; Security Auditor MCP Server</image:title>
@@ -215,7 +215,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-mockforge.png</image:loc>
       <image:title>MockForge AI Relational Mock Database &amp; Fixture Generator MCP Server</image:title>
@@ -226,7 +226,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-skillprism.png</image:loc>
       <image:title>SkillPrism MCP Context Optimizer &amp; Tool Search Proxy MCP Server</image:title>
@@ -237,7 +237,7 @@
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-web-sec-auditor.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://mcp.ritualdev.in/og/io-github-ritualdev-lab-web-sec-auditor.png</image:loc>
       <image:title>WebSecAuditor AI Cybersecurity &amp; Vulnerability Auditor MCP Server</image:title>
@@ -553,6 +553,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-advizion-advizion.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-advizion-advizion.png</image:loc>
+      <image:title>AdVizion MCP Server</image:title>
+      <image:caption>Check ad creative against brand rules, plan where, when and how to run it, and guard live campaigns.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adweave-meta-ads-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -693,6 +704,116 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-agentasy-cronjob.png</image:loc>
       <image:title>agent-cronjob MCP Server</image:title>
       <image:caption>Scheduled, HMAC-signed, retried webhook triggers for AI agents. No account: self-register via tools.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-sec-edgar-crypto-real-estate-pinterest-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-sec-edgar-crypto-real-estate-pinterest-mcp.png</image:loc>
+      <image:title>AgentAPIHub — Domain RDAP/WHOIS/DNS/SSL, Shodan CVEs, arXiv &amp; ClinicalTrials MCP MCP Server</image:title>
+      <image:caption>Domain WHOIS/RDAP/DNS/SSL, Shodan ports/CVEs, OpenAlex/arXiv papers &amp; ClinicalTrials.gov MCP.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-google-maps-places-business-app-reviews-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-google-maps-places-business-app-reviews-mcp.png</image:loc>
+      <image:title>AgentAPIHub — Google Maps Places, Trustpilot, Yelp, G2 Reviews &amp; US Realty MCP MCP Server</image:title>
+      <image:caption>Google Maps places, Trustpilot, Yelp &amp; G2 software reviews, and US real estate listings MCP.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-tiktok-instagram-short-video-creator-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-tiktok-instagram-short-video-creator-mcp.png</image:loc>
+      <image:title>AgentAPIHub — Google SERP, News, Trends &amp; Clean Web-to-Markdown MCP MCP Server</image:title>
+      <image:caption>Google SERP, News, Trends, Autocomplete &amp; URL-to-clean-Markdown MCP ($0.001/call, x402 or key).</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-job-postings-company-ats-career-search-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-job-postings-company-ats-career-search-mcp.png</image:loc>
+      <image:title>AgentAPIHub — LinkedIn B2B Profiles, Company KYB &amp; 5-ATS Live Job Postings MCP MCP Server</image:title>
+      <image:caption>LinkedIn profiles/companies, Workday/Greenhouse/Lever ATS jobs &amp; GLEIF/Companies House KYB MCP.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-twitter-x-tweets-trending-topics-search-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-twitter-x-tweets-trending-topics-search-mcp.png</image:loc>
+      <image:title>AgentAPIHub — Real-Time X (Twitter) Search, Tweets, Threads &amp; Profiles MCP MCP Server</image:title>
+      <image:caption>Real-time X/Twitter search, tweets, threads, replies &amp; profiles MCP (-87% compact tokens &amp; x402).</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-linkedin-company-b2b-business-profile-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-linkedin-company-b2b-business-profile-mcp.png</image:loc>
+      <image:title>AgentAPIHub — SEC EDGAR Filings, XBRL Facts, DEXScreener &amp; DefiLlama DeFi MCP MCP Server</image:title>
+      <image:caption>SEC EDGAR filings, insider trades, XBRL facts, DEXScreener token pairs &amp; DefiLlama TVL MCP.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-google-serp-web-scraping-domain-search-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-google-serp-web-scraping-domain-search-mcp.png</image:loc>
+      <image:title>AgentAPIHub — Unified AI Agent Data &amp; Action API Hub (75+ Tools, MCP &amp; x402) MCP Server</image:title>
+      <image:caption>75+ real-time agent data APIs in 4 meta-tools (-87% compact tokens, x402 USDC on Base or API key).</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-amazon-product-walmart-shopify-ecommerce-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-amazon-product-walmart-shopify-ecommerce-mcp.png</image:loc>
+      <image:title>AgentAPIHub — Walmart, Shopee, TikTok Shop, Shopify &amp; WooCommerce Catalog MCP MCP Server</image:title>
+      <image:caption>Walmart, Shopee, TikTok Shop, Shopify &amp; WooCommerce live product &amp; pricing MCP (x402 USDC or key).</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-reddit-hacker-news-forum-posts-search-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-reddit-hacker-news-forum-posts-search-mcp.png</image:loc>
+      <image:title>AgentAPIHub — YouTube Transcripts, TikTok, Instagram, Reddit &amp; Hacker News MCP MCP Server</image:title>
+      <image:caption>YouTube transcripts, TikTok videos, Instagram profiles, Reddit threads &amp; HN MCP (-87% LLM tokens).</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-youtube-transcript-video-subtitles-search-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-youtube-transcript-video-subtitles-search-mcp.png</image:loc>
+      <image:title>AgentAPIHub — Zero-Signup x402 Base USDC Data &amp; Search MCP Hub MCP Server</image:title>
+      <image:caption>Zero-signup x402 Base USDC &amp; API-key MCP hub for Search, X, Video, Commerce, Jobs &amp; SEC EDGAR.</image:caption>
     </image:image>
   </url>
   <url>
@@ -3171,6 +3292,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-bluesky-substack-social-newsletter-scraper-api-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-bluesky-substack-social-newsletter-scraper-api-mcp.png</image:loc>
+      <image:title>bluesky-substack-social-newsletter-scraper-api-mcp MCP Server</image:title>
+      <image:caption>Bluesky posts, profiles, feeds, threads &amp; Substack newsletter search and publication feed MCP API.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bnbgenius-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -3567,6 +3699,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-customs-bill-of-lading-import-export-trade-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-customs-bill-of-lading-import-export-trade-mcp.png</image:loc>
+      <image:title>customs-bill-of-lading-import-export-trade-mcp MCP Server</image:title>
+      <image:caption>Global customs bill of lading shipments, HS code, importer/exporter &amp; supplier trade data MCP API.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/ae-discond-discond.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -3578,6 +3721,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/africa-divisi-divisi.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/africa-divisi-divisi.png</image:loc>
+      <image:title>Divisi MCP Server</image:title>
+      <image:caption>Farm, trade and learn together: what to plant and when, what ails a crop, prices near you.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/ac-tandem-docs-mcp.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -3586,6 +3740,17 @@
       <image:loc>https://mcp.ritualdev.in/og/ac-tandem-docs-mcp.png</image:loc>
       <image:title>docs-mcp MCP Server</image:title>
       <image:caption>Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-douyin-xiaohongshu-rednote-social-scraper-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-douyin-xiaohongshu-rednote-social-scraper-mcp.png</image:loc>
+      <image:title>douyin-xiaohongshu-rednote-social-scraper-mcp MCP Server</image:title>
+      <image:caption>Douyin short video, Xiaohongshu (RedNote) notes, comments &amp; creator profile scraper remote MCP API.</image:caption>
     </image:image>
   </url>
   <url>
@@ -3688,6 +3853,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-facebook-meta-google-tiktok-ads-library-api-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-facebook-meta-google-tiktok-ads-library-api-mcp.png</image:loc>
+      <image:title>facebook-meta-google-tiktok-ads-library-api-mcp MCP Server</image:title>
+      <image:caption>Facebook posts, Meta Ad Library, Google Ads Transparency &amp; TikTok Creative Center ads scraper MCP.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-feedback.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -3765,6 +3941,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-github-huggingface-arxiv-papers-repos-search-api-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-github-huggingface-arxiv-papers-repos-search-api-mcp.png</image:loc>
+      <image:title>github-huggingface-arxiv-papers-repos-search-api-mcp MCP Server</image:title>
+      <image:caption>GitHub trending repos, HuggingFace trending AI models &amp; arXiv academic paper search remote MCP API.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/agency-goji-goji.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -3817,6 +4004,17 @@
       <image:loc>https://mcp.ritualdev.in/og/ai-adramp-google-ads.png</image:loc>
       <image:title>google-ads MCP Server</image:title>
       <image:caption>Google Ads MCP server — manage campaigns, keywords, and metrics.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-google-trends-seo-keywords-serp-search-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-google-trends-seo-keywords-serp-search-mcp.png</image:loc>
+      <image:title>google-trends-seo-keywords-serp-search-mcp MCP Server</image:title>
+      <image:caption>Real-time Google Trends breakout queries, calibrated daily interest, keyword volume &amp; SERP MCP.</image:caption>
     </image:image>
   </url>
   <url>
@@ -4128,6 +4326,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-polymarket-odds-prediction-market-events-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-polymarket-odds-prediction-market-events-mcp.png</image:loc>
+      <image:title>polymarket-odds-prediction-market-events-mcp MCP Server</image:title>
+      <image:caption>Live Polymarket prediction market events, implied probabilities &amp; CLOB L2 orderbook odds MCP ($0.001</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/agency-kesey-pretrip.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -4315,6 +4524,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-stocks-crypto-ohlcv-quote-market-data-api-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-stocks-crypto-ohlcv-quote-market-data-api-mcp.png</image:loc>
+      <image:title>stocks-crypto-ohlcv-quote-market-data-api-mcp MCP Server</image:title>
+      <image:caption>Real-time US stocks quote, stock &amp; crypto OHLCV candles, Fear &amp; Greed index and Polymarket MCP API.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atdev-supershopping.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -4348,6 +4568,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-telegram-discord-twitch-kick-medium-pinterest-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-telegram-discord-twitch-kick-medium-pinterest-mcp.png</image:loc>
+      <image:title>telegram-discord-twitch-kick-medium-pinterest-mcp MCP Server</image:title>
+      <image:caption>Telegram channel messages, Discord server stats, Twitch, Kick, Medium &amp; Pinterest scraper MCP API.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mcp.ritualdev.in/servers/agency-thirdhemisphere-ai-authority-index.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -4356,6 +4587,17 @@
       <image:loc>https://mcp.ritualdev.in/og/agency-thirdhemisphere-ai-authority-index.png</image:loc>
       <image:title>Third Hemisphere AI Authority Index MCP Server</image:title>
       <image:caption>Read-only CRISP scores and AI visibility data from Third Hemisphere&apos;s AI Authority Index.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-threads-instagram-truthsocial-linkedin-posts-mcp.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://mcp.ritualdev.in/og/ai-agentapigate-threads-instagram-truthsocial-linkedin-posts-mcp.png</image:loc>
+      <image:title>threads-instagram-truthsocial-linkedin-posts-mcp MCP Server</image:title>
+      <image:caption>Threads, Instagram reels &amp; profiles, Truth Social posts &amp; LinkedIn company/profile scraper MCP API.</image:caption>
     </image:image>
   </url>
   <url>

@@ -13,22 +13,22 @@
     "publishedAt": "2026-09-22T17:02:07.800881Z",
     "trustScore": 1.5,
     "securityRating": "Caution",
-    "reviewsCount": 16,
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 14,
     "averageRating": 4.8,
-    "estimatedInstalls": 9190,
+    "estimatedInstalls": 8959,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"gsc\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askwatch/gsc\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"gsc\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askwatch/gsc\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"gsc\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askwatch/gsc\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.askwatch/gsc"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 0.5,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   }
 ]

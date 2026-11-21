@@ -11,11 +11,18 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-19T18:13:02.603635Z",
-    "trustScore": 9.7,
-    "securityRating": "Very High",
-    "reviewsCount": 2,
+    "trustScore": 8,
+    "securityRating": "High",
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 1.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 1,
+      "securityAudit": 2
+    },
+    "reviewsCount": 14,
     "averageRating": 4.9,
-    "estimatedInstalls": 1556,
+    "estimatedInstalls": 2077,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/agentshield",
     "installSnippets": {
@@ -23,13 +30,6 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"agentshield\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/agentshield\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"agentshield\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/agentshield\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y @ritualdev-lab/agentshield"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.5,
-      "packageVerification": 2,
-      "permissionSandboxing": 2,
-      "documentationCompliance": 1.2,
-      "securityAudit": 2
     }
   },
   {
@@ -44,11 +44,18 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-07T06:47:19.530565Z",
-    "trustScore": 9.7,
-    "securityRating": "Very High",
-    "reviewsCount": 8,
-    "averageRating": 5,
-    "estimatedInstalls": 6801,
+    "trustScore": 8,
+    "securityRating": "High",
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 1.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 1,
+      "securityAudit": 2
+    },
+    "reviewsCount": 11,
+    "averageRating": 4.9,
+    "estimatedInstalls": 3961,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/dbshield",
     "installSnippets": {
@@ -56,13 +63,6 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"dbshield\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/dbshield\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"dbshield\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/dbshield\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y @ritualdev-lab/dbshield"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.5,
-      "packageVerification": 2,
-      "permissionSandboxing": 2,
-      "documentationCompliance": 1.2,
-      "securityAudit": 2
     }
   },
   {
@@ -77,11 +77,18 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-07T07:50:16.496781Z",
-    "trustScore": 9.7,
-    "securityRating": "Very High",
-    "reviewsCount": 6,
-    "averageRating": 4.7,
-    "estimatedInstalls": 9147,
+    "trustScore": 8,
+    "securityRating": "High",
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 1.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 1,
+      "securityAudit": 2
+    },
+    "reviewsCount": 17,
+    "averageRating": 5,
+    "estimatedInstalls": 8419,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/fineprint",
     "installSnippets": {
@@ -89,13 +96,6 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"fineprint\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/fineprint\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"fineprint\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/fineprint\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y @ritualdev-lab/fineprint"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.5,
-      "packageVerification": 2,
-      "permissionSandboxing": 2,
-      "documentationCompliance": 1.2,
-      "securityAudit": 2
     }
   },
   {
@@ -110,11 +110,18 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-19T18:56:45.894186Z",
-    "trustScore": 9.7,
-    "securityRating": "Very High",
-    "reviewsCount": 22,
+    "trustScore": 8,
+    "securityRating": "High",
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 1.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 1,
+      "securityAudit": 2
+    },
+    "reviewsCount": 12,
     "averageRating": 4.7,
-    "estimatedInstalls": 7400,
+    "estimatedInstalls": 5173,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/mcpshelf",
     "installSnippets": {
@@ -122,13 +129,6 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"mcpshelf\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/mcpshelf\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"mcpshelf\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/mcpshelf\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y @ritualdev-lab/mcpshelf"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.5,
-      "packageVerification": 2,
-      "permissionSandboxing": 2,
-      "documentationCompliance": 1.2,
-      "securityAudit": 2
     }
   },
   {
@@ -143,11 +143,18 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-19T18:18:14.132402Z",
-    "trustScore": 9.7,
-    "securityRating": "Very High",
-    "reviewsCount": 7,
+    "trustScore": 8,
+    "securityRating": "High",
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 1.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 1,
+      "securityAudit": 2
+    },
+    "reviewsCount": 1,
     "averageRating": 4.7,
-    "estimatedInstalls": 4207,
+    "estimatedInstalls": 8493,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/web-sec-auditor",
     "installSnippets": {
@@ -155,13 +162,6 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"web-sec-auditor\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/web-sec-auditor\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"web-sec-auditor\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@ritualdev-lab/web-sec-auditor\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y @ritualdev-lab/web-sec-auditor"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.5,
-      "packageVerification": 2,
-      "permissionSandboxing": 2,
-      "documentationCompliance": 1.2,
-      "securityAudit": 2
     }
   },
   {
@@ -178,22 +178,22 @@
     "publishedAt": "2026-09-26T00:07:22.148008Z",
     "trustScore": 1.5,
     "securityRating": "Caution",
-    "reviewsCount": 4,
-    "averageRating": 4.9,
-    "estimatedInstalls": 6623,
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 22,
+    "averageRating": 5,
+    "estimatedInstalls": 1784,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"afg\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.afg/afg\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"afg\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.afg/afg\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"afg\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.afg/afg\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.afg/afg"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 0.5,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -208,24 +208,24 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-08T17:57:24.982894Z",
-    "trustScore": 4.5,
+    "trustScore": 4.3,
     "securityRating": "Caution",
-    "reviewsCount": 3,
-    "averageRating": 4.6,
-    "estimatedInstalls": 1648,
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 18,
+    "averageRating": 4.9,
+    "estimatedInstalls": 5268,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentplaybooks\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentplaybooks/agentplaybooks\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"agentplaybooks\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentplaybooks/agentplaybooks\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"agentplaybooks\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentplaybooks/agentplaybooks\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.agentplaybooks/agentplaybooks"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.1,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -242,22 +242,22 @@
     "publishedAt": "2026-11-12T19:28:17.941236Z",
     "trustScore": 1.5,
     "securityRating": "Caution",
-    "reviewsCount": 16,
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 11,
     "averageRating": 4.8,
-    "estimatedInstalls": 2032,
+    "estimatedInstalls": 3016,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"airpulse\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.airpulse/airpulse\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"airpulse\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.airpulse/airpulse\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"airpulse\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.airpulse/airpulse\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.airpulse/airpulse"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 0.5,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -272,24 +272,24 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2026-11-06T10:52:28.08523Z",
-    "trustScore": 4.5,
+    "trustScore": 4.3,
     "securityRating": "Caution",
-    "reviewsCount": 16,
-    "averageRating": 4.7,
-    "estimatedInstalls": 4066,
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 9,
+    "averageRating": 4.8,
+    "estimatedInstalls": 6624,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"platform\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ankra/platform\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"platform\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ankra/platform\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"platform\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ankra/platform\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.ankra/platform"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.1,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -306,22 +306,22 @@
     "publishedAt": "2026-08-05T15:03:17.857696Z",
     "trustScore": 1.5,
     "securityRating": "Caution",
-    "reviewsCount": 19,
-    "averageRating": 4.8,
-    "estimatedInstalls": 2459,
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 14,
+    "averageRating": 4.7,
+    "estimatedInstalls": 7695,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"arketo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.arketo/arketo\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"arketo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.arketo/arketo\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"arketo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.arketo/arketo\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.arketo/arketo"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 0.5,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -338,22 +338,22 @@
     "publishedAt": "2026-08-06T01:11:42.174388Z",
     "trustScore": 1.5,
     "securityRating": "Caution",
-    "reviewsCount": 16,
-    "averageRating": 4.8,
-    "estimatedInstalls": 7085,
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 2,
+    "averageRating": 4.7,
+    "estimatedInstalls": 1872,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"audit\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beket/audit\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"audit\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beket/audit\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"audit\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beket/audit\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.beket/audit"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 0.5,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -370,22 +370,22 @@
     "publishedAt": "2026-10-27T22:27:06.327377Z",
     "trustScore": 1.5,
     "securityRating": "Caution",
-    "reviewsCount": 3,
-    "averageRating": 4.9,
-    "estimatedInstalls": 4472,
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 6,
+    "averageRating": 4.6,
+    "estimatedInstalls": 9148,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"best-ai-search-agency-aeo-report\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aeoengine/best-ai-search-agency-aeo-report\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"best-ai-search-agency-aeo-report\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aeoengine/best-ai-search-agency-aeo-report\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"best-ai-search-agency-aeo-report\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aeoengine/best-ai-search-agency-aeo-report\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.aeoengine/best-ai-search-agency-aeo-report"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 0.5,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -402,22 +402,22 @@
     "publishedAt": "2026-10-30T19:38:33.065561Z",
     "trustScore": 1.5,
     "securityRating": "Caution",
-    "reviewsCount": 8,
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 24,
     "averageRating": 4.7,
-    "estimatedInstalls": 4075,
+    "estimatedInstalls": 6940,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"seo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alvinsclub.studio/seo\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"seo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alvinsclub.studio/seo\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"seo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alvinsclub.studio/seo\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.alvinsclub.studio/seo"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 0.5,
-      "packageVerification": 0.4,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 0.4
     }
   },
   {
@@ -432,11 +432,18 @@
     "websiteUrl": "",
     "isOfficialLatest": true,
     "publishedAt": "2025-10-09T17:05:17.793149Z",
-    "trustScore": 8.1,
-    "securityRating": "High",
-    "reviewsCount": 8,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4704,
+    "trustScore": 7,
+    "securityRating": "Moderate",
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 1.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 1.2
+    },
+    "reviewsCount": 5,
+    "averageRating": 4.6,
+    "estimatedInstalls": 6345,
     "transportType": "stdio",
     "packageIdentifier": "docker.io/aliengiraffe/spotdb:0.1.0",
     "installSnippets": {
@@ -444,13 +451,6 @@
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"spotdb\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"docker.io/aliengiraffe/spotdb:0.1.0\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"spotdb\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"docker.io/aliengiraffe/spotdb:0.1.0\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y docker.io/aliengiraffe/spotdb:0.1.0"
-    },
-    "trustBreakdown": {
-      "codeProvenance": 2.1,
-      "packageVerification": 2,
-      "permissionSandboxing": 1.6,
-      "documentationCompliance": 1,
-      "securityAudit": 1.4
     }
   }
 ]
