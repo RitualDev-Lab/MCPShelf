@@ -2,6 +2,7 @@
 > The Open Model Context Protocol (MCP) Registry, Marketplace & Security Directory
 
 [![CI](https://github.com/RitualDev-Lab/MCPShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/MCPShelf/actions/workflows/ci.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/RitualDev-Lab/MCPShelf/badge)](https://securityscorecards.dev/viewer/?repo=github.com/RitualDev-Lab/MCPShelf)
 [![Live Registry](https://img.shields.io/badge/Live_Registry-mcp.ritualdev.in-22c55e.svg?style=flat-square&logo=googlechrome&logoColor=white)](https://mcp.ritualdev.in)
 [![npm](https://img.shields.io/npm/v/@ritualdev-lab/mcpshelf.svg?style=flat-square&color=cb3837&logo=npm)](https://www.npmjs.com/package/@ritualdev-lab/mcpshelf)
 [![PyPI](https://img.shields.io/pypi/v/mcpshelf.svg?style=flat-square&color=3775A9&logo=pypi&logoColor=white)](https://pypi.org/project/mcpshelf/)
@@ -68,6 +69,45 @@ Or install **DBShield** database guardrail into Cursor:
   }
 }
 ```
+
+---
+
+## 🏷️ Embed Verification Badges in your GitHub README
+
+Building an open-source Model Context Protocol server? Showcase official verification, trust rating, and 1-click install capabilities directly on your repository using our live vector SVG badges:
+
+### 1. Verified on MCPShelf Badge
+```markdown
+[![Verified on MCPShelf](https://mcp.ritualdev.in/api/v1/badges/verified/<server-slug>.svg)](https://mcp.ritualdev.in/servers/<server-slug>.html)
+```
+*(Preview: `⚡ MCPShelf | ✓ Verified` or `★ 9.5/10`)*
+
+### 2. Live Trust Score Badge
+```markdown
+[![Trust Score](https://mcp.ritualdev.in/api/v1/badges/trust/<server-slug>.svg)](https://mcp.ritualdev.in/servers/<server-slug>.html)
+```
+*(Preview: `🛡️ Trust Score | 9.5/10` color-coded Emerald, Amber, or Rose based on risk analysis)*
+
+### 3. Protocol Ready Badges
+```markdown
+[![Model Context Protocol](https://mcp.ritualdev.in/api/v1/badges/protocol.svg)](https://mcp.ritualdev.in)
+[![Zero-Leak Audited](https://mcp.ritualdev.in/api/v1/badges/zero-leak.svg)](https://mcp.ritualdev.in)
+[![Claude & Cursor Ready](https://mcp.ritualdev.in/api/v1/badges/mcp-ready.svg)](https://mcp.ritualdev.in)
+```
+
+---
+
+## 🤖 No-Code Submission Pipeline (GitHub Issue Form)
+
+No need to clone or manually edit JSON files to get your MCP server listed:
+
+1. Go to **[New Issue &rarr; Submit an MCP Server](https://github.com/RitualDev-Lab/MCPShelf/issues/new?template=mcp_server_submission.yml)**.
+2. Fill out the structured form with your server identifier, description, and `server.json` manifest.
+3. Our automated **MCPShelf Bot** triggers via GitHub Actions to:
+   - Run capability introspection (`tools`, `prompts`, `resources`, token footprint).
+   - Evaluate security privileges and assign a transparent Trust Score.
+   - Automatically open a clean Pull Request with you credited as **Co-Author**!
+4. Once merged, your server is immediately indexed across [mcp.ritualdev.in](https://mcp.ritualdev.in), RSS feeds, and the terminal CLI.
 
 ---
 

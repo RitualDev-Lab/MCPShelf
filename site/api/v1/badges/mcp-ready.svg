@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="208" height="24" viewBox="0 0 208 24" role="img" aria-label="Claude and Cursor MCP Compatible">
+  <defs>
+    <clipPath id="mcpshelf-ready-clip">
+      <rect width="208" height="24" rx="5" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="ready-grad" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#mcpshelf-ready-clip)">
+    <rect width="62" height="24" fill="#0b0f19"/>
+    <rect x="62" width="146" height="24" fill="url(#ready-grad)"/>
+    <rect width="208" height="24" fill="none" stroke="rgba(139, 92, 246, 0.45)" stroke-width="1.5"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700">
+    <text x="31" y="16.5" fill="#e2e8f0">⚡ MCP</text>
+    <text x="135" y="16.5" fill="#ffffff">Claude &amp; Cursor Ready</text>
+  </g>
+</svg>

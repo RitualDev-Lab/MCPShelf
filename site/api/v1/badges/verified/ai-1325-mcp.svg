@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="24" viewBox="0 0 166 24" role="img" aria-label="MCPShelf Verified: 1325.AI (★ 3.3/10)">
+  <defs>
+    <clipPath id="mcpshelf-verified-clip">
+      <rect width="166" height="24" rx="5" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="verified-grad" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#mcpshelf-verified-clip)">
+    <rect width="84" height="24" fill="#0b0f19"/>
+    <rect x="84" width="82" height="24" fill="url(#verified-grad)"/>
+    <rect width="166" height="24" fill="none" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.5"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700">
+    <text x="42" y="16.5" fill="#e2e8f0" letter-spacing="-0.2px">⚡ MCPShelf</text>
+    <text x="125" y="16.5" fill="#ffffff" letter-spacing="-0.1px">★ 3.3/10</text>
+  </g>
+</svg>

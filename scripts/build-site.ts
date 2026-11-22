@@ -1,6 +1,7 @@
 import { scanSecurityRisks } from './security-scanner.js';
 import { synthesizeCapabilitiesForServer } from './introspect-server.js';
 import { publishRegistryAndSync } from './sync-to-devshelf.js';
+import { generateAllBadges } from './generate-badges.js';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { generateDigestFiles } from './generate-digest.js';
@@ -166,6 +167,9 @@ async function main() {
 
   // Build Weekly AI Agent Digest & RSS/JSON Feeds
   generateDigestFiles();
+
+  // Generate Embeddable SVG Badges
+  generateAllBadges();
 
   // Publish static versioned registry v1 endpoints and cross-sync DevShelf
   await publishRegistryAndSync();
@@ -3228,6 +3232,46 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
         </details>
       </div>
 
+      <!-- Embed Badges in your GitHub README -->
+      <div class="mb-8 p-5 rounded-2xl bg-slate-950/70 border border-slate-800">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center space-x-2">
+            <span class="text-base">🏷️</span>
+            <h3 class="text-sm font-bold text-white tracking-tight">Embed Badges in your GitHub README</h3>
+          </div>
+          <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-2.5 py-0.5 rounded">
+            Live Vector SVG
+          </span>
+        </div>
+        <p class="text-xs text-slate-400 mb-4">Showcase verified status, live trust rating, and 1-click install capabilities to developers visiting your GitHub repository.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Verified Badge -->
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold text-slate-300">Verified Badge</span>
+              <img src="/api/v1/badges/verified/${slug}.svg" alt="Verified on MCPShelf" class="h-6" />
+            </div>
+            <div class="relative mt-2">
+              <input type="text" readonly value="[![Verified on MCPShelf](https://mcp.ritualdev.in/api/v1/badges/verified/${slug}.svg)](https://mcp.ritualdev.in/servers/${slug}.html)" id="badge-verified-${slug}" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-[11px] font-mono text-slate-400 pr-16 select-all focus:outline-none focus:border-emerald-500" />
+              <button onclick="copyBadgeSnippet('badge-verified-${slug}', this)" class="absolute right-1.5 top-1.5 px-2.5 py-0.5 text-[11px] font-bold rounded bg-slate-800 hover:bg-slate-700 text-white transition">Copy</button>
+            </div>
+          </div>
+
+          <!-- Trust Score Badge -->
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-semibold text-slate-300">Trust Score Badge</span>
+              <img src="/api/v1/badges/trust/${slug}.svg" alt="Trust Score ${server.trustScore}/10" class="h-6" />
+            </div>
+            <div class="relative mt-2">
+              <input type="text" readonly value="[![Trust Score: ${server.trustScore}/10](https://mcp.ritualdev.in/api/v1/badges/trust/${slug}.svg)](https://mcp.ritualdev.in/servers/${slug}.html)" id="badge-trust-${slug}" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-[11px] font-mono text-slate-400 pr-16 select-all focus:outline-none focus:border-emerald-500" />
+              <button onclick="copyBadgeSnippet('badge-trust-${slug}', this)" class="absolute right-1.5 top-1.5 px-2.5 py-0.5 text-[11px] font-bold rounded bg-slate-800 hover:bg-slate-700 text-white transition">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-800">
         ${server.repositoryUrl ? `<a href="${server.repositoryUrl}" target="_blank" class="px-4 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">View GitHub Repository &rarr;</a>` : ''}
         <a href="/boost.html" class="px-4 py-2 text-xs font-bold rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 transition">🚀 Boost This Server</a>
@@ -3373,6 +3417,20 @@ function generateServerDetailHtml(server: any, categories: Category[], catalog: 
       if (cBtn) cBtn.href = cursorDeepLink;
       const vBtn = document.getElementById('vscodeDeepLinkBtn');
       if (vBtn) vBtn.href = vscodeDeepLink;
+    }
+
+        function copyBadgeSnippet(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      navigator.clipboard.writeText(input.value).then(function() {
+        const orig = btn.textContent;
+        btn.textContent = 'Copied! ✓';
+        btn.classList.add('bg-emerald-500', 'text-black');
+        setTimeout(function() {
+          btn.textContent = orig;
+          btn.classList.remove('bg-emerald-500', 'text-black');
+        }, 1500);
+      });
     }
 
     function copyCurrentConfig() {

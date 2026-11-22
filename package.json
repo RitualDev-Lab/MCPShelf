@@ -52,10 +52,11 @@
     "validate:version": "tsx scripts/verify-version-sync.ts",
     "build:css": "tailwindcss -i site/input.css -o site/css/tailwind.min.css --minify",
     "build:site": "tsx scripts/build-site.ts",
+    "build:badges": "tsx scripts/generate-badges.ts",
     "build:seo": "tsx scripts/generate-seo.ts",
     "build:digest": "tsx scripts/generate-digest.ts",
     "build:og": "python scripts/generate-og-images.py",
-    "build": "npm run build:site && npm run build:seo && npm run build:digest && npm run build:og",
+    "build": "npm run build:site && npm run build:badges && npm run build:seo && npm run build:digest && npm run build:og",
     "api": "tsx scripts/rest-api.ts",
     "test": "tsx scripts/verify-version-sync.ts && tsx scripts/run-tests.ts",
     "dev": "tsx scripts/build-site.ts && npx serve site -l 3000"

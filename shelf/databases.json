@@ -20,9 +20,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 1,
+    "reviewsCount": 17,
     "averageRating": 4.7,
-    "estimatedInstalls": 5778,
+    "estimatedInstalls": 5689,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/mockforge",
     "installSnippets": {
@@ -53,9 +53,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 8,
-    "averageRating": 4.8,
-    "estimatedInstalls": 7364,
+    "reviewsCount": 7,
+    "averageRating": 4.7,
+    "estimatedInstalls": 9584,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"aevia\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aeviamodeler/aevia\"\n      ]\n    }\n  }\n}",
@@ -85,9 +85,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
+    "reviewsCount": 3,
     "averageRating": 4.8,
-    "estimatedInstalls": 5090,
+    "estimatedInstalls": 8164,
     "transportType": "stdio",
     "packageIdentifier": "annsa",
     "installSnippets": {
@@ -118,9 +118,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
-    "averageRating": 4.6,
-    "estimatedInstalls": 8223,
+    "reviewsCount": 24,
+    "averageRating": 4.8,
+    "estimatedInstalls": 8038,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"azquo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.azquo/azquo\"\n      ]\n    }\n  }\n}",
@@ -150,9 +150,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
+    "reviewsCount": 7,
     "averageRating": 4.6,
-    "estimatedInstalls": 3587,
+    "estimatedInstalls": 3004,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"collector-car-values\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bidbetter/collector-car-values\"\n      ]\n    }\n  }\n}",
@@ -182,9 +182,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 15,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4855,
+    "reviewsCount": 22,
+    "averageRating": 4.7,
+    "estimatedInstalls": 4449,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"boomlink\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.boomlink/boomlink\"\n      ]\n    }\n  }\n}",
@@ -214,9 +214,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
-    "averageRating": 4.6,
-    "estimatedInstalls": 2847,
+    "reviewsCount": 24,
+    "averageRating": 4.8,
+    "estimatedInstalls": 2487,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"enforcement-database\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.argushq/enforcement-database\"\n      ]\n    }\n  }\n}",
@@ -247,8 +247,8 @@
       "securityAudit": 0.5
     },
     "reviewsCount": 6,
-    "averageRating": 5,
-    "estimatedInstalls": 8538,
+    "averageRating": 4.9,
+    "estimatedInstalls": 5398,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"feedback\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/feedback\"\n      ]\n    }\n  }\n}",

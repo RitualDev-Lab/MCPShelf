@@ -1,0 +1,99 @@
+name: Auto Process Community Submission
+
+on:
+  issues:
+    types: [opened]
+
+permissions: read-all
+
+jobs:
+  process-submission:
+    name: Introspect Submission & Open PR
+    if: >
+      contains(github.event.issue.labels.*.name, 'submission') ||
+      startsWith(github.event.issue.title, '[Submission') ||
+      contains(github.event.issue.title, 'Submission')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Process Issue Form & Introspect Server
+        id: process
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          npx tsx scripts/process-submission.ts
+
+      - name: Rebuild MCPShelf Static Web Platform, Badges & Feeds
+        run: |
+          npm run build
+
+      - name: Create Submission Branch & Open Pull Request
+        id: create-pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
+          USER_LOGIN: ${{ github.event.issue.user.login }}
+          USER_ID: ${{ github.event.issue.user.id }}
+        run: |
+          git config --global user.name "MCPShelf Bot"
+          git config --global user.email "bot@mcpshelf.local"
+          git add data/ site/
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes produced from submission."
+          else
+            BRANCH_NAME="submission/issue-${ISSUE_NUM}"
+            git checkout -b "$BRANCH_NAME"
+            git commit -m "feat(community): add submission from issue #${ISSUE_NUM}
+
+          Co-authored-by: ${USER_LOGIN} <${USER_ID}+${USER_LOGIN}@users.noreply.github.com>"
+            git push origin "$BRANCH_NAME" --force
+
+            PR_URL=$(gh pr create \
+              --title "feat(community): add submission from #${ISSUE_NUM}" \
+              --body "Resolves #${ISSUE_NUM}
+
+          Submitted by @${USER_LOGIN} via Issue form.
+
+          - **Automated Pipeline**: Introspected by MCPShelf Bot with contributor credited as Co-Author.
+          - **Trust Score & Badges**: Scoring rubric and live vector SVG badges generated.
+          - **Verification**: Full CI test suite will run on this PR automatically." \
+              --head "$BRANCH_NAME" \
+              --base "main" \
+              --label "submission")
+
+            PR_NUM=$(echo "$PR_URL" | grep -oE '[0-9]+$')
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "pr_url=$PR_URL" >> $GITHUB_OUTPUT
+            echo "pr_number=$PR_NUM" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Post Confirmation Comment on Issue
+        if: steps.create-pr.outputs.has_changes == 'true'
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const postSubmissionComment = require('./scripts/post-submission-comment.cjs');
+            await postSubmissionComment({
+              github,
+              context,
+              prUrl: '${{ steps.create-pr.outputs.pr_url }}',
+              prNumber: '${{ steps.create-pr.outputs.pr_number }}',
+              serverSlug: '${{ steps.process.outputs.server_slug }}',
+              serverTitle: '${{ steps.process.outputs.server_title }}'
+            });

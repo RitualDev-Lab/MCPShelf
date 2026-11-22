@@ -135,9 +135,9 @@
     }
   },
   {
-    "id": "sub_1795328690547_k15xk",
+    "id": "sub_1795343905843_qv2x2",
     "target": "mcpshelf",
-    "submittedAt": "2026-11-22T06:24:50.547Z",
+    "submittedAt": "2026-11-22T10:38:25.843Z",
     "status": "queued",
     "trustScore": 8.8,
     "item": {
@@ -149,9 +149,9 @@
     }
   },
   {
-    "id": "sub_1795328690552_guc6u",
+    "id": "sub_1795343905852_8h3i3",
     "target": "devshelf",
-    "submittedAt": "2026-11-22T06:24:50.552Z",
+    "submittedAt": "2026-11-22T10:38:25.852Z",
     "status": "queued",
     "trustScore": 9,
     "item": {
