@@ -20,9 +20,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 14,
+    "reviewsCount": 7,
     "averageRating": 4.9,
-    "estimatedInstalls": 2077,
+    "estimatedInstalls": 1359,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/agentshield",
     "installSnippets": {
@@ -53,9 +53,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 11,
-    "averageRating": 4.9,
-    "estimatedInstalls": 3961,
+    "reviewsCount": 3,
+    "averageRating": 4.7,
+    "estimatedInstalls": 8971,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/dbshield",
     "installSnippets": {
@@ -86,9 +86,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 17,
-    "averageRating": 5,
-    "estimatedInstalls": 8419,
+    "reviewsCount": 18,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1879,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/fineprint",
     "installSnippets": {
@@ -119,9 +119,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 12,
-    "averageRating": 4.7,
-    "estimatedInstalls": 5173,
+    "reviewsCount": 15,
+    "averageRating": 4.8,
+    "estimatedInstalls": 5779,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/mcpshelf",
     "installSnippets": {
@@ -152,9 +152,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 1,
-    "averageRating": 4.7,
-    "estimatedInstalls": 8493,
+    "reviewsCount": 13,
+    "averageRating": 5,
+    "estimatedInstalls": 4720,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/web-sec-auditor",
     "installSnippets": {
@@ -185,9 +185,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 22,
-    "averageRating": 5,
-    "estimatedInstalls": 1784,
+    "reviewsCount": 14,
+    "averageRating": 4.7,
+    "estimatedInstalls": 5205,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"afg\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.afg/afg\"\n      ]\n    }\n  }\n}",
@@ -217,9 +217,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 18,
+    "reviewsCount": 6,
     "averageRating": 4.9,
-    "estimatedInstalls": 5268,
+    "estimatedInstalls": 1415,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentplaybooks\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentplaybooks/agentplaybooks\"\n      ]\n    }\n  }\n}",
@@ -249,9 +249,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
-    "averageRating": 4.8,
-    "estimatedInstalls": 3016,
+    "reviewsCount": 7,
+    "averageRating": 4.7,
+    "estimatedInstalls": 3001,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"airpulse\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.airpulse/airpulse\"\n      ]\n    }\n  }\n}",
@@ -281,9 +281,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 9,
-    "averageRating": 4.8,
-    "estimatedInstalls": 6624,
+    "reviewsCount": 5,
+    "averageRating": 5,
+    "estimatedInstalls": 5853,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"platform\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ankra/platform\"\n      ]\n    }\n  }\n}",
@@ -313,9 +313,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
-    "averageRating": 4.7,
-    "estimatedInstalls": 7695,
+    "reviewsCount": 24,
+    "averageRating": 4.8,
+    "estimatedInstalls": 5499,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"arketo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.arketo/arketo\"\n      ]\n    }\n  }\n}",
@@ -345,15 +345,47 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 2,
-    "averageRating": 4.7,
-    "estimatedInstalls": 1872,
+    "reviewsCount": 16,
+    "averageRating": 4.6,
+    "estimatedInstalls": 3967,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"audit\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beket/audit\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"audit\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beket/audit\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"audit\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beket/audit\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.beket/audit"
+    }
+  },
+  {
+    "id": "ai.bakedbot/bakedbot-distribution",
+    "name": "ai.bakedbot/bakedbot-distribution",
+    "title": "BakedBot AI Distribution",
+    "description": "Read-only BakedBot tools: revenue-leak audits, retention, inventory, menu and compliance insights.",
+    "version": "1.0.0",
+    "category": "security",
+    "author": "Community",
+    "repositoryUrl": "https://github.com/bakedbot-ai/bakedbot-for-brands",
+    "websiteUrl": "",
+    "isOfficialLatest": true,
+    "publishedAt": "2026-11-22T05:12:59.348888Z",
+    "trustScore": 4.3,
+    "securityRating": "Caution",
+    "trustBreakdown": {
+      "codeProvenance": 2,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 18,
+    "averageRating": 4.8,
+    "estimatedInstalls": 8329,
+    "transportType": "stdio",
+    "installSnippets": {
+      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bakedbot-distribution\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bakedbot/bakedbot-distribution\"\n      ]\n    }\n  }\n}",
+      "cursorMcp": "{\n  \"mcpServers\": {\n    \"bakedbot-distribution\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bakedbot/bakedbot-distribution\"\n      ]\n    }\n  }\n}",
+      "windsurf": "{\n  \"mcpServers\": {\n    \"bakedbot-distribution\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bakedbot/bakedbot-distribution\"\n      ]\n    }\n  }\n}",
+      "terminal": "npx -y ai.bakedbot/bakedbot-distribution"
     }
   },
   {
@@ -377,9 +409,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 6,
-    "averageRating": 4.6,
-    "estimatedInstalls": 9148,
+    "reviewsCount": 4,
+    "averageRating": 4.7,
+    "estimatedInstalls": 2812,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"best-ai-search-agency-aeo-report\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aeoengine/best-ai-search-agency-aeo-report\"\n      ]\n    }\n  }\n}",
@@ -409,9 +441,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
+    "reviewsCount": 1,
     "averageRating": 4.7,
-    "estimatedInstalls": 6940,
+    "estimatedInstalls": 4503,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"seo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alvinsclub.studio/seo\"\n      ]\n    }\n  }\n}",
@@ -441,9 +473,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 5,
-    "averageRating": 4.6,
-    "estimatedInstalls": 6345,
+    "reviewsCount": 13,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1278,
     "transportType": "stdio",
     "packageIdentifier": "docker.io/aliengiraffe/spotdb:0.1.0",
     "installSnippets": {

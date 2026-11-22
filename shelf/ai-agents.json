@@ -20,9 +20,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 24,
+    "reviewsCount": 12,
     "averageRating": 4.7,
-    "estimatedInstalls": 7747,
+    "estimatedInstalls": 5245,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/devshelf",
     "installSnippets": {
@@ -53,9 +53,9 @@
       "documentationCompliance": 1,
       "securityAudit": 2
     },
-    "reviewsCount": 12,
-    "averageRating": 4.7,
-    "estimatedInstalls": 4464,
+    "reviewsCount": 18,
+    "averageRating": 5,
+    "estimatedInstalls": 2083,
     "transportType": "stdio",
     "packageIdentifier": "@ritualdev-lab/skillprism",
     "installSnippets": {
@@ -86,9 +86,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 1,
-    "averageRating": 4.9,
-    "estimatedInstalls": 8716,
+    "reviewsCount": 5,
+    "averageRating": 5,
+    "estimatedInstalls": 8138,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-service-desk\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.28in28/agent-service-desk\"\n      ]\n    }\n  }\n}",
@@ -118,9 +118,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
+    "reviewsCount": 24,
     "averageRating": 4.7,
-    "estimatedInstalls": 5524,
+    "estimatedInstalls": 1607,
     "transportType": "stdio",
     "packageIdentifier": "@2kw/ai-mcp-server",
     "installSnippets": {
@@ -151,9 +151,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
+    "reviewsCount": 6,
     "averageRating": 4.8,
-    "estimatedInstalls": 6711,
+    "estimatedInstalls": 1484,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"69ai\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.69ai/69ai\"\n      ]\n    }\n  }\n}",
@@ -183,9 +183,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
-    "averageRating": 4.7,
-    "estimatedInstalls": 3154,
+    "reviewsCount": 16,
+    "averageRating": 5,
+    "estimatedInstalls": 5926,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"catalog\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.a2uicatalog/catalog\"\n      ]\n    }\n  }\n}",
@@ -199,13 +199,13 @@
     "name": "ai.achromat/mcp-server",
     "title": "Achromat Machine Operational Memory",
     "description": "Recall and calibrate policy-compliant tool-call arguments before execution. Does not run the tool.",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "category": "ai-agents",
     "author": "Community",
     "repositoryUrl": "https://github.com/achromat-ai/achromat-mcp-server",
     "websiteUrl": "",
     "isOfficialLatest": true,
-    "publishedAt": "2026-11-18T06:54:12.24488Z",
+    "publishedAt": "2026-11-21T11:02:29.109259Z",
     "trustScore": 7,
     "securityRating": "Moderate",
     "trustBreakdown": {
@@ -215,9 +215,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 1,
+    "reviewsCount": 16,
     "averageRating": 4.7,
-    "estimatedInstalls": 2141,
+    "estimatedInstalls": 5381,
     "transportType": "stdio",
     "packageIdentifier": "@achromat-ai/mcp-server",
     "installSnippets": {
@@ -248,9 +248,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 8,
-    "averageRating": 4.6,
-    "estimatedInstalls": 4562,
+    "reviewsCount": 4,
+    "averageRating": 4.8,
+    "estimatedInstalls": 2884,
     "transportType": "stdio",
     "packageIdentifier": "mcp-church",
     "installSnippets": {
@@ -281,9 +281,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
-    "averageRating": 4.6,
-    "estimatedInstalls": 6799,
+    "reviewsCount": 10,
+    "averageRating": 4.8,
+    "estimatedInstalls": 3083,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"adrails\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.adrails/adrails\"\n      ]\n    }\n  }\n}",
@@ -313,9 +313,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 22,
-    "averageRating": 5,
-    "estimatedInstalls": 1376,
+    "reviewsCount": 7,
+    "averageRating": 4.7,
+    "estimatedInstalls": 6720,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"adside\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.adside/adside\"\n      ]\n    }\n  }\n}",
@@ -345,9 +345,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 11,
-    "averageRating": 4.7,
-    "estimatedInstalls": 4483,
+    "reviewsCount": 7,
+    "averageRating": 5,
+    "estimatedInstalls": 2750,
     "transportType": "stdio",
     "packageIdentifier": "affiliate-networks-mcp",
     "installSnippets": {
@@ -378,9 +378,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 3,
+    "reviewsCount": 20,
     "averageRating": 4.7,
-    "estimatedInstalls": 7396,
+    "estimatedInstalls": 3448,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"catalog\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenlify/catalog\"\n      ]\n    }\n  }\n}",
@@ -410,9 +410,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
+    "reviewsCount": 1,
     "averageRating": 4.7,
-    "estimatedInstalls": 5877,
+    "estimatedInstalls": 2847,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-blueprint\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentblueprint/agent-blueprint\"\n      ]\n    }\n  }\n}",
@@ -442,9 +442,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 20,
-    "averageRating": 4.9,
-    "estimatedInstalls": 4700,
+    "reviewsCount": 23,
+    "averageRating": 4.7,
+    "estimatedInstalls": 4746,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"neo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agent-neo/neo\"\n      ]\n    }\n  }\n}",
@@ -474,9 +474,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4881,
+    "reviewsCount": 14,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1456,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-ready-report\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenticplug/agent-ready-report\"\n      ]\n    }\n  }\n}",
@@ -506,9 +506,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 8,
-    "averageRating": 5,
-    "estimatedInstalls": 9083,
+    "reviewsCount": 19,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1747,
     "transportType": "stdio",
     "packageIdentifier": "@agent-bev/mcp-server",
     "installSnippets": {
@@ -539,9 +539,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
-    "averageRating": 4.8,
-    "estimatedInstalls": 1790,
+    "reviewsCount": 21,
+    "averageRating": 4.7,
+    "estimatedInstalls": 5903,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"library\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agent-bev/library\"\n      ]\n    }\n  }\n}",
@@ -571,9 +571,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 3,
+    "reviewsCount": 10,
     "averageRating": 4.7,
-    "estimatedInstalls": 5449,
+    "estimatedInstalls": 7562,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"cronjob\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentasy/cronjob\"\n      ]\n    }\n  }\n}",
@@ -603,9 +603,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2060,
+    "reviewsCount": 1,
+    "averageRating": 4.9,
+    "estimatedInstalls": 8065,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"sec-edgar-crypto-real-estate-pinterest-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/sec-edgar-crypto-real-estate-pinterest-mcp\"\n      ]\n    }\n  }\n}",
@@ -635,9 +635,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
+    "reviewsCount": 10,
     "averageRating": 4.7,
-    "estimatedInstalls": 4708,
+    "estimatedInstalls": 7978,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"google-maps-places-business-app-reviews-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/google-maps-places-business-app-reviews-mcp\"\n      ]\n    }\n  }\n}",
@@ -667,9 +667,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
-    "averageRating": 4.9,
-    "estimatedInstalls": 6135,
+    "reviewsCount": 9,
+    "averageRating": 5,
+    "estimatedInstalls": 6841,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"tiktok-instagram-short-video-creator-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/tiktok-instagram-short-video-creator-mcp\"\n      ]\n    }\n  }\n}",
@@ -699,9 +699,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 2,
-    "averageRating": 4.7,
-    "estimatedInstalls": 3531,
+    "reviewsCount": 3,
+    "averageRating": 4.9,
+    "estimatedInstalls": 5773,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"job-postings-company-ats-career-search-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/job-postings-company-ats-career-search-mcp\"\n      ]\n    }\n  }\n}",
@@ -731,9 +731,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 18,
-    "averageRating": 4.7,
-    "estimatedInstalls": 3861,
+    "reviewsCount": 12,
+    "averageRating": 4.9,
+    "estimatedInstalls": 6727,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"twitter-x-tweets-trending-topics-search-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/twitter-x-tweets-trending-topics-search-mcp\"\n      ]\n    }\n  }\n}",
@@ -763,9 +763,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
-    "averageRating": 5,
-    "estimatedInstalls": 2679,
+    "reviewsCount": 6,
+    "averageRating": 4.7,
+    "estimatedInstalls": 1821,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"linkedin-company-b2b-business-profile-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/linkedin-company-b2b-business-profile-mcp\"\n      ]\n    }\n  }\n}",
@@ -795,9 +795,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
+    "reviewsCount": 9,
     "averageRating": 4.8,
-    "estimatedInstalls": 3086,
+    "estimatedInstalls": 7500,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"google-serp-web-scraping-domain-search-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/google-serp-web-scraping-domain-search-mcp\"\n      ]\n    }\n  }\n}",
@@ -827,9 +827,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 22,
+    "reviewsCount": 20,
     "averageRating": 4.9,
-    "estimatedInstalls": 7777,
+    "estimatedInstalls": 5940,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"amazon-product-walmart-shopify-ecommerce-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp\"\n      ]\n    }\n  }\n}",
@@ -859,9 +859,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 3,
-    "averageRating": 4.8,
-    "estimatedInstalls": 8624,
+    "reviewsCount": 6,
+    "averageRating": 4.6,
+    "estimatedInstalls": 6629,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"reddit-hacker-news-forum-posts-search-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/reddit-hacker-news-forum-posts-search-mcp\"\n      ]\n    }\n  }\n}",
@@ -891,9 +891,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 9,
-    "averageRating": 4.6,
-    "estimatedInstalls": 6734,
+    "reviewsCount": 3,
+    "averageRating": 4.9,
+    "estimatedInstalls": 7165,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"youtube-transcript-video-subtitles-search-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/youtube-transcript-video-subtitles-search-mcp\"\n      ]\n    }\n  }\n}",
@@ -923,9 +923,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 4.6,
-    "estimatedInstalls": 7396,
+    "reviewsCount": 6,
+    "averageRating": 4.9,
+    "estimatedInstalls": 7965,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentberg\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentberg/agentberg\"\n      ]\n    }\n  }\n}",
@@ -955,9 +955,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
+    "reviewsCount": 8,
     "averageRating": 5,
-    "estimatedInstalls": 5050,
+    "estimatedInstalls": 2781,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentboard\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentboard/agentboard\"\n      ]\n    }\n  }\n}",
@@ -987,9 +987,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 1,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2182,
+    "reviewsCount": 14,
+    "averageRating": 5,
+    "estimatedInstalls": 4731,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"registry\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentcv/registry\"\n      ]\n    }\n  }\n}",
@@ -1019,9 +1019,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 17,
-    "averageRating": 4.7,
-    "estimatedInstalls": 5374,
+    "reviewsCount": 9,
+    "averageRating": 4.8,
+    "estimatedInstalls": 1928,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentdm\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentdm/agentdm\"\n      ]\n    }\n  }\n}",
@@ -1051,9 +1051,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
-    "averageRating": 5,
-    "estimatedInstalls": 1399,
+    "reviewsCount": 22,
+    "averageRating": 4.8,
+    "estimatedInstalls": 7485,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"compute\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentgates/compute\"\n      ]\n    }\n  }\n}",
@@ -1084,8 +1084,8 @@
       "securityAudit": 0.5
     },
     "reviewsCount": 9,
-    "averageRating": 5,
-    "estimatedInstalls": 4868,
+    "averageRating": 4.7,
+    "estimatedInstalls": 2427,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentgates/mcp\"\n      ]\n    }\n  }\n}",
@@ -1115,9 +1115,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
-    "averageRating": 4.7,
-    "estimatedInstalls": 6666,
+    "reviewsCount": 17,
+    "averageRating": 4.8,
+    "estimatedInstalls": 5323,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentic-blue\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenticblue/agentic-blue\"\n      ]\n    }\n  }\n}",
@@ -1147,9 +1147,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
-    "averageRating": 4.8,
-    "estimatedInstalls": 9111,
+    "reviewsCount": 17,
+    "averageRating": 4.7,
+    "estimatedInstalls": 7038,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"periodic-system\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"academy.ase/periodic-system\"\n      ]\n    }\n  }\n}",
@@ -1179,9 +1179,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
-    "averageRating": 4.9,
-    "estimatedInstalls": 8951,
+    "reviewsCount": 17,
+    "averageRating": 4.6,
+    "estimatedInstalls": 3411,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"ufp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenticfabricationnetwork/ufp\"\n      ]\n    }\n  }\n}",
@@ -1211,9 +1211,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
-    "averageRating": 4.7,
-    "estimatedInstalls": 6924,
+    "reviewsCount": 23,
+    "averageRating": 4.8,
+    "estimatedInstalls": 8461,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentic-news/mcp\"\n      ]\n    }\n  }\n}",
@@ -1243,9 +1243,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
+    "reviewsCount": 1,
     "averageRating": 4.8,
-    "estimatedInstalls": 3252,
+    "estimatedInstalls": 8904,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenticshelf/mcp\"\n      ]\n    }\n  }\n}",
@@ -1275,9 +1275,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 22,
-    "averageRating": 4.9,
-    "estimatedInstalls": 3758,
+    "reviewsCount": 7,
+    "averageRating": 5,
+    "estimatedInstalls": 3824,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agenticcart\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenticcart/agenticcart\"\n      ]\n    }\n  }\n}",
@@ -1307,9 +1307,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
-    "averageRating": 4.6,
-    "estimatedInstalls": 4403,
+    "reviewsCount": 22,
+    "averageRating": 4.7,
+    "estimatedInstalls": 6967,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentmash\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentmash/agentmash\"\n      ]\n    }\n  }\n}",
@@ -1339,9 +1339,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 13,
+    "reviewsCount": 23,
     "averageRating": 4.8,
-    "estimatedInstalls": 8717,
+    "estimatedInstalls": 7143,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mesh\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentmesh/mesh\"\n      ]\n    }\n  }\n}",
@@ -1371,9 +1371,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
-    "averageRating": 5,
-    "estimatedInstalls": 7231,
+    "reviewsCount": 20,
+    "averageRating": 4.7,
+    "estimatedInstalls": 4381,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentra\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentrapay/agentra\"\n      ]\n    }\n  }\n}",
@@ -1403,9 +1403,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
-    "averageRating": 4.7,
-    "estimatedInstalls": 7978,
+    "reviewsCount": 6,
+    "averageRating": 4.6,
+    "estimatedInstalls": 5817,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentroam\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentroam/agentroam\"\n      ]\n    }\n  }\n}",
@@ -1435,9 +1435,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
-    "averageRating": 4.6,
-    "estimatedInstalls": 7125,
+    "reviewsCount": 11,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2345,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentsrank\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentsrank/agentsrank\"\n      ]\n    }\n  }\n}",
@@ -1469,7 +1469,7 @@
     },
     "reviewsCount": 19,
     "averageRating": 4.8,
-    "estimatedInstalls": 2361,
+    "estimatedInstalls": 5220,
     "transportType": "stdio",
     "packageIdentifier": "@agenttrust/mcp-server",
     "installSnippets": {
@@ -1500,9 +1500,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 6,
-    "averageRating": 4.7,
-    "estimatedInstalls": 5478,
+    "reviewsCount": 15,
+    "averageRating": 4.9,
+    "estimatedInstalls": 4616,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"apps\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentui/apps\"\n      ]\n    }\n  }\n}",
@@ -1532,9 +1532,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 16,
-    "averageRating": 5,
-    "estimatedInstalls": 7108,
+    "reviewsCount": 19,
+    "averageRating": 4.9,
+    "estimatedInstalls": 9543,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-agentops",
     "installSnippets": {
@@ -1565,9 +1565,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 22,
-    "averageRating": 4.8,
-    "estimatedInstalls": 1506,
+    "reviewsCount": 18,
+    "averageRating": 4.7,
+    "estimatedInstalls": 2331,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-bestiary",
     "installSnippets": {
@@ -1598,9 +1598,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 12,
-    "averageRating": 4.9,
-    "estimatedInstalls": 2265,
+    "reviewsCount": 15,
+    "averageRating": 4.8,
+    "estimatedInstalls": 9232,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-browser-workflow",
     "installSnippets": {
@@ -1631,9 +1631,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 24,
-    "averageRating": 4.8,
-    "estimatedInstalls": 8361,
+    "reviewsCount": 13,
+    "averageRating": 4.6,
+    "estimatedInstalls": 6187,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-compose",
     "installSnippets": {
@@ -1664,9 +1664,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 10,
-    "averageRating": 4.9,
-    "estimatedInstalls": 3370,
+    "reviewsCount": 23,
+    "averageRating": 4.8,
+    "estimatedInstalls": 6303,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-edge-finance",
     "installSnippets": {
@@ -1697,9 +1697,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 22,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2558,
+    "reviewsCount": 16,
+    "averageRating": 4.6,
+    "estimatedInstalls": 3673,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-edge-market",
     "installSnippets": {
@@ -1730,9 +1730,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 10,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2425,
+    "reviewsCount": 8,
+    "averageRating": 5,
+    "estimatedInstalls": 1470,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-locale",
     "installSnippets": {
@@ -1763,9 +1763,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 15,
+    "reviewsCount": 20,
     "averageRating": 4.9,
-    "estimatedInstalls": 4409,
+    "estimatedInstalls": 7819,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-matchpoint",
     "installSnippets": {
@@ -1796,9 +1796,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 24,
-    "averageRating": 4.9,
-    "estimatedInstalls": 9213,
+    "reviewsCount": 23,
+    "averageRating": 5,
+    "estimatedInstalls": 1213,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-mediakit",
     "installSnippets": {
@@ -1829,9 +1829,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 4,
+    "reviewsCount": 14,
     "averageRating": 4.7,
-    "estimatedInstalls": 9085,
+    "estimatedInstalls": 6979,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-model-router",
     "installSnippets": {
@@ -1863,8 +1863,8 @@
       "securityAudit": 1.2
     },
     "reviewsCount": 21,
-    "averageRating": 4.8,
-    "estimatedInstalls": 5698,
+    "averageRating": 4.7,
+    "estimatedInstalls": 5593,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-prooflayer",
     "installSnippets": {
@@ -1895,9 +1895,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 17,
-    "averageRating": 4.8,
-    "estimatedInstalls": 7593,
+    "reviewsCount": 15,
+    "averageRating": 5,
+    "estimatedInstalls": 1791,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-retail",
     "installSnippets": {
@@ -1928,9 +1928,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 1,
+    "reviewsCount": 9,
     "averageRating": 4.9,
-    "estimatedInstalls": 7707,
+    "estimatedInstalls": 1522,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-rollforge",
     "installSnippets": {
@@ -1961,9 +1961,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 22,
-    "averageRating": 4.9,
-    "estimatedInstalls": 1697,
+    "reviewsCount": 12,
+    "averageRating": 4.7,
+    "estimatedInstalls": 3739,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-statline",
     "installSnippets": {
@@ -1995,8 +1995,8 @@
       "securityAudit": 1.2
     },
     "reviewsCount": 5,
-    "averageRating": 5,
-    "estimatedInstalls": 7062,
+    "averageRating": 4.7,
+    "estimatedInstalls": 9179,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-synthforge",
     "installSnippets": {
@@ -2027,9 +2027,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 24,
+    "reviewsCount": 23,
     "averageRating": 4.9,
-    "estimatedInstalls": 1412,
+    "estimatedInstalls": 4187,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-web-probe",
     "installSnippets": {
@@ -2060,9 +2060,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 17,
-    "averageRating": 4.7,
-    "estimatedInstalls": 6310,
+    "reviewsCount": 6,
+    "averageRating": 4.8,
+    "estimatedInstalls": 8801,
     "transportType": "stdio",
     "packageIdentifier": "@agentutility/mcp-wordmint",
     "installSnippets": {
@@ -2093,9 +2093,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
+    "reviewsCount": 19,
     "averageRating": 4.8,
-    "estimatedInstalls": 4965,
+    "estimatedInstalls": 8265,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-contract-preflight\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agothe.mcp-chatgpt/agent-contract-preflight\"\n      ]\n    }\n  }\n}",
@@ -2125,9 +2125,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
+    "reviewsCount": 10,
     "averageRating": 4.8,
-    "estimatedInstalls": 9491,
+    "estimatedInstalls": 3729,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"ahel\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ahel/ahel\"\n      ]\n    }\n  }\n}",
@@ -2157,9 +2157,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
-    "averageRating": 4.6,
-    "estimatedInstalls": 9118,
+    "reviewsCount": 23,
+    "averageRating": 5,
+    "estimatedInstalls": 4216,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"ai-media-studio\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/ai-media-studio\"\n      ]\n    }\n  }\n}",
@@ -2189,9 +2189,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 5,
-    "estimatedInstalls": 2467,
+    "reviewsCount": 14,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2278,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"ai-portal\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ai-portal/ai-portal\"\n      ]\n    }\n  }\n}",
@@ -2221,9 +2221,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 5,
-    "estimatedInstalls": 8744,
+    "reviewsCount": 8,
+    "averageRating": 4.8,
+    "estimatedInstalls": 8945,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"aigamedev\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aigamedev/aigamedev\"\n      ]\n    }\n  }\n}",
@@ -2253,9 +2253,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
-    "averageRating": 4.9,
-    "estimatedInstalls": 5536,
+    "reviewsCount": 24,
+    "averageRating": 5,
+    "estimatedInstalls": 7669,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"catalog\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.airshelf/catalog\"\n      ]\n    }\n  }\n}",
@@ -2285,9 +2285,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
+    "reviewsCount": 4,
     "averageRating": 4.8,
-    "estimatedInstalls": 1237,
+    "estimatedInstalls": 2613,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"recorder\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aislabs/recorder\"\n      ]\n    }\n  }\n}",
@@ -2317,9 +2317,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
-    "averageRating": 5,
-    "estimatedInstalls": 3134,
+    "reviewsCount": 20,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1745,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"cve\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aislabs/cve\"\n      ]\n    }\n  }\n}",
@@ -2349,9 +2349,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4958,
+    "reviewsCount": 13,
+    "averageRating": 5,
+    "estimatedInstalls": 9014,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"aistlabs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aistlabs/aistlabs\"\n      ]\n    }\n  }\n}",
@@ -2381,9 +2381,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 8,
-    "averageRating": 4.7,
-    "estimatedInstalls": 5053,
+    "reviewsCount": 21,
+    "averageRating": 4.9,
+    "estimatedInstalls": 4445,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"registrar\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aivikings/registrar\"\n      ]\n    }\n  }\n}",
@@ -2413,9 +2413,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4031,
+    "reviewsCount": 24,
+    "averageRating": 4.7,
+    "estimatedInstalls": 6111,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-trust-receipt\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ai-akari/agent-trust-receipt\"\n      ]\n    }\n  }\n}",
@@ -2445,9 +2445,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 13,
+    "reviewsCount": 21,
     "averageRating": 4.9,
-    "estimatedInstalls": 6655,
+    "estimatedInstalls": 7736,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"akaphone\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.akaphone/akaphone\"\n      ]\n    }\n  }\n}",
@@ -2477,9 +2477,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
-    "averageRating": 4.8,
-    "estimatedInstalls": 2181,
+    "reviewsCount": 8,
+    "averageRating": 5,
+    "estimatedInstalls": 2233,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"memory\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alexein/memory\"\n      ]\n    }\n  }\n}",
@@ -2510,8 +2510,8 @@
       "securityAudit": 0.5
     },
     "reviewsCount": 16,
-    "averageRating": 4.7,
-    "estimatedInstalls": 6393,
+    "averageRating": 4.8,
+    "estimatedInstalls": 2752,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"arena\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alphabazaar/arena\"\n      ]\n    }\n  }\n}",
@@ -2541,9 +2541,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
+    "reviewsCount": 8,
     "averageRating": 4.7,
-    "estimatedInstalls": 4558,
+    "estimatedInstalls": 2940,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"Alpix\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alpic.alpix/Alpix\"\n      ]\n    }\n  }\n}",
@@ -2573,9 +2573,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 2,
-    "averageRating": 4.7,
-    "estimatedInstalls": 3112,
+    "reviewsCount": 14,
+    "averageRating": 4.9,
+    "estimatedInstalls": 4648,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"alwen\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alwen/alwen\"\n      ]\n    }\n  }\n}",
@@ -2605,9 +2605,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
-    "averageRating": 4.9,
-    "estimatedInstalls": 7033,
+    "reviewsCount": 12,
+    "averageRating": 4.7,
+    "estimatedInstalls": 6320,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"amazon-seller-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentxray/amazon-seller-mcp\"\n      ]\n    }\n  }\n}",
@@ -2637,9 +2637,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
-    "averageRating": 4.7,
-    "estimatedInstalls": 1793,
+    "reviewsCount": 7,
+    "averageRating": 4.8,
+    "estimatedInstalls": 9430,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"ambix\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ambix/ambix\"\n      ]\n    }\n  }\n}",
@@ -2669,9 +2669,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
-    "averageRating": 4.6,
-    "estimatedInstalls": 6977,
+    "reviewsCount": 6,
+    "averageRating": 4.7,
+    "estimatedInstalls": 5771,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"sap-analytics\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.analyticslegends/sap-analytics\"\n      ]\n    }\n  }\n}",
@@ -2701,9 +2701,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 1,
-    "averageRating": 4.8,
-    "estimatedInstalls": 3760,
+    "reviewsCount": 15,
+    "averageRating": 4.9,
+    "estimatedInstalls": 9324,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"anyreach\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.anyreach/anyreach\"\n      ]\n    }\n  }\n}",
@@ -2733,9 +2733,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 22,
-    "averageRating": 5,
-    "estimatedInstalls": 2874,
+    "reviewsCount": 18,
+    "averageRating": 4.7,
+    "estimatedInstalls": 4533,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"apex-ai-academy\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"academy.apexai/apex-ai-academy\"\n      ]\n    }\n  }\n}",
@@ -2765,9 +2765,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 9,
-    "averageRating": 4.8,
-    "estimatedInstalls": 3233,
+    "reviewsCount": 4,
+    "averageRating": 4.7,
+    "estimatedInstalls": 5573,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"signals\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.apexrunner/signals\"\n      ]\n    }\n  }\n}",
@@ -2797,9 +2797,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
-    "averageRating": 5,
-    "estimatedInstalls": 7549,
+    "reviewsCount": 11,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1336,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"verify\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.apir/verify\"\n      ]\n    }\n  }\n}",
@@ -2829,9 +2829,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
-    "averageRating": 4.6,
-    "estimatedInstalls": 6633,
+    "reviewsCount": 20,
+    "averageRating": 4.8,
+    "estimatedInstalls": 4789,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"apitree\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.apitree/apitree\"\n      ]\n    }\n  }\n}",
@@ -2861,9 +2861,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 3,
+    "reviewsCount": 13,
     "averageRating": 4.8,
-    "estimatedInstalls": 1259,
+    "estimatedInstalls": 6578,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"propertycheck\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.alphaquantlabs/propertycheck\"\n      ]\n    }\n  }\n}",
@@ -2893,9 +2893,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
-    "averageRating": 4.8,
-    "estimatedInstalls": 3458,
+    "reviewsCount": 8,
+    "averageRating": 4.7,
+    "estimatedInstalls": 8915,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.arcreport/mcp\"\n      ]\n    }\n  }\n}",
@@ -2925,9 +2925,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 9,
-    "averageRating": 4.7,
-    "estimatedInstalls": 9001,
+    "reviewsCount": 8,
+    "averageRating": 4.9,
+    "estimatedInstalls": 3246,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"ari\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.ariso/ari\"\n      ]\n    }\n  }\n}",
@@ -2957,9 +2957,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
-    "averageRating": 4.7,
-    "estimatedInstalls": 5247,
+    "reviewsCount": 18,
+    "averageRating": 4.9,
+    "estimatedInstalls": 5102,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"artil\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.artil/artil\"\n      ]\n    }\n  }\n}",
@@ -2989,9 +2989,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 15,
-    "averageRating": 4.9,
-    "estimatedInstalls": 3234,
+    "reviewsCount": 5,
+    "averageRating": 4.6,
+    "estimatedInstalls": 9108,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"asms\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.asms/asms\"\n      ]\n    }\n  }\n}",
@@ -3021,9 +3021,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 6,
+    "reviewsCount": 13,
     "averageRating": 4.8,
-    "estimatedInstalls": 9093,
+    "estimatedInstalls": 9529,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"assistable\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.assistable/assistable\"\n      ]\n    }\n  }\n}",
@@ -3053,9 +3053,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 9,
+    "reviewsCount": 3,
     "averageRating": 4.8,
-    "estimatedInstalls": 2963,
+    "estimatedInstalls": 9611,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atako/mcp\"\n      ]\n    }\n  }\n}",
@@ -3085,9 +3085,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 5,
-    "estimatedInstalls": 2114,
+    "reviewsCount": 22,
+    "averageRating": 4.8,
+    "estimatedInstalls": 7050,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"atars-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aarna/atars-mcp\"\n      ]\n    }\n  }\n}",
@@ -3117,9 +3117,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
-    "averageRating": 4.8,
-    "estimatedInstalls": 6884,
+    "reviewsCount": 2,
+    "averageRating": 4.7,
+    "estimatedInstalls": 8577,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"makler\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.athaus/makler\"\n      ]\n    }\n  }\n}",
@@ -3149,9 +3149,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
+    "reviewsCount": 17,
     "averageRating": 4.9,
-    "estimatedInstalls": 4413,
+    "estimatedInstalls": 1237,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atlaso/mcp\"\n      ]\n    }\n  }\n}",
@@ -3181,15 +3181,79 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 17,
-    "averageRating": 5,
-    "estimatedInstalls": 7176,
+    "reviewsCount": 1,
+    "averageRating": 4.8,
+    "estimatedInstalls": 1809,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"atmark\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atmark/atmark\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"atmark\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atmark/atmark\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"atmark\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atmark/atmark\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.atmark/atmark"
+    }
+  },
+  {
+    "id": "ai.atomindustries/agent-channel",
+    "name": "ai.atomindustries/agent-channel",
+    "title": "Atom Industries",
+    "description": "Atom Industries (development stage): AI data-center sites in Latin America. Facts, inquiries.",
+    "version": "1.0.0",
+    "category": "ai-agents",
+    "author": "Community",
+    "repositoryUrl": "",
+    "websiteUrl": "",
+    "isOfficialLatest": true,
+    "publishedAt": "2026-11-22T06:05:43.813499Z",
+    "trustScore": 1.5,
+    "securityRating": "Caution",
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 7,
+    "averageRating": 5,
+    "estimatedInstalls": 5683,
+    "transportType": "stdio",
+    "installSnippets": {
+      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-channel\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atomindustries/agent-channel\"\n      ]\n    }\n  }\n}",
+      "cursorMcp": "{\n  \"mcpServers\": {\n    \"agent-channel\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atomindustries/agent-channel\"\n      ]\n    }\n  }\n}",
+      "windsurf": "{\n  \"mcpServers\": {\n    \"agent-channel\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atomindustries/agent-channel\"\n      ]\n    }\n  }\n}",
+      "terminal": "npx -y ai.atomindustries/agent-channel"
+    }
+  },
+  {
+    "id": "ai.atomtechnologies/agent-channel",
+    "name": "ai.atomtechnologies/agent-channel",
+    "title": "Atom Technologies",
+    "description": "Atom Technologies: dedicated Latin American software teams in US hours. Prices, FAQ, inquiries.",
+    "version": "1.0.0",
+    "category": "ai-agents",
+    "author": "Community",
+    "repositoryUrl": "",
+    "websiteUrl": "",
+    "isOfficialLatest": true,
+    "publishedAt": "2026-11-22T06:05:43.115365Z",
+    "trustScore": 1.5,
+    "securityRating": "Caution",
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 17,
+    "averageRating": 4.7,
+    "estimatedInstalls": 9324,
+    "transportType": "stdio",
+    "installSnippets": {
+      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-channel\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atomtechnologies/agent-channel\"\n      ]\n    }\n  }\n}",
+      "cursorMcp": "{\n  \"mcpServers\": {\n    \"agent-channel\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atomtechnologies/agent-channel\"\n      ]\n    }\n  }\n}",
+      "windsurf": "{\n  \"mcpServers\": {\n    \"agent-channel\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atomtechnologies/agent-channel\"\n      ]\n    }\n  }\n}",
+      "terminal": "npx -y ai.atomtechnologies/agent-channel"
     }
   },
   {
@@ -3213,9 +3277,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 6,
-    "averageRating": 5,
-    "estimatedInstalls": 5460,
+    "reviewsCount": 11,
+    "averageRating": 4.9,
+    "estimatedInstalls": 7672,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"atomsell\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atomsell/atomsell\"\n      ]\n    }\n  }\n}",
@@ -3245,9 +3309,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 6,
-    "averageRating": 4.8,
-    "estimatedInstalls": 1948,
+    "reviewsCount": 24,
+    "averageRating": 4.9,
+    "estimatedInstalls": 8016,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"atria\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askatria/atria\"\n      ]\n    }\n  }\n}",
@@ -3277,9 +3341,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 11,
-    "averageRating": 4.7,
-    "estimatedInstalls": 8807,
+    "reviewsCount": 14,
+    "averageRating": 5,
+    "estimatedInstalls": 5327,
     "transportType": "stdio",
     "packageIdentifier": "attestari-mcp",
     "installSnippets": {
@@ -3310,9 +3374,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 3,
+    "reviewsCount": 16,
     "averageRating": 4.8,
-    "estimatedInstalls": 3685,
+    "estimatedInstalls": 8115,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agentic\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aunoo/agentic\"\n      ]\n    }\n  }\n}",
@@ -3342,9 +3406,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 8,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2110,
+    "reviewsCount": 17,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2295,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"docs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.auteng/docs\"\n      ]\n    }\n  }\n}",
@@ -3374,15 +3438,47 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 3,
-    "averageRating": 4.8,
-    "estimatedInstalls": 7323,
+    "reviewsCount": 22,
+    "averageRating": 4.7,
+    "estimatedInstalls": 8025,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"authoryze\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.authoryze/authoryze\"\n      ]\n    }\n  }\n}",
       "cursorMcp": "{\n  \"mcpServers\": {\n    \"authoryze\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.authoryze/authoryze\"\n      ]\n    }\n  }\n}",
       "windsurf": "{\n  \"mcpServers\": {\n    \"authoryze\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.authoryze/authoryze\"\n      ]\n    }\n  }\n}",
       "terminal": "npx -y ai.authoryze/authoryze"
+    }
+  },
+  {
+    "id": "ai.autobound/signals",
+    "name": "ai.autobound/signals",
+    "title": "Autobound Signals",
+    "description": "Company and contact signals for AI agents: funding, hiring, job changes, SEC filings, buyer intent.",
+    "version": "1.3.2",
+    "category": "ai-agents",
+    "author": "Community",
+    "repositoryUrl": "",
+    "websiteUrl": "",
+    "isOfficialLatest": true,
+    "publishedAt": "2026-11-21T16:29:59.45536Z",
+    "trustScore": 1.5,
+    "securityRating": "Caution",
+    "trustBreakdown": {
+      "codeProvenance": 0.5,
+      "packageVerification": 0.5,
+      "permissionSandboxing": 1.5,
+      "documentationCompliance": 0.8,
+      "securityAudit": 0.5
+    },
+    "reviewsCount": 2,
+    "averageRating": 5,
+    "estimatedInstalls": 9471,
+    "transportType": "stdio",
+    "installSnippets": {
+      "claudeDesktop": "{\n  \"mcpServers\": {\n    \"signals\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.autobound/signals\"\n      ]\n    }\n  }\n}",
+      "cursorMcp": "{\n  \"mcpServers\": {\n    \"signals\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.autobound/signals\"\n      ]\n    }\n  }\n}",
+      "windsurf": "{\n  \"mcpServers\": {\n    \"signals\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.autobound/signals\"\n      ]\n    }\n  }\n}",
+      "terminal": "npx -y ai.autobound/signals"
     }
   },
   {
@@ -3406,9 +3502,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 2,
+    "reviewsCount": 18,
     "averageRating": 4.7,
-    "estimatedInstalls": 4562,
+    "estimatedInstalls": 4617,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"avasis\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.avasis.agents/avasis\"\n      ]\n    }\n  }\n}",
@@ -3438,9 +3534,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 4.9,
-    "estimatedInstalls": 7396,
+    "reviewsCount": 2,
+    "averageRating": 4.6,
+    "estimatedInstalls": 6680,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"back-office\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.avlira/back-office\"\n      ]\n    }\n  }\n}",
@@ -3470,9 +3566,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
-    "averageRating": 4.6,
-    "estimatedInstalls": 7307,
+    "reviewsCount": 22,
+    "averageRating": 4.7,
+    "estimatedInstalls": 4326,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"awen\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.awen/awen\"\n      ]\n    }\n  }\n}",
@@ -3502,9 +3598,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 9,
+    "reviewsCount": 19,
     "averageRating": 4.7,
-    "estimatedInstalls": 4968,
+    "estimatedInstalls": 6590,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"neuroautomata\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.axonagentic/neuroautomata\"\n      ]\n    }\n  }\n}",
@@ -3534,9 +3630,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 17,
-    "averageRating": 4.6,
-    "estimatedInstalls": 4830,
+    "reviewsCount": 18,
+    "averageRating": 4.8,
+    "estimatedInstalls": 4307,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"backengine-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.backengine/backengine-mcp\"\n      ]\n    }\n  }\n}",
@@ -3566,9 +3662,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 15,
-    "averageRating": 4.6,
-    "estimatedInstalls": 1992,
+    "reviewsCount": 14,
+    "averageRating": 4.7,
+    "estimatedInstalls": 7063,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"backrow\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.backrow/backrow\"\n      ]\n    }\n  }\n}",
@@ -3598,9 +3694,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
+    "reviewsCount": 5,
     "averageRating": 4.7,
-    "estimatedInstalls": 5436,
+    "estimatedInstalls": 9430,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bamf\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bamf/bamf\"\n      ]\n    }\n  }\n}",
@@ -3630,9 +3726,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
-    "averageRating": 4.8,
-    "estimatedInstalls": 8185,
+    "reviewsCount": 24,
+    "averageRating": 4.6,
+    "estimatedInstalls": 3279,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"basethread\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.basethread/basethread\"\n      ]\n    }\n  }\n}",
@@ -3662,9 +3758,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
-    "averageRating": 4.8,
-    "estimatedInstalls": 1709,
+    "reviewsCount": 4,
+    "averageRating": 5,
+    "estimatedInstalls": 2748,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bassethound\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bassethound/bassethound\"\n      ]\n    }\n  }\n}",
@@ -3694,9 +3790,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 17,
-    "averageRating": 4.8,
-    "estimatedInstalls": 2304,
+    "reviewsCount": 24,
+    "averageRating": 4.9,
+    "estimatedInstalls": 5855,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"beatra\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beatra/beatra\"\n      ]\n    }\n  }\n}",
@@ -3726,9 +3822,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 22,
-    "averageRating": 4.8,
-    "estimatedInstalls": 3424,
+    "reviewsCount": 8,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2399,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"beatview\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beatview/beatview\"\n      ]\n    }\n  }\n}",
@@ -3758,9 +3854,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
-    "averageRating": 5,
-    "estimatedInstalls": 4136,
+    "reviewsCount": 8,
+    "averageRating": 4.8,
+    "estimatedInstalls": 5954,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.betslipdoctor/mcp\"\n      ]\n    }\n  }\n}",
@@ -3791,8 +3887,8 @@
       "securityAudit": 0.5
     },
     "reviewsCount": 19,
-    "averageRating": 5,
-    "estimatedInstalls": 7328,
+    "averageRating": 4.6,
+    "estimatedInstalls": 3094,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bevgtin\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agent-bev/bevgtin\"\n      ]\n    }\n  }\n}",
@@ -3822,9 +3918,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4051,
+    "reviewsCount": 20,
+    "averageRating": 4.7,
+    "estimatedInstalls": 6580,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"local-commerce\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bezal/local-commerce\"\n      ]\n    }\n  }\n}",
@@ -3854,9 +3950,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
-    "averageRating": 4.6,
-    "estimatedInstalls": 3671,
+    "reviewsCount": 8,
+    "averageRating": 4.8,
+    "estimatedInstalls": 1630,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bitroad\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bitroad/bitroad\"\n      ]\n    }\n  }\n}",
@@ -3886,9 +3982,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4536,
+    "reviewsCount": 21,
+    "averageRating": 4.6,
+    "estimatedInstalls": 2894,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bittuitive\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bittuitive.api/bittuitive\"\n      ]\n    }\n  }\n}",
@@ -3918,9 +4014,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 4.7,
-    "estimatedInstalls": 9555,
+    "reviewsCount": 6,
+    "averageRating": 4.8,
+    "estimatedInstalls": 9522,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"agent-lounge\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.blinibot/agent-lounge\"\n      ]\n    }\n  }\n}",
@@ -3950,9 +4046,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
-    "averageRating": 4.9,
-    "estimatedInstalls": 9312,
+    "reviewsCount": 21,
+    "averageRating": 5,
+    "estimatedInstalls": 7249,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"sound-effects\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.blipsmith/sound-effects\"\n      ]\n    }\n  }\n}",
@@ -3982,9 +4078,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
+    "reviewsCount": 23,
     "averageRating": 4.7,
-    "estimatedInstalls": 5944,
+    "estimatedInstalls": 2103,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bluesky-substack-social-newsletter-scraper-api-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/bluesky-substack-social-newsletter-scraper-api-mcp\"\n      ]\n    }\n  }\n}",
@@ -4014,9 +4110,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
-    "averageRating": 4.7,
-    "estimatedInstalls": 9623,
+    "reviewsCount": 6,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1694,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bootkey\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bootkey/bootkey\"\n      ]\n    }\n  }\n}",
@@ -4046,9 +4142,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 2,
+    "reviewsCount": 13,
     "averageRating": 4.7,
-    "estimatedInstalls": 5430,
+    "estimatedInstalls": 4284,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"boqo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.boqo/boqo\"\n      ]\n    }\n  }\n}",
@@ -4078,9 +4174,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 18,
+    "reviewsCount": 1,
     "averageRating": 5,
-    "estimatedInstalls": 3868,
+    "estimatedInstalls": 6158,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bordet\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bordet/bordet\"\n      ]\n    }\n  }\n}",
@@ -4110,9 +4206,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 14,
-    "averageRating": 4.9,
-    "estimatedInstalls": 7364,
+    "reviewsCount": 13,
+    "averageRating": 4.7,
+    "estimatedInstalls": 6023,
     "transportType": "stdio",
     "packageIdentifier": "borealhost-mcp",
     "installSnippets": {
@@ -4143,9 +4239,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2365,
+    "reviewsCount": 9,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2594,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bot-office\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aibotoffice/bot-office\"\n      ]\n    }\n  }\n}",
@@ -4175,9 +4271,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
+    "reviewsCount": 18,
     "averageRating": 4.7,
-    "estimatedInstalls": 3668,
+    "estimatedInstalls": 4472,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"boundaryai\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.boundaryai/boundaryai\"\n      ]\n    }\n  }\n}",
@@ -4208,8 +4304,8 @@
       "securityAudit": 0.5
     },
     "reviewsCount": 14,
-    "averageRating": 4.9,
-    "estimatedInstalls": 5828,
+    "averageRating": 4.8,
+    "estimatedInstalls": 6444,
     "transportType": "stdio",
     "packageIdentifier": "bourdon",
     "installSnippets": {
@@ -4240,9 +4336,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
-    "averageRating": 4.9,
-    "estimatedInstalls": 2536,
+    "reviewsCount": 14,
+    "averageRating": 4.7,
+    "estimatedInstalls": 9183,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bureau-public\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"agency.thebureauoflostcontext/bureau-public\"\n      ]\n    }\n  }\n}",
@@ -4272,9 +4368,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 13,
-    "averageRating": 5,
-    "estimatedInstalls": 5139,
+    "reviewsCount": 7,
+    "averageRating": 4.9,
+    "estimatedInstalls": 4579,
     "transportType": "stdio",
     "packageIdentifier": "@autonomad1/computeback-mcp",
     "installSnippets": {
@@ -4305,9 +4401,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 20,
-    "averageRating": 4.7,
-    "estimatedInstalls": 3207,
+    "reviewsCount": 2,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2594,
     "transportType": "stdio",
     "packageIdentifier": "contextburn",
     "installSnippets": {
@@ -4338,9 +4434,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 7,
-    "averageRating": 5,
-    "estimatedInstalls": 4757,
+    "reviewsCount": 5,
+    "averageRating": 4.8,
+    "estimatedInstalls": 6650,
     "transportType": "stdio",
     "packageIdentifier": "@contextlayer/mcp",
     "installSnippets": {
@@ -4371,9 +4467,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
-    "averageRating": 4.7,
-    "estimatedInstalls": 7551,
+    "reviewsCount": 7,
+    "averageRating": 4.9,
+    "estimatedInstalls": 7917,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"counterscript\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentlookups/counterscript\"\n      ]\n    }\n  }\n}",
@@ -4403,9 +4499,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 8,
-    "averageRating": 4.9,
-    "estimatedInstalls": 4002,
+    "reviewsCount": 15,
+    "averageRating": 4.6,
+    "estimatedInstalls": 9676,
     "transportType": "stdio",
     "packageIdentifier": "ctxl",
     "installSnippets": {
@@ -4436,9 +4532,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 7,
-    "averageRating": 4.7,
-    "estimatedInstalls": 4056,
+    "reviewsCount": 21,
+    "averageRating": 4.8,
+    "estimatedInstalls": 1856,
     "transportType": "stdio",
     "packageIdentifier": "ctxl-mcp",
     "installSnippets": {
@@ -4469,9 +4565,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
-    "averageRating": 4.9,
-    "estimatedInstalls": 7214,
+    "reviewsCount": 22,
+    "averageRating": 5,
+    "estimatedInstalls": 8338,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"customs-bill-of-lading-import-export-trade-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/customs-bill-of-lading-import-export-trade-mcp\"\n      ]\n    }\n  }\n}",
@@ -4501,9 +4597,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
-    "averageRating": 4.6,
-    "estimatedInstalls": 6778,
+    "reviewsCount": 7,
+    "averageRating": 4.8,
+    "estimatedInstalls": 5849,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"docs-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ac.tandem/docs-mcp\"\n      ]\n    }\n  }\n}",
@@ -4533,9 +4629,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
+    "reviewsCount": 22,
     "averageRating": 4.7,
-    "estimatedInstalls": 4156,
+    "estimatedInstalls": 5008,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"douyin-xiaohongshu-rednote-social-scraper-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/douyin-xiaohongshu-rednote-social-scraper-mcp\"\n      ]\n    }\n  }\n}",
@@ -4565,9 +4661,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 14,
-    "averageRating": 4.8,
-    "estimatedInstalls": 7876,
+    "reviewsCount": 1,
+    "averageRating": 4.7,
+    "estimatedInstalls": 3347,
     "transportType": "stdio",
     "packageIdentifier": "@extremely-agency/mcp",
     "installSnippets": {
@@ -4598,9 +4694,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 5,
-    "averageRating": 4.8,
-    "estimatedInstalls": 2571,
+    "reviewsCount": 21,
+    "averageRating": 5,
+    "estimatedInstalls": 6067,
     "transportType": "stdio",
     "packageIdentifier": "@augmentev/fabric-verify-mcp",
     "installSnippets": {
@@ -4631,9 +4727,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 8,
-    "averageRating": 4.9,
-    "estimatedInstalls": 9173,
+    "reviewsCount": 10,
+    "averageRating": 4.7,
+    "estimatedInstalls": 8354,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"facebook-meta-google-tiktok-ads-library-api-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/facebook-meta-google-tiktok-ads-library-api-mcp\"\n      ]\n    }\n  }\n}",
@@ -4663,9 +4759,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
-    "averageRating": 4.9,
-    "estimatedInstalls": 3531,
+    "reviewsCount": 20,
+    "averageRating": 4.7,
+    "estimatedInstalls": 8653,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"file-storage\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/file-storage\"\n      ]\n    }\n  }\n}",
@@ -4695,9 +4791,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
+    "reviewsCount": 1,
     "averageRating": 4.7,
-    "estimatedInstalls": 2132,
+    "estimatedInstalls": 8406,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"github-huggingface-arxiv-papers-repos-search-api-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/github-huggingface-arxiv-papers-repos-search-api-mcp\"\n      ]\n    }\n  }\n}",
@@ -4727,9 +4823,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 19,
-    "averageRating": 4.7,
-    "estimatedInstalls": 6598,
+    "reviewsCount": 6,
+    "averageRating": 4.6,
+    "estimatedInstalls": 4167,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"google-trends-seo-keywords-serp-search-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/google-trends-seo-keywords-serp-search-mcp\"\n      ]\n    }\n  }\n}",
@@ -4759,9 +4855,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
-    "averageRating": 4.7,
-    "estimatedInstalls": 8322,
+    "reviewsCount": 4,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1755,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"graffeo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenticshelf/graffeo\"\n      ]\n    }\n  }\n}",
@@ -4791,9 +4887,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
-    "averageRating": 4.7,
-    "estimatedInstalls": 5208,
+    "reviewsCount": 18,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2476,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"greenlight\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentlookups/greenlight\"\n      ]\n    }\n  }\n}",
@@ -4823,9 +4919,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 16,
+    "reviewsCount": 24,
     "averageRating": 4.7,
-    "estimatedInstalls": 6935,
+    "estimatedInstalls": 3445,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"groundrules\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentlookups/groundrules\"\n      ]\n    }\n  }\n}",
@@ -4855,9 +4951,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 22,
-    "averageRating": 4.8,
-    "estimatedInstalls": 1427,
+    "reviewsCount": 4,
+    "averageRating": 4.6,
+    "estimatedInstalls": 5721,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"groundtruth\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentlookups/groundtruth\"\n      ]\n    }\n  }\n}",
@@ -4887,9 +4983,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 20,
+    "reviewsCount": 22,
     "averageRating": 4.8,
-    "estimatedInstalls": 1709,
+    "estimatedInstalls": 1231,
     "transportType": "stdio",
     "packageIdentifier": "@autonomous-ai/harness-mcp",
     "installSnippets": {
@@ -4920,9 +5016,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
-    "averageRating": 4.7,
-    "estimatedInstalls": 1439,
+    "reviewsCount": 7,
+    "averageRating": 4.8,
+    "estimatedInstalls": 7927,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"inferventis-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bankee/inferventis-mcp\"\n      ]\n    }\n  }\n}",
@@ -4952,9 +5048,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
-    "averageRating": 4.8,
-    "estimatedInstalls": 2849,
+    "reviewsCount": 1,
+    "averageRating": 4.9,
+    "estimatedInstalls": 1214,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"kinnovis-storage\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/kinnovis-storage\"\n      ]\n    }\n  }\n}",
@@ -4985,8 +5081,8 @@
       "securityAudit": 0.5
     },
     "reviewsCount": 15,
-    "averageRating": 4.7,
-    "estimatedInstalls": 9034,
+    "averageRating": 4.8,
+    "estimatedInstalls": 7029,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"lifeclaw\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentese.lifeclaw/lifeclaw\"\n      ]\n    }\n  }\n}",
@@ -5016,9 +5112,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
-    "averageRating": 4.9,
-    "estimatedInstalls": 7004,
+    "reviewsCount": 16,
+    "averageRating": 5,
+    "estimatedInstalls": 9479,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"overassessed\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentlookups/overassessed\"\n      ]\n    }\n  }\n}",
@@ -5048,9 +5144,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
-    "averageRating": 4.7,
-    "estimatedInstalls": 3744,
+    "reviewsCount": 11,
+    "averageRating": 4.8,
+    "estimatedInstalls": 4777,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"paseo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.augmentev/paseo\"\n      ]\n    }\n  }\n}",
@@ -5080,9 +5176,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
-    "averageRating": 5,
-    "estimatedInstalls": 8622,
+    "reviewsCount": 11,
+    "averageRating": 4.9,
+    "estimatedInstalls": 7620,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"plumbline\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentlookups/plumbline\"\n      ]\n    }\n  }\n}",
@@ -5112,9 +5208,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
-    "averageRating": 5,
-    "estimatedInstalls": 5561,
+    "reviewsCount": 18,
+    "averageRating": 4.7,
+    "estimatedInstalls": 9319,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"polymarket-odds-prediction-market-events-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/polymarket-odds-prediction-market-events-mcp\"\n      ]\n    }\n  }\n}",
@@ -5144,9 +5240,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
-    "averageRating": 4.8,
-    "estimatedInstalls": 3099,
+    "reviewsCount": 2,
+    "averageRating": 4.9,
+    "estimatedInstalls": 8489,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"project-desk\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.atlier/project-desk\"\n      ]\n    }\n  }\n}",
@@ -5176,9 +5272,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 12,
-    "averageRating": 4.8,
-    "estimatedInstalls": 4420,
+    "reviewsCount": 11,
+    "averageRating": 4.7,
+    "estimatedInstalls": 2943,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"puroair\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agenticshelf/puroair\"\n      ]\n    }\n  }\n}",
@@ -5208,9 +5304,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 1.2
     },
-    "reviewsCount": 9,
-    "averageRating": 5,
-    "estimatedInstalls": 2130,
+    "reviewsCount": 6,
+    "averageRating": 4.7,
+    "estimatedInstalls": 5757,
     "transportType": "stdio",
     "packageIdentifier": "@aquex/reasonbook",
     "installSnippets": {
@@ -5241,9 +5337,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 6,
-    "averageRating": 4.6,
-    "estimatedInstalls": 7750,
+    "reviewsCount": 19,
+    "averageRating": 4.9,
+    "estimatedInstalls": 3868,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"resolver\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.anha/resolver\"\n      ]\n    }\n  }\n}",
@@ -5273,9 +5369,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2364,
+    "reviewsCount": 15,
+    "averageRating": 4.6,
+    "estimatedInstalls": 2902,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"snag\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ac.snag/snag\"\n      ]\n    }\n  }\n}",
@@ -5305,9 +5401,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
-    "averageRating": 4.8,
-    "estimatedInstalls": 7727,
+    "reviewsCount": 18,
+    "averageRating": 4.6,
+    "estimatedInstalls": 2088,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"spoon-scout\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentlookups/spoon-scout\"\n      ]\n    }\n  }\n}",
@@ -5337,9 +5433,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 1,
+    "reviewsCount": 4,
     "averageRating": 4.8,
-    "estimatedInstalls": 3729,
+    "estimatedInstalls": 6875,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"stocks-crypto-ohlcv-quote-market-data-api-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/stocks-crypto-ohlcv-quote-market-data-api-mcp\"\n      ]\n    }\n  }\n}",
@@ -5369,9 +5465,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 18,
-    "averageRating": 4.8,
-    "estimatedInstalls": 2003,
+    "reviewsCount": 22,
+    "averageRating": 5,
+    "estimatedInstalls": 7218,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"switchboard\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.anywhereintelligence/switchboard\"\n      ]\n    }\n  }\n}",
@@ -5401,9 +5497,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 3,
-    "averageRating": 4.7,
-    "estimatedInstalls": 3029,
+    "reviewsCount": 4,
+    "averageRating": 5,
+    "estimatedInstalls": 5747,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"telegram-discord-twitch-kick-medium-pinterest-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp\"\n      ]\n    }\n  }\n}",
@@ -5433,9 +5529,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 17,
-    "averageRating": 4.9,
-    "estimatedInstalls": 6701,
+    "reviewsCount": 12,
+    "averageRating": 4.6,
+    "estimatedInstalls": 8798,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"threads-instagram-truthsocial-linkedin-posts-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.agentapigate/threads-instagram-truthsocial-linkedin-posts-mcp\"\n      ]\n    }\n  }\n}",
@@ -5465,9 +5561,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 13,
+    "reviewsCount": 2,
     "averageRating": 4.9,
-    "estimatedInstalls": 3620,
+    "estimatedInstalls": 8330,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"travel-world\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.augworlds/travel-world\"\n      ]\n    }\n  }\n}",
@@ -5497,9 +5593,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
+    "reviewsCount": 5,
     "averageRating": 4.9,
-    "estimatedInstalls": 9696,
+    "estimatedInstalls": 6475,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"search\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.blopus/search\"\n      ]\n    }\n  }\n}",

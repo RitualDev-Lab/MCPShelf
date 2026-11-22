@@ -20,9 +20,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
-    "averageRating": 4.6,
-    "estimatedInstalls": 3354,
+    "reviewsCount": 5,
+    "averageRating": 4.7,
+    "estimatedInstalls": 5570,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.1325/mcp\"\n      ]\n    }\n  }\n}",
@@ -52,9 +52,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
+    "reviewsCount": 9,
     "averageRating": 4.9,
-    "estimatedInstalls": 7556,
+    "estimatedInstalls": 1429,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"domains\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.4ai/domains\"\n      ]\n    }\n  }\n}",
@@ -84,9 +84,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 10,
-    "averageRating": 4.8,
-    "estimatedInstalls": 5354,
+    "reviewsCount": 17,
+    "averageRating": 4.6,
+    "estimatedInstalls": 8445,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"docs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.a2uicatalog/docs\"\n      ]\n    }\n  }\n}",
@@ -116,9 +116,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 6,
-    "averageRating": 4.9,
-    "estimatedInstalls": 8701,
+    "reviewsCount": 12,
+    "averageRating": 4.7,
+    "estimatedInstalls": 3101,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"adrio\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.adrio/adrio\"\n      ]\n    }\n  }\n}",
@@ -148,9 +148,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
-    "averageRating": 4.7,
-    "estimatedInstalls": 1599,
+    "reviewsCount": 11,
+    "averageRating": 4.9,
+    "estimatedInstalls": 5362,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"notes\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.aimochi/notes\"\n      ]\n    }\n  }\n}",
@@ -180,9 +180,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 9,
-    "averageRating": 5,
-    "estimatedInstalls": 2126,
+    "reviewsCount": 14,
+    "averageRating": 4.9,
+    "estimatedInstalls": 2179,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"apple-search-ads\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/apple-search-ads\"\n      ]\n    }\n  }\n}",
@@ -212,9 +212,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
+    "reviewsCount": 14,
     "averageRating": 4.7,
-    "estimatedInstalls": 4903,
+    "estimatedInstalls": 7151,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"trademark-search\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.arcangel/trademark-search\"\n      ]\n    }\n  }\n}",
@@ -244,9 +244,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 21,
-    "averageRating": 4.9,
-    "estimatedInstalls": 5318,
+    "reviewsCount": 13,
+    "averageRating": 5,
+    "estimatedInstalls": 1281,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"jobs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.arihaan/jobs\"\n      ]\n    }\n  }\n}",
@@ -276,9 +276,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 18,
-    "averageRating": 4.6,
-    "estimatedInstalls": 9594,
+    "reviewsCount": 8,
+    "averageRating": 4.9,
+    "estimatedInstalls": 3239,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"artifactry\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.artifactry/artifactry\"\n      ]\n    }\n  }\n}",
@@ -308,9 +308,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 15,
-    "averageRating": 4.7,
-    "estimatedInstalls": 2720,
+    "reviewsCount": 7,
+    "averageRating": 4.6,
+    "estimatedInstalls": 7435,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"gina\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.askgina/gina\"\n      ]\n    }\n  }\n}",
@@ -340,9 +340,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
-    "averageRating": 4.6,
-    "estimatedInstalls": 8710,
+    "reviewsCount": 21,
+    "averageRating": 4.9,
+    "estimatedInstalls": 5181,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"asrm\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.asrm/asrm\"\n      ]\n    }\n  }\n}",
@@ -372,9 +372,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 2,
-    "averageRating": 5,
-    "estimatedInstalls": 1902,
+    "reviewsCount": 5,
+    "averageRating": 4.9,
+    "estimatedInstalls": 3194,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"assetlog\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.assetlog/assetlog\"\n      ]\n    }\n  }\n}",
@@ -404,9 +404,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 8,
-    "averageRating": 4.7,
-    "estimatedInstalls": 8718,
+    "reviewsCount": 24,
+    "averageRating": 4.8,
+    "estimatedInstalls": 7234,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"immobiliensuche\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.athaus/immobiliensuche\"\n      ]\n    }\n  }\n}",
@@ -436,9 +436,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
+    "reviewsCount": 16,
     "averageRating": 4.9,
-    "estimatedInstalls": 1316,
+    "estimatedInstalls": 2387,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"audiomap\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.audiomap/audiomap\"\n      ]\n    }\n  }\n}",
@@ -468,9 +468,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 24,
+    "reviewsCount": 11,
     "averageRating": 4.8,
-    "estimatedInstalls": 7727,
+    "estimatedInstalls": 7080,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"auralogs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.auralogs/auralogs\"\n      ]\n    }\n  }\n}",
@@ -500,9 +500,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 4,
+    "reviewsCount": 21,
     "averageRating": 4.7,
-    "estimatedInstalls": 3515,
+    "estimatedInstalls": 9690,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"autoblogging\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.autoblogging/autoblogging\"\n      ]\n    }\n  }\n}",
@@ -532,9 +532,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 14,
-    "averageRating": 5,
-    "estimatedInstalls": 9605,
+    "reviewsCount": 8,
+    "averageRating": 4.8,
+    "estimatedInstalls": 5610,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.autorfp/mcp\"\n      ]\n    }\n  }\n}",
@@ -564,9 +564,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 13,
-    "averageRating": 4.6,
-    "estimatedInstalls": 7861,
+    "reviewsCount": 10,
+    "averageRating": 4.7,
+    "estimatedInstalls": 6309,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"investor-research\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.beliefstate/investor-research\"\n      ]\n    }\n  }\n}",
@@ -596,9 +596,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
-    "averageRating": 4.9,
-    "estimatedInstalls": 7703,
+    "reviewsCount": 17,
+    "averageRating": 5,
+    "estimatedInstalls": 7278,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bidclub\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bidclub/bidclub\"\n      ]\n    }\n  }\n}",
@@ -628,9 +628,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
-    "averageRating": 4.6,
-    "estimatedInstalls": 3414,
+    "reviewsCount": 22,
+    "averageRating": 4.8,
+    "estimatedInstalls": 8981,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"docs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bithuman/docs\"\n      ]\n    }\n  }\n}",
@@ -660,9 +660,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 18,
-    "averageRating": 4.8,
-    "estimatedInstalls": 3788,
+    "reviewsCount": 16,
+    "averageRating": 4.7,
+    "estimatedInstalls": 4329,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"bloopo\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.bloopo/bloopo\"\n      ]\n    }\n  }\n}",
@@ -692,9 +692,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
+    "reviewsCount": 10,
     "averageRating": 4.8,
-    "estimatedInstalls": 4364,
+    "estimatedInstalls": 3093,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"docs\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.boltclaw/docs\"\n      ]\n    }\n  }\n}",
@@ -724,9 +724,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 23,
-    "averageRating": 5,
-    "estimatedInstalls": 1492,
+    "reviewsCount": 4,
+    "averageRating": 4.6,
+    "estimatedInstalls": 9322,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"signals\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.boolsai/signals\"\n      ]\n    }\n  }\n}",
@@ -756,9 +756,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 17,
-    "averageRating": 5,
-    "estimatedInstalls": 1864,
+    "reviewsCount": 12,
+    "averageRating": 4.9,
+    "estimatedInstalls": 3135,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"fenlight\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ae.waggle/fenlight\"\n      ]\n    }\n  }\n}",
@@ -788,9 +788,9 @@
       "documentationCompliance": 0.5,
       "securityAudit": 0.5
     },
-    "reviewsCount": 13,
+    "reviewsCount": 18,
     "averageRating": 4.7,
-    "estimatedInstalls": 5664,
+    "estimatedInstalls": 7291,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"google-news\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/google-news\"\n      ]\n    }\n  }\n}",
@@ -821,8 +821,8 @@
       "securityAudit": 0.5
     },
     "reviewsCount": 24,
-    "averageRating": 4.8,
-    "estimatedInstalls": 8583,
+    "averageRating": 4.9,
+    "estimatedInstalls": 3315,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"google-search-console\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/google-search-console\"\n      ]\n    }\n  }\n}",
@@ -852,9 +852,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 5,
+    "reviewsCount": 20,
     "averageRating": 4.9,
-    "estimatedInstalls": 4677,
+    "estimatedInstalls": 9278,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"knowledge-base\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.b77/knowledge-base\"\n      ]\n    }\n  }\n}",
@@ -884,9 +884,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 7,
+    "reviewsCount": 15,
     "averageRating": 4.8,
-    "estimatedInstalls": 7763,
+    "estimatedInstalls": 7435,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"dubai-gardening\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ae.plantguide/dubai-gardening\"\n      ]\n    }\n  }\n}",
@@ -916,9 +916,9 @@
       "documentationCompliance": 0.8,
       "securityAudit": 0.5
     },
-    "reviewsCount": 8,
-    "averageRating": 4.8,
-    "estimatedInstalls": 2930,
+    "reviewsCount": 18,
+    "averageRating": 4.9,
+    "estimatedInstalls": 6251,
     "transportType": "stdio",
     "installSnippets": {
       "claudeDesktop": "{\n  \"mcpServers\": {\n    \"quant-research\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"ai.avasis/quant-research\"\n      ]\n    }\n  }\n}",
