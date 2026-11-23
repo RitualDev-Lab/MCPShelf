@@ -37,6 +37,8 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
           npx tsx scripts/process-submission.ts
+          echo "Server slug: ${{ steps.process.outputs.server_slug }}"
+          echo "Server title: ${{ steps.process.outputs.server_title }}"
 
       - name: Rebuild MCPShelf Static Web Platform, Badges & Feeds
         run: |

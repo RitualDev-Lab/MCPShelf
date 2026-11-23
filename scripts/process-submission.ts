@@ -251,7 +251,14 @@ async function main() {
   console.log('🤖 [MCPShelf Pipeline] Processing community submission from issue...');
   const { server, slug } = processSubmissionData(issueBody);
 
-  console.log(`✅ Successfully processed submission for ${server.title} (${server.id})!`);
+  console.log(`✅ Successfully processed submission for ${serverId}`);
+  console.log(`📝 Server slug: ${slug}`);
+  console.log(`📝 Server title: ${title}`);
+
+  // Output for GitHub Actions
+  console.log(`::set-output name=server_slug::${slug}`);
+  console.log(`::set-output name=server_title::${title}`);
+}ully processed submission for ${server.title} (${server.id})!`);
   console.log(`Slug: ${slug}`);
 
   // Set GitHub Actions output if in GHA environment
