@@ -3,6 +3,7 @@
 
 [![CI](https://github.com/RitualDev-Lab/MCPShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/MCPShelf/actions/workflows/ci.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/RitualDev-Lab/MCPShelf/badge)](https://securityscorecards.dev/viewer/?repo=github.com/RitualDev-Lab/MCPShelf)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9834/badge)](https://www.bestpractices.dev/projects/9834)
 [![Live Registry](https://img.shields.io/badge/Live_Registry-mcp.ritualdev.in-22c55e.svg?style=flat-square&logo=googlechrome&logoColor=white)](https://mcp.ritualdev.in)
 [![npm](https://img.shields.io/npm/v/@ritualdev-lab/mcpshelf.svg?style=flat-square&color=cb3837&logo=npm)](https://www.npmjs.com/package/@ritualdev-lab/mcpshelf)
 [![PyPI](https://img.shields.io/pypi/v/mcpshelf.svg?style=flat-square&color=3775A9&logo=pypi&logoColor=white)](https://pypi.org/project/mcpshelf/)
