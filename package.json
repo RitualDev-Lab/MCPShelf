@@ -62,7 +62,7 @@
     "dev": "tsx scripts/build-site.ts && npx serve site -l 3000"
   },
   "devDependencies": {
-    "@types/node": "^22.13.10",
+    "@types/node": "^26.6.6",
     "tailwindcss": "^3.4.19",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
