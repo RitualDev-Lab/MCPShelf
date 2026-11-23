@@ -46,7 +46,7 @@ describe('MCPShelf SEO, AEO & Deployment Suite', () => {
   it('site/llms.txt and site/llms-full.txt provide structured machine discovery', () => {
     const llmsTxt = fs.readFileSync(path.join(siteDir, 'llms.txt'), 'utf-8');
     assert.ok(llmsTxt.includes('# MCPShelf'));
-    assert.ok(llmsTxt.includes('https://mcp.ritualdev.in/servers/'));
+    assert.match(llmsTxt, /https:\/\/mcp\.ritualdev\.in\/servers\//);
 
     const llmsFullTxt = fs.readFileSync(path.join(siteDir, 'llms-full.txt'), 'utf-8');
     assert.ok(llmsFullTxt.includes('INDEX OF ALL PRODUCTION MCP SERVERS'));

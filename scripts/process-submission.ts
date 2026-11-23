@@ -83,9 +83,18 @@ export function processSubmissionData(issueBody: string): { server: any; slug: s
   const category = normalizeCategory(rawCategory || parsedJson?.category);
   const repositoryUrl = (rawRepo || parsedJson?.repositoryUrl || '').trim();
 
-  const author = repositoryUrl.includes('github.com/')
-    ? repositoryUrl.replace(/^https?:\/\/github\.com\//, '').split('/')[0]
-    : 'Community';
+  let author = 'Community';
+  if (repositoryUrl) {
+    try {
+      const parsedRepo = new URL(repositoryUrl);
+      if (parsedRepo.hostname === 'github.com') {
+        const parts = parsedRepo.pathname.split('/').filter(Boolean);
+        if (parts.length > 0) author = parts[0];
+      }
+    } catch {
+      // fallback if not a valid URL
+    }
+  }
 
   // Package identifier & version
   let packageId = '';
