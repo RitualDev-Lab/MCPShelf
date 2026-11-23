@@ -1,46 +1,46 @@
-name: Versioned Registry & DevShelf Cross-Sync
+name: Cross-Sync DevShelf MCP Registry
 
 on:
   schedule:
-    - cron: '30 2 * * *' # Every night at 02:30 UTC
+    - cron: '0 2 * * *'
   workflow_dispatch:
-  push:
-    paths:
-      - 'data/catalog.json'
-      - 'shelf/**'
-    branches: [main]
 
-permissions:
-  contents: write
+permissions: read-all
 
 jobs:
   sync:
-    name: Publish Versioned Registry & Cross-Sync DevShelf
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout MCPShelf
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Setup Node.js 22
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.0.0
         with:
           node-version: 22
-          cache: 'npm'
 
       - name: Install Dependencies
         run: npm ci || npm install
 
-      - name: Generate Versioned Registry & Cross-Sync Artifacts
-        run: npx tsx scripts/sync-to-devshelf.ts
+      - name: Run Cross-Sync Pipeline
+        run: npx tsx scripts/cross-sync-devshelf.ts
 
-      - name: Commit & Push Changes
+      - name: Build Site & Badges
+        run: npm run build:site && npm run build:seo
+
+      - name: Run Integrity Tests
+        run: npm test
+
+      - name: Commit and Push Updates
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add site/v1/ site/api/v1/ data/devshelf-mcp-sync.json
+          git add data/ shelf/ site/
           if git diff --staged --quiet; then
-            echo "No changes to versioned registry or cross-sync data."
+            echo "No cross-sync changes needed."
           else
-            git commit -m "chore(sync): update versioned registry v1 and devshelf sync artifacts"
+            git commit -m "chore(sync): automated cross-sync with DevShelf MCP catalog"
             git push origin main
           fi
