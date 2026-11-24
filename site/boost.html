@@ -118,15 +118,52 @@
   </header>
 
   <main class="max-w-5xl mx-auto px-4 py-16 text-center">
+    <!-- Success Banner -->
+    <div id="successBanner" class="hidden max-w-2xl mx-auto mb-8 p-4 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-sm flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🎉</span>
+        <div class="text-left">
+          <p class="font-bold">Boost Successfully Activated!</p>
+          <p class="text-xs text-emerald-400/80">Your payment has been processed. Your server badge and rankings are now active across MCPShelf.</p>
+        </div>
+      </div>
+      <button onclick="document.getElementById('successBanner').classList.add('hidden')" class="text-emerald-400 hover:text-white text-xs px-2 py-1">✕</button>
+    </div>
+
     <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-4">
       🚀 Self-Serve Creator Monetization & Placement
     </div>
     <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-4">
       Boost Your MCP Server to <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">Thousands of AI Engineers</span>
     </h1>
-    <p class="max-w-2xl mx-auto text-base text-slate-400 mb-12">
-      Get your tools into the hands of developers actively building with Claude Desktop, Cursor, and autonomous agents. Transparent sponsored ranking that complies with all security audits.
+    <p class="max-w-2xl mx-auto text-base text-slate-400 mb-8">
+      Get your tools into the hands of developers actively building with Claude Desktop, Cursor, and autonomous agents. Transparent sponsored ranking powered by Dodo Payments that complies with all security audits.
     </p>
+
+    <!-- Step 1: Target Server Selector -->
+    <div class="max-w-xl mx-auto mb-12 p-6 rounded-2xl bg-slate-900/90 border border-slate-800 text-left shadow-2xl relative">
+      <div class="flex items-center space-x-2 mb-3">
+        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xs">1</span>
+        <h2 class="text-sm font-bold uppercase tracking-wider text-slate-200">Select MCP Server to Boost</h2>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <label for="serverInput" class="block text-xs font-medium text-slate-400 mb-1">Server Identifier or Name *</label>
+          <input type="text" id="serverInput" list="serversList" placeholder="e.g. io.github.RitualDev-Lab/mcpshelf or search by name" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-slate-100 text-xs focus:outline-none focus:border-amber-400 transition" />
+          <datalist id="serversList"></datalist>
+          <p id="serverError" class="hidden text-xs text-rose-400 mt-1 font-semibold">Please select or enter an MCP server ID first.</p>
+        </div>
+        <div>
+          <label for="emailInput" class="block text-xs font-medium text-slate-400 mb-1">Creator / Billing Email (optional)</label>
+          <input type="email" id="emailInput" placeholder="founder@yourorg.com (for invoices & receipt)" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-slate-100 text-xs focus:outline-none focus:border-amber-400 transition" />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center space-x-2 mb-6">
+      <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xs">2</span>
+      <h2 class="text-sm font-bold uppercase tracking-wider text-slate-200">Choose Sponsorship Tier</h2>
+    </div>
 
     <!-- Pricing / Boost Tiers -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-16">
@@ -141,12 +178,15 @@
             <span class="text-xs text-slate-400">/ month</span>
           </div>
           <ul class="text-xs text-slate-300 space-y-2.5 mb-6">
-            <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>Pinned to top 3 slots in primary category</span></li><li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>Transparent 'Promoted' badge</span></li><li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>2x search relevance multiplier</span></li><li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>Direct install modal with custom instructions</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>Pinned to top 3 slots in primary category</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>Transparent 'Promoted' badge</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>2x search relevance multiplier</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>Direct install modal with custom instructions</span></li>
           </ul>
         </div>
-        <a href="https://checkout.dodopayments.com/buy/pdt_spotlight_mcp?quantity=1" target="_blank" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">
+        <button onclick="handleBoostCheckout('spotlight', 'pdt_0NpjONLXnMYR9e2SUlYJt')" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition cursor-pointer">
           Activate Spotlight ($19)
-        </a>
+        </button>
       </div>
 
       <!-- Tier 2: Hero (Highlighted) -->
@@ -162,12 +202,15 @@
             <span class="text-xs text-slate-400">/ month</span>
           </div>
           <ul class="text-xs text-slate-300 space-y-2.5 mb-6">
-            <li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Featured in top Hero banner across the entire marketplace</span></li><li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Prominent card highlighting on all search queries</span></li><li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Weekly spotlight in developer newsletter (5,000+ engineers)</span></li><li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Verified installation badge</span></li>
+            <li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Featured in top Hero banner across the entire marketplace</span></li>
+            <li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Prominent card highlighting on all search queries</span></li>
+            <li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Weekly spotlight in developer newsletter (5,000+ engineers)</span></li>
+            <li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>Verified installation badge</span></li>
           </ul>
         </div>
-        <a href="https://checkout.dodopayments.com/buy/pdt_hero_mcp?quantity=1" target="_blank" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black transition shadow-lg">
+        <button onclick="handleBoostCheckout('hero', 'pdt_0NpjONNytUpW7gzjoDlYW')" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black transition shadow-lg cursor-pointer">
           Claim Homepage Hero ($49)
-        </a>
+        </button>
       </div>
 
       <!-- Tier 3: Partner -->
@@ -180,20 +223,110 @@
             <span class="text-xs text-slate-400">/ month</span>
           </div>
           <ul class="text-xs text-slate-300 space-y-2.5 mb-6">
-            <li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Official Gold Shield Verification Checkmark</span></li><li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Dedicated Security Audit & Compliance verification badge</span></li><li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Inclusion in Enterprise AI Agent recommended stack</span></li><li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Priority developer support and direct partnership link</span></li>
+            <li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Official Gold Shield Verification Checkmark</span></li>
+            <li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Dedicated Security Audit & Compliance verification badge</span></li>
+            <li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Inclusion in Enterprise AI Agent recommended stack</span></li>
+            <li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>Priority developer support and direct partnership link</span></li>
           </ul>
         </div>
-        <a href="https://checkout.dodopayments.com/buy/pdt_partner_mcp?quantity=1" target="_blank" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">
+        <button onclick="handleBoostCheckout('partner', 'pdt_0NrFSmrXT8zU2u5BKGJ7y')" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition cursor-pointer">
           Partner Activation ($99)
-        </a>
+        </button>
       </div>
 
     </div>
 
+    <!-- Live Sponsored Servers Showcase -->
+    <div class="max-w-4xl mx-auto mb-16 text-left">
+      <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+        <span>✨</span> Current Live Sponsored & Promoted Servers
+      </h3>
+      <p class="text-xs text-slate-400 mb-6">Real-time status of servers currently enjoying boosted visibility on MCPShelf:</p>
+      <div id="liveSponsorsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
     <!-- Assurance -->
     <div class="max-w-2xl mx-auto p-4 rounded-xl bg-slate-900/50 border border-slate-800 text-xs text-slate-400">
-      🛡️ <strong>Zero Hidden Bias Policy</strong>: Promoted servers are clearly labeled with visible "Promoted" badges and <code>rel="sponsored"</code> HTML tags. Boosting never alters trust scores or security audit results.
+      🛡️ <strong>Zero Hidden Bias Policy</strong>: Promoted servers are clearly labeled with visible "Promoted" badges and <code>rel="sponsored"</code> HTML tags. Boosting never alters trust scores or security audit results. Powered by Dodo Payments & Stripe with instant webhook fulfillment.
     </div>
   </main>
+
+  <script>
+    // Load catalog for datalist autocomplete
+    fetch('/data.json')
+      .then(r => r.json())
+      .then(data => {
+        const servers = Array.isArray(data) ? data : (data.servers || []);
+        const list = document.getElementById('serversList');
+        servers.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.id;
+          opt.label = s.title ? `${s.title} (${s.id})` : s.id;
+          list.appendChild(opt);
+        });
+      })
+      .catch(() => {});
+
+    // Check query params for auto-fill or success banner
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('success') === 'true') {
+      document.getElementById('successBanner').classList.remove('hidden');
+    }
+    if (params.get('server')) {
+      const input = document.getElementById('serverInput');
+      if (input) input.value = params.get('server');
+    }
+
+    // Load active sponsors showcase
+    fetch('/api/v1/sponsors')
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById('liveSponsorsContainer');
+        if (!container || !data.activeBoosts) return;
+        container.innerHTML = data.activeBoosts.map(b => `
+          <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-bold text-white font-mono">${b.serverId}</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${
+                  b.tier === 'hero' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' :
+                  b.tier === 'partner' ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30' :
+                  'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+                }">${b.badge || b.tier.toUpperCase()}</span>
+              </div>
+              <p class="text-[11px] text-slate-400">${b.customCallout || 'Active MCPShelf Sponsorship'}</p>
+            </div>
+            <span class="text-[10px] text-slate-500 font-mono whitespace-nowrap ml-2">Exp: ${new Date(b.expiresAt).toLocaleDateString()}</span>
+          </div>
+        `).join('');
+      })
+      .catch(() => {});
+
+    function handleBoostCheckout(tier, productId) {
+      const serverInput = document.getElementById('serverInput');
+      const emailInput = document.getElementById('emailInput');
+      const errorMsg = document.getElementById('serverError');
+
+      const serverId = serverInput ? serverInput.value.trim() : '';
+      if (!serverId) {
+        if (errorMsg) errorMsg.classList.remove('hidden');
+        if (serverInput) {
+          serverInput.focus();
+          serverInput.classList.add('border-rose-500');
+        }
+        return;
+      }
+      if (errorMsg) errorMsg.classList.add('hidden');
+      if (serverInput) serverInput.classList.remove('border-rose-500');
+
+      const email = emailInput ? emailInput.value.trim() : '';
+      const returnUrl = encodeURIComponent(window.location.origin + '/boost.html?success=true&server=' + encodeURIComponent(serverId));
+      const checkoutUrl = `https://checkout.dodopayments.com/buy/${productId}?quantity=1&metadata.serverId=${encodeURIComponent(serverId)}&metadata.tier=${tier}${email ? '&email=' + encodeURIComponent(email) : ''}&return_url=${returnUrl}`;
+
+      window.location.href = checkoutUrl;
+    }
+  </script>
 </body>
 </html>
