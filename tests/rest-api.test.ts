@@ -92,4 +92,39 @@ describe('Unified REST API Suite (MCPShelf & DevShelf)', () => {
     assert.strictEqual(body.target, 'devshelf');
     assert.ok(body.submissionId.startsWith('sub_'));
   });
+
+  test('POST /api/v1/boosts/checkout rejects missing serverId', async () => {
+    const res = await fetch(`${BASE_URL}/api/v1/boosts/checkout`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tier: 'hero' })
+    });
+    assert.strictEqual(res.status, 400);
+    const body = await res.json();
+    assert.strictEqual(body.success, false);
+    assert.ok(body.error.includes('serverId is required'));
+  });
+
+  test('POST /api/v1/boosts/checkout generates checkout URL with metadata', async () => {
+    const res = await fetch(`${BASE_URL}/api/v1/boosts/checkout`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        serverId: 'io.github.test-creator/my-mcp',
+        tier: 'hero',
+        email: 'creator@example.com'
+      })
+    });
+    assert.strictEqual(res.status, 200);
+    const body = await res.json();
+    assert.strictEqual(body.success, true);
+    assert.strictEqual(body.serverId, 'io.github.test-creator/my-mcp');
+    assert.strictEqual(body.tier, 'hero');
+    assert.strictEqual(body.productId, 'pdt_0NpjONNytUpW7gzjoDlYW');
+    assert.strictEqual(body.priceUSD, 49);
+    assert.ok(body.checkoutUrl.includes('checkout.dodopayments.com/buy/pdt_0NpjONNytUpW7gzjoDlYW'));
+    assert.ok(body.checkoutUrl.includes('metadata.serverId=io.github.test-creator%2Fmy-mcp'));
+    assert.ok(body.checkoutUrl.includes('metadata.tier=hero'));
+    assert.ok(body.checkoutUrl.includes('email=creator%40example.com'));
+  });
 });
