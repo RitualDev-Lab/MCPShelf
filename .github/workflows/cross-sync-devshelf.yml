@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Run Cross-Sync Pipeline
-        run: npx tsx scripts/cross-sync-devshelf.ts
+        run: npx tsx scripts/sync-to-devshelf.ts
 
       - name: Build Site & Badges
         run: npm run build:site && npm run build:seo
