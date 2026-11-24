@@ -90,7 +90,33 @@ export interface WebhookResult {
   message?: string;
 }
 
+export const DODO_PRODUCTS: Record<BoostTier, { productId: string; name: string; priceUSD: number; url: string }> = {
+  spotlight: {
+    productId: 'pdt_0NpjONLXnMYR9e2SUlYJt',
+    name: 'Category Spotlight',
+    priceUSD: 19,
+    url: 'https://checkout.dodopayments.com/buy/pdt_0NpjONLXnMYR9e2SUlYJt'
+  },
+  hero: {
+    productId: 'pdt_0NpjONNytUpW7gzjoDlYW',
+    name: 'Homepage Hero Boost',
+    priceUSD: 49,
+    url: 'https://checkout.dodopayments.com/buy/pdt_0NpjONNytUpW7gzjoDlYW'
+  },
+  partner: {
+    productId: 'pdt_0NrFSmrXT8zU2u5BKGJ7y',
+    name: 'Enterprise Verified Partner',
+    priceUSD: 99,
+    url: 'https://checkout.dodopayments.com/buy/pdt_0NrFSmrXT8zU2u5BKGJ7y'
+  }
+};
+
 const PRODUCT_TIER_MAP: Record<string, BoostTier> = {
+  pdt_0NpjONLXnMYR9e2SUlYJt: 'spotlight',
+  pdt_0NpjONNytUpW7gzjoDlYW: 'hero',
+  pdt_0NrFSmrXT8zU2u5BKGJ7y: 'partner',
+  pdt_0NpjONIua0Ls6HXoumIta: 'partner',
+  pdt_0NrFWlIkkreo5fOBIJWxI: 'partner',
   pdt_spotlight_mcp: 'spotlight',
   pdt_hero_mcp: 'hero',
   pdt_partner_mcp: 'partner',

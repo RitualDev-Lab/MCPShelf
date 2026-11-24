@@ -11,7 +11,7 @@ import * as http from 'node:http';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { DodoWebhookProcessor, SPONSORS_FILE } from './dodo-webhook.js';
+import { DodoWebhookProcessor, SPONSORS_FILE, DODO_PRODUCTS, type BoostTier } from './dodo-webhook.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -171,6 +171,7 @@ export function createApiServer() {
           devTools: 'GET /api/v1/tools',
           devToolDetail: 'GET /api/v1/tools/:id',
           sponsors: 'GET /api/v1/sponsors',
+          boostCheckout: 'POST /api/v1/boosts/checkout',
           dodoWebhook: 'POST /api/v1/webhooks/dodo',
           digest: 'GET /api/v1/digest',
           subscribe: 'POST /api/v1/subscribe',
@@ -319,6 +320,46 @@ export function createApiServer() {
       return sendJson(200, sponsorsData);
     }
 
+    // 7b. Create Dodo Boost Checkout Session (POST /api/v1/boosts/checkout)
+    if (pathname === '/api/v1/boosts/checkout' && req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => { body += chunk; });
+      req.on('end', () => {
+        try {
+          const payload = JSON.parse(body || '{}');
+          const serverId = (payload.serverId || payload.server_id || '').trim();
+          const tierRaw = (payload.tier || 'spotlight').toLowerCase().trim();
+          const customerEmail = (payload.email || payload.customerEmail || '').trim();
+          const returnUrl = payload.returnUrl || 'https://mcp.ritualdev.in/boost.html?success=true';
+
+          if (!serverId) {
+            return sendJson(400, { success: false, error: 'serverId is required to initiate a boost checkout' });
+          }
+
+          if (!['spotlight', 'hero', 'partner'].includes(tierRaw)) {
+            return sendJson(400, { success: false, error: 'tier must be one of: spotlight, hero, partner' });
+          }
+
+          const tier = tierRaw as BoostTier;
+          const product = DODO_PRODUCTS[tier];
+          const checkoutUrl = `${product.url}?quantity=1&metadata.serverId=${encodeURIComponent(serverId)}&metadata.tier=${tier}${customerEmail ? `&email=${encodeURIComponent(customerEmail)}` : ''}&return_url=${encodeURIComponent(returnUrl)}`;
+
+          return sendJson(200, {
+            success: true,
+            serverId,
+            tier,
+            productId: product.productId,
+            priceUSD: product.priceUSD,
+            checkoutUrl,
+            message: `Checkout session generated for ${product.name} on server "${serverId}". Redirecting to Dodo Payments.`
+          });
+        } catch (err: any) {
+          return sendJson(400, { success: false, error: `Invalid JSON body: ${err.message}` });
+        }
+      });
+      return;
+    }
+
     // 8. Automated Dodo Payments Webhook (POST /api/v1/webhooks/dodo)
     if (pathname === '/api/v1/webhooks/dodo' && req.method === 'POST') {
       let rawBody = '';
@@ -404,6 +445,7 @@ export function createApiServer() {
         'GET /api/v1/tools',
         'GET /api/v1/tools/:id',
         'GET /api/v1/sponsors',
+        'POST /api/v1/boosts/checkout',
         'GET /api/v1/digest',
         'POST /api/v1/subscribe',
         'POST /api/v1/webhooks/dodo',
