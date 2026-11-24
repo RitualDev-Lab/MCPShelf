@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mcp.ritualdev.in/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/digest.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -25,7 +25,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/boost.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -36,7 +36,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/submit.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -47,19 +47,19 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/feed.xml</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/feed.json</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=security</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=databases</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -81,7 +81,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=developer-tools</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=monetization</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -103,7 +103,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=ai-agents</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=cloud-infra</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -125,7 +125,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=productivity</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -136,7 +136,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/?cat=web-automation</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -147,7 +147,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-agentshield.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -158,7 +158,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-dbshield.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -169,7 +169,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-devshelf.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -180,7 +180,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-fineprint.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -191,7 +191,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcp-monetize.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -202,7 +202,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mcpshelf.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -213,7 +213,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-mockforge.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-skillprism.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -235,7 +235,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/io-github-ritualdev-lab-web-sec-auditor.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -246,7 +246,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-0si-disclosures.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -257,7 +257,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-1325-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -268,7 +268,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-1court-state-court-directory.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -279,7 +279,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-28in28-agent-service-desk.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-2kw-mcp-server.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -301,7 +301,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-4ai-domains.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -312,7 +312,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-69ai-69ai.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -323,7 +323,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-a1lane-a1lane.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -334,7 +334,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-a2uicatalog-catalog.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -345,7 +345,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-a2uicatalog-docs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -356,7 +356,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aard-aard.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -367,7 +367,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-abmeter-abmeter.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -378,7 +378,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-achromat-mcp-server.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -389,7 +389,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-achurch-church.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -400,7 +400,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-acubic-acubic.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -411,7 +411,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adadvisor-mcp-server.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -422,7 +422,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adako-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -433,7 +433,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adeu-adeu.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -444,7 +444,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adkix-adkix.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -455,7 +455,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adlab-adlab.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -466,7 +466,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adlio-meta-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -477,7 +477,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-admux-admux.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -488,7 +488,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adplane-google-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -499,7 +499,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adrails-adrails.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -510,7 +510,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adrio-adrio.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -521,7 +521,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adsap-adsap.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -532,7 +532,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adside-adside.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -543,7 +543,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adstar-adstar.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -554,7 +554,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adtest-adtest-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -565,7 +565,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-advisorsai-service-navigator.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -576,7 +576,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-advizion-advizion.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -587,7 +587,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adweave-meta-ads-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -598,7 +598,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aeviamodeler-aevia.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -609,7 +609,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticaffiliate-affiliate-networks-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -620,7 +620,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-affogato-affogato.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -631,7 +631,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-afg-afg.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -642,7 +642,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-afmr-discovery.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -653,7 +653,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenlify-catalog.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -664,7 +664,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentblueprint-agent-blueprint.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -675,7 +675,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agent-neo-neo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -686,7 +686,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticplug-agent-ready-report.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -697,7 +697,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agent-bev-bev-door.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -708,7 +708,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agent-bev-library.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -719,7 +719,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentasy-cronjob.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -730,7 +730,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-sec-edgar-crypto-real-estate-pinterest-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -741,7 +741,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-google-maps-places-business-app-reviews-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -752,7 +752,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-tiktok-instagram-short-video-creator-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -763,7 +763,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-job-postings-company-ats-career-search-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -774,7 +774,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-twitter-x-tweets-trending-topics-search-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -785,7 +785,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-linkedin-company-b2b-business-profile-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -796,7 +796,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-google-serp-web-scraping-domain-search-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -807,7 +807,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-amazon-product-walmart-shopify-ecommerce-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -818,7 +818,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-reddit-hacker-news-forum-posts-search-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -829,7 +829,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-youtube-transcript-video-subtitles-search-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -840,7 +840,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentberg-agentberg.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -851,7 +851,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentboard-agentboard.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -862,7 +862,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentcv-registry.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -873,7 +873,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentdm-agentdm.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -884,7 +884,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentgates-compute.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -895,7 +895,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentgates-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -906,7 +906,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticblue-agentic-blue.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -917,7 +917,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/academy-ase-periodic-system.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -928,7 +928,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticfabricationnetwork-ufp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -939,7 +939,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentic-news-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -950,7 +950,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticshelf-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -961,7 +961,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticterminal-directory.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -972,7 +972,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticbooks-books.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -983,7 +983,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticcart-agenticcart.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -994,7 +994,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentmash-agentmash.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1005,7 +1005,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentmesh-mesh.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1016,7 +1016,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentplaybooks-agentplaybooks.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1027,7 +1027,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentrapay-agentra.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1038,7 +1038,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentroam-agentroam.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1049,7 +1049,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentsrank-agentsrank.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1060,7 +1060,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenttrust-mcp-server.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1071,7 +1071,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentui-apps.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1082,7 +1082,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-agentops.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1093,7 +1093,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-bestiary.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1104,7 +1104,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-browser-workflow.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1115,7 +1115,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-compose.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1126,7 +1126,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-finance.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1137,7 +1137,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-edge-market.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1148,7 +1148,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-locale.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1159,7 +1159,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-matchpoint.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1170,7 +1170,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-mediakit.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1181,7 +1181,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-model-router.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1192,7 +1192,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-prooflayer.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1203,7 +1203,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-retail.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1214,7 +1214,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-rollforge.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1225,7 +1225,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-statline.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1236,7 +1236,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-synthforge.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1247,7 +1247,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-web-probe.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1258,7 +1258,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentutility-mcp-wordmint.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1269,7 +1269,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agilex-service-docs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1280,7 +1280,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agimon-agimon.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1291,7 +1291,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aginera-preconstruction.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1302,7 +1302,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agothe-mcp-chatgpt-agent-contract-preflight.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1313,7 +1313,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ahel-ahel.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1324,7 +1324,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aiadvisorlab-teamops.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1335,7 +1335,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-ai-media-studio.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1346,7 +1346,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aiphotoanimator-photo-animator.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1357,7 +1357,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ai-portal-ai-portal.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1368,7 +1368,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aidoo-aidoo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1379,7 +1379,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aigamedev-aigamedev.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1390,7 +1390,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aimentiontracker-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1401,7 +1401,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aimochi-notes.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1412,7 +1412,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-airboxship-shipping-public.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1423,7 +1423,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-airpulse-airpulse.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1434,7 +1434,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-airshelf-catalog.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1445,7 +1445,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aislabs-recorder.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1456,7 +1456,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aislabs-cve.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1467,7 +1467,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aislabs-gateway.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1478,7 +1478,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aisma-aisma.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1489,7 +1489,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aistlabs-aistlabs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1500,7 +1500,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aitopia-aitopia.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1511,7 +1511,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aivikings-registrar.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1522,7 +1522,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ai-akari-agent-trust-receipt.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1533,7 +1533,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ai-akari-one-minute-akari.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1544,7 +1544,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-akaphone-akaphone.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1555,7 +1555,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-akkrudata-akkrudata.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1566,7 +1566,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alcock-arena.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1577,7 +1577,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aldro-tax.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1588,7 +1588,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alexein-memory.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1599,7 +1599,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-alexeysound-alexey-sound.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1610,7 +1610,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-almostimpossible-site.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1621,7 +1621,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alphabazaar-arena.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1632,7 +1632,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alphacreek-alphacreek-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1643,7 +1643,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alpic-mcp-alpic-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1654,7 +1654,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alpic-alpix-alpix.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1665,7 +1665,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alvinsclub-studio-brandpilot.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1676,7 +1676,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alvinsclub-studio-channel.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1687,7 +1687,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alvinsclub-studio-studio.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1698,7 +1698,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alwen-alwen.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1709,7 +1709,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentxray-amazon-seller-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1720,7 +1720,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ambix-ambix.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1731,7 +1731,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-amdahl-amdahl.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1742,7 +1742,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-amigurumi-patterns.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1753,7 +1753,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-analyticslegends-sap-analytics.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1764,7 +1764,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anam-anam.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1775,7 +1775,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-animeapi-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1786,7 +1786,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ankimcp-anki-mcp-server.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1797,7 +1797,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ankidecks-ankidecks.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1808,7 +1808,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ankimcp-anki-mcp-server-addon.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1819,7 +1819,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ankra-platform.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1830,7 +1830,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ankra-docs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1841,7 +1841,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-annsa-annsa.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1852,7 +1852,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anomalyarmor-armor-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1863,7 +1863,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anyforge-anyforge.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1874,7 +1874,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anyreach-anyreach.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1885,7 +1885,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anysoft-share-anyshare.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1896,7 +1896,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anzenna-anzenna.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1907,7 +1907,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-apatero-studio.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1918,7 +1918,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/academy-apexai-apex-ai-academy.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1929,7 +1929,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-apexrunner-signals.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1940,7 +1940,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-apiant-apiant.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1951,7 +1951,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-apipod-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1962,7 +1962,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-apir-verify.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1973,7 +1973,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-apithreshold-apithreshold.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1984,7 +1984,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-apitree-apitree.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -1995,7 +1995,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ad-apogee-apogee.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2006,7 +2006,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-appdeploy-deploy-app.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2017,7 +2017,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-apple-search-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2028,7 +2028,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alphaquantlabs-propertycheck.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2039,7 +2039,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arabickeyboard-name-calligraphy.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2050,7 +2050,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arcreport-ask.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2061,7 +2061,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arcreport-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2072,7 +2072,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arcangel-arcangel.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2083,7 +2083,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arcangel-trademark-search.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2094,7 +2094,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arcdeck-arcdeck.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2105,7 +2105,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-architool-architool.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2116,7 +2116,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-archome-archome.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2127,7 +2127,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arclan-registry.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2138,7 +2138,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-ariso-ari.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2149,7 +2149,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arihaan-jobs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2160,7 +2160,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arketo-arketo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2171,7 +2171,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arpi-arpi-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2182,7 +2182,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-artidrop-artidrop.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2193,7 +2193,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-artifactry-artifactry.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2204,7 +2204,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-artil-artil.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2215,7 +2215,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arvx-arvx.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2226,7 +2226,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askgina-gina.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2237,7 +2237,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askgina-perps.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2248,7 +2248,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askgina-predictions.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2259,7 +2259,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askgina-spot.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2270,7 +2270,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askyouraudience-ask-your-audience.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2281,7 +2281,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askadia-askadia.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2292,7 +2292,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askline-askline.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2303,7 +2303,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askwatch-gsc.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2314,7 +2314,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-asms-asms.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2325,7 +2325,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-asrm-asrm.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2336,7 +2336,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-assetlog-assetlog.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2347,7 +2347,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-assistable-assistable.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2358,7 +2358,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atako-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2369,7 +2369,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aarna-atars-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2380,7 +2380,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-athaus-makler.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2391,7 +2391,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-athaus-immobiliensuche.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2402,7 +2402,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atlasverified-atlas-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2413,7 +2413,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atlaso-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2424,7 +2424,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atmark-atmark.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2435,7 +2435,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atmy-air-quality.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2446,7 +2446,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atomindustries-agent-channel.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2457,7 +2457,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atomtechnologies-agent-channel.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2468,7 +2468,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atomsell-atomsell.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2479,7 +2479,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askatria-atria.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2490,7 +2490,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-attestari-attestari.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2501,7 +2501,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-audiomap-audiomap.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2512,7 +2512,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-audiopod-audiopod.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2523,7 +2523,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-audiopod-audiopod-core.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2534,7 +2534,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beket-audit.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2545,7 +2545,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-audo-audo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2556,7 +2556,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-augenix-build.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2567,7 +2567,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-augmap-maps.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2578,7 +2578,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aunoo-agentic.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2589,7 +2589,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-auralogs-auralogs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2600,7 +2600,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-auten-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2611,7 +2611,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-auteng-docs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2622,7 +2622,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-auteo-auteo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2633,7 +2633,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-authoryze-authoryze.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2644,7 +2644,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autoblogging-autoblogging.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2655,7 +2655,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autobound-signals.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2666,7 +2666,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autoposter-autoposter.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2677,7 +2677,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autoposting-autoposting.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2688,7 +2688,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autorfp-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2699,7 +2699,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autotracks-autotracks.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2710,7 +2710,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autovox-autovox.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2721,7 +2721,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autron-autron.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2732,7 +2732,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-auxen-auxen.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2743,7 +2743,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-avasis-agents-avasis.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2754,7 +2754,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aviado-health.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2765,7 +2765,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/aero-avioverse-library.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2776,7 +2776,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-avlira-back-office.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2787,7 +2787,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-awardcast-federal-contracts.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2798,7 +2798,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-awen-awen.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2809,7 +2809,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-awraiter-telegram.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2820,7 +2820,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-axad-axad.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2831,7 +2831,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-axonagentic-neuroautomata.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2842,7 +2842,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-azquo-azquo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2853,7 +2853,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bcited-bcited.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2864,7 +2864,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-benroberts-b4-index.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2875,7 +2875,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-backengine-backengine-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2886,7 +2886,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-backrow-backrow.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2897,7 +2897,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bakedbot-bakedbot-distribution.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2908,7 +2908,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bamf-bamf.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2919,7 +2919,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bananabread-bananabread.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2930,7 +2930,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bankrolled-agent-hub.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2941,7 +2941,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bareun-bareun.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2952,7 +2952,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-baseedgelabs-account.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2963,7 +2963,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-baseedgelabs-catalog.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2974,7 +2974,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-baselight-baselight.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2985,7 +2985,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-baseray-baseray.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -2996,7 +2996,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-basethread-basethread.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3007,7 +3007,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bassethound-bassethound.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3018,7 +3018,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bazichart-bazichart-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3029,7 +3029,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beatbandit-beatbandit.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3040,7 +3040,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beatra-beatra.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3051,7 +3051,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beatview-beatview.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3062,7 +3062,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adoraads-beauty.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3073,7 +3073,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beefi-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3084,7 +3084,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beevr-beevr.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3095,7 +3095,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beliefstate-investor-research.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3106,7 +3106,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-benchgecko-benchgecko.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3117,7 +3117,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-benchlm-data.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3128,7 +3128,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aeoengine-best-ai-search-agency-aeo-report.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3139,7 +3139,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-betslipdoctor-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3150,7 +3150,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-betterpost-server.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3161,7 +3161,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agent-bev-bevgtin.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3172,7 +3172,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bezal-local-commerce.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3183,7 +3183,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bidbetter-collector-car-values.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3194,7 +3194,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bidclub-bidclub.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3205,7 +3205,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-biddeed-biddeed-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3216,7 +3216,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-biel-biel-ai.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3227,7 +3227,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bindry-bindry.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3238,7 +3238,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bithuman-characters.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3249,7 +3249,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bithuman-docs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3260,7 +3260,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bitroad-bitroad.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3271,7 +3271,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bittlebits-bittlebits.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3282,7 +3282,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bittuitive-api-bittuitive.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3293,7 +3293,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bizmuse-bizmuse.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3304,7 +3304,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-blast-radius-blast-radius.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3315,7 +3315,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-blaze-app-blaze.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3326,7 +3326,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-blinibot-agent-lounge.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3337,7 +3337,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-blipsmith-sound-effects.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3348,7 +3348,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-blitz-api-b2b-data.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3359,7 +3359,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bloopo-bloopo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3370,7 +3370,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bluebox-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3381,7 +3381,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bluenexus-universal-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3392,7 +3392,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bluerate-loan-officers.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3403,7 +3403,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-bluesky-substack-social-newsletter-scraper-api-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3414,7 +3414,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bnbgenius-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3425,7 +3425,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boardmark-boardmark.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3436,7 +3436,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bobos-dispatcher.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3447,7 +3447,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boltclaw-boltclaw.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3458,7 +3458,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boltclaw-docs.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3469,7 +3469,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bolthub-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3480,7 +3480,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bolthub-registry.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3491,7 +3491,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boolsai-directory.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3502,7 +3502,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boolsai-grep.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3513,7 +3513,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boolsai-scan.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3524,7 +3524,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boolsai-signals.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3535,7 +3535,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boomlink-boomlink.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3546,7 +3546,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boon-boon.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3557,7 +3557,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-booqer-booqer.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3568,7 +3568,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bootkey-bootkey.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3579,7 +3579,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boqo-boqo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3590,7 +3590,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bordet-bordet.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3601,7 +3601,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-borealhost-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3612,7 +3612,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-botappetit-bot-appetit.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3623,7 +3623,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aibotoffice-bot-office.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3634,7 +3634,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-botinfo-robot-market-data.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3645,7 +3645,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-boundaryai-boundaryai.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3656,7 +3656,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bourdon-bourdon.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3667,7 +3667,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bowmark-bowmark.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3678,7 +3678,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-brainy-grocery-prices.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3689,7 +3689,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-brainy-brainy-48.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3700,7 +3700,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-thebureauoflostcontext-bureau-public.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3711,7 +3711,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-ottobot-business-contact-finder.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3722,7 +3722,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-askmiles-catalog.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3733,7 +3733,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-chess-results.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3744,7 +3744,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autonomad-computeback.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3755,7 +3755,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-arsentev-contextburn.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3766,7 +3766,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autoblocks-contextlayer-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3777,7 +3777,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-ottobot-contractor-license-changes.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3788,7 +3788,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentlookups-counterscript.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3799,7 +3799,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3810,7 +3810,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autoblocks-ctxl-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3821,7 +3821,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-customs-bill-of-lading-import-export-trade-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3832,7 +3832,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-discond-discond.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3843,7 +3843,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/africa-divisi-divisi.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3854,7 +3854,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ac-tandem-docs-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3865,7 +3865,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-douyin-xiaohongshu-rednote-social-scraper-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3876,7 +3876,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-datadubai-dubai-real-estate.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3887,7 +3887,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-easyvoice-tts.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3898,7 +3898,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bobwork-emailwarmup.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3909,7 +3909,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-argushq-enforcement-database.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3920,7 +3920,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/aero-events-events.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3931,7 +3931,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beexcellent-excellent.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3942,7 +3942,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-beexcellent-reference.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3953,7 +3953,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-extremely-agency.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3964,7 +3964,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-augmentev-fabric-verify.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3975,7 +3975,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-facebook-meta-google-tiktok-ads-library-api-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3986,7 +3986,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-feedback.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -3997,7 +3997,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-waggle-fenlight.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4008,7 +4008,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-fibalo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4019,7 +4019,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-file-storage.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4030,7 +4030,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-framerfy-store-builder.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4041,7 +4041,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-genosys-genosys.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4052,7 +4052,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ad-getle-leads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4063,7 +4063,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-github-huggingface-arxiv-papers-repos-search-api-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4074,7 +4074,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-goji-goji.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4085,7 +4085,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-google-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4096,7 +4096,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-google-news.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4107,7 +4107,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-google-search-console.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4118,7 +4118,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-adramp-google-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4129,7 +4129,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-google-trends-seo-keywords-serp-search-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4140,7 +4140,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticshelf-graffeo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4151,7 +4151,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-granek-signal-signal.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4162,7 +4162,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentlookups-greenlight.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4173,7 +4173,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-grovisor-grotax.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4184,7 +4184,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentlookups-groundrules.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4195,7 +4195,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentlookups-groundtruth.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4206,7 +4206,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-artemisgtm-gtm-engineer.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4217,7 +4217,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autonomous-harness-harness.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4228,7 +4228,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ag-hood-name-service.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4239,7 +4239,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-actwise-ideation.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4250,7 +4250,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bankee-inferventis-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4261,7 +4261,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ad-inside-inside-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4272,7 +4272,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/academy-jasonlau-classes.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4283,7 +4283,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-justidea-justidea-agency.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4294,7 +4294,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-kinnovis-storage.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4305,7 +4305,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-knowledge-base.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4316,7 +4316,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-ottobot-licensed-house-painters.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4327,7 +4327,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentese-lifeclaw-lifeclaw.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4338,7 +4338,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aient-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4349,7 +4349,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ac-mizan-registry.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4360,7 +4360,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-employerofrecord-moha.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4371,7 +4371,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-employerofrecord-moha-account.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4382,7 +4382,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-mrk-dubai-property.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4393,7 +4393,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/academy-mycontent-google-ads.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4404,7 +4404,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-nightscout.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4415,7 +4415,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-advisorsai-store-readiness.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4426,7 +4426,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentlookups-overassessed.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4437,7 +4437,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-augmentev-paseo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4448,7 +4448,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-plantguide-dubai-gardening.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4459,7 +4459,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentlookups-plumbline.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4470,7 +4470,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-polymarket-odds-prediction-market-events-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4481,7 +4481,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-kesey-pretrip.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4492,7 +4492,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atlier-project-desk.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4503,7 +4503,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-propick-propick.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4514,7 +4514,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agenticshelf-puroair.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4525,7 +4525,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-avasis-quant-research.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4536,7 +4536,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aquex-reasonbook.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4547,7 +4547,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bizmoon-regulatory.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4558,7 +4558,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anha-resolver.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4569,7 +4569,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aqta-seal.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4580,7 +4580,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-alvinsclub-studio-seo.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4591,7 +4591,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-seo-content-factory.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4602,7 +4602,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/academy-serviceengineer-se-ai.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4613,7 +4613,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-bluebed-property-new-launches.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4624,7 +4624,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ac-snag-snag.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4635,7 +4635,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentlookups-spoon-scout.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4646,7 +4646,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aliengiraffe-spotdb.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4657,7 +4657,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-aquex-stage1.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4668,7 +4668,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-stocks-crypto-ohlcv-quote-market-data-api-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4679,7 +4679,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-atdev-supershopping.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4690,7 +4690,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-anywhereintelligence-switchboard.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4701,7 +4701,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-teamwork.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4712,7 +4712,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-telegram-discord-twitch-kick-medium-pinterest-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4723,7 +4723,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-thirdhemisphere-ai-authority-index.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4734,7 +4734,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-agentapigate-threads-instagram-truthsocial-linkedin-posts-mcp.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4745,7 +4745,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-time.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4756,7 +4756,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-brainy-tipline-gta6.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4767,7 +4767,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-lona-trading.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4778,7 +4778,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-autonomad-travel.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4789,7 +4789,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-augworlds-travel-world.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4800,7 +4800,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/africa-ugc-ugc.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4811,7 +4811,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ae-waggle-vera.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4822,7 +4822,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-b77-web-analytics.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4833,7 +4833,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-avaloncompany-web-content-url-tools.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4844,7 +4844,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/ai-blopus-search.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -4855,7 +4855,7 @@
   </url>
   <url>
     <loc>https://mcp.ritualdev.in/servers/agency-zoll-ausfuhr.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
     <image:image>
