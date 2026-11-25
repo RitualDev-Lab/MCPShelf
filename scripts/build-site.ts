@@ -145,6 +145,15 @@ async function main() {
   fs.writeFileSync(path.join(siteDir, 'index.html'), indexHtml);
   console.log('  📄 Built site/index.html');
 
+  // Write static api/v1/sponsors.json for boost.html zero-cloud display
+  const apiV1Dir = path.join(siteDir, 'api', 'v1');
+  fs.mkdirSync(apiV1Dir, { recursive: true });
+  fs.writeFileSync(
+    path.join(apiV1Dir, 'sponsors.json'),
+    JSON.stringify({ boostTiers: sponsorsData.boostTiers, activeBoosts }, null, 2)
+  );
+  console.log('  💳 Wrote site/api/v1/sponsors.json');
+
   // Build Boost Page (boost.html)
   const boostHtml = generateBoostHtml(categories, sponsorsData.boostTiers);
   fs.writeFileSync(path.join(siteDir, 'boost.html'), boostHtml);
@@ -2494,15 +2503,52 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
   </header>
 
   <main class="max-w-5xl mx-auto px-4 py-16 text-center">
+    <!-- Success Banner -->
+    <div id="successBanner" class="hidden max-w-2xl mx-auto mb-8 p-4 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-sm flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🎉</span>
+        <div class="text-left">
+          <p class="font-bold">Boost Checkout Completed!</p>
+          <p class="text-xs text-emerald-400/80">Your Dodo Payments receipt has been issued. Forward your receipt or open a 1-line PR to <code>data/sponsors.json</code> with your Server ID for fast activation across MCPShelf.</p>
+        </div>
+      </div>
+      <button onclick="document.getElementById('successBanner').classList.add('hidden')" class="text-emerald-400 hover:text-white text-xs px-2 py-1">✕</button>
+    </div>
+
     <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-4">
       🚀 Self-Serve Creator Monetization & Placement
     </div>
     <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-4">
       Boost Your MCP Server to <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">Thousands of AI Engineers</span>
     </h1>
-    <p class="max-w-2xl mx-auto text-base text-slate-400 mb-12">
-      Get your tools into the hands of developers actively building with Claude Desktop, Cursor, and autonomous agents. Transparent sponsored ranking that complies with all security audits.
+    <p class="max-w-2xl mx-auto text-base text-slate-400 mb-8">
+      Get your tools into the hands of developers actively building with Claude Desktop, Cursor, and autonomous agents. Transparent sponsored ranking powered by Dodo Payments that complies with all security audits.
     </p>
+
+    <!-- Step 1: Target Server Selector -->
+    <div class="max-w-xl mx-auto mb-12 p-6 rounded-2xl bg-slate-900/90 border border-slate-800 text-left shadow-2xl relative">
+      <div class="flex items-center space-x-2 mb-3">
+        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xs">1</span>
+        <h2 class="text-sm font-bold uppercase tracking-wider text-slate-200">Select MCP Server to Boost</h2>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <label for="serverInput" class="block text-xs font-medium text-slate-400 mb-1">Server Identifier or Name *</label>
+          <input type="text" id="serverInput" list="serversList" placeholder="e.g. io.github.RitualDev-Lab/mcpshelf or search by name" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-slate-100 text-xs focus:outline-none focus:border-amber-400 transition" />
+          <datalist id="serversList"></datalist>
+          <p id="serverError" class="hidden text-xs text-rose-400 mt-1 font-semibold">Please select or enter an MCP server ID first.</p>
+        </div>
+        <div>
+          <label for="emailInput" class="block text-xs font-medium text-slate-400 mb-1">Creator / Billing Email (optional)</label>
+          <input type="email" id="emailInput" placeholder="founder@yourorg.com (for invoices & receipt)" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-slate-100 text-xs focus:outline-none focus:border-amber-400 transition" />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center space-x-2 mb-6">
+      <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xs">2</span>
+      <h2 class="text-sm font-bold uppercase tracking-wider text-slate-200">Choose Sponsorship Tier</h2>
+    </div>
 
     <!-- Pricing / Boost Tiers -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-16">
@@ -2520,9 +2566,9 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
             ${boostTiers.spotlight.perks.map((p: string) => `<li class="flex items-start gap-2"><span class="text-emerald-400">✓</span><span>${p}</span></li>`).join('')}
           </ul>
         </div>
-        <a href="https://checkout.dodopayments.com/buy/pdt_spotlight_mcp?quantity=1" target="_blank" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">
+        <button type="button" onclick="handleBoostCheckout('spotlight', 'pdt_0NpjONLXnMYR9e2SUlYJt')" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition cursor-pointer">
           Activate Spotlight ($19)
-        </a>
+        </button>
       </div>
 
       <!-- Tier 2: Hero (Highlighted) -->
@@ -2541,9 +2587,9 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
             ${boostTiers.hero.perks.map((p: string) => `<li class="flex items-start gap-2"><span class="text-amber-400">✓</span><span>${p}</span></li>`).join('')}
           </ul>
         </div>
-        <a href="https://checkout.dodopayments.com/buy/pdt_hero_mcp?quantity=1" target="_blank" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black transition shadow-lg">
+        <button type="button" onclick="handleBoostCheckout('hero', 'pdt_0NpjONNytUpW7gzjoDlYW')" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black transition shadow-lg cursor-pointer">
           Claim Homepage Hero ($49)
-        </a>
+        </button>
       </div>
 
       <!-- Tier 3: Partner -->
@@ -2559,18 +2605,122 @@ function generateBoostHtml(categories: Category[], boostTiers: any): string {
             ${boostTiers.partner.perks.map((p: string) => `<li class="flex items-start gap-2"><span class="text-purple-400">✓</span><span>${p}</span></li>`).join('')}
           </ul>
         </div>
-        <a href="https://checkout.dodopayments.com/buy/pdt_partner_mcp?quantity=1" target="_blank" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition">
+        <button type="button" onclick="handleBoostCheckout('partner', 'pdt_0NrFSmrXT8zU2u5BKGJ7y')" class="w-full py-2.5 rounded-xl font-bold text-xs text-center bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition cursor-pointer">
           Partner Activation ($99)
-        </a>
+        </button>
       </div>
 
     </div>
 
+    <!-- Live Sponsored Servers Showcase -->
+    <div class="max-w-4xl mx-auto mb-16 text-left">
+      <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+        <span>✨</span> Current Live Sponsored & Promoted Servers
+      </h3>
+      <p class="text-xs text-slate-400 mb-6">Real-time status of servers currently enjoying boosted visibility on MCPShelf:</p>
+      <div id="liveSponsorsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+    <!-- Creator Monetization Flywheel Callout -->
+    <div class="max-w-3xl mx-auto mb-8 p-5 rounded-2xl bg-slate-900/80 border border-emerald-500/30 text-left flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1">Monetize Your Own MCP Server</div>
+        <p class="text-xs text-slate-300">Add per-call Dodo Payments / Stripe paywalls in 3 lines using <code class="text-emerald-300">@ritualdev-lab/mcp-monetize</code> or scaffold via <code class="text-emerald-300">npx @ritualdev-lab/mcp-builder-kit init --monetize dodo</code>.</p>
+      </div>
+      <a href="https://github.com/RitualDev-Lab/mcp-monetize" target="_blank" rel="noopener noreferrer" class="shrink-0 px-4 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-300 text-xs font-bold transition">
+        Explore mcp-monetize &rarr;
+      </a>
+    </div>
+
     <!-- Assurance -->
     <div class="max-w-2xl mx-auto p-4 rounded-xl bg-slate-900/50 border border-slate-800 text-xs text-slate-400">
-      🛡️ <strong>Zero Hidden Bias Policy</strong>: Promoted servers are clearly labeled with visible "Promoted" badges and <code>rel="sponsored"</code> HTML tags. Boosting never alters trust scores or security audit results.
+      🛡️ <strong>Zero Hidden Bias Policy</strong>: Promoted servers are clearly labeled with visible "Promoted" badges and <code>rel="sponsored"</code> HTML tags. Boosting never alters trust scores or security audit results. Powered by Dodo Payments (Card, UPI, Apple Pay) — email <a href="mailto:hello@ritualdev.in" class="text-amber-300 underline">hello@ritualdev.in</a> with your Server ID for custom invoicing.
     </div>
   </main>
+
+  <script>
+    fetch('/data.json')
+      .then(r => r.json())
+      .then(data => {
+        const servers = Array.isArray(data) ? data : (data.servers || []);
+        const list = document.getElementById('serversList');
+        servers.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.id;
+          opt.label = s.title ? \`\${s.title} (\${s.id})\` : s.id;
+          list.appendChild(opt);
+        });
+      })
+      .catch(() => {});
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('success') === 'true') {
+      document.getElementById('successBanner').classList.remove('hidden');
+    }
+    if (params.get('server')) {
+      const input = document.getElementById('serverInput');
+      if (input) input.value = params.get('server');
+    }
+
+    fetch('/api/v1/sponsors.json')
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById('liveSponsorsContainer');
+        if (!container || !data.activeBoosts) return;
+        container.innerHTML = data.activeBoosts.map(b => \`
+          <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-bold text-white font-mono">\${b.serverId}</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold \${
+                  b.tier === 'hero' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' :
+                  b.tier === 'partner' ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30' :
+                  'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+                }">\${b.badge || b.tier.toUpperCase()}</span>
+              </div>
+              <p class="text-[11px] text-slate-400">\${b.customCallout || 'Active MCPShelf Sponsorship'}</p>
+            </div>
+            <span class="text-[10px] text-slate-500 font-mono whitespace-nowrap ml-2">Exp: \${new Date(b.expiresAt).toLocaleDateString()}</span>
+          </div>
+        \`).join('');
+      })
+      .catch(() => {});
+
+    function handleBoostCheckout(tier, productId) {
+      const serverInput = document.getElementById('serverInput');
+      const emailInput = document.getElementById('emailInput');
+      const errorMsg = document.getElementById('serverError');
+
+      const serverId = serverInput ? serverInput.value.trim() : '';
+      if (!serverId) {
+        if (errorMsg) errorMsg.classList.remove('hidden');
+        if (serverInput) {
+          serverInput.focus();
+          serverInput.classList.add('border-rose-500');
+        }
+        return;
+      }
+      if (errorMsg) errorMsg.classList.add('hidden');
+      if (serverInput) serverInput.classList.remove('border-rose-500');
+
+      const email = emailInput ? emailInput.value.trim().toLowerCase() : '';
+      const redirectUrl = window.location.origin + '/boost.html?success=true&server=' + encodeURIComponent(serverId);
+      const q = new URLSearchParams();
+      q.set('quantity', '1');
+      q.set('product_type', 'digital');
+      q.set('shipping_required', 'false');
+      q.set('metadata_serverId', serverId.slice(0, 120));
+      q.set('metadata_tier', tier);
+      if (email) {
+        q.set('email', email);
+        q.set('customer_email', email);
+      }
+      q.set('redirect_url', redirectUrl);
+      window.location.href = \`https://checkout.dodopayments.com/buy/\${productId}?\${q.toString()}\`;
+    }
+  </script>
 </body>
 </html>`;
 }
