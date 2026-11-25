@@ -54,21 +54,7 @@ Usage:
         run_server()
         return
 
-    if cmd == "list":CPShelf Python CLI - Open Registry for MCP Servers & Dev Tools (https://mcp.ritualdev.in)
-
-Usage:
-  mcpshelf explore              Interactive terminal browser & installer
-  mcpshelf search <query>       Search 419+ verified MCP servers
-  mcpshelf tools <query>        Search 577+ free open-source dev tools (DevShelf)
-  mcpshelf get <serverId>       Inspect metadata & install configs
-  mcpshelf audit <serverId>     Run trust score & security check
-  mcpshelf-mcp                  Run stdio MCP server for AI agents
-""")
-        return
-
-    cmd = args[0]
-
-    if cmd == "explore":
+    if cmd in ("list", "explore"):
         catalog = get_servers()
         print(f"\n⚡ MCPShelf Terminal Explorer ({len(catalog)} Verified Servers)")
         print("=" * 70)
