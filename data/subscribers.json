@@ -46,5 +46,11 @@
     "subscribedAt": "2026-11-26T10:41:43.791Z",
     "source": "unit-test",
     "status": "active"
+  },
+  {
+    "email": "agent_1795776220298@testbench.ai",
+    "subscribedAt": "2026-11-27T10:43:40.299Z",
+    "source": "unit-test",
+    "status": "active"
   }
 ]
